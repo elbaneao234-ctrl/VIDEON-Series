@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VIDEON</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="navbar">
+
+        <div class="logo">
+            VIDEON
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Anime</a>
+            <a href="#sobre">Sobre nosotros</a>
+        </nav>
+
+        <div id="auth-status" class="auth-status" aria-live="polite"></div>
+
+    </header>
+
+
+    <!-- PORTADA -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">ANIME · SERIES · EPISODIOS</p>
+
+                <h1>Tu próxima<br>historia<br>empieza aquí.</h1>
+
+                <p class="hero-description">
+                    Sigue tus series, temporadas y episodios favoritos
+                    en un solo lugar.
+                </p>
+
+                <a href="catalogo.html" class="hero-button">
+                    Explorar anime
+                </a>
+
+                <div class="social-links" aria-label="Redes sociales de VIDEON">
+                    <a href="https://www.youtube.com/@Taperbrand09" target="_blank" rel="noopener noreferrer" aria-label="YouTube de VIDEON">YT</a>
+                    <a href="https://www.tiktok.com/@el4nimado04" target="_blank" rel="noopener noreferrer" aria-label="TikTok de VIDEON">TK</a>
+                    <a href="https://www.instagram.com/_.whoiisjose._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de VIDEON">IG</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE NOSOTROS -->
+        <section class="continue-watching-section" aria-labelledby="continue-watching-title">
+            <div class="section-header">
+                <p>CONTINUAR</p>
+                <h2 id="continue-watching-title">Continuar viendo</h2>
+            </div>
+            <div id="continue-watching" class="continue-grid"></div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="profile-title">
+            <div class="section-header">
+                <p>PERFIL</p>
+                <h2 id="profile-title">Mi cuenta</h2>
+            </div>
+            <div id="profile-content" class="profile-content"></div>
+        </section>
+
+        <section id="sobre" class="about">
+
+            <p>APOYA EL PROYECTO</p>
+
+            <h2>Ayuda a que<br>VIDEON siga creciendo.</h2>
+
+            <p class="support-copy">
+                Si disfrutas de la plataforma, tu apoyo ayuda a mantenerla y a seguir añadiendo nuevas series.
+            </p>
+
+            <a class="donation-button" href="https://paypal.me/VIDEONdonateJoselu" target="_blank" rel="noopener noreferrer">
+                <span aria-hidden="true">♥</span>
+                Donar con PayPal
+            </a>
+
+        </section>
+
+    </main>
+
+    <div id="auth-modal" class="auth-modal" aria-hidden="true">
+        <div class="auth-modal-content" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+            <button class="close-modal" type="button" data-auth-close aria-label="Cerrar inicio de sesión">×</button>
+            <p class="hero-subtitle">CUENTA</p>
+            <h3 id="auth-modal-title">Iniciar sesión</h3>
+            <form id="auth-form" data-mode="login">
+                <input id="auth-email" type="email" placeholder="Correo electrónico" required>
+                <input id="auth-password" type="password" placeholder="Contraseña" required>
+                <input type="hidden" id="auth-mode" value="login">
+                <button id="auth-submit" class="auth-button primary" type="submit">Entrar</button>
+            </form>
+            <button id="auth-toggle" class="auth-toggle" type="button">¿No tienes cuenta?</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 VIDEON</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="auth.js"></script>
+    <script src="database.js"></script>
+    <script src="progress.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
