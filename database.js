@@ -1,4 +1,6 @@
 const VIDEON_DB = (() => {
+  let progressTableAvailable = true;
+
   const getClient = () => {
     if (!window.VIDEON_SUPABASE || !window.VIDEON_SUPABASE.client) {
       return null;
@@ -6,6 +8,8 @@ const VIDEON_DB = (() => {
 
     return window.VIDEON_SUPABASE.client;
   };
+
+  const isMissingProgressTableError = (error) => error?.code === 'PGRST205';
 
   const ensureProfile = async () => {
     const client = getClient();
@@ -44,49 +48,113 @@ const VIDEON_DB = (() => {
 
   const upsertProgress = async ({
     episodeId,
-    series,
-    season,
-    episode,
     positionSeconds,
     durationSeconds,
-    percentage,
     completed,
-    lastPlayedAt
+    updatedAt
   }) => {
     const client = getClient();
-    const user = await window.VIDEON_AUTH.getCurrentUser();
+
+    if (!progressTableAvailable) {
+      console.error('[VIDEON PROGRESS] error: watch_progress no está disponible');
+      return null;
+    }
+
+    let user;
+
+    try {
+      user = await window.VIDEON_AUTH.getCurrentUser();
+    } catch (error) {
+      console.error('[VIDEON PROGRESS] error:', error);
+      return null;
+    }
 
     if (!client || !user) {
+      console.error('[VIDEON PROGRESS] error: cliente o usuario no disponible');
       return null;
     }
 
     const payload = {
       user_id: user.id,
       episode_id: episodeId,
-      series,
-      season,
-      episode,
-      position_seconds: Number(positionSeconds || 0),
-      duration_seconds: Number(durationSeconds || 0),
-      percentage: Number(percentage || 0),
+      progress_seconds: Number(positionSeconds || 0),
+      duration: Number(durationSeconds || 0),
       completed: Boolean(completed),
-      last_played_at: lastPlayedAt || new Date().toISOString()
+      updated_at: updatedAt || new Date().toISOString()
     };
 
-    const { data, error } = await client.from('watch_progress').upsert(payload, {
-      onConflict: 'user_id,episode_id'
-    }).select();
+    const { data: existing, error: lookupError } = await client
+      .from('watch_progress')
+      .select('id')
+      .eq('user_id', user.id)
+      .eq('episode_id', episodeId)
+      .maybeSingle();
 
-    if (error) {
-      console.error('Error guardando progreso:', error);
+    console.log('[VIDEON DEBUG] consulta previa watch_progress:', {
+      data: existing,
+      error: lookupError,
+      code: lookupError?.code,
+      message: lookupError?.message,
+      details: lookupError?.details,
+      hint: lookupError?.hint
+    });
+
+    if (lookupError) {
+      if (isMissingProgressTableError(lookupError)) {
+        progressTableAvailable = false;
+        console.error('[VIDEON PROGRESS] error: watch_progress no existe');
+        return null;
+      }
+
+      console.error('Error buscando progreso:', lookupError);
+      console.error('[VIDEON PROGRESS] error:', lookupError);
       return null;
     }
 
+    console.log('[VIDEON DEBUG] operación watch_progress:', {
+      operation: existing?.id ? 'update' : 'insert',
+      payload
+    });
+
+    const query = existing?.id
+      ? client.from('watch_progress').update(payload).eq('id', existing.id)
+      : client.from('watch_progress').insert(payload);
+
+    const { data, error } = await query.select();
+
+    console.log('[VIDEON DEBUG] respuesta watch_progress:', {
+      payload,
+      data,
+      error,
+      code: error?.code,
+      message: error?.message,
+      details: error?.details,
+      hint: error?.hint
+    });
+
+    if (error) {
+      if (isMissingProgressTableError(error)) {
+        progressTableAvailable = false;
+        console.error('[VIDEON PROGRESS] error: watch_progress no existe');
+        return null;
+      }
+
+      console.error('Error guardando progreso:', error);
+      console.error('[VIDEON PROGRESS] error:', error);
+      return null;
+    }
+
+    console.log('[VIDEON PROGRESS] guardado correctamente');
     return data?.[0] || null;
   };
 
   const getProgress = async () => {
     const client = getClient();
+
+    if (!progressTableAvailable) {
+      return [];
+    }
+
     const user = await window.VIDEON_AUTH.getCurrentUser();
 
     if (!client || !user) {
@@ -97,9 +165,14 @@ const VIDEON_DB = (() => {
       .from('watch_progress')
       .select('*')
       .eq('user_id', user.id)
-      .order('last_played_at', { ascending: false });
+      .order('updated_at', { ascending: false });
 
     if (error) {
+      if (isMissingProgressTableError(error)) {
+        progressTableAvailable = false;
+        return [];
+      }
+
       console.error('Error leyendo progreso:', error);
       return [];
     }
@@ -109,6 +182,11 @@ const VIDEON_DB = (() => {
 
   const getEpisodeProgress = async (episodeId) => {
     const client = getClient();
+
+    if (!progressTableAvailable) {
+      return null;
+    }
+
     const user = await window.VIDEON_AUTH.getCurrentUser();
 
     if (!client || !user || !episodeId) {
@@ -123,6 +201,11 @@ const VIDEON_DB = (() => {
       .maybeSingle();
 
     if (error && error.code !== 'PGRST116') {
+      if (isMissingProgressTableError(error)) {
+        progressTableAvailable = false;
+        return null;
+      }
+
       console.error('Error leyendo episodio concreto:', error);
       return null;
     }

@@ -166,6 +166,76 @@ const inazumaSeason2Episodes = [
 	'iframe'
 ]);
 
+const inazumaSeason3Episodes = [
+	['https://mega.nz/embed/zlpx0SpQ#G_-pIrVApb3A-oxixsCgkgy37nYM9Y40_o1jBnzvu4k', '¡La reunión de la selección japonesa!'],
+	['https://mega.nz/embed/rx5gBCaK#d4DVwcVb0crvvjU2aOK1KW9sG1865Za8tJ2C_yBIjR4', '¡El nacimiento de Inazuma Japón!'],
+	['https://www.youtube.com/embed/gWViKomjR64', 'El entrenador maldito'],
+	['https://mega.nz/embed/uh4DxTyb#9Z-JXod9L_K1-S_p9kNJWV6vgonQmKVeh62ZNAFrTXM', '¡Se levanta el telón! ¡El reto del mundial!'],
+	['https://mega.nz/embed/GoBw3bDZ#fHl_Z8vrVQ5f2bmNMqy_CyNdcHW_UPHVky3DzKakrgk', '¡Remontemos a los Big Waves!'],
+	['https://www.youtube.com/embed/m8kEJPztBmA', '¡Los Leones del Desierto! ¡Unos impetuosos guerreros!'],
+	['https://mega.nz/embed/X8ZjBSob#dtRUqw48Vs8dqg5f8hPVjK8z2TgUVoUVHSv3jc2Rg70', '¡El despertar de Austin!'],
+	['https://mega.nz/embed/Hwp2jQYK#PNWyO3J1IMGt1x8tHqCGPJXsJZExaGTBZSabEwovUeM', 'Un gran duelo: ¡Mark contra Archer!'],
+	['https://mega.nz/embed/T4IWWTIK#jiJu42CunJRMXxOlfotPu-2W6TQvT5k01J9V79ze3Gk', '¿Cambio de selección? ¡El mayor de los desafíos!'],
+	['https://mega.nz/embed/yo5FgboQ#8dm6G-mQU6o9OPpJv-0b9hqlXe-bkEUB7713El9RSqo', '¡La selección de Kudou contra el equipo de Hitomiko!'],
+	['https://mega.nz/embed/D4QDma4S#1CU6yf9diUHn0P4rgy9gX6SHLdzxYbKcNMb4Ws062EY', '¡La técnica especial de Fuyuka!'],
+	['https://mega.nz/embed/agglhbZR#8qzGxv0LlcCBS5YtYxCZFIxu0AQe7SYgEjWnUwF54Vk', '¡La decisión de Goenji!'],
+	['https://www.youtube.com/embed/-SFtlTipqM8', '¡El último partido!'],
+	['https://mega.nz/embed/LtgSTBpK#zjVybw1qssjYE1ZYyOCWjplJVCIOkP5r8tMtymctso4', '¡Asia más fuerte! ¡Dragón de Fuego!'],
+	['https://mega.nz/embed/mxZQiJyD#Ald7bEFtRbvt0rcDWVPEsTF_oZtpo_oDaoQv0dVFrMM', '¡La táctica perfecta! ¡Perfecta zona de presión!'],
+	['https://mega.nz/embed/DhAHVQJC#Ks_mKvM61z_lo3VYg-tM2BO6ODWSdWkjsMGvJ1m7SNo', '¡Levántate, capitán!'],
+	['https://mega.nz/embed/zoxGQAxK#hyYQSBuULra3fw8t1lQy1JZVQraG-Gr7djGxQUC4qnM', '¡A buscar! ¡Nuestro boleto para las internacionales!'],
+	['https://mega.nz/embed/yhhX2DJa#qEN3Pr6fdDBWvW22WfJSs7fU4_-_dD_DFjP1k6vUF5c', '¡Aquí estamos! ¡El torneo mundial!'],
+	['https://mega.nz/embed/64Zg2IRT#B0F5_DClXoSg7iCMlQM3BdGSRD9EVUiZlJAG8FcYahQ', '¡Choque! ¡Esto es a nivel mundial!'],
+	['https://mega.nz/embed/b95gWAyC#IbkXkX0kUFDy0l9hT_sKbyBuRUJoPwtsYmls13413QA', '¡Los caballeros absolutos! ¡Caballeros de la reina! / ¡Está completa! ¡Mi propia técnica Hissatsu!'],
+	['https://mega.nz/embed/K5Jz0SBI#eHbaI1-O0BDxHYsmxBDSkM0YFfYOH2AACnD6ruSm9Y4', '¡Vamos más allá de la Mano Invencible!'],
+	['https://mega.nz/embed/3xZV2b7T#VYRxVrxOuK5IZGT0K-I99eqAq-bMWQcFvL3Rn0S__f4', '¡La maldición imperial! I Parte'],
+	['https://mega.nz/embed/zth31S6Z#d5rf9D7x9zEXJ7UuXJEvF7NBW5khV1ZY5rUz4US79Ec', '¡La maldición imperial! II Parte'],
+	['https://mega.nz/embed/a4YyGb7S#rS4PsksPgypeZYg_uED9qu2N1eFiEzd11jH-nomXpqk', '¡Espeluznante! ¡El otro Kido!'],
+	['https://mega.nz/embed/D9YnkaxK#JHvd5KCGO9FA4jZibAczwkipOm9shJrJtXh1WYYSJKc', '¡El más fuerte cara a cara! ¡Pingüinos vs. Pingüinos!'],
+	['https://mega.nz/embed/O9oFxS5A#FS-HaudpIprZvxShx86mU9I25d3hMAl49AKM6sqvung', '¡El amurallamiento fortaleza!'],
+	['https://www.youtube.com/embed/-Y2HTOkLBjE', '¡Desesperación absoluta! ¡Inazuma Japón pierde?!'],
+	['https://mega.nz/embed/30wHFJza#gYju-OlJYRhfn0EEikcRQynn-rHGBAQNT5NtU89A688', '¡El secreto de Fuyupe!'],
+	['https://mega.nz/embed/bw5XVbzJ#_1lJHPvb448ItP6TviH6ffW9BYQ1NhctLBffIcTkdl0', '¡Ichinose, final patada de salida!'],
+	['https://mega.nz/embed/P5JB3K5L#verd5JC7oXi3JaGmZ_n11RPfHOrz3m5KAcTN_m6gYOU', '¡Todos fuera de la amistad! ¡Endo vs. Ichinose!'],
+	['https://mega.nz/embed/PlAD3bLC#Ej1eVjv9ld4YxvMuyBaE4yZwm3Fkkkh7WRgo7e2q-oE', 'La determinación de Phoenix'],
+	['https://mega.nz/embed/vpImWDhZ#KUFrJYG7n9FuQH8F_K_ydY4LeyA8AeKDTA_5i9U9j0c', '¡Milagro! Encuentro con un Kappa'],
+	['https://mega.nz/embed/65YRRRBa#IoJz2DkcZApP2cZHKbn3X04FkAwHTesnFIG8x7izhIo', '¡Increíble! ¡Maou The Hand VS Odin Sword!'],
+	['https://mega.nz/embed/ywpy2LgD#_Ri293eXkfOQCn8tL4tuvGreuKABEal4zB_CsL7Pokc', '¡Recuerdos recuperados! ¡La verdad sobre Fuyuppe!'],
+	['https://mega.nz/embed/f55nSIaC#YtkRDJQiY1-On1TETC18YZNYAXITUKJz4-HFcaFlm_M', '¡A un paso de la fase final! ¡La decisión de Fidio!'],
+	['https://mega.nz/embed/ftIwGIzL#IS8KHQ3BSuUZ_Bre00VzeuGFbffb5u7Y8ATkjrYivd4', '¡La mejor de las supertácticas! ¡El Contraataque Cattenacchio!'],
+	['https://mega.nz/embed/agYi0ZJD#q5wJPEiAtUjgDGb8vlhTjDTtT-ohoKwsXwl0gRkF2zQ', '¡Duelo explosivo! ¡Fidio contra Endo!'],
+	['https://www.youtube.com/embed/No0ZYYdATtY', '¡Kageyama y su último reto!'],
+	['https://mega.nz/embed/K85DDaqT#wJnuHtYCgYjW5-_nsaZOV4kY0UROOZXG8aWY2ZZyg3o', '¡El último cuaderno del abuelo!'],
+	['https://mega.nz/embed/jwxknCoB#V-0lmduSgqejq2n6Bx3oSPsRHkXkdZM_hyMdh7mQ1qs', '¡La leyenda de Liocott!'],
+	['https://mega.nz/embed/nshGCL6C#WGv6T3qvAAocJTLM6K4v6B9cBjGqSbu3Gs7n-onHUYE', '¡El Sky Team!'],
+	['https://mega.nz/embed/75hGXCLI#9BeMen10OMFFO_9EUIMlKSp_wMKMkr2a46RsNxzlQXw', '¡El Dark Team!'],
+	['https://mega.nz/embed/6g5VmQAS#7pjQfF7Y3PyBCS4nBHuQdndrnGGHXMw9KZw6KatpMnA', '¡El Ángel Oscuro, la llegada del rey de los dioses!'],
+	['https://mega.nz/embed/z8xBTALA#9fm7vs5nUTBDAFeq8XZCV2kBjJqlMy7mss4Ph95EIO0', 'La oscuridad de Kingudamu'],
+	['https://mega.nz/embed/X4pQWJzB#wvhnPfPh9WldUrgHdORrc-lvQlpkAlQO66WafFTKzxI', '¡La conspiración de Garshield Bayhan!'],
+	['https://mega.nz/embed/3oYzEZ6Y#VYCNcXBcvrZgrihMnJ0QV0ms0yOBpL7UpPx7wBR1Opc', '¡Inazuma Japón contra Kingudamu!'],
+	['https://www.youtube.com/embed/oKcol1yw9lI', '¡El contraataque de Kingudamu!'],
+	['https://mega.nz/embed/SkYRyDAZ#Ypn6ZM9VAPFgQB3AEhxOLkxKVXAKbPorJ1NTARU8wZQ', '¡La maravilla de The Little Giants!'],
+	['https://mega.nz/embed/Cg53hJKL#8F1y2s3PcSEI8JnR9uD0wsi1L-0jBUG9Tlx1RLfXm0w', '¡El ataque de los humanos reforzados definitivos!'],
+	['https://mega.nz/embed/74JEiTJI#ge61pxuGBTuYajdkuMsTN1gVNZh_q5Zyhr7tgqBrASA', '¡El aterrador Garshield Bayhan!'],
+	['https://mega.nz/embed/j440lSbK#9w-RKPZpPw0ZLJwFwJ1EyYyZgyKJkKq7v7AQXHM0AWc', '¡El más fuerte de los rivales!'],
+	['https://mega.nz/embed/3hBB0I7Q#o05SG_tAQZuGBhsirBoRMabwTNSU2dP6kQS8QFOG9NE', '¡Entrenamiento amistoso especial con Fidio!'],
+	['https://mega.nz/embed/uhQSnAbJ#FFBh-YJw_f3Tb-YviUDBbZCx6jpTKejaVo3bVaRn_Fw', '¡Once lemas para ganar el mundial!'],
+	['https://mega.nz/embed/7soHXZiY#M_zNSrhthvbTkwCzsVRREchtpbyGQOa0c1gGRUJF2eg', '¡El duelo final de Inazuma Japón!'],
+	['https://mega.nz/embed/qoh3ga7R#iOQYXkolns_INdemz_bmF6ddcbPcBwySC0Px3trKi60', '¡Duelo en la cumbre: The Little Giants! 1ª parte'],
+	['https://mega.nz/embed/ylJlDI4Q#uu6tTRaGZSPoodjh3vY6ZCxWmqqlCIL1VuLLOCFON5Y', '¡Duelo en la cumbre: The Little Giants! 2ª parte'],
+	['https://www.youtube.com/embed/xLSlzxCUZR8', '¡Al fin la conclusión! ¡Los mejores del mundo!'],
+	['https://mega.nz/embed/Cw5nEKYT#wvFei5GcMKeaL7VkhnJwTi33dOqPIhMUUYubIHKN9P0', '¡Lágrimas en la graduación!'],
+	['https://www.youtube.com/embed/IS62xv_yrw4', '¡Un saque hacia el mañana!']
+].map(([url, description], index) => [
+	url,
+	index === 19
+		? 'Episodios 20 y 21'
+		: `Episodio ${index >= 20 ? index + 2 : index + 1}`,
+	description,
+	`img/Inazuma/Portada-Tmp3-Cap${index + 1}-Inazuma.jpg`,
+	'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -180,7 +250,7 @@ const catalogData = {
 		seasons: [
 			{ title: 'Temporada 1', description: '26 Episodios', cover: 'img/Temp1-Inazuma.jpg', videos: inazumaSeason1Episodes },
 			{ title: 'Temporada 2', description: '40 Episodios', cover: 'img/Temp2-Inazuma.jpg', videos: inazumaSeason2Episodes },
-			{ title: 'Temporada 3', description: '60 Episodios', cover: 'img/Temp3-Inazuma.jpg', videos: episodeSets('documentales-t3-episodio', ['El último archivo', 'Historias del presente', 'Más allá del tiempo']) }
+			{ title: 'Temporada 3', description: '60 Episodios', cover: 'img/Temp3-Inazuma.jpg', videos: inazumaSeason3Episodes }
 		]
 	},
 	especiales: {
@@ -224,8 +294,10 @@ if (videoGrid) {
 	document.querySelector('#category-description').textContent = selectedSeason.description;
 
 	selectedSeason.videos.forEach(([video, title, description, thumbnail, type = 'video']) => {
+		const episodeId = generateEpisodeId(selectedCatalog.title, selectedSeason.title, title);
+
 		videoGrid.insertAdjacentHTML('beforeend', `
-			<article class="video-card" data-video="${video}" data-type="${type}" role="button" tabindex="0" aria-label="Reproducir ${title}">
+			<article class="video-card" data-video="${video}" data-type="${type}" data-episode-id="${episodeId}" role="button" tabindex="0" aria-label="Reproducir ${title}">
 				<div class="thumbnail">
 					<img src="${thumbnail}" alt="Portada de ${title}">
 					<span class="play-button" aria-hidden="true">▶</span>
@@ -239,7 +311,6 @@ if (videoGrid) {
 	});
 }
 
-const videoCards = document.querySelectorAll('.video-card');
 const videoModal = document.querySelector('#video-modal');
 const videoPlayer = document.querySelector('#video-player');
 const videoFrame = document.querySelector('#video-frame');
@@ -290,15 +361,24 @@ window.openVideo = openVideo;
 window.closeVideo = closeVideo;
 
 if (videoModal) {
-	videoCards.forEach((card) => {
-		card.addEventListener('click', () => openVideo(card));
-		card.addEventListener('keydown', (event) => {
-			if (event.key === 'Enter' || event.key === ' ') {
+	if (videoGrid) {
+		videoGrid.addEventListener('click', (event) => {
+			const card = event.target.closest('.video-card');
+
+			if (card) {
+				openVideo(card);
+			}
+		});
+
+		videoGrid.addEventListener('keydown', (event) => {
+			const card = event.target.closest('.video-card');
+
+			if (card && (event.key === 'Enter' || event.key === ' ')) {
 				event.preventDefault();
 				openVideo(card);
 			}
 		});
-	});
+	}
 
 	if (videoPlayer) {
 		videoPlayer.addEventListener('error', () => {
