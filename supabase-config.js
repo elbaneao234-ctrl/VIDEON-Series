@@ -1,6 +1,6 @@
 window.VIDEON_CONFIG = {
-  supabaseUrl: 'https://TU_PROYECTO.supabase.co',
-  supabaseAnonKey: 'TU_PUBLIC_ANON_KEY'
+  supabaseUrl: 'https://xsirzfqcfqkvyrvdzajm.supabase.co',
+  supabaseAnonKey: 'sb_publishable_9GwNFMhZaCW1vEuc4syKlg_AVYmrnuW'
 };
 
 window.VIDEON_SUPABASE = window.VIDEON_SUPABASE || {};
