@@ -85,7 +85,7 @@ const mushokuSeason3Episodes = [
 
 const inazumaSeason1Episodes = [
 	['https://mega.nz/embed/qWxShCrT#nvmBgyJW0DKXPfoCYDRLrMjEVUzHLmvPWGKe4fym-Es', 'Episodio 1', '¡Juguemos Al Fútbol!'],
-	['https://www.youtube.com/embed/x5_udff7_Y8', 'Episodio 2', '¡AQUÍ ESTÁ LA ROYAL ACADEMY!'],
+	['https://www.youtube.com/embed/i6T6RCSdaiM', 'Episodio 2', '¡AQUÍ ESTÁ LA ROYAL ACADEMY!'],
 	['https://mega.nz/embed/bTQhiIST#EgREvPxAw1yK-hkiMTOcha4j6RVOjwDRkBpGooEtsNE', 'Episodio 3', '¡BUSQUEMOS LA TÉCNICA DEFINITIVA!'],
 	['https://mega.nz/embed/aDQkkZbJ#YY4-jTXUqKcEW6xpwQWjyFiskv-7MmNZ9cze7iUsoWQ', 'Episodio 4', '¡HA LLEGADO EL DRAGÓN!'],
 	['https://mega.nz/embed/KTBQAQDD#2cvYcz7GxvYJp-gLZeFDW8VmaxOf4VRWSKtNkais2k4', 'Episodio 5', '¿DÓNDE ESTÁ EL CUADERNO SECRETO?'],
@@ -518,7 +518,7 @@ const catalogData = {
 		seasons: [
 			{ title: 'Temporada 1', description: '26 Episodios', cover: 'img/Temp1-Mushoku.jpg', videos: episodeSets('aventuras-t1-episodio', ['Episodio 1', 'Episodio 2', 'Episodio 3']) },
 			{ title: 'Temporada 2', description: '25 Episodios', cover: 'img/Temp2-Mushoku.webp', videos: episodeSets('aventuras-t2-episodio', ['Episodio 1', 'Episodio 2', 'Episodio 3']) },
-			{ title: 'Temporada 3', description: '12 episodios', cover: 'img/Temp3-Mushoku.jpg', videos: mushokuSeason3Episodes }
+			{ title: 'Temporada 3', description: '14 episodios', cover: 'img/Temp3-Mushoku.jpg', videos: mushokuSeason3Episodes }
 		]
 	},
 	documentales: {
@@ -556,7 +556,7 @@ const catalogData = {
 			{ title: 'Ciudad Yorknew / Phantom Troupe', description: '20 Episodios', cover: 'img/Temp3-HxH.jpg', videos: hunterYorknewEpisodes },
 			{ title: 'Greed Island', description: '17 Episodios', cover: 'img/Temp4-HxH.webp', videos: hunterGreedIslandEpisodes },
 			{ title: 'Hormigas Quimera', description: '61 Episodios', cover: 'img/Temp5-HxH.webp', videos: hunterChimeraAntsEpisodes },
-			{ title: 'La Elección del Decimotercer Presidente Cazador', description: '12 Episodios', cover: 'img/Temp6-HxH.jpg', videos: hunterElectionEpisodes }
+			{ title: 'La Elección del 13º Presidente Cazador', description: '12 Episodios', cover: 'img/Temp6-HxH.jpg', videos: hunterElectionEpisodes }
 		]
 	}
 };
