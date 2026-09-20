@@ -238,18 +238,18 @@ const inazumaSeason3Episodes = [
 ]);
 
 const chainsawSeason1Episodes = [
-	['https://mega.nz/embed/1e8CmDJQ#IeVExP6uFRqnq9m3a3UtESnqteRUmAu5IQN9Bhgsg1Q', 'Episodio 1', 'Un perro y una motosierra', 'img/chainsaw/Portada-Tmp1-Cap1-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/1G8ziYQY#gHUnywM3QAQNoWH0ULzmQMfFBAOl4WeFwICuOUuzngQ', 'Episodio 2', 'Llegada a Tokio', 'img/chainsaw/Portada-Tmp1-Cap2-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/0CN3xIbT#aE0DU62aHKjPqnwq7vy_wmwndwX9bCrYkLltuoWi8KY', 'Episodio 3', 'El paradero de Nyako', 'img/chainsaw/Portada-Tmp1-Cap3-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/NPlgxCAA#YhgmBuKZxnVXKQrrh9zPYaNkqiQljJK3SPlwk9kv0k8', 'Episodio 4', 'Rescate', 'img/chainsaw/Portada-Tmp1-Cap4-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/gD9EmS6K#kVmgQ0K_kNd6E5fzxpVt7uHDvR5HCkQQfV7uK7BTN2E', 'Episodio 5', 'Demonio Pistola', 'img/chainsaw/Portada-Tmp1-Cap5-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/UPUgmTqY#LVmhBtVtJ84MHPrMKeJ3DstTwY66mLWJDwHM6BgrTAo', 'Episodio 6', 'Matar a Denji', 'img/chainsaw/Portada-Tmp1-Cap6-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/1GcGCDCa#IG0ftT-TvNhPGErGcr12eGZHsQm_gQXe9MqO-_R9Q9Q', 'Episodio 7', 'El sabor de un beso', 'img/chainsaw/Portada-Tmp1-Cap7-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/J3NWQCzT#sOMg77r8JVzhhiaq38DDZD-Pl50KaN-hIO5TKU0FT6Q', 'Episodio 8', 'Tiroteo', 'img/chainsaw/Portada-Tmp1-Cap8-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/da8ilbpD#NbTHS9W_XU-TkC1v8GdeXJqcjqIr1I20N4kfLtyPOi8', 'Episodio 9', 'Desde Kioto', 'img/chainsaw/Portada-Tmp1-Cap9-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/trkXRARQ#HcEzWwkcj_1Z7iPSvLYfHvnOa0lbYlrq6XpxTblDeRo', 'Episodio 10', 'Magullado y maltratado', 'img/chainsaw/Portada-Tmp1-Cap10-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/AHFwUYrY#2FY5yWexgwgjiHCn1a6jVuW--X6gbkTNtbsPuXtUaLc', 'Episodio 11', 'Comienzo de la misión', 'img/chainsaw/Portada-Tmp1-Cap11-Chainsaw.jpg', 'iframe'],
-	['https://mega.nz/embed/Bv8mwTzI#0C_CpdEOtb7JOHp72gxEGhjJFYv9-l4zwPCAiUU3fIo', 'Episodio 12', 'Espada vs Motosierra', 'img/chainsaw/Portada-Tmp1-Cap12-Chainsaw.jpg', 'iframe']
+	['https://mega.nz/embed/1e8CmDJQ#IeVExP6uFRqnq9m3a3UtESnqteRUmAu5IQN9Bhgsg1Q', 'Episodio 1', 'Un perro y una motosierra', 'img/Chainsaw/Portada-Tmp1-Cap1-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/1G8ziYQY#gHUnywM3QAQNoWH0ULzmQMfFBAOl4WeFwICuOUuzngQ', 'Episodio 2', 'Llegada a Tokio', 'img/Chainsaw/Portada-Tmp1-Cap2-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/0CN3xIbT#aE0DU62aHKjPqnwq7vy_wmwndwX9bCrYkLltuoWi8KY', 'Episodio 3', 'El paradero de Nyako', 'img/Chainsaw/Portada-Tmp1-Cap3-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/NPlgxCAA#YhgmBuKZxnVXKQrrh9zPYaNkqiQljJK3SPlwk9kv0k8', 'Episodio 4', 'Rescate', 'img/Chainsaw/Portada-Tmp1-Cap4-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/gD9EmS6K#kVmgQ0K_kNd6E5fzxpVt7uHDvR5HCkQQfV7uK7BTN2E', 'Episodio 5', 'Demonio Pistola', 'img/Chainsaw/Portada-Tmp1-Cap5-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/UPUgmTqY#LVmhBtVtJ84MHPrMKeJ3DstTwY66mLWJDwHM6BgrTAo', 'Episodio 6', 'Matar a Denji', 'img/Chainsaw/Portada-Tmp1-Cap6-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/1GcGCDCa#IG0ftT-TvNhPGErGcr12eGZHsQm_gQXe9MqO-_R9Q9Q', 'Episodio 7', 'El sabor de un beso', 'img/Chainsaw/Portada-Tmp1-Cap7-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/J3NWQCzT#sOMg77r8JVzhhiaq38DDZD-Pl50KaN-hIO5TKU0FT6Q', 'Episodio 8', 'Tiroteo', 'img/Chainsaw/Portada-Tmp1-Cap8-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/da8ilbpD#NbTHS9W_XU-TkC1v8GdeXJqcjqIr1I20N4kfLtyPOi8', 'Episodio 9', 'Desde Kioto', 'img/Chainsaw/Portada-Tmp1-Cap9-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/trkXRARQ#HcEzWwkcj_1Z7iPSvLYfHvnOa0lbYlrq6XpxTblDeRo', 'Episodio 10', 'Magullado y maltratado', 'img/Chainsaw/Portada-Tmp1-Cap10-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/AHFwUYrY#2FY5yWexgwgjiHCn1a6jVuW--X6gbkTNtbsPuXtUaLc', 'Episodio 11', 'Comienzo de la misión', 'img/Chainsaw/Portada-Tmp1-Cap11-Chainsaw.jpg', 'iframe'],
+	['https://mega.nz/embed/Bv8mwTzI#0C_CpdEOtb7JOHp72gxEGhjJFYv9-l4zwPCAiUU3fIo', 'Episodio 12', 'Espada vs Motosierra', 'img/Chainsaw/Portada-Tmp1-Cap12-Chainsaw.jpg', 'iframe']
 ];
 
 const vinlandSeason1Episodes = [
