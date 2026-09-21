@@ -61,6 +61,72 @@ const deathNoteEpisodes = [
 	'iframe'
 ]);
 
+const mushokuSeason1Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=NjR1YmNLT1E0R25nY21RYzY3NS9RNTM1MHhxNHpEMkpVQ2JRUTM4ek5ncEV2SXVuTjdZVmQvWlo0VklkNzA2VDJmVG96OGxsTTBhRWVDM1BNL1M1aHo0cHA1ZFlJQldHbzZVT1Q4M2FiRmc9OjprYXe8dMLOUPA88d_HdJXx&t=51ece4029cf46868d10fa2e1bef17b3f&op=NDQzMTI=', 'Episodio 1', 'Reencarnación sin empleo'],
+    ['https://jkanime.net/jkplayer/um?e=RktOK0hqUTRMaDY3VjFpWC93M25UVHdBVjAySXNINTJScXlaTTl4cmQ4TlMyTEl1bTdYQTF4QWRHL1RFVzY1UmpoQyt3aFk3YzZhWitNTmNJNXR2MXorQS8wNG11SWZOM1J1eHY3bHF6Zmc9OjrmiS74A7KNMJDzUrIv_EOQ&t=c9b2c3e73b3b3f66e03d077fbf632764&op=NDQzMTM=', 'Episodio 2', 'Maestra'],
+    ['https://jkanime.net/jkplayer/um?e=cFU4TGRETVBiWnR0YzFOc3I1dmdXVndScnhWTG4wbk9zdWphUFR5VkJsclNNWEI0MzZnWFlxQmZxYlB0Wk5QYXgzMFNqMmVXTERWVkE4ME9oUG85S2Rhd01ORVlPai9EY2p0ZkpLb0xFYzg9OjoJbhEJUb9Zh6VmMeY4CFTy&t=e3ed7cb7b47e4079cb9fef895846b3e2&op=NDQ0OTA=', 'Episodio 3', 'Un amigo'],
+    ['https://jkanime.net/jkplayer/um?e=K2lvRWh5KzZ1ZGZ1RE85cjJWZnVseVN5OEVDTVd1bVdJRm10TmVNbENVaE8wQVJheWJ1T0wyUXN0cFBhYmdsM0pEVVRTVkFvU1FMOENWVDFzTlFkbG1ibnlIQUF4NWNoOWlHTHFhNXRyeFU9OjqdbP.IJXkLXAeEYebLHqJ0&t=1900820441f58be72e092e531f54adc1&op=NDQ1NTY=', 'Episodio 4', 'Reunión familiar de emergencia'],
+    ['https://jkanime.net/jkplayer/um?e=N09HNXBTNGJ5MnhYY0VDNUhzNEZYUnZHelEzY1k5RjVyZk5zQWh4dTJTR0NNSmhGTW5ybGlpRzRocHNpL0pjakVkeXF2Mk8ram44RW5yRFgyOVl1cXN4VlI1UVplN2dYQkZBTmFQZGRLZVE9OjowOSd9LIk0o79tORTrePEs&t=b3d5cd16656bd872844d94e6c00ac9f3&op=NDQ2MjQ=', 'Episodio 5', 'Una joven y la violencia'],
+    ['https://jkanime.net/jkplayer/um?e=cHJ3UlpINVJiRVVwZ3I5T3hwS1pxV1pCMndSMitYWTl5L0hYNnZ4NGd5bitCWVNYYkc3LzRkSTloZndOZnowTUgwelhMNlNnZTQ5dllUcFZxa1FTUkxPMGRmWjU1NWYyTDBzTE1HZEk5RzA9OjoNH_vNYgaC6PqWcgDFfb5Q&t=df9a2abe2ad3f2d8758b675ac8331ecf&op=NDQ2OTI=', 'Episodio 6', 'Un dia libre en Roa'],
+    ['https://jkanime.net/jkplayer/um?e=RTRzelFRN0pGUFlRZm9LTnU0V0NBQ25xNXFINGxhS3RxQWp2QWlGVUNWVUpBdW5hU2owQVJSUVMyMWN6MlovUmJqS2xWek53QUZrMGJ3WG1YYWVLQUJlb1Rac2swS3JiTW5lSVA1bUlkOUk9Ojp87fipDRe42KshJj_wkDcT&t=f8139aafa67b26069e83dbe877a45468&op=NDQ3NjI=', 'Episodio 7', 'Lo que hay más allá del esfuerzo'],
+    ['https://jkanime.net/jkplayer/um?e=U1RaMTJRdGhycHhaMFIrSVNjQjhlRzdiSUZiL2ZFV3dQYXZIMnZrNDVPZE1OdnB0TGx6emNDdUtkcFlDRFVkRzVPd2llU1loUVh6alFsME1uKzNCcWJvQlR4NllUcjlxdFFHS2E5azdGYms9OjqAGt0sgMwp6FZ3S.YEVbnk&t=98826328c3a60215e53b342560084571&op=NDQ4MzQ=', 'Episodio 8', 'Punto de inflexión 1'],
+    ['https://jkanime.net/jkplayer/um?e=WUMxVllyZ0huSWdvakhyM2xObnZ6bit0T2ZtNWdIN0NFemVLTzFoOXkrSEFJaDBNamZ2UVVZTUpNMEZ6ZFpBU3hnU2MvMkNKK281dElpM09XZFJCTnA1aUJqMHRjWlZ3LzN2SmtmTCsxajQ9Ojo8g.C9Os1GfmhHuxqYYqeI&t=b79ebb75bdf9e00513b4560f357a69bc&op=NDQ5MDA=', 'Episodio 9', 'Un encuentro fortuito'],
+    ['https://jkanime.net/jkplayer/um?e=cHJoSlBBVWNWMTczWHZtMklyYXVMZndvcytmNFpWVGloZ1AveThMYjJGM0RZMzRSUWRMQXB1elVVRlVsZTRWc2ZnQXhEaUNPUTZyZkhlbUh6b2YwaGlCWkVYQjkxb29YNmhoV1ZlVy9NSEE9Ojq3l2hkgUj67k6IUEXN1ugA&t=90505b01728d89083db9e5b1804b52d4&op=NDQ5NjY=', 'Episodio 10', 'El primer encargo y el valor de la vida'],
+    ['https://jkanime.net/jkplayer/um?e=NUp1VFR6VkhNVUc4UW1hcGdBMzQ4azdQdHVDYnBKakxabEg3QjI3amVOdVFKOUt1eWFVeDJNYjVGck5FRVdFck9XNTl0VWtSNEhyMFczbWtVRGVSS01Fck1MeU1xd2phVmozaUxBNHBpbjg9OjqmtiR8lAtG94ouOGbpti0N&t=a7308ceb6bfe23ec59af4c75cd8885ce&op=NDUwMzk=', 'Episodio 11', 'Niños y guerreros'],
+    ['https://jkanime.net/jkplayer/um?e=Y1VOZUUxY2RoWGZQY0VBcERYbUVmSXlPcUJtTE9qUHlySFBEbkRDT3JlM0M4WS92Mkc3SlZkVDFJU0lmcEE4UWZ0K1lBVFVNbU84cTNXUEZqbnJXSnc9PTo6xd7KGs.tbD3zB99_i16UAQ--&t=dcb388ff8ffd71d034c5be968bb13ef9&op=NDY4MTU=', 'Episodio 12', 'La mujer con los ojos de demoino'],
+    ['https://jkanime.net/jkplayer/um?e=WU1NNjQ1NUc5NklKL0lMS2RaVWFzMXhCbXJOYWtwLzlhVUsvMjk5d1V0UjlibjV5M2xrYjlNOXFZU21FRjFIcmN2ZytlOHRDSlEzOTlwa09TV2VPb3c9PTo6qNbtj4kbHUqcL6hB5yW4mg--&t=73d20b039c7607c58dd816c7e9fa29ed&op=NDY4ODM=', 'Episodio 13', 'Conexiones perdidas'],
+    ['https://jkanime.net/jkplayer/um?e=ZDFOTGpMaG9veUtnMzBHS3dST3RScmg0YUhrSWVUVFRaTHJWQW9BbGtyZnhwYnlrUW9WT3JvR1pHZnN1QXI0Wm1QdXJMRlZIbUx5MURROEdXZVplVGc9PTo6A90KG7HYzenocSYo_8VgOQ--&t=4269a9915e07e5906f7d552a0cf51179&op=NDY5NDY=', 'Episodio 14', 'Nada en la vida es gratis'],
+    ['https://jkanime.net/jkplayer/um?e=TWNFcEFrbGdNK1pDN29Rb0xOamh6TmNrVVVoVXl4NUk0WFcyUzNLUFBzVExERDJSbW4yUmV6bjdkK3J1cUcwOVFxejlzZkN4d2VxbTRac29DWjFHSHc9PTo654dC4krd4nAqrWr2URWHkQ--&t=648065d6b81ecfa8cc16a36a1aadb0a1&op=NDcwMTA=', 'Episodio 15', 'La tranquila vida en la aldea Doldia'],
+    ['https://jkanime.net/jkplayer/um?e=MlpDS3BiMGVaMnUzdzhqYTVsVXl6K25GVXJGS1lTMlIrVDg2K0s2czF0M2lXUFJ0UjZua3dENU5TQWNwV0dKaTQ1QzFGbUY2Y3BhUkVLa3VES0lTVnc9PTo63onQW9uHB3KXqOqDsmpqsA--&t=1b3792d7a5971736e7dd4932c8c20f74&op=NDcwODA=', 'Episodio 16', 'Conflicto familiar'],
+    ['https://jkanime.net/jkplayer/um?e=RUh3RFVnUENjL2h1eG51ZlZDb2Q0ZHI4clEyZ0lEN0U2TEZlSWJ0Zjl1d2c1S0g3L3UxeWk2UDQ4cW9CbEJabjBzeTdKMU9Da0RUTUpEZW5qbkNZZXc9PTo6ch8SIDM1C2oV96ZGToi67A--&t=1b7f4b2c845aac58d112f6e7ca78e8f7&op=NDcxNDE=', 'Episodio 17', 'Reunión'],
+    ['https://jkanime.net/jkplayer/um?e=ZDVxWU1DTTZHVUdsdk5xRzg4amh3bEhaSDZJTXRlbGUwMmVTd1FUNEFwYkxRWlg3RTJoZGdBYjBvdE50cVNNVUdQdHpvajZZK3JXSVZLaVJDb0E5d1E9PTo6vbPptqZSNvkN527OaNByFg--&t=ee5e316ecc89554a4609fa2f56eb3ca5&op=NDcyMTc=', 'Episodio 18', 'Viajes divididos'],
+    ['https://jkanime.net/jkplayer/um?e=N1Jpb0FSSFJZU1Vnay9TaHErK1VUMDhwM21qTTY3cWpzY1daL1BKNE5DUjlTeS9jcnMwUGtQQTlEd0JlbEJpZnEyYjVRcXdLSHNSTEFRcW9xbTNsVnc9PTo64YICzcv0BDGbpZM0SFe.qQ--&t=f21ff2c15561bd5271169cb7b3e957c1&op=NDczMjY=', 'Episodio 19', 'Selección de ruta'],
+    ['https://jkanime.net/jkplayer/um?e=UXZpQm1KL0s3TEZjbExiaUo4d0tRL2R4WDJ2QXoyTGJBK2dkdjRFa1h1YVp0UDB6dFVJYTl5TDY4ekc3TThmWmpabjJQMmluc3NxZk9uQURPbWQxVnc9PTo6hx2BwsvF6qFiQsTuiB8pNg--&t=08be83f454d1b25bc644a44783b8b7d2&op=NDczODA=', 'Episodio 20', 'El nacimiento de mi hermana mejor, la criada'],
+    ['https://jkanime.net/jkplayer/um?e=NEpWcmVoTWh5M0R1bUJPdWJMT0hrVlNJQ3VWc1o3NEJKSTQ0M2U4S2h3SXloRFFLMGY0ck5SWllFSmp2Z0ZYU2d4SUdsMWJxRHhpTHFxdElFNDBuRlE9PTo6p57lnemIRS9KUGSJmWZZeg--&t=9ad5546678148565e647bff60c2e7163&op=NDc0ODY=', 'Episodio 21', 'Punto de inflexion 2'],
+    ['https://jkanime.net/jkplayer/um?e=dVhDL0lkdXAxOEJrSCt0dXNRNDNRVytsaC84SkNPdlZnYmtoTDY3cVgySGFySTRaRWRUK3JUZ3RtdU1VTzhwcDFmQ2tLM0RaaDBVVkxIdEk4SEs2TlE9PTo60TOrvKpap0hCz3buXgTosA--&t=0054c9f76e4f89e69f3cfbc10a5d7560&op=NDc1NDc=', 'Episodio 22', 'Sueños y realidad'],
+    ['https://jkanime.net/jkplayer/um?e=MExKUEdlVnRyUGZMWVMwVWxNMy9RN3NYUjJQWGQ2bVgxSkJZSnFIcnRPc1VSbDBlV3NHYVdJcjc0dGVydElGMlE3emFraDhlZE4ycUJNdVFjUmE0blE9PTo60Eqz9Ayb70saEgmuDha0_g--&t=4aa29ca00d7fb2c2a06f51bd15ebf772&op=NDc3ODc=', 'Episodio 23', 'Despierta y da un paso']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Mushoku/Portada-Tmp1-Cap${index + 1}-Mushoku.jpg`,
+    'iframe'
+]);
+
+const mushokuSeason2Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=d3dJOWY0QnpyT1FTeHZvU08rL0lHVUtMbEcyZ1U2NlFxN3JaZndyeE9ReFlFWEE3ZzFrb3FWbVZtS0xOQ0JxYm04NlViM1dISklpOWIxYmFYNTRWK3d2NHJPclpCNXE0VllKWGdWTDczWlk9OjpoUMZwG_6L0obwYdh4n4Vr&t=99d2ba94750dc7d072f9eb25129d7c0f&op=NTMyOTI=', 'Episodio 0'],
+    ['https://jkanime.net/jkplayer/um?e=VEJOUVpkQlh2bnVKRHk2bDNzd1piS05ZMlVjM0crR01IZ3NVR055WnN4NGhWc1RvdEpSNk9IVUVzS2xzbjE3OXZNUDR6eUxVQkJmSlUzZXdVRWoyRlE9PTo6JDOaoGgo2MTfPVmSS6rq.Q--&t=e3806ee77d0e7b7190ce751cb01a313a&op=NTMzNTc=', 'Episodio 1'],
+    ['https://jkanime.net/jkplayer/um?e=YWxvWEVsei9jOWtmTFZScWNwTU5MZ05tVDdLR2hVMnNBSWl2Ujd4Uys3T1FKaEhFR3RUTUhqU3VhUDNWKzh6RUpFZk8zNVducjVyUGNSMVJpS1ZjcWc9PTo6VMZZWrDiFdyF9NmGzaBigA--&t=91349a3a19b33b040b950e41d12b76ee&op=NTM0MzE=', 'Episodio 2'],
+    ['https://jkanime.net/jkplayer/um?e=Y2xzR0xENFZkRVhHTUp0dVJoa0RzeTdFMlNzVmlhUVg2eHpINmxWb1hBK0pzTUJoRUxvY28rSEx1VVlLSFR5OU55Y1hsYURqRXpacXhqZDlDVE84aWVSUUpqY3BVQUZOcWxFWWltQk1ObnM9Ojq9aDC.TzVKVVuYBbL510BZ&t=86c45936b865b478445e53b7e86f950f&op=NTM1MDg=', 'Episodio 3'],
+    ['https://jkanime.net/jkplayer/um?e=cWRXQzNjM2QvSm1TWGtmcG5MdFAyaW41MHpWSE45azNNZk8yeUdwUGppZWhPSXJYWVd3c3lKeHNSL3ZwL1BlUHJ4UHBSZnFsUldmSUoxTDlxZy9FSHVtWG9tV2o0NTJqVkVRbmhBOS9EWHM9Ojqwu76_Uuy6ohSg.AU8KDks&t=d8f7c9428b19b77df5cda83a7500af7c&op=NTM2MDE=', 'Episodio 4'],
+    ['https://jkanime.net/jkplayer/um?e=ekRVMU8zWDRPRnpCNkM5NEZKUFhDckdYem45bHhxOTJBVExTMW0vem5SSXl2VnhxTFVPRFdJZHdzZkM3TjBpMWNhbmdtYXRjc2NCYm5iQXUydEVrR1JvN21aUDNQWDNDenFuVzlaTCtNZ1U9OjrdiD8yRxfnCTHwr.LCY3iC&t=06696711623eb807463b9d3d479ac56b&op=NTM2NzE=', 'Episodio 5'],
+    ['https://jkanime.net/jkplayer/um?e=K04xVEt5WkVVejdvbDZ6dzVadE43TGtHdk1zaFVQRmhsaE9tVHFCVEo5VWlQT2JYdHBqSnhpUUNqYmNmeThLRG5qOXVrb2JqS0pVZEdDQ3ZNandzOUU2cUdkM1NEY1hXcXpDS3IxTythZk09OjqOXWYMfrhzNN89uq6mXtIP&t=b603fd1803a895c4f696ebeceffe4fee&op=NTM3MjU=', 'Episodio 6'],
+    ['https://jkanime.net/jkplayer/um?e=YXJkNzRUSE5tZmxtdWdUMlRYS2xReWgrV0hUR1BPQ3ZzRG4rZTdTbmRxUWU4WW1DMjR4aDViY0RoVnFUZytTWDRoQyt3dGdiNnlDSkNLRWR4cExYWHRWNUtycEZNY1V0aGdYU0p1aHZ1VTA9OjrHqAYLIDHqC.7iwtWvAjmg&t=63374bf7f4745952e48b94c576e99a6e&op=NTM4MjM=', 'Episodio 7'],
+    ['https://jkanime.net/jkplayer/um?e=emRKbXlBczdrREFWSkJnam5nWlhOMXV5b2ZPNldwcDNBMFc3K1FobFhCaE51MXdhbG5hWSsxQ3JkQXZBMU5UZGYrVVEwTS9VK1Z4OVhwNGNTK3E0RVVYOFBhQUNtaHp2Mkp1d0RDd1JYVmM9OjoyuhVPo2BAv4jyCl.l.1Oy&t=8e7138291e1f49666097c87d8aa5aa5d&op=NTM4OTU=', 'Episodio 8'],
+    ['https://jkanime.net/jkplayer/um?e=Q3dPVTBCdnB5OVdTNWc2YTA2RDZ3dGxsd3lmR1VCZ0VXZzNEZmdqeUppVXlncktLdEJHVkxhc2FablFDZkVxcGE1OWQxWW54WXQvcUVmYUd4Zm14SVNHTWgwSGdmZDVjZUp0bGlBaDdaaW89OjrP8YaRXFiW5TqPoO3mkn0J&t=fbf707cc380a1e95e3bc614c3c3f030c&op=NTM5ODE=', 'Episodio 9'],
+    ['https://jkanime.net/jkplayer/um?e=QmlZTU5aRXkxSk9kRWZQcTFLWWdqSVFZckNKaHhvVk9QSVFCWVNLY0lvcjRoeTFTY2VqOFhWZmtXakkwMEZYOHNPSjV3ZVkxekRSb2xON2gyZC9zbTA0QWhrWnRyOHVwajdld3Zvc2EycTQ9OjrFqqfgpnJlsAIlI.HDn395&t=9bd36c10ff1cfc37d53df4efb9970fe3&op=NTQwNjA=', 'Episodio 10'],
+    ['https://jkanime.net/jkplayer/um?e=cEdTR05GeGlrQTJxZTBwVU1KUG9DcDBCbHk4YWxWL05vcktVY1lqcjJnQWhueklHOFM3UDZoOXRFNXhHMXAyVFVZWFh0VnVmTnorZkMyY3lvR0M5NXc9PTo6PJg2cY1QvdE82paQww50ZA--&t=8319c312cb7f3122f1aa2dfb4cfb8969&op=NTQxNDQ=', 'Episodio 11'],
+    ['https://jkanime.net/jkplayer/um?e=Q3NSSkFKcXNCclRwU1hnbXgzR2k4a2R5WHpibGVPNk9HeWZLb29HQnJDeVloT3BwU3VpY1pmdDAzWTBFN3NhS1pxM3QrNWhMTWpJNjZEa251QlhUN0p3M1ZIM0NhLzlSSDg5M1Rjd1RydjA9OjothgU815x9CJSUOu5UqS2l&t=601858549a65755f68b5ec3465c0d00a&op=NTQyMTg=', 'Episodio 12'],
+    ['https://jkanime.net/jkplayer/um?e=cVpjZWViN1paUjZpSTdHQzhENzYra29JbnlLYzlZd2pldTFZUUJaMFh2RTFPbmFjM01GTlJ5NnErYURadkE1TmpnbmtIejdZaDdRNWd1YU00MytlUFlYRmRMWGt4b3lIOFdkb3ZGdWZuTUE9Ojqawb69Xqe03iibo8ns6AX9&t=d345960630e2971cd75a4c21ddc0cd16&op=NTY3Nzc=', 'Episodio 13'],
+    ['https://jkanime.net/jkplayer/um?e=aGMyTlFEbm0zVE5Cc1lCZ2w0Ymd4aTVGWDZCam5pV3NubHJkdS8xTUZuY2hHTlEvZWhMRWRYSFc4UkhyM21sMHpYNnV6aGhWY3ZPcFlDWUptQmF3WnZLZExEYnZBNmdrenhQU0l5U2hGck09Ojo03APZyiqSW6HfvtkkgGnp&t=5495ab28ec837d17f003237e5b630c2d&op=NTY4Njc=', 'Episodio 14'],
+    ['https://jkanime.net/jkplayer/um?e=QmorZk8yWVZpL0xTcGpYVm5QWXRMMU9vdnFWTWVmS1Bqc01TbUo4V08xeFErSVA1ODVTYXBCb1M0ZkllRXd2a2hUZ2YxcDlMOEYwMTNYZHVuUGpTOVNqT01Bbkg3blZxWW9FNnFkZzBVK289Ojr2M7H2Z_B3_Ae47o35eUvi&t=3790b911c954b04a45ded469d1e4ee39&op=NTY5NjE=', 'Episodio 17'],
+    ['https://jkanime.net/jkplayer/um?e=T2hBY05JUk9CWW0xTjlpSVVJTGlYK3dCSGxJbnFUbEtNbVNIREdiMmRPOHFuNjBSZUhncHFmRWhwUzRZbTRVdW1PRC9oaTNaVUR6UFVNb2FCMGhudDVuSWpFa0lNcGtqWFRBRW5YSmtQL3c9OjrofJ3EDr09OX6z1AmKB2LG&t=cd18669c22c2844e336ef95f2409ccdf&op=NTcwNDc=', 'Episodio 18'],
+    ['https://jkanime.net/jkplayer/um?e=UEQxKzhOUVdsRUs4aVcvbFQ4Q1FrcnVWRXFSaGo5a1V1TEQ1OFlMZ1VDSGpNWGhiNS96OVVGUEdyRWgzUWRCcktzcHU5ZGpDUDJuZnJXTStKU095MHNKNnVuQkwwRmFtWGR0aFFuK2MxVXMzRW1yYXc0N0xEa2hldXZtTGxTY3U6Oo8htLOc7Qy3UYyeET4L548-&t=02d796bc40c3aeafdc0c8ff57c262047&op=NTcxMzU=', 'Episodio 19'],
+    ['https://jkanime.net/jkplayer/um?e=bDU2NnZXcEtmY0Q1cXBFSVZycTVWeWF6WmRVL3A1dG4rcDljM1lwMEZKZDhxVlVlQ0dKdW92ZVN2cjZ4ZmphbUFGVEM0NWxsd21ES1RSMGF1RWlncVozazExWmVBWTlPbTFIMXd0aHowMW89Ojqsd57YX6KBMpFwMZZOJms4&t=96b0006235c2dafddeeea1eb7ffe475b&op=NTcyMjM=', 'Episodio 20'],
+    ['https://jkanime.net/jkplayer/um?e=K0RkUkNsY0cyMitLdGpqd1lKcUczQjA2VE1IWUh1NGpFenF1S1BVd01pZ0ZDVEIwRkYzeU03a3ExRTNRQ3FkSFVjTGk4VHpmMnpkZzBNSkZCdDVBNDAvZ3d4SVBYUmIvZ3FBNG4xZHV3eTg9Ojq5iVCnOvBUjvnKVvXf5Zsh&t=8c7b120d624959725210b6583fc6c8ad&op=NTczOTQ=', 'Episodio 21'],
+    ['https://jkanime.net/jkplayer/um?e=WWMweGF1aSt1MFIzMjRvTFY2cE0zd2pKWTBMdWtocGxqeG9uOGZQZG1MMXF0NUl1Z2JHa2g4ZFBKUDdiSktqaldkU2pZN0tDZDEyY21lRVA0YjhmdWU1U1hVS2hBaGFUdjNmRDRMNmU3d2M9OjoGsE9rdmGuirUzDLi._rcl&t=b5847d57af29d07544892597e26cb9fb&op=NTc0Nzc=', 'Episodio 22'],
+    ['https://jkanime.net/jkplayer/um?e=aTBMQXByekFLTGhnam9KY1JIbUd4QXZKS1pDTE9raFNta0tZenZRTHA2V053azhuTFMyd0NLdWN2RXV3WU11ZXF2QUNRMVNwazdwOTZlMGZTRFpWMms4eTZ0Y1ArSzQ1M0tGNmNVU0JWMEk9Ojoaq14cTwI7zn.Ca9eIlh0Z&t=19673d298dd6a3043279a6294a87e3e3&op=NTc1NjQ=', 'Episodio 23'],
+    ['https://jkanime.net/jkplayer/um?e=bDFtU1hHYTlpTGlib05hcjlpbWVUT3dlNktWOCtCa21MMENMMkJrRFYyNWlDclg5MjB5Q1lKYTJhWkdBY3JSS2Y1VGJneEF4NHdEeDc4MU1BL1Q5bGtVYkZjVmc0NTZWTytkc0RjWGtISG1UT2svQndkNXo1eEZGUTlkU2I3QXQ6OkvOR93fnmsxw1mw1i3mqlk-&t=cea328ba82d77ce6070299466ec854cd&op=NTc2NDc=', 'Episodio 24'],
+	['https://jkanime.net/jkplayer/um?e=eDcranVlNnk3VHZrSFFycDhjWEpVVnVTRW0vUlJNUHRWRUhTVEdFaUF3K3hoMVNzU05rU1dab2dNSWF2WkNieEFmb1ArQ01hbFhuTjRVb0VkQVB3akJEK25uOUZLSEdUK01zbFVBTTZRSmM9OjoPpL.N2yT0fkkMgbHoOm1C&t=58c87895c5069e0adaec0bf1e15ce9b5&op=NTc3MDM=', 'Episodio 25'],
+	['https://jkanime.net/jkplayer/um?e=Z1g3S2Z1OERCT1NYQThrOENYcUxRNUF4a2RJQ2ZYTnhGVGgvQlMwM3hWcFptaDNhNTF2QTF1N1paajBidVdUZFVGZFVabDBqM1I5Z00yV3NiSFNOamxvMlFGRDRVcG1KTVFTYnp6RWJ1OGM9OjpmWCcU67p5AXh8mjc9wVkA&t=acd6b03bcec8a6bad96a99b4e7750748&op=NTc3NTY=', 'Episodio 26']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Mushoku/Portada-Tmp2-Cap${index + 1}-Mushoku.jpg`,
+    'iframe'
+]);
+
 const mushokuSeason3Episodes = [
 	['https://mega.nz/embed/iwQlDZTY#RYBw4JpdsK90U9sk29uXR5AZliB-NYh8KrWouiwpHLA', 'Arde, Perra Rabiosa'],
 	['https://mega.nz/embed/jhhwCZ5Q#3Hiqfev_YhF8AmuP5xRt5skzstDBOXHz6rolmIbvpMs', 'Ladra, Perra Rabiosa'],
@@ -516,8 +582,8 @@ const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
 		seasons: [
-			{ title: 'Temporada 1', description: '26 Episodios', cover: 'img/Temp1-Mushoku.jpg', videos: episodeSets('aventuras-t1-episodio', ['Episodio 1', 'Episodio 2', 'Episodio 3']) },
-			{ title: 'Temporada 2', description: '25 Episodios', cover: 'img/Temp2-Mushoku.webp', videos: episodeSets('aventuras-t2-episodio', ['Episodio 1', 'Episodio 2', 'Episodio 3']) },
+			{ title: 'Temporada 1', description: '26 Episodios', cover: 'img/Temp1-Mushoku.jpg', videos: mushokuSeason1Episodes },
+			{ title: 'Temporada 2', description: '25 Episodios', cover: 'img/Temp2-Mushoku.webp', videos: mushokuSeason2Episodes },
 			{ title: 'Temporada 3', description: '14 episodios', cover: 'img/Temp3-Mushoku.jpg', videos: mushokuSeason3Episodes }
 		]
 	},
