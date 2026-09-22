@@ -578,6 +578,108 @@ const hunterElectionEpisodes = hunterContinuationEpisodeSet(137, [
 	'https://jkanime.net/jkplayer/um?e=L0FvTUJtb1p1eDlKOVNETDV0RlVBOHV1UVFLakt2b1pLWmZpVG1EM3gySnJSZ090MW9aUzd6TFZ2UjlubHB6elNpWFMvanBZdVRWOGZzYmZuL1U4TGc9PTo653gfJGT9LZQDRS4EWio4yw--&t=0743832ad29f3a3ee0f01243aabbc3b8&op=MjQ4NDc='
 ], 'Tmp6');
 
+const blueLockSeason1Episodes = [
+    ['https://mega.nz/embed/9dVH0BaB#oTJJS2vNpI8SG-vjPlCH75-3YHWkQ0D1JOqJCRxy8Sk', 'Episodio 1', 'Sueño'],
+    ['https://mega.nz/embed/JF0QHSjS#XJY-9NCt3akJyT7upruAgHR5i5ejbGOhZjSZxvel-Oc', 'Episodio 2', 'Monstruo'],
+    ['https://mega.nz/embed/FZ8RVYJK#okyVnOMexA3BT3s7eoB-RBfV15sMFzw_UsiYy4tp9IY', 'Episodio 3', 'El "Cero" del futbol'],
+	['https://mega.nz/embed/gRUnHaTT#TWGHD2OApkP0RdzqjE-GwMgVl1WAfcGavp1xp4Kbspo', 'Episodio 4', 'Premonición e intuición'],
+	['https://mega.nz/embed/UQ9HzJyJ#tDimpSi0WHGk9VTzushHgZOWHafh-D3vKUYpMMwhvJ8', 'Episodio 5', 'Para renacer'],
+	['https://mega.nz/embed/scE1DJgK#MavqAaa_VsMqspS1PE5worYnZORgYESJrIfR68FtCUI', 'Episodio 6', 'Lo siento'],
+	['https://mega.nz/embed/0JFTVLQL#he70emUP4oo7R4zAotfoYWiZkJYGOzpzHEdsGDrUCdE', 'Episodio 7', 'Subidón'],
+	['https://mega.nz/embed/xcM32bLa#zxIu07W1A_LVKJs4I9s1VyvfEltdoDGJJwirreQt6yI', 'Episodio 8', 'La fórmula para marcar gol'],
+	['https://mega.nz/embed/4ZUAzahA#m1S2kWbSmQMclNDyinuaXxKL-0t-fyu7s659wQMEbFw', 'Episodio 9', 'El despertar'],
+	['https://mega.nz/embed/8I0VwRwb#qbR5J3FXt-jS661UbdcHwe6Nna-E0FCfkIJxIycXnN8', 'Episodio 10', 'Que se quede así'],
+	['https://mega.nz/embed/NAdAXADC#RxEOZB_1647HNTJzy_RAIhILUsFvfnl04I9v-5Hp85U', 'Episodio 11', 'La última pieza'],
+	['https://mega.nz/embed/5YsghQZY#INP-Z4DJiouEYDcqnnqjUj_VvEE_JoMUrwX8zTp9HSg', 'Episodio 12', 'La segunda fase'],
+	['https://mega.nz/embed/pUtSxCLR#hBYYxO0Iy6ghYJ-b2-zQ9kpld799nmHOsbfFWY5aE7c', 'Episodio 13', 'Top 3'],
+	['https://mega.nz/embed/oV1AAT7L#VSz73WZWlP3nwXQhQHm-Gpts2OQ6VvcW9vr9h2MCpqg', 'Episodio 14', 'Genios y mediocres'],
+	['https://mega.nz/embed/xM8gxLRD#ST_fkYqLzGawY9KvsUlKoWgCz0Rdp564uE4n0-ngbyA', 'Episodio 15', 'Asimilación'],
+	['https://mega.nz/embed/QBMASZRS#wAvSlQmSltz48-I4A1Ch8F6rp34qxPSZr5YOLIBpUis', 'Episodio 16', 'Fusión triple'],
+	['https://mega.nz/embed/MMkVmTZK#jUfbXUbiluvMKXAvwC0xgKR_23vaUjlcqu5lvGhiph8', 'Episodio 17', 'Paquete'],
+	['https://mega.nz/embed/9ZkWSIIb#9ruC0BkEKycM9mapLISyYr5Aj1hdNhsW8soycG9gwtg', 'Episodio 18', 'El escenario de la estrella'],
+	['https://mega.nz/embed/lQti0AQJ#c_0ufwiYfejoPx-JvF0QfX1AcEMOndEkitfjoqqxLZE', 'Episodio 19', 'Dancing boy'],
+	['https://mega.nz/embed/dMkBRCZb#qMqqktAJQ60apgrkQ3TGRLbYnPzj64Z7WV9HI-asqIE', 'Episodio 20', 'Superjuego combinado'],
+	['https://mega.nz/embed/cAUTkQoZ#JJ0no7I_aGNAfQ1GLXX7Po68qKlKl6mpXyKX_-w4WSU', 'Episodio 21', 'No estoy ahí'],
+	['https://mega.nz/embed/xQVRSLTI#r10JK1h6_CPy8uHboLt_RstvTUNSDB_nFwwBZQnEGsQ', 'Episodio 22', 'La voz'],
+	['https://mega.nz/embed/9E1QkIyZ#wwgDUrvFN8AI_DhZOsr0sBWpVy-4MEm7uLLT9SPb4AU', 'Episodio 23', 'Suerte'],
+	['https://mega.nz/embed/9Q1FUBTC#ri6_QzbZtMg67S91V7xFOpHa25CZEFsuxmCeHILalUQ', 'Episodio 24', 'Ha llegado la hora']
+    
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/BlueLock/Portada-Tmp1-Cap${index + 1}-BlueLock.jpg`,
+    'iframe'
+]);
+
+const blueLockMovie = [
+    ['https://streamtape.com/e/6oAB4ZaovxF92Dz/', 'Película', 'Episodio Nagi']
+
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/BlueLock/Portada-Movie-Cap${index + 1}.webp`,
+    'iframe'
+]);
+
+const blueLockSeason2Episodes = [
+    ['https://mega.nz/embed/sddkgbiZ#3rjCVPuOUKDMwfQ1xPYZn1Z4tBubm_WeWxaXTw8LrIE', 'Episodio 1', 'Pruebas'],
+    ['https://mega.nz/embed/pEcQWLDQ#HBOhSR16kOqNaR13JquiW7gPsBX12qrWpOPbgHfh8Nk', 'Episodio 2', 'El asesino y el ninja'],
+    ['https://mega.nz/embed/VZMFULja#Ot9kzGQMk0ORjjPnjmtOATZdKemfQwN5VWGjxed8CHE', 'Episodio 3', 'Un mundo de sensaciones'],
+	['https://mega.nz/embed/kcsUzaoQ#3I7gpaF9pwYjHMZeYBzyYCxZlF7Ah-QfOQnMgRIBGSc', 'Episodio 4', 'Camaleón'],
+	['https://mega.nz/embed/tMUmFYqQ#I_sj8WajCQXaH5ADqtkLxC_qawmUFwPx9mQIBwx8lM8', 'Episodio 5', 'Flujo'],
+	['https://mega.nz/embed/pZ8EHZTB#XJfEdr4P248g6z4jUlM3kvoyiCo2o1PBwq2F2n7mLgc', 'Episodio 6', 'El gran escenario'],
+	['https://mega.nz/embed/YRFzmCbB#eoE7H2UvzPUWd6pOhj2fRK1WDGVavK2ARojKeJf2pWE', 'Episodio 7', 'Sae Itoshi'],
+	['https://mega.nz/embed/gNFURQTK#FkVgmHz7CMkfc0cUcSN_r_0USm0hzLMLez_JuxSvFpQ', 'Episodio 8', 'Genes azules'],
+	['https://mega.nz/embed/ZcVhHDIb#ci6KxVIm2C1L53B-zWlyA4hfNKCXdJqKpr1FCzuNBMQ', 'Episodio 9', 'Nieve nocturna'],
+	['https://mega.nz/embed/QBtilYYb#kIYIVNjv5Cm0P3NVpdW0TkrjRlMzKFM00qg9VSl41qs', 'Episodio 10', 'Cambios'],
+	['https://mega.nz/embed/JQlUXA7L#rBzLExVHjUVAifhIRv9bb51_IjNLDagXRGdA1-D9c1k', 'Episodio 11', 'Lo que nos enseñaste'],
+	['https://mega.nz/embed/8U8EhAQR#ySW4Ur1FJrxsZW7q9B8qoiAM951oKydepi6N91QbBkI', 'Episodio 12', 'Flor'],
+	['https://mega.nz/embed/FEVz3abD#pig6kP-_x0itZYsZhTVYqStDb7impxdqMNCbQhMehUY', 'Episodio 13', 'No estoy solo'],
+	['https://mega.nz/embed/RRsDyAiC#ttzrmKyf-0GvytPL0wfHgxGryXqZnhlxt-EL1Mw6rKM', 'Episodio 14', 'Golpe de gracia']
+
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/BlueLock/Portada-Tmp2-Cap${index + 1}-BlueLock.jpg`,
+    'iframe'
+]);
+
+const aoashiSeason1Episodes = [
+    ['https://mega.nz/embed/FZNSyaiC#E024JKMkaXtepQUzeTfMtbTAe4anYL2PYEYB8sPMe5s', 'Episodio 1', 'Primer toque'],
+    ['https://mega.nz/embed/UdFFDKKR#sxAuQ6Yp72bujuxGnlMvWyLq2LVmWcP1xrZPcR2wK1Q', 'Episodio 2', 'Tokyo City esperion'],
+    ['https://mega.nz/embed/hdUGBYCY#0Fe8D_SjlwQSFYOe-b0KTJNiqHOA0plOwEPxa1eidJg', 'Episodio 3', 'Comienza la fase final'],
+	['https://mega.nz/embed/tY1hFLgB#8PNEHDg55_ki8mzXyshdMJYpCpnBLMYqHQ9kCRZDSKE', 'Episodio 4', 'CROW'],
+	['https://mega.nz/embed/kRkkGCSJ#hVVG8mF6hupkfmZHmc3CuWRHzmxIEVBpqOjv-Xh1GN8', 'Episodio 5', 'Un paisaje naranja'],
+	['https://mega.nz/embed/IMcw2bjB#kesjnQGSIRBGPoFyI7ZxP2JX767InE-nB2brOQAVbeM', 'Episodio 6', 'Primera fan'],
+	['https://mega.nz/embed/wRM2GYLA#jOECjEICpcMbOTvwitse-wpQKqhlyI-jtUpulemCd_M', 'Episodio 7', 'El primer partido de los juveniles'],
+	['https://mega.nz/embed/JBkFXQYK#MSvXz_qsmckJzciklnhaObB9aGBNtFVM--s4KQ_y6mM', 'Episodio 8', 'Entrenamiento nocturno'],
+	['https://mega.nz/embed/hRVCyD6T#PYURkMNwQuy3ErWt94N3Umsu6cEhJ_EwL-99z0KEosM', 'Episodio 9', 'Un fútobl más amplio'],
+	['https://mega.nz/embed/1EtkHY6D#PJs_bqLavVAXVZFoQU8Qjq38ablsot0jlxUStwetoX8', 'Episodio 10', 'Sin ceder'],
+	['https://mega.nz/embed/4Jl2EZJA#8R7Uc2dqExA2C1C6JOukhs3LGAsu_lM1gYHnmsYiYS8', 'Episodio 11', 'Primer partido de la Liga Metropolitana de Tokio - Instituto Seikyo'],
+	['https://mega.nz/embed/5BVSAC4b#NbL1TyjTafk2vBZ66X0yxWY756ioOTOaAK4fX7sPm-Y', 'Episodio 12', 'Eagle Eye'],
+	['https://mega.nz/embed/IUNSiDBB#Hecr0_u-ok3e8q25dmvYiAXHpRGqagO5Uir-U8ugyZk', 'Episodio 13', 'Cambio'],
+	['https://mega.nz/embed/kdFkwYaJ#dnxaxTLJ1oRsjpARQkW6g8aMtn4fuahpYIG1SekWLYw', 'Episodio 14', 'Solo es fútbol'],
+	['https://mega.nz/embed/QUNHkAja#1zH2UBIDMXF1sg2DeyKfsgfb_rnXGEUmfVq62Mws-cE', 'Episodio 15', 'Donde debería estar'],
+	['https://mega.nz/embed/8NEljagQ#0v1nCfNgX0DsBd0wvcQlIRooXL8K6hJ9kNaANx2uHec', 'Episodio 16', 'Como tú'],
+	['https://mega.nz/embed/EQlngJZI#PMzhx3LTB1NCfrkzN1M5HTDlXo1zTaSKuIKz3lwCsBo', 'Episodio 17', 'Séptima jornada - Instituto de Ciencia Deportiva de la Universidad de Tama'],
+	['https://mega.nz/embed/AAMF0bLJ#fneYGrJ1x04DKhGTI5AZ5MxmPZFHSaKwpdnH81ShVqQ', 'Episodio 18', 'Vientos de cambio'],
+	['https://mega.nz/embed/xZdHHDbC#6Nfv5JugV9ZPpbO0Gc7I3YufqrQGqmtcu7KsfOcfY5M', 'Episodio 19', 'Lo que nos falta'],
+	['https://mega.nz/embed/tVcGjRha#K0uYABXoU9TamnRdjVZHRl1cKh4LJVmt3eqcvJ-2mlQ', 'Episodio 20', 'El que es malo de verdad'],
+	['https://mega.nz/embed/8I801KQI#cLCiGZTwGsUrZzPdAS_wcsHtZam5NiypZbIRMy6eMMY', 'Episodio 21', 'Octava jornada de liga - Tokyo Musashino FC Juvenil'],
+	['https://mega.nz/embed/1ZMUQBqa#tOp5jpSXSoP_gptDLsYmhXmpYkXMKxFdyoi1soW7dfc', 'Episodio 22', 'Como un demonio'],
+	['https://mega.nz/embed/ERtS3YTZ#FW3DDNHEJyxJ_851SD-v5j2PdJUQoEDGKCPFJ_CHRAo', 'Episodio 23', 'Esfuérzate, no pierdas, afronta tus límites'],
+	['https://mega.nz/embed/9Bk2QIYD#wQ_vuKNyt-P8WRDDf_VwxAIuEQn3yZlNj74lbhHuAsY', 'Episodio 24', 'Desde ahora']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Aoashi/Portada-Tmp1-Cap${index + 1}-Aoashi.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -624,7 +726,21 @@ const catalogData = {
 			{ title: 'Hormigas Quimera', description: '61 Episodios', cover: 'img/Temp5-HxH.webp', videos: hunterChimeraAntsEpisodes },
 			{ title: 'La Elección del 13º Presidente Cazador', description: '12 Episodios', cover: 'img/Temp6-HxH.jpg', videos: hunterElectionEpisodes }
 		]
-	}
+	},
+	bluelock: {
+		label: 'CATÁLOGO 07', title: 'Blue Lock', description: 'Tras la derrota de Japón en el Mundial de Fútbol, la Asociación Japonesa de Fútbol decide crear un programa de entrenamiento para encontrar al mejor delantero del país. Para ello, 300 jóvenes jugadores son encerrados en un complejo llamado "Blue Lock", donde deberán competir entre ellos para convertirse en el delantero definitivo.',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-BlueLock.jpg', videos: blueLockSeason1Episodes },
+			{ title: 'Película Episodio Nagi', description: '1 Película', cover: 'img/Peli-BlueLock.webp', videos: blueLockMovie },
+			{ title: 'Temporada 2', description: '14 Episodios', cover: 'img/Temp2-BlueLock.webp', videos: blueLockSeason2Episodes }
+		]
+	},
+	aoashi: {
+		label: 'CATÁLOGO 08', title: 'Aoashi', description: 'Aoashi es un joven futbolista que sueña con convertirse en un gran jugador profesional. Tras ser descubierto por un entrenador, se une a un equipo juvenil y comienza su camino hacia la cima del fútbol japonés.',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Aoashi.jpg', videos: aoashiSeason1Episodes }
+		]
+	},
 };
 
 const videoGrid = document.querySelector('#video-grid');
