@@ -141,6 +141,7 @@ const mushokuSeason3Episodes = [
 	['https://mega.nz/embed/XwZD2AJb#pMKJwldUTTLmWioqGeuAf3NzxNFNvTsvwcl8alNvPvU', 'Punto de inflexión 4'],
 	['https://mega.nz/embed/LwQmhYLK#zN_Egg6hKYZjoh6FWBostgGtP1aWC6h95lIvVFadOvE', 'Un final y un comienzo'],
 	['https://mega.nz/embed/b8hDRa5D#L0y-Z6BLLmq7vTWINFhT1imFB_ioP_nkNscHfnvz_a8', 'El diario'],
+	['https://www.mp4upload.com/embed-ivyc9ibqattm.html', 'Determinación'],
 ].map(([url, description], index) => [
 	url,
 	`Capítulo ${index + 1}`,
