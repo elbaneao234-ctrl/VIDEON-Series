@@ -681,6 +681,16 @@ const aoashiSeason1Episodes = [
     'iframe'
 ]);
 
+const aoashiSeason2Episodes = [
+	['https://mega.nz/embed/JFFywBSJ#NkkCh473m9T-qfKGJBlhvARdkyg0rdX7kh6OlTwJJlA', 'Episodio 1', 'Línea de salida'],
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Aoashi/Portada-Tmp2-Cap${index + 1}-Aoashi.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -739,7 +749,8 @@ const catalogData = {
 	aoashi: {
 		label: 'CATÁLOGO 08', title: 'Aoashi', description: 'Aoashi es un joven futbolista que sueña con convertirse en un gran jugador profesional. Tras ser descubierto por un entrenador, se une a un equipo juvenil y comienza su camino hacia la cima del fútbol japonés.',
 		seasons: [
-			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Aoashi.jpg', videos: aoashiSeason1Episodes }
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Aoashi.jpg', videos: aoashiSeason1Episodes },
+			{ title: 'Temporada 2', description: 'En estreno', cover: 'img/Temp2-Aoashi.webp', videos: aoashiSeason2Episodes }
 		]
 	},
 };

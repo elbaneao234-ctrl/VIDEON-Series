@@ -196,6 +196,9 @@ const VIDEON_AUTH = (() => {
         if (action === 'register') {
           openAuthModal('register');
         }
+        if (action === 'google') {
+          await signInWithGoogle(target);
+        }
       }
 
       if (event.target.closest('[data-auth-close]')) {
@@ -295,6 +298,49 @@ const VIDEON_AUTH = (() => {
     }
   };
 
+  const signInWithGoogle = async (button) => {
+    const client = getClient();
+    const feedback = document.querySelector('[data-auth-feedback]');
+
+    if (!client || !isSetupReady()) {
+      if (feedback) {
+        feedback.textContent = 'El acceso con Google no está disponible ahora.';
+        feedback.hidden = false;
+      }
+      return;
+    }
+
+    const originalText = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Conectando con Google…';
+
+    if (feedback) {
+      feedback.textContent = '';
+      feedback.hidden = true;
+    }
+
+    try {
+      const { error } = await client.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: window.location.href
+        }
+      });
+
+      if (error) {
+        throw error;
+      }
+    } catch {
+      console.warn('No se pudo iniciar sesión con Google.');
+      if (feedback) {
+        feedback.textContent = 'No se pudo iniciar sesión con Google. Inténtalo de nuevo.';
+        feedback.hidden = false;
+      }
+      button.disabled = false;
+      button.textContent = originalText;
+    }
+  };
+
   const signOut = async () => {
     const client = getClient();
 
@@ -325,6 +371,7 @@ const VIDEON_AUTH = (() => {
     getCurrentUser,
     renderAccountState,
     signIn,
+    signInWithGoogle,
     signUp,
     signOut,
     openAuthModal,
