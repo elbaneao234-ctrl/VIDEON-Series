@@ -81,6 +81,23 @@ body {
     min-width: 200px;
 }
 
+.report-trigger {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1001;
+    white-space: nowrap;
+    border-color: rgba(240, 68, 68, 0.65);
+    background: rgba(11, 11, 12, 0.92);
+}
+
+#logout-button {
+    position: fixed;
+    top: 84px;
+    right: 5.5%;
+    z-index: 1001;
+}
+
 .user-pill {
     display: inline-flex;
     align-items: center;
@@ -196,6 +213,78 @@ body {
 }
 
 .auth-feedback[hidden] {
+    display: none;
+}
+
+.feedback-modal-content h2 {
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(28px, 4vw, 40px);
+}
+
+.feedback-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 0;
+}
+
+.feedback-form label {
+    margin-top: 4px;
+    color: #d7d3d7;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.03);
+    color: white;
+    font: inherit;
+    font-size: 14px;
+}
+
+.feedback-form select option {
+    background: #121214;
+    color: white;
+}
+
+.feedback-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.feedback-form input[readonly] {
+    color: #a8a5a8;
+}
+
+.feedback-form fieldset:disabled {
+    opacity: 0.55;
+}
+
+.feedback-submit {
+    margin-top: 8px;
+}
+
+.feedback-login-message,
+.feedback-message {
+    margin-bottom: 14px;
+    color: #d7d3d7;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.feedback-message--error {
+    color: #ff8c8c;
+}
+
+.feedback-login-message[hidden],
+.feedback-message[hidden] {
     display: none;
 }
 
@@ -802,6 +891,17 @@ footer {
         padding: 0 6%;
         gap: 18px;
         align-items: center;
+    }
+
+    .report-trigger {
+        right: 14px;
+        bottom: 14px;
+        padding: 9px 12px;
+    }
+
+    #logout-button {
+        top: 76px;
+        right: 6%;
     }
 
     .navbar nav {

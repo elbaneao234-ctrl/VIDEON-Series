@@ -691,6 +691,42 @@ const aoashiSeason2Episodes = [
     'iframe'
 ]);
 
+const gurrenSeason1Episodes = [
+	['https://mega.nz/embed/DOoBwQAa#HQ9wx_ARnTCI1-KJLd4_LqzMBwX6S4BhppArjnUiKMc', 'Episodio 1', '¡¡Perfora los cielos con tu taladro!!'],
+	['https://mega.nz/file/WPRUQYQZ#9CQeOjRU7WyG7rEN4P31OqKofmDXs4HEyA0AjA5HJhM', 'Episodio 2', '¡¡He dicho que yo piloto!!'],
+    ['https://jkanime.net/jkplayer/um?e=NGtiVndSVlhSUFdEdGp2WmxZVnVTQ0dUZTlFeGpqdk5qUEN4VjY0THB4a051U1BNOEM5dFN4RTdTT01DeDNpN3EzZ3dJcXRyU2JNU1oxOUpVVkF0RUE9PTo6nTfmj3rCfMElcO7Mfz9SmA--&t=0428be7495f8f382d0943cdd4738ffbb&op=NzA1Mg==', 'Episodio 3', '¡¡Dos caras, no me subestimes!!'],
+	['https://jkanime.net/jkplayer/um?e=U1NZQS9iSnA2aEZTVTJadXRxdFlvNXdCQ3Jnb0NTTWRRZGsvRUNob01mUWlPRHBjcGNPaWxDcjJwc0oxd0hIMkNiUEpEREw3TGVVa1dZS2RoQnBHN1E9PTo67d_qxyPhpzBcshKb0q91NQ--&t=dfc69ee4c48a622e2bcda2c3d2a219d0&op=NzA1Mw==', 'Episodio 4', '¿Te crees tan genial con tantas caras?'],
+	['https://jkanime.net/jkplayer/um?e=SC9PZDZPcis3d2dpdk5jWHE3YW1mQml2cktOaGJrMnhEa1ZOUjlaM1UxeTBMZk1uZi9xSFhldlNsUDJhSFFJWnFNY3lvSmRSdGttcHBxUUN3bERxMkE9PTo6PSX.fjyQHEB0T4qggnkYug--&t=812469e49663025b39e8d25fdaad81a7&op=NzA1NA==', 'Episodio 5', '¡¡No lo entiendo en absoluto!!'],
+	['https://jkanime.net/jkplayer/um?e=SS94T2k4b0FsUkdwY1dBb2EzK05MWlc1TkZaQ1l1T3FWbGk3dEhQdjRqTzhWWjN6MFRPOHFYY1RpYXdUUFBWbzZjbnRDVk8yMWd4bDJjQS92eitneXc9PTo6z.HV5BQKI8Q6jWbd_euhqw--&t=e143c01e314f7b950daca31188cb5d0f&op=NzA1NQ==', 'Episodio 6', '¡¡Ustedes necesitan unos baños termales!!'],
+	['https://jkanime.net/jkplayer/um?e=VHluZE5wUkMwMExEWGt3TDZocDNpc1RmTkI3MWo2aHpHcldMUDNWWGR3d0JqS3ZCa2t6c0paSGhRWElJTFJjTHZDZjloMFQ0RUw5V08yWHMxeFhBTHc9PTo6AnhwErTREgRcYC71h4L.6g--&t=ced92d38d8fec10f1da779dfa44f8bbe&op=NzA1Ng==', 'Episodio 7', '¡¡Esto es lo que debes hacer!!'],
+	['https://jkanime.net/jkplayer/um?e=SDhkNlM1bnJwWGs1VUUwaDVwSFRFNzdJVndwT1dKaThRcDkwY3dmS0lCWWlhd0pnYVNpSnFjeWV4K2lFdTFIRmYyQ25kVElxVGl0dmpQOG1zZWF4eFE9PTo6Ht0wXyJsddxSJeAb9E0Uow--&t=c4bfbf68f5d8d0f8b9a0752ca08ea01d&op=NzA1Nw==', 'Episodio 8', 'Nos vemos, chicos'],
+	['https://jkanime.net/jkplayer/um?e=bFFtWTdmejRUeS91TldpcnhKM3hITDl3Y0ZMYlhBekkxZExQQ1N0clRWT1NYWmlOVVhrU2RzSEJwNlE1RHhTbDhORk1ZYUhOQVdHeld4Z3JLNVd4OGc9PTo6eWXnFfjb01e7dvT6hWqCBw--&t=696186d1596721cb6e79013d4655c5d9&op=NzA1OA==', 'Episodio 9', '¿Qué es una «persona»?'],
+	['https://jkanime.net/jkplayer/um?e=amRlSGN3RHU2TnBWRHkwSEpTS3plMTRybmRBcnJHODQ0TzZOQVQwdFlEc2kraGx5bzl3ZUpCNFdxQmpqa29OTVNjMUZjdU9COTdyaGNXN2RIamw1R3c9PTo6t6in5EQB72MoIagJwE1UiA--&t=84cdde86a4560c17d00c9c437fc2f0da&op=NzA1OQ==', 'Episodio 10', '¿Quién es tu «hermano»?'],
+	['https://jkanime.net/jkplayer/um?e=cHBVM2k4ck9lZllSTkFMdkp3djlqbkY1QUZER1dRampiNmdLZmRrNEtCekJDQlpjZEYwYlpPUC9IcjZpd0QxN3pqd0tYV1lXcFp3ODl0cUJUcnZ3NUE9PTo6VAIKvWDWqVSFgarXy1VDFA--&t=ab4c389364232588a6680ad92ec170c7&op=NzA2MA==', 'Episodio 11', 'Simon, vámonos'],
+	['https://jkanime.net/jkplayer/um?e=MFRkR3drMnFMVW1iQ05ZYVZDQlVzQzBKY09EU0NncWNqZ0RxRW8rZ2pNSE5lVTZTK0E1UzRhN3ZKaXNZelpOVlRzcGczck4vdzhoazlWalVWcjJGTWc9PTo6hYY_ILCywuCoVVxGhw4r1w--&t=6495cf7ca745a9443508b86951b8e33a&op=NzA2MQ==', 'Episodio 12', 'Señorita Yoko, tengo que pedirle un favor'],
+	['https://jkanime.net/jkplayer/um?e=cW9MVzVOcDA5a29FNXo2eWU1djNYSkp1M1g4NTlJMkVwcEpIaG85Wm1yWWMrRzBicHAxcE5xdTNRbUlMdjJUTDlmK1ZlcmFYVGVJSDNBTVNCcWdpM3c9PTo6y6F3DGP_kyQPi1nCD5EI4w--&t=6cf75a28ed72a43ef7ca1b66ff345859&op=NzA2Mg==', 'Episodio 13', 'Todos, termínense tooodo el plato por favor'],
+	['https://jkanime.net/jkplayer/um?e=SnNZQThlZW9acnk4dUl2SVBiQXJ4Sk1XdVh5NmFsaTh1dVdTNEsyM044eCtMV05UMFFNYmJDdGFybHlMeTBvdGRsSWNZN3JrbnRCZy8yVG1lMCtHVVE9PTo6nhiqQ8P..IlqQzFRz2bs9Q--&t=68a15b5278e4f7c4c056df9d5f1d3b1f&op=NzA2Mw==', 'Episodio 14', 'Saludos cordiales a todo'],
+	['https://jkanime.net/jkplayer/um?e=d2JOTW9uRWtjOTcwbnNiV2d2bFVEL2FpSHEwOXovWEdVbElHcktueVJEdkJ6RHZBdEZYQXFmN1kwTkIxT2VqOXVTQWhPSUd2Y05NeFd0aXZ1SnVjaFE9PTo6PALYdLP1qiiBohY1SOmr.A--&t=76d7c0780ceb8fbf964c102ebc16d75f&op=NzA2NA==', 'Episodio 15', 'Yo tomaré el mañana'],
+	['https://jkanime.net/jkplayer/um?e=NlgzZXNQQXoxTnJva0p6MHlaR1F6MGVIYU4zVWxYeVpDSjVuQXhVT1M1bzNnTUJtbVQ5VS9GWjg0RVJVZGgwK3ZveGJpMXdjK3RBdGJCa3RwdU9NYWc9PTo6gVxcoFZR_tG9k2BTaFvBOA--&t=88340338e0a0cdc54350c05cf056dca8&op=NzA2NQ==', 'Episodio 16', 'Episodio resumen'],
+	['https://jkanime.net/jkplayer/um?e=YWxZOGdrZlQ1a2lqM0U5TTdhaEJMMkZyeXpuS09ndWF6N1JaenBLZWQ5RmNZZEx2V2dIcDJpMW83eEFFMUEvd05STVkrVlJuN2VnbmdiMHc0VUVESEE9PTo6.s7oQvojT6djkWn4I.Tqow--&t=57e5cb96e22546001f1d6520ff11d9ba&op=NzA2Ng==', 'Episodio 17', 'Tú no entiendes nada'],
+	['https://jkanime.net/jkplayer/um?e=bHhDcldKM2tyZ0dpSys5ZXJTZTZjYXV3NS9ndW8yd3YzN0RCVEZaMTZJcWRwbEJHSjBaL2VYQW9oSWI1SisyRGRoNy85ZitHL2VwajBLK0pjbkRyT3c9PTo6NX4AsfXyfAId0msbZ2FBBA--&t=1109f8734e117143a570a8bf9f8c47b2&op=NzA2Nw==', 'Episodio 18', 'Cuéntame los misterios de este mundo'],
+	['https://jkanime.net/jkplayer/um?e=ZS9zelMxVkpNaUs0QldYVTZCTmlEUGhBMWpZaGJxZHRRTGRjdnZuNzJYZmxKbVNZeHJUYm5vSmg5cU9tVE1ZM0VMbE51TFhjTWt0Y2NqUFRWY0xpZ0E9PTo6dMhoehSLRSm90p80UXcvew--&t=abc99d6b9938aa86d1f30f8ee0fd169f&op=NzA2OA==', 'Episodio 19', 'Vamos a sobrevivir cueste lo que cueste'],
+	['https://jkanime.net/jkplayer/um?e=ZFU4bFZMMmhTVjd3eTlWUVRUYTdPM3F0T0dlQmdlOSsyRkd6QVZPNGJBdE0ya1huVDkyRzhzY1NSUEtJRW0yd3QyTndTZ2pyMk9lc2FTWjg5aFM1TWc9PTo633FR.HV98MP7K67Xt7Vdiw--&t=83187550749e6b8024a097630f9d4722&op=NzA2OQ==', 'Episodio 20', 'Dios nos pondrá a prueba hasta el final'],
+	['https://jkanime.net/jkplayer/um?e=dFA3eVgyTlZtYkZ2aWRnZ3NKQmdIWEdDZXRFZFhkNksxQXdnT2xoN3VXb2V6ejFYQWUxejhBZlIxVmZtZWdwbVp5VHFIK0g5TEpuZmdRSStOdzBDY2c9PTo6cGozl6EiOq5ZQK1aEygMOA--&t=08f0efebb1c51aada9430a089a2050cc&op=NzA3MA==', 'Episodio 21', 'Tú eres alguien que debe vivir'],
+	['https://jkanime.net/jkplayer/um?e=bVpKSGVzUXRYWkxOak90NGRubkZDVmtaMVVrQkQzaXkwb3Vnd0ZxRkU3QnpqMWVYU1NtMjZpZGxMSE5DbXBzbXJaempKaHJQdmhsck13QkVOdkxBYXc9PTo6Ebq0Lpse5phGqaxNQ0knGA--&t=059d9e01176ab2f0892fe2215835bf19&op=NzA3MQ==', 'Episodio 22', 'Ese es mi último deber'],
+	['https://jkanime.net/jkplayer/um?e=QWdCdWJQVmhDcTdHVndoQXhNbGhRN1FIZ0NOdXVtOUd3QmsyT0tSUE1rSTE4YWJQUUU3ZndpZ1A1VVFLQ1R4VVZtOTdNZDI3Mll2VnFTUkNwTUlsSmc9PTo63nRwf.mWCmxwhUeQX7A5Fw--&t=29e11ea8ec6c7804a7f939e8e78e9c18&op=NzA3Mg==', 'Episodio 23', '¡Adelante! ¡Es la batalla final!'],
+	['https://jkanime.net/jkplayer/um?e=Ny9kLzBVQmp3WjJIeEhXQ05zYW9UUWR1eEFRN2plYjdGZFU0VDI4WFpHL3luYnFzV1Z3SGl5VCtSMnVkWlEwTkVBUDloZEl4ZjBac3I2NG9yaFc2VXc9PTo6T.PMFrcuJb9dXN1UQjWsbA--&t=c7217b04fe11f374f9a6737901025606&op=NzA3Mw==', 'Episodio 24', 'Cómo podría olvidar este minuto, este segundo.'],
+	['https://jkanime.net/jkplayer/um?e=bjVOK1g2ZU8rajRZWXFCak1oUG1BaWVJc3JKNHNNOWduVlRaRjAvcGcxc0RDMzJoQUNmSi91aFdYSzM3Yk84NWlOTFVHY3VJS0ZWeHB6SC9RUVRqM1E9PTo68o3Zy3.opbi23H5rM.NwLA--&t=4f2b590864ff38e818c75312f81b1cbf&op=NzA3NA==', 'Episodio 25', '¡Acepto tu última voluntad!'],
+	['https://jkanime.net/jkplayer/um?e=U0xvRVdmUXdDcUIrYkdzUDBMajlCSzN6S29DRkRIaHJDN1Nqb3k0MG9iVktiTU5PTmpZOHJwWTZ2ZStCc09rOTVLSm04U29RSzRtaWFiUUhxVGVpcGc9PTo6iRMltRVHCwa.beu1ddRFJw--&t=bdad073d2c77b0525e32a0e9784089ea&op=NzA3NQ==', 'Episodio 26', 'Adelante, chicos'],
+	['https://jkanime.net/jkplayer/um?e=VlpJdGFVRVFrQ0ZJNW5BRXJ3cTV6WDFmZjU1bDlqSHZ5SytEMVN6bWc2bkJIV2hYblBjMVpVcy9JdHFrT043MnFsUUgvZ201TTNjVGhmNk51dVNLSHc9PTo6sJRMxkY9.Bob3s1BRXk.XQ--&t=f02a8fde79ddf5b978cd9ae9d408b7c1&op=NzA3Ng==', 'Episodio 27', 'Todas las luces del cielo son estrellas']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Gurren/Portada-Tmp1-Cap${index + 1}-Gurren.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -751,6 +787,12 @@ const catalogData = {
 		seasons: [
 			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Aoashi.jpg', videos: aoashiSeason1Episodes },
 			{ title: 'Temporada 2', description: 'En estreno', cover: 'img/Temp2-Aoashi.webp', videos: aoashiSeason2Episodes }
+		]
+	},
+	gurren: {
+		label: 'CATÁLOGO 09', title: 'Gurren Lagann', description: 'Esta es la historia de un hombre que aún no comprende lo que el destino le depara… En un futuro lejano, la humanidad ha vivido silenciosa e inquieta bajo tierra durante cientos de años, expuesta a terremotos y derrumbes. En una de estas aldeas viven dos jóvenes: uno llamado Simon, tímido e ingenuo, y el otro llamado Kamina, quien cree en la existencia de un mundo en la superficie, sobre sus cabezas.',
+		seasons: [
+			{ title: 'Temporada 1', description: '27 Episodios', cover: 'img/Temp1-Gurren.jpg', videos: gurrenSeason1Episodes }
 		]
 	},
 };
