@@ -683,6 +683,7 @@ const aoashiSeason1Episodes = [
 
 const aoashiSeason2Episodes = [
 	['https://mega.nz/embed/JFFywBSJ#NkkCh473m9T-qfKGJBlhvARdkyg0rdX7kh6OlTwJJlA', 'Episodio 1', 'Línea de salida'],
+	['https://mega.nz/embed/JUtkhYhC#QadwcqUwiRPKIK-7OrSF_PvnHqmSf78LW5uDHrdQXX0', 'Episodio 2', 'La caña pensante'],
 ].map(([url, title, description], index) => [
     url,
     title,
