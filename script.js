@@ -728,6 +728,112 @@ const gurrenSeason1Episodes = [
     'iframe'
 ]);
 
+const jujutsuSeason1Episodes = [
+    ['https://mega.nz/embed/umAGSTqD#VgztgPiUJ2N1NdnmUtuuXYQmO0HyiZyhvltix2l1EZ4', 'Episodio 1', 'Ryomen Sukuna'],
+    ['https://mega.nz/embed/P7gDiKDR#jKW3OESbs6CUfxHepJ5cvHWWvBgsNXJGe8p2DcWysaY', 'Episodio 2', 'Por mí'],
+    ['https://mega.nz/embed/XjZi0ZpL#OKkOtGIJT6hrrQ0r977E-29IDyuBeCRDv19iurOvovA', 'Episodio 3', 'Chica de acero'],
+	['https://mega.nz/embed/6rIwTTAD#UhsG3p505Gce4tk5Ep9Pvye7BY-j_Oln3rrw3lvaGRQ', 'Episodio 4', 'La existencia terrenal del vientre maldito'],
+	['https://mega.nz/embed/28ZhSIQS#1onucq5Ok2o47TB8ZRTbPUiP9cdAV6q3UneUWsf_PAc', 'Episodio 5', 'La existencia terrenal del vientre maldito II'],
+	['https://mega.nz/embed/TnhQHbha#HmgLwvT4-4UXI65ht_HMa209htMAWK5D7xBckN80fHY', 'Episodio 6', 'Tras la lluvia'],
+	['https://mega.nz/embed/bjpE0SqZ#tRoB-C-JHoPHz_v81w1_jbS4s39c_WUkemresHjH4J4', 'Episodio 7', 'Asalto'],
+	['https://mega.nz/embed/enojmKKC#YJ4Lv2_ClKrowuEDer3TjbjLA7GVatL8dliAtoPfwX4', 'Episodio 8', 'Aburrimiento'],
+	['https://mega.nz/embed/Xi4E3S6I#GCM1KYRFc4iTMmykofLHDqJ7XoWsFhq9mc10GQfsj0Y', 'Episodio 9', 'Donnadies y castigo'],
+	['https://mega.nz/embed/b6wWFS4L#O-wc8rclYR0QKSoU-OJtbU4_zih_fgql8x3k4nSsLcg', 'Episodio 10', 'Mutación Pasiva'],
+	['https://mega.nz/embed/umA0HC4R#zduP1VyJVwUu659gJZT_UWgOOGJZ5wIiD5bE0PLZftw', 'Episodio 11', 'De mente cerrada'],
+	['https://mega.nz/embed/n2okiQjB#JqltKlmjV20kkdZ7OWJErrfWtrup2ULln3kHa5dyHQI', 'Episodio 12', 'Para ti, algún día'],
+	['https://mega.nz/embed/LuICnIaJ#ilQftnXEsKUPhy0YysepOQ-eJcb_CnggOc1rBNeZCrY', 'Episodio 13', 'Hasta mañana'],
+	['https://mega.nz/embed/L7AThZaD#RH_NIPlfDR9sh6DaWpn_W3Hz7t1lJZBrOFV9zoWfAdU', 'Episodio 14', 'El evento de intercambio con la escuela de Kioto-Combate grupal 0-'],
+	['https://mega.nz/embed/i2ZkkRwa#8gSYt39dfo_k_kXSjaGNtf2r4tstfVw6WpKOaHoKsjI', 'Episodio 15', 'El evento de intercambio con la escuela de Kioto-Combate grupal 1-'],
+	['https://mega.nz/embed/LrZwEBxZ#95hsOpI4IsqmblKG8S94aWNK4Nv9SMwVWMsb-dPrDw4', 'Episodio 16', 'El evento de intercambio con la escuela de Kioto-Combate grupal 2-'],
+	['https://mega.nz/embed/Tj5ViQYb#m_A-V7x8icTTPVKWawf3jE0oJZ0kdtRJtfQ0y5JjLXY', 'Episodio 17', 'El evento de intercambio con la escuela de Kioto-Combate grupal 3-'],
+	['https://mega.nz/embed/XhRhEBoL#sfIbD3nlAwP7NPyDdtILmE51OviqZJfbkV5xcS8mueQ', 'Episodio 18', 'Sabios'],
+	['https://mega.nz/embed/frRkHABB#qmIHh6QDIGZjr4raUfCZ5jSCNqGMFfqUAf90pnkEyEM', 'Episodio 19', 'Destello negro'],
+	['https://mega.nz/embed/erYSxKjL#FU7kuTgw7bM1b6ktEQEVLbp7cWK_18J_BTcTf_VbjDk', 'Episodio 20', 'Fuera de lo común'],
+	['https://mega.nz/embed/WtpwwYzK#aPoO8cFiVsVsQvPPbtbBp2zeUQFc3ZYlW7dNL4D4Bhg', 'Episodio 21', 'Jujutsu Koshien'],
+	['https://mega.nz/embed/6w5HWJCL#Yr4Es4DOm-GbfgzsMqX-3zPIDN8h_8q0OVHmMDuo4PM', 'Episodio 22', 'El origen de la fe ciega'],
+	['https://mega.nz/embed/3goBFCiL#1BWJ-n3w0za3pBMlC7JOkqfUBOPdbfsb3dojocJ3rd8', 'Episodio 23', 'El origen de la fe ciega II'],
+	['https://mega.nz/embed/rkBRVLTB#TEdbN75pRuqR0TymVEkb53eKQYpW80nGk0gfNZM_GK8', 'Episodio 24', 'Complicidad']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Jujutsu/Portada-Tmp1-Cap${index + 1}-Jujutsu.jpg`,
+    'iframe'
+]);
+
+const jujutsuMovie1Episodes = [
+    ['https://mega.nz/embed/yihhgCSY#4O-HfHaOB8qPQWS-Mea0rrtCEKFNmsesozkZbW7pfb8', 'Episodio 1', 'Jujutsu Kaisen 0'],
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Jujutsu/Portada-Movie1-Cap${index + 1}-Jujutsu.jpg`,
+    'iframe'
+]);
+
+const jujutsuSeason2Episodes = [
+    ['https://mega.nz/embed/K0xU0Bza#LbNhy2sDPLiNkPkhdC9DskI7H1iDDKl-joZVYP3x7Ws', 'Episodio 1', 'El tesoro escondido'],
+    ['https://mega.nz/embed/aoIzwKSC#tvCMgD5IBIo559BC7MFZepMpOhAo11DqhrGo5kG37fQ', 'Episodio 2', 'El tesoro escondido - Parte 2'],
+    ['https://mega.nz/embed/78JgCTxR#mfAgS1oZ36nyfQSy-CedCMrWSiMGM0BzxMmOsyOaASo', 'Episodio 3', 'El tesoro escondido - Parte 3'],
+	['https://mega.nz/embed/m04lwLSJ#i_jtRkDEwEYh1w1at5oYs-rlaWaGXaGTqjlPfG4Ye6A', 'Episodio 4', 'El tesoro escondido - Parte 4'],
+	['https://mega.nz/embed/StIWxTZb#8zXl0QsABqJVkw31rIs4fG-yvhKALA6swPwE_BP3_LM', 'Episodio 5', 'El tesoro perdido'],
+	['https://mega.nz/embed/b4pRVZyB#730i7FdmOpS-Y3YX6X-0DjoOiOJKdV3AorTh-kwxwO8', 'Episodio 6', 'Sí, es eso'],
+	['https://mega.nz/embed/DkJwzAYZ#9O05BzvjcVcM2NMOmQ_uDBq6kP7un_yjiWdeRzxz9G4', 'Episodio 7', 'La víspera del festival'],
+	['https://mega.nz/embed/bhIQiCoD#dFQtg1onLiOP7Ksp173mhVLyZJSEmgUIWeJADjSMhL8', 'Episodio 8', 'El incidente de Shibuya'],
+	['https://mega.nz/embed/D5ZU2Jib#kRk3OunQ4mJsvNK8SO5z0DkB2Eb9Zj7DPzcjqs5K9nQ', 'Episodio 9', 'El incidente de Shibuya - Apertura del portal'],
+	['https://mega.nz/embed/31x3mA6Q#2qRJWYbEbfV1SeL0lvF9jv1bmG3HgsfN0vBP1zB99l8', 'Episodio 10', 'Confusión'],
+	['https://mega.nz/embed/grEUBKIQ#vH76a5LbvalkqvSpuTFqtkG8ZDseUYgI7Q6xZCd34HE', 'Episodio 11', 'Espiritismo'],
+	['https://mega.nz/embed/ezhVUYrJ#-qjsZ6WvQLq_AOaENcQF4Gbac8XZzRJX_hckBFp4WKs', 'Episodio 12', 'Cuchillo desafilado'],
+	['https://mega.nz/embed/fjw3DCob#Iy33bMWGEBAyF9eh32vOEl7uNdJUICtcFNIqSqnHoA4', 'Episodio 13', 'Escamas carmesíes'],
+	['https://mega.nz/embed/v4xA1LTT#EJDhwK-epA1bP8O_E4JfIzxbQBYm9L9Y7l4C8TwsLtI', 'Episodio 14', 'Temblores'],
+	['https://mega.nz/embed/nyRFBBSb#OOCgSHRm32kHx1Cck1TbNwIArWKJRIl6SAldj6kxrhE', 'Episodio 15', 'Temblores, parte dos'],
+	['https://mega.nz/embed/L2ABxRoA#tcmws62lWDEEZetWTq-P6tv34mV0g7s717Ff3IWAAHg', 'Episodio 16', 'Trueno'],
+	['https://mega.nz/embed/muZE2R7L#67nD1m82zhBar2VEuVbVlEMB89SD7erGX4Og8cCfd74', 'Episodio 17', 'Trueno, parte 2'],
+	['https://mega.nz/embed/KmYwTbZI#xWKb28eagnQe5yIUpiQeFgcnimJzEJ5TlibMTxOHA_I', 'Episodio 18', 'El bien y el mal'],
+	['https://mega.nz/embed/SuoClRyC#_5-6mcpAbT2v6WmJe5FVmMkcGAh3ENFIxNxcB9T_nug', 'Episodio 19', 'El bien y el mal, parte dos'],
+	['https://mega.nz/embed/XuwHCaaT#Zj2kCquk5eb-sqw_GmNbc0rZ9Mw_9UgCahL5GztO1Qs', 'Episodio 20', 'El bien y el mal, parte tres'],
+	['https://mega.nz/embed/P7QXzSTD#DGRJSPOSxLMs6NTwmusEvBnzGp3o8faxFa1S--yzfuw', 'Episodio 21', 'Metamorfosis'],
+	['https://mega.nz/embed/X2AAXTZI#5J7Uegmi-W3Z9lnm8zs1ArrLONW4WHp1IHuxO3tT3dc', 'Episodio 22', 'Metamorfosis, parte dos'],
+	['https://mega.nz/embed/juZRAbga#2aonejPw1iLJcngyfN5FluFUT3x27jC4Dw0VXOn7B-Y', 'Episodio 23', 'El incidente de Shibuya, cierre del portal']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Jujutsu/Portada-Tmp2-Cap${index + 1}-Jujutsu.jpg`,
+    'iframe'
+]);
+
+const jujutsuMovie2Episodes = [
+    ['', 'Episodio 1', 'El tesoro escondido / El tesoro perdido'],
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Jujutsu/Portada-Movie2-Cap${index + 1}-Jujutsu.jpg`,
+    'iframe'
+]);
+
+const jujutsuSeason3Episodes = [
+    ['https://mega.nz/embed/YYlzzLLQ#7IXWkx_-cpuaUn-TMlklPlXb4N0sZzqp5bRr_tVrlBc', 'Episodio 1', 'Ejecución'],
+    ['https://mega.nz/embed/lNVUQaBT#7dVpHoJAQdJyDYd0GDSeYGYDIJvIptdSdvf1YVTgk_I', 'Episodio 2', 'Otra vez'],
+    ['https://mega.nz/embed/VVMj1QJT#P38TW7_Mm1OHT5ejk9Jjk_5oafyVt6V3Q-CJHyVSAdY', 'Episodio 3', 'Sobre el Viaje de Aniquilación'],
+	['https://mega.nz/embed/RQVQVSjQ#t05scZmS7m-c8EZ1Yn3SHK2mCvv9jJ8rGOju86b62yk', 'Episodio 4', 'Resistiendo en silencio'],
+	['https://mega.nz/embed/sUN2xCBD#HEr6RpWXRo9zaA9vheY13RsRkj9TE9gYUbNiHJiWKRo', 'Episodio 5', 'Pasión'],
+	['https://mega.nz/embed/cIETCKhZ#-4stjo7cJN-hTgn8m1hbkmyYBfL91ICbb0Dt1W05OP0', 'Episodio 6', 'Pieza'],
+	['https://mega.nz/embed/NclG3CKA#Xu41z2nnBCU-nFPYBdIwD7pbNp59qhOoZL0BWqIPlxU', 'Episodio 7', 'Colonia n.1 de Tokio, parte 1'],
+	['https://mega.nz/embed/1IFGiIzK#_fokPIIaXNrZXo08vNldT5IUHaBXGMZfLrUaLzv5Rf4', 'Episodio 8', 'Colonia n.1 de Tokio, parte 2'],
+	['https://mega.nz/embed/BJd2FRwI#ssFuDE5wZm43BRgt5stylQONWfWsifKBNSWkOncPFqE', 'Episodio 9', 'Colonia n.1 de Tokio, parte 3'],
+	['https://mega.nz/embed/0dECyISL#mYzsVrnAMOMbm8eejPjTfCqSqcn62W0UWMdgh9gi6sI', 'Episodio 10', 'Colonia n.1 de Tokio, parte 4'],
+	['https://mega.nz/embed/EIN21aIb#_-9j9OtF4EN27ahyhxGmVAHS6Fd-jtZy8vk_RWxP1DY', 'Episodio 11', 'Colonia n.1 de Tokio, parte 5'],
+	['https://mega.nz/embed/BQcSwYqb#uv_xDnXlfs3EhDxW0teF-H8qgwTe_DyDuyjjTzCsk0k', 'Episodio 12', 'Colonia de Sendai']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Jujutsu/Portada-Tmp3-Cap${index + 1}-Jujutsu.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -794,6 +900,16 @@ const catalogData = {
 		label: 'CATÁLOGO 09', title: 'Gurren Lagann', description: 'Esta es la historia de un hombre que aún no comprende lo que el destino le depara… En un futuro lejano, la humanidad ha vivido silenciosa e inquieta bajo tierra durante cientos de años, expuesta a terremotos y derrumbes. En una de estas aldeas viven dos jóvenes: uno llamado Simon, tímido e ingenuo, y el otro llamado Kamina, quien cree en la existencia de un mundo en la superficie, sobre sus cabezas.',
 		seasons: [
 			{ title: 'Temporada 1', description: '27 Episodios', cover: 'img/Temp1-Gurren.jpg', videos: gurrenSeason1Episodes }
+		]
+	},
+	jujutsu: {
+		label: 'CATÁLOGO 10', title: 'Jujutsu Kaisen', description: 'Dificultades, arrepentimiento, vergüenza… Los sentimientos negativos de los humanos se convierten en Maldiciones que nos acechan en nuestra vida diaria. Las Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a las personas a sufrir terribles desgracias e incluso dirigirlas a su muerte. Y lo que es peor: solo una Maldición puede exorcizar otra Maldición.',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Jujutsu.jpg', videos: jujutsuSeason1Episodes },
+			{ title: 'Película Jujutsu Kaisen 0', description: '1 Película', cover: 'img/Movie1-Jujustu.jpg', videos: jujutsuMovie1Episodes },
+			{ title: 'Temporada 2', description: '23 Episodios', cover: 'img/Temp2-Jujutsu.webp', videos: jujutsuSeason2Episodes},
+			{ title: 'Película El tesoro escondido', description: '1 Película', cover: 'img/Movie2-Jujutsu.webp', videos: jujutsuMovie2Episodes},
+			{ title: 'Temporada 3', description: '12 Episodios', cover: 'img/Temp3-Jujutsu.webp', videos: jujutsuSeason3Episodes }			
 		]
 	},
 };
