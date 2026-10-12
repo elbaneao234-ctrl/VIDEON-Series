@@ -834,6 +834,59 @@ const jujutsuSeason3Episodes = [
     'iframe'
 ]);
 
+const noblezaSeason1Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=UCtTMWZpcTY1VnovUnh5enJhYUlHYVRmVmcweGlrQldWY0hTeHZJSXBoaVk0Ync3OVYvTVpyOEdSaEVna05TanEyZE1MTDZNWHc4TitLc0NEWHNGS3VLQmlmWHprM2RQM1ozTjVYS0lWdTg9OjrvctOVEQIYQw.fBAYAGkpC&t=fe6569e0fa5b8fe840d6fc276ce08755&op=NjQyODA=', 'Episodio 1', 'Rintaro y Kaoruko'],
+    ['https://jkanime.net/jkplayer/um?e=amZYV1cvWmtzalliRnhhZHZteG1uT3RsRGJqREhzbHRvUndBdlFjK0w0djBNRllBTHVJN2I4L0Z4ZnBXQkd0S3hiVjVPUjdlWEcxRDJDa2l0Yk9KZGpyWnEvQVpqeG5JZU9PWm4xNmFIak09OjpCoPzs1IhAZ6qU8YtPjd3H&t=10d9fd22d5518d32a6d30207bbc3b2ab&op=NjQ0NTk=', 'Episodio 2', 'Chidori y Kikyo'],
+    ['https://jkanime.net/jkplayer/um?e=c0VxbzB0Qm0xb2R3K3dyUENwV0Z1OXM0QUtvU1NlOHZxRVJ0L1Z3MDFYRkROcmFXRkwzNTM0UngyQ056WnRuNFV2WmxNSnhxYm1LY3ZESWVLMU1VSFpkTDhwZnNzamlMRzZJVFZDNVZjTWM9Ojpso7H6d3n.Uhyi2OxnUKl1&t=099206317539aeba176f5f0f8cabc713&op=NjQ1Njk=', 'Episodio 3', 'Una buena persona'],
+	['https://jkanime.net/jkplayer/um?e=NEJrS1VVdHhiaGF4ZEhvdDhyaWE5WDZGQUZHMXZjN3AvM2pZNENoMFh2MEVLUElVMjhWZndvam8vNkh6UlFsUFZZREprOHVTY3duU1FGeXY3UzgyRFE9PTo6pyRAqgln_gCSPCYy2FyX_g--&t=a6d37cc5a51c706b777302573f90e78a&op=NjUzOTA=', 'Episodio 4', 'Afecto sincero'],
+	['https://jkanime.net/jkplayer/um?e=UmFzQWdocXI0bWZsQ0wxWE80bnhCWTlJN0k4YWtXbEVGTUVEV2pTV1JPWE56ZjFsUmFGWGpyNW1ETmcvTE9vSVZrcDkvallranRHalY0MEJrNDVpdkgvTXhSeDFjM2ZZR0svWUVnM001ZDQ9OjoE2Bct9p3LMnyie342cFfJ&t=63bc59e050fdb27a0892fd9da6adebbf&op=NjU2MTk=', 'Episodio 5', 'Presagio de un nuevo comienzo'],
+	['https://jkanime.net/jkplayer/um?e=SUlvbFBWbWM5Tzk0ZHhiUTdaRTg1SWV3MU0vYXpQa1F0TlgvbWhkZVB6RTFNekN2MkEvQVVpa20rSjF0TWxFTFpFODcydUtwbEZnRk1nN1p5REZhUDFEcDlCOVl1UmZDS0ZHLzBtZm1rY2c9Ojp9SS4krsU5uBewwZsaLwLP&t=c1cba695929f7c9d7c595345f96d9e8c&op=NjYxMTU=', 'Episodio 6', 'Me odio / ¡Te quiero!'],
+	['https://jkanime.net/jkplayer/um?e=Q0NpbG91UlExalI2VEtLV1lUQW9oMzVCKysyYjhEUStrUlFCKzh1bW5WOFZSQkN0YXVWMHIvVDNESTZsQTkvaGM4ZTlnV1BCR1V5eEs0QWFUQTgrMVFkZ3pVNzNKMUdob1d4K3JLbnNsQTg9Ojq4qNA76bYD14jlHM_MatVu&t=4098646be3cc2ec5884ddd8a060bd4e5&op=NjY4MzY=', 'Episodio 7', 'El mejor chico del mundo'],
+	['https://jkanime.net/jkplayer/um?e=NlMxQU14ak9HeTdnZmlkR0NHd1VMSXFXOHVnbEdEQWY2SllMWHpyWTdDeUxMNHhpOGlMNWJTQ3hpNXR0M3RqczNYL1lKYURRYWRHZU9oQmhXTFBjN1E9PTo6kKZeki1lSZYo.b3EeKe2MQ--&t=ca412e44bb9a199aa66eb1b971652df5&op=NjcwMzU=', 'Episodio 8', 'La verdad de lo que siento'],
+	['https://jkanime.net/jkplayer/um?e=WkhqOGwya3cxVmNvdmM0VkZYeXFjNEhtZXdseVFBb1BpdE0reDBJcTBNTmRwSXlCMXlQK1hHWGgrWk5hMWdpWlM4NCtHLzF4SXVsSE9vWlFFTmM1eW1WZ0lHdmhIWWh6bGM0U0pKbU1mUTA9OjrM_D5I6gnafAfHIzUjny6R&t=143ea86fcbc92b62aa284e6d74927a8b&op=NjcyNzc=', 'Episodio 9', 'Pelo rubio y pendientes'],
+	['https://jkanime.net/jkplayer/um?e=bG8rd29kQUU2WnBGU1QzSWJDRmlsWFJ3dkNQMGw0OWN3cWJwSGRHWkN0SWZhbzNPSlZFUUUzeGZKSEl6UWZWWUs4MTV1OVNLZ3lFSWxDTVQzZ1U5QUE9PTo683hC.Lc5LwMcq_mTHPFqSg--&t=2783914090f3b00aea6f405dc66daea6&op=Njc0MDE=', 'Episodio 10', 'Tormenta de verano'],
+	['https://jkanime.net/jkplayer/um?e=SXVsVVpkRE00UnVjQVNGNWl3NlNFYlpRNlVyNHVMNWlIUUhIN1VWeVp2bG5iRXYyYW9xWUs3SUlVMkMzNzA1QlE5d2FiTmN5bnBBR2ZtQVYvVnk5M1FYMW9aQlFWb2xBeTkyRmVXdTNqK1E9OjqcWcqsPyamOgCj2bl5dRDq&t=bc8b713d9d1cc0b974ade5de73929193&op=Njc1MTU=', 'Episodio 11', 'Un bocado de ternura'],
+	['https://jkanime.net/jkplayer/um?e=K2pMb25aTDlPd2N1TGFzVFgrSUczQWJIYkR2T1Z2SjhLWDMzcFpIU2xRWGU4VlNlWXJ4MHdoNmwwUHlBZEJ0VG56eFRxQ3BWdHg4R1A0bmt6eHljQi83ZVpwVXg3OGpxamJ2VmwxeTZJc0k9OjoJ6NjwkERT1aVG_CLj1Oo1&t=924e3d18456d14af181296787cd874d8&op=Njc2Mjk=', 'Episodio 12', 'Desconcierto en la playa'],
+	['https://jkanime.net/jkplayer/um?e=bHNhTExQZTUxRUQ1ZVFDa2NPR2FEMWhvRVZwS1ptMGgvZ3Z0QVZqWjJ2MTg5ZWFhRWtNL0x3cjlvb3FRSEpHQVJ3MjVMaFl1ZUlzR3hTbHljdDJQZWc9PTo6mt_rQGNs_8QZ6I.tEFumog--&t=34d530db39916f25cb710626d56c2d29&op=Njc3MTI=', 'Episodio 13', 'Kaoruko y Rintaro']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Nobleza/Portada-Tmp1-Cap${index + 1}-Nobleza.jpg`,
+    'iframe'
+]);
+
+const ylaSeason1Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=ejdlQnlNZ0JLNDdBNnJhT2xKRVR6Y1c1MlhLSHU1OFYzTGI2ZjNXd0hiWWFBeVFIUEVsZXhBazV6VVZIb2RjdDFlM0ZjUkw1QjhubWZzYm5JMEYzZmc9PTo671MpRIPDH_BK66nwMexl8Q--&t=496de0c88f240bfb9193f37b29db8add&op=NzU3OTk=', 'Episodio 1', 'Monótono'],
+    ['https://jkanime.net/jkplayer/um?e=MW96TCt0am1ZNE41MjlzbDMvaklqNVl0U3ZXNlExZ2ZlR1c3NEVqWTZqaHVmRmZIK1J0aW42T3lhL1lXOWg1R255eHM1d2JWakp4KzJBQVNnTDJvNWc9PTo6weKNOTiHzTahX_tkXBmzwA--&t=afd0cf3f127c15df54897eefd82c4c7c&op=NzU4MDA=', 'Episodio 2', 'Amigo A'],
+    ['https://jkanime.net/jkplayer/um?e=WFczVDdiaXUvc01Eb1hjdDRUOXVCVjBWN2ZqUElMZFRPZllXQjdVclA5c3ZIQ2hvVzRYOGZsSGhsenc0YUNLdS92cElkTGJ2TXd5QTk2V29YOW9aVnc9PTo6nTTYG0WVjGfKWEXykk9cCg--&t=a6d735d5f39b392e7a48c8eed45a975f&op=NzU4MDE=', 'Episodio 3', 'Dentro de la primavera'],
+	['https://jkanime.net/jkplayer/um?e=RnZScGltMng3Zm5lT0ZpQklNdng0b2o4R2JrekVCbGc3VVJSaXBINkorenc4OUx3MFhrWnFQM09DUzJqb0x4TFkzR0cyT1VjQStoL1pnS1JHMzlVSGc9PTo6U2Gko2pvXUFipMHrqpHVCg--&t=f03d7a0deb28174607ffbe35a5feedc2&op=NzU4MDI=', 'Episodio 4', 'El viaje'],
+	['https://jkanime.net/jkplayer/um?e=Z0IyZTI4RXE1SXpzTlBPRDRQZXhRRk1YSHVHZkhjVWhoSW9ORk0weW1GWlc4U2t5Q3Jqd2REdUZNcnp1cVEva1dPL1QyU1FMVHVPOGhBMVRuUWE1cmc9PTo6xpKjLwh_BkgXWEz493IRHA--&t=6a5188eb9695d725301434cddd8a0dc9&op=NzU4MDM=', 'Episodio 5', 'Cielos nublados'],
+	['https://jkanime.net/jkplayer/um?e=b2hCeUlOL1k3cmlaVUVYS09sLzdKNWc5KzF4Z1U3eWgxaTczM0szSW93ZXVnLzR0MFJjNnNEajRWR200WUk2bk1YK1gwQnFZUVlRL05UOWpkY3hLOWc9PTo6i.HVhEa99oXCesMuJ5c65A--&t=9f9841df8030e471dda2c3d913f8365c&op=NzU4MDQ=', 'Episodio 6', 'De camino a casa'],
+	['https://jkanime.net/jkplayer/um?e=d2Zkbm0zT2FqZGtUSHcrVEpURzZVTnF5MTVlRVFjZ2x2RFhhT1JlU09iOVBjbXZiS1NCRzVkb2dBdzBadlEweEtWMDZRZGF6cjB6Z01IK2dvYjZvV0E9PTo61o8gikAjrsptyY8OxRITIw--&t=b08ba5546f0ba267117924c47fbc0fbc&op=NzU4MDU=', 'Episodio 7', 'El susurro del mar'],
+	['https://jkanime.net/jkplayer/um?e=OEhwYTZSRmZ1QmwvenN0U0RZcEJsWmIwamo3ZWhPeDRNWjlQd0pvY2hjaXZrWVFaQjlRRGZoQnMzQ1FrUDVvZUxTTEZrVUlKWmlKaTRDd3JHYXE5NFE9PTo6NGR42mq_EjT7.VyiLU3ZsQ--&t=bcd9cf783e03370d5b2eb0cd58f0149e&op=NzU4MDY=', 'Episodio 8', 'Que suene'],
+	['https://jkanime.net/jkplayer/um?e=aGFBaDU5cTl2S1U0bVlvMEdCZ0o5akduMTBYMi9YWEJJL3JTcTlvREVPTWlFUlJSSGJIS1ZJNDZpZDRpaGQzaG41QjlBZGJKUFhPcExVUWlKMDRLTWc9PTo6UNqJ4yn9S5b6TUCtV2KDkA--&t=ba963a2d7b9c29c886b84763bdf426fd&op=NzU4MDc=', 'Episodio 9', 'Resonancia'],
+	['https://jkanime.net/jkplayer/um?e=anlIcXVkOGdtZ2ZUaHg2eWY1UlN0MnMwRzBSVmp1VENPTWZURHU3ZDU4ei92Y212a0RIdmloYjNpellHeFJRaFJXU2lTNVdUU2ZMSVhpenVsMmgwVmc9PTo615b_qJnI10UVgapToGV6Ng--&t=2c6aa0a30002532cd38fd98a6705d949&op=NzU4MDg=', 'Episodio 10', 'El paisaje que comartí contigo'],
+	['https://jkanime.net/jkplayer/um?e=MmVsWHBqZXFnSXQ0ZG1icjhuMFVmT2IySDN5eU9Wa0NsNGFjRC9kbERvQ3lMWEtnYjZUNHgycGFub1lVY3lhaHVrT3lnQVc2TnVVYW5aUWhOU3VENkE9PTo6Fk34z7KBMXXlUWtglyK43g--&t=25b59d1f01395d9e5e0769c4ae283117&op=NzU4MDk=', 'Episodio 11', 'La luz de la vida'],
+	['https://jkanime.net/jkplayer/um?e=V0hnM3c0Z2ZCc3VzdFM3bjJiZ1duNlVsSzQyK0VZMzN1RHE0U0hocHBLdDlrMmIxZTJwajRtUUpKS1dlYTVWbkEvLzVxSWhnd0VScEEvT1JidGp5WlE9PTo6hDtK5QLjvnIoKDAVT7ZhBQ--&t=3840f652cfde27c93f306cdace5a494e&op=NzU4MTA=', 'Episodio 12', 'Brilla, pequeña estrella'],
+	['https://jkanime.net/jkplayer/um?e=Tk8rMkFQZ3d6MWYyQ2xMUTNWbFFDM2RIOGttMHFJdnlzYW5UZERkTDBKcERFMHNpVmFJWjUwU3NVMXZkVmREUko0T3g3TURlQXN3Q1JXdFVLNkw5ZEE9PTo65yfBgBRenuIbNKw3wKVvQw--&t=79cf47dd4f5056ea81943df74fdc6806&op=NzU4MTE=', 'Episodio 13', 'La tristeza del amor'],
+	['https://jkanime.net/jkplayer/um?e=S0RReGsvcldBWExRZ3IyNlJlZDRKc3JiZnJtZkFKYzE0QWt4dVdhM0NQL3NJVVRCSkVUdm9pSEJIOUhJQ3NqQzlDczFIRUMwV215Z1FOS1VGZkUxM0E9PTo64FrNu_ygLeebUYKCr.Nbgw--&t=13e4597a43e353770b7f184aae84deed&op=NzU4MTI=', 'Episodio 14', 'Huellas'],
+	['https://jkanime.net/jkplayer/um?e=NjhwUWpzUk1wL1NjWFdsd0l5dFY4ako1cW9RK0hmbWVzUXNNZTVEOWVOZk5GUlFTbUJJR21JbDBkSzA5Q2xNZ292RXp0L3IyQlBhV29DbFN1OGxSZWc9PTo6quytC0D_0VujMXVwUSVqFw--&t=87a5da8c396d4aeff10db206018db25f&op=NzU4MTM=', 'Episodio 15', 'Mentiroso'],
+	['https://jkanime.net/jkplayer/um?e=Z3RGTlR3eUFRaVMvc3V6Ti9PMzlSdmJwWDUrS0JDbUI5YVNKaEdBR2lXWTZkYmk5TEdXT3dyWm5PSThCK25GcTBrT1JQYVZDZ3ZVcVBydHFyeDFYaEE9PTo69jd31nFWQdDt5YkCdPtzWA--&t=8afcc44bd2ae9ac536ef45b4b0fb0dfb&op=NzU4MTQ=', 'Episodio 16', 'Dos de un tipo'],
+	['https://jkanime.net/jkplayer/um?e=clJuazBkWjdyYldiN0N6Z0xMdEh3UmhIRm5kYVVCUktQZzBsbW16cWt4R09VUDBPSGYvbmI1cDRPS0RFME42anJoZzBKZmpKbUppUU55SHlrdVJjVFE9PTo6wC5u7xi2ZDDcs2QKptyRAQ--&t=d6792a0172ae731fdd22c5414e8d963d&op=NzU4MTU=', 'Episodio 17', 'El crepúsculo'],
+	['https://jkanime.net/jkplayer/um?e=WUZ0MGxCRGlkbWNRMk5aZkFoK2JIbS9PNHBWbFl4bFRENFJaVUo4N3ZteHZUSlcxTGo3NFFKcitkMXZUNytlNVk5cDZPcmNjUGxSZTRPVGhHUHc2N0E9PTo6SY5DQnWYdy.OZpVIchUHGA--&t=70105a07fb565f113a304c5d7d76ccad&op=NzU4MTY=', 'Episodio 18', 'Corazones unidos'],
+	['https://jkanime.net/jkplayer/um?e=V0lKS0d3clJMYlZYV0UwUFF0ZFhlVER2bGgrbGtXUWFNV0VzMmxtellaTDZ2Nk1tMGVjY1IrS1ExOXpPbFlzQklibnRBaHcyMnNSTGk2ZXVhdHMrL0E9PTo6yrsOD94iygJ74VKjgkIgtw--&t=5568ad247520bfcde2089fd3de84ab91&op=NzU4MTc=', 'Episodio 19', 'Adiós, heroe'],
+	['https://jkanime.net/jkplayer/um?e=YWE4bkprdjZRK3RVTjZUSUQrY0pGRmh1QUF3U1hqTHB5V25adEFLelBLdDRPekV0Wjhsd2U2MngwbSs4eE55U0ZXMnIvM1d2dWw5emJRM1hqN1BCcmc9PTo67AZhNe8FOiBPXu.M_bzpPg--&t=2b9d4763ab62b3b77242b6768bb9036e&op=NzU4MTg=', 'Episodio 20', 'Mano a mano'],
+	['https://jkanime.net/jkplayer/um?e=NkxxTUdwSlNuUUNheHBULytWYXJNSVlua3RlclU4eUZKVWRzaE1IazY1V3hJMmJqa1UyZjBQckRZVG16V0ZKQ29rVGNqVWZzNXFSbjZDTHNJaGVQNnc9PTo6sVGqEKGB_OofFyX7a8jMJw--&t=bba936e5fa8fb9fc26abc374e8da2f2c&op=NzU4MTk=', 'Episodio 21', 'Nieve'],
+	['https://jkanime.net/jkplayer/um?e=TjZxV0JlbHpLNVZXR2xVT0Q1RFFUNHgxY3JYb0FyWE1zb081Z3RaODU5R1VGL2tQczZCQ1VXUDA4NGdxRytBODRyVDk3VklybWNWSXQzM295T0lJdnc9PTo6r7ggD6t6Fycu7hD1nwS22w--&t=7c8fc90a4b50a42635e7afab69caaa93&op=NzU4MjA=', 'Episodio 22', 'Viento de primavera']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/YLA/Portada-Tmp1-Cap${index + 1}-YLA.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -899,7 +952,7 @@ const catalogData = {
 	gurren: {
 		label: 'CATÁLOGO 09', title: 'Gurren Lagann', description: 'Esta es la historia de un hombre que aún no comprende lo que el destino le depara… En un futuro lejano, la humanidad ha vivido silenciosa e inquieta bajo tierra durante cientos de años, expuesta a terremotos y derrumbes. En una de estas aldeas viven dos jóvenes: uno llamado Simon, tímido e ingenuo, y el otro llamado Kamina, quien cree en la existencia de un mundo en la superficie, sobre sus cabezas.',
 		seasons: [
-			{ title: 'Temporada 1', description: '27 Episodios', cover: 'img/Temp1-Gurren.jpg', videos: gurrenSeason1Episodes }
+			{ title: 'Temporada 1', description: '27 Episodios', cover: 'img/Temp1-Gurren.jpg', videos: gurrenSeason1Episodes },
 		]
 	},
 	jujutsu: {
@@ -910,6 +963,18 @@ const catalogData = {
 			{ title: 'Temporada 2', description: '23 Episodios', cover: 'img/Temp2-Jujutsu.webp', videos: jujutsuSeason2Episodes},
 			{ title: 'Película El tesoro escondido', description: '1 Película', cover: 'img/Movie2-Jujutsu.webp', videos: jujutsuMovie2Episodes},
 			{ title: 'Temporada 3', description: '12 Episodios', cover: 'img/Temp3-Jujutsu.webp', videos: jujutsuSeason3Episodes }			
+		]
+	},
+	nobleza: {
+		label: 'CATÁLOGO 11', title: 'La nobleza de las flores', description: 'Tras conocerse por casualidad, el cada vez más fuerte vínculo entre Rintaro y Kaoruko podría conseguir lo imposible: limar asperezas entre sus institutos rivasles y sus amigos.',
+		seasons: [
+			{ title: 'Temporada 1', description: '13 Episodios', cover: 'img/Temp1-Nobleza.webp', videos: noblezaSeason1Episodes },
+		]
+	},
+	yla: {
+		label: 'CATÁLOGO 12', title: 'Your lie in April', description: 'Tras una tragedia, un prodigio del piano abandona la música hasta que conoce a una excéntrica violinista. Con su estilo libre y lleno de vida, ella lo obligará a enfrentar su pasado y a regresar a los escenarios en un emotivo viaje lleno de color, juventud y superación.',
+		seasons: [
+			{ title: 'Temporada 1', description: '22 Episodios', cover: 'img/Temp1-YLA.jpg', videos: ylaSeason1Episodes },
 		]
 	},
 };
