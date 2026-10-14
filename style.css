@@ -426,11 +426,8 @@ body {
 
 .video-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 28px 18px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px 16px;
 }
 
 
@@ -930,12 +927,12 @@ footer {
     }
 
     .video-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px 12px;
     }
 
     .catalog-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px 12px;
     }
 }
@@ -974,11 +971,61 @@ footer {
 
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px 18px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px 16px;
+}
+
+.catalog-search {
+    display: block;
+    width: min(100%, 440px);
+    margin: 0 0 28px;
+}
+
+.catalog-search .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.catalog-search input {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.03);
+    color: white;
+    font: inherit;
+    font-size: 14px;
+}
+
+.catalog-search input::placeholder {
+    color: #858286;
+}
+
+.catalog-search input:focus-visible {
+    outline: 2px solid #f04444;
+    outline-offset: 2px;
+}
+
+.catalog-search-empty {
+    margin: 0 0 24px;
+    color: #a8a5a8;
+    font-size: 14px;
+}
+
+.catalog-search-empty[hidden] {
+    display: none;
 }
 
 .catalog-card {
+    min-width: 0;
     color: white;
     text-decoration: none;
     transition: transform 0.4s ease;
@@ -992,6 +1039,10 @@ footer {
     aspect-ratio: 2 / 3;
     overflow: hidden;
     background: #252525;
+}
+
+.catalog-card .video-info h3 {
+    overflow-wrap: anywhere;
 }
 
 .catalog-cover img {
