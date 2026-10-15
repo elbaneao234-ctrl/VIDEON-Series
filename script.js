@@ -1114,6 +1114,200 @@ const cloverSeason5Episodes = [
     'iframe'
 ]);
 
+const ragnarokSeason1Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=ZlVXbktvRk9nTEFhZnhDTHFxLzFSN011L0xEdGh6RDF2TVdkYjlQWGJ4Z3Awc3N1cHJ1QmRScTNhU25nbnQ2ZWZCaUU3SnNzVWRMK3huSUJlTlY4SHc9PTo6zUYh20JDKcoZMxdRLkboeg--&t=dba5599394ea5d4dce084407e2e6274d&op=NDU4NTM=', 'Episodio 1', 'El Ragnarok'],
+    ['https://jkanime.net/jkplayer/um?e=dzE0cG5OOGF1VlZBTHdLODZsbEpQZFZKOWNGaWN1MVg2T0UxMVZ0d0lsNEl1WGtrQ09ubldPUzlvaENYU0RRWWlCZWw5c2puKzR2cVAwUU5HdlNhSXc9PTo65sfFHQLHJaSw2HYbqPMW8Q--&t=3e4a0c9abc957e634d773110fedafb26&op=NDU4NTQ=', 'Episodio 2', 'Un adversario a la altura'],
+    ['https://jkanime.net/jkplayer/um?e=V0x4RE1SZldtMytaSDQ1NXdsRVEwb2QvVDU5eC9PT3lEamdPV1RsZW9OWTk4cjNnbkQrbzY5V2E1RWtoTzFna1lrcEtRWFZVWEw4RTRvOElxRFBBVGc9PTo6Z7wU.D7JdY0ul0xiqoeusg--&t=3bfc8356903f8b39ec744b6a0154bcba&op=NDU4NTU=', 'Episodio 3', 'El golpe maestro'],
+	['https://jkanime.net/jkplayer/um?e=ZDJrVjVYMkdJSXk0TU5CTFlUaGVQcVc4TzNMZlgxMDloemU4cFFSclJiRTBha0R1QzBZU3crQ213NVhHSlg2Q0NyajA1eHYyQ0o4REtScE1Hanl2ZUE9PTo6t8emCAqfjQGZifT5Xa_xRg--&t=5490e7d6b0202e0f649d6fba5bf770ec&op=NDU4NTY=', 'Episodio 4', 'Alegría'],
+	['https://jkanime.net/jkplayer/um?e=WkdQTGxMblV6VDVETGZ0SVEwcngxZDFRVkVJYzl0cjVUVVlGTndHL0pZOXMxdkx1czlGa0ZPTWV4L1pPTXN2MWt5cnJPOWFjY2FoVklNVmRRT0k5Tmc9PTo689Rz2lj0YAnXJAYtctUMVA--&t=6726f851d9de8f7d76c143b1e025a9b6&op=NDU4NTc=', 'Episodio 5', 'Archivo n.00000000001'],
+	['https://jkanime.net/jkplayer/um?e=YWVxV2NLZktPQ0dNb2U1N2cyQy92K3R4aWhXaDVKeU5meTRubUlyUHBJWWIvWU1pdW83enBKVjVKTDVYT3dtc2IvcHVFK0YxdlpObFlRSEZTMGVXa3c9PTo6z7e6AqJ_iw3WuIEv4lrg1Q--&t=ce10b99820f24fb3dc769a4f9fb67672&op=NDU4NTg=', 'Episodio 6', 'Una gran imitación'],
+	['https://jkanime.net/jkplayer/um?e=NklXdHg1QWh1amlXbThFOU8vRENFVytZd2VOZ3RYWmRVYThaeThSTXc2YnpVeFpnbGpobHE5RjA3VXRZSkg2blc1RENSdGo1VDR4WkVuVmdndmZCaHc9PTo68bdG2bhD6DEr_X93iZgq0g--&t=52e6502148c9d92d3e8c078c8983f1c1&op=NDU4NTk=', 'Episodio 7', 'Expulsados del paraiso'],
+	['https://jkanime.net/jkplayer/um?e=M1BteEZHaTZ5V3MvaXNVQXJmU3BCRFl4RkVWOEszSUxmbHRtZUxqb2V3dkFFRk9FckhQanE3blM4b0NIK3pMNkNiZWJubzU1c3pabjJ1dHJjcmdXUWc9PTo6IXEc0WKlavffh0lFbwmYBg--&t=8d5679179e529f9ed2dfd332a526f51f&op=NDU4NjA=', 'Episodio 8', 'Lleno de gracia'],
+	['https://jkanime.net/jkplayer/um?e=Zi9seFZLeVNCOER0WFVxRVhtMmplc2cxbjRQWFpUS1JSTHJ6UFY3emc5QnYwejJ5YWVuMnBhMm9vWFROcmJUcE1jL0ovWCsxRjZPcHVTTlFiaVVDRmc9PTo66oBv6mRcSlkC1qLTg7RREQ--&t=e575af3f6d64da1287b8b6552b65a1df&op=NDU4NjE=', 'Episodio 9', 'El tirano del oceano'],
+	['https://jkanime.net/jkplayer/um?e=Nk1wSjYwQUpPc2RnSXVYeDBuSlNrcGs3cldWbVlxejdhekdUeHphYlVZbzBMVWpxRU9TUHBxZVNkT3BwSHV5Z3FpUVk3MnVBd0NvcE1HeDE1SU1NN0E9PTo6FdDxN1y502rt7TXbxCBdPg--&t=419c2a2a2f4ef10201e0bd13e579ca21&op=NDU4NjI=', 'Episodio 10', 'El gran perdedor'],
+	['https://jkanime.net/jkplayer/um?e=SFZkNDQzODF0b0NiSDJjYW92MWV0RzBna01hbkl1ZlFPeFNsNFNCS0tPai90RGlCUzJtRGNCc2xmTlJiSm9FSTVra0tUejNEenpQZlVlc1ZFc1F6NkE9PTo6mSgeYz_lZ2cHgIll9w_KnQ--&t=9b5d7c532f524acbb13114a74e3ff9f4&op=NDU4NjM=', 'Episodio 11', 'La golondrina se asoma al abismo'],
+	['https://jkanime.net/jkplayer/um?e=TTJiQ3p6a1JVYnk2UzJCMDNjNUpPQnZjcWhsdUN3OUgwTjh0eEhGWi9tQnZkMHJ0MG82Y2k0SmhxUWhPdjF0eHdkY0ZwNkMrRTladGh3eXZaajhzNXc9PTo6ZcLfvVp6apFzk6L36KwljA--&t=fcac261edd107969dab8b6254f7716df&op=NDU4NjQ=', 'Episodio 12', 'Y el Ragnarok continúa']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ragnarok/Portada-Tmp1-Cap${index + 1}-Ragnarok.jpg`,
+    'iframe'
+]);
+
+const ragnarokSeason2Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=TStxYWwzeC9ERGF5eGNLOWhTSUp4cHg0R1FUL1dTcFlZOEFTN21yeER1RmNLN2dLM3dFYjV4ZytxYSszbWpObHMvVTlHYlYyYnU4VEk5WDNVek1qNXc9PTo6Xfso10KLK8.N6mtWSqw1hA--&t=494c1e8d99ec2b04889e42806f77f482&op=NTE2OTQ=', 'Episodio 1', 'El bien contra el mal'],
+    ['https://jkanime.net/jkplayer/um?e=MGsrUmF0VlpkSHVKcnZwMlF2cW9SQWpmSFdremVSZC9jOHM0d0dwNm1JZ25JejZhTjREbGMwdFlkR2NTbDdpRXB3VnJPQzZSMUU4aENRclNnZEpPRnc9PTo6EUNTkp1orcYDC3fGKBL4DA--&t=4d1bd6b7b71837fc45f9a0fd4221e1c0&op=NTE2OTU=', 'Episodio 2', 'El indomable dios de la guerra'],
+    ['https://jkanime.net/jkplayer/um?e=SCtqV0s3cXZEMjk1WkhRZ0ZRQS9zTlFOVUk0bkIycER4bWtxbXFWSk9xNDRqSitMUFNVQlMweGFvdThPNklUN1h2YzNCTnlJbkRvaGhSQUVXY2JYWkE9PTo6afGVkr28hs_D9g7oUtbyeQ--&t=69cedb86ab0a122715d16e198312d75c&op=NTE2OTY=', 'Episodio 3', 'El nacimiento de un monstruo'],
+	['https://jkanime.net/jkplayer/um?e=YXlCRFM0ekJwK0pnWGhSZHFtUnJPQTA5cGc5TFprbXE1UmNYUzN3NGFFcjJtalVONXNOUGg4SEpBL0RhSE80THk5ZmpvZkl2MmZWdEhyaFE3UlQvVHc9PTo660qgwhoDhytdJxQl753Q9Q--&t=35cf9e0f3791e65c1ea77e19943ee6b9&op=NTE2OTc=', 'Episodio 4', 'El último trabajo'],
+	['https://jkanime.net/jkplayer/um?e=SUFVTTlWRGl0aGh2ZllCRTJFVU5NVEpXUVd3L0YzbWNrODJvT3d1QjlmMGRYNjFHOUM3K0JBakQ1MVI4b0FZdHhZSTY3Um5RNFgxWUNzeWFXYSt5d1E9PTo6WpaDRDCz1Z8sV.eAJsX6Iw--&t=76b8c91e717458b41eee39767f188c4b&op=NTE2OTg=', 'Episodio 5', 'Réquiem'],
+	['https://jkanime.net/jkplayer/um?e=S1A0cHVJWEhrRE9NNDlzUzh6bTViWnJ6azJLNkNMU1o4ZnI4d0V2SXhwWHFkQUd4Ty9VNkVxT1BmTmxuaHRKcFRZSU9sbjJ5TTA2ekRyQTlKNDBUSHc9PTo65wbiLGB9YU.4ZgWvn4vsJg--&t=9830d910f3fa1bb1974d26a393fc7f19&op=NTE2OTk=', 'Episodio 6', 'Motivos de conflicto'],
+	['https://jkanime.net/jkplayer/um?e=N1czUnN0RmhpcVNYcVJubHgzdHFYczE4ZGRwWGF5ZjFmOU1vMXZlQ0VGSlhSWWdFUmpmQ0JBTXJYYm8wL0JKQUwyMm4yVmVZSUZXaXBCaERUK3lqVFE9PTo6fol_LOKxbavO_nXp_h9fQA--&t=112e748d5f9aa9b6dafa4317ef5edc41&op=NTE3MDA=', 'Episodio 7', 'Cien sellos'],
+	['https://jkanime.net/jkplayer/um?e=RlZodmNCT2dYY2E1NXNTYXRTM29mTXlJQUxnUnNDVGJTaVViSUszV3VVMXNBM1c4S0Q5K25sM1U1L0JUcEJLOEpHVkg2TG5kb2FPNE1DMFlCakFxanc9PTo6Lsg5yQuwSU6ed640rQiAFA--&t=7f346a3b6379358b5fb0bf5d252e0d32&op=NTE3MDE=', 'Episodio 8', 'El pináculo de los 1116'],
+	['https://jkanime.net/jkplayer/um?e=ZC9tY1ljZC91UjQyRUlSUDQ1UDBtOEZ5UEJZbWRNY2lCTDZuanp5WnE1QlQyM0ZWYVlxSTBDbDlZT2NWU3laOHBCZCtBZ2FJb1RzcFlwUUltaERZeHc9PTo6T42kpkme2h1dB9FkUCtuWw--&t=0abb97d0accc424f1c257c60f9e37b8d&op=NTE3MDI=', 'Episodio 9', 'Resonancia'],
+	['https://jkanime.net/jkplayer/um?e=SjNSeEZiU09ocVg5MkJhd2lsMndvMW9JTG1NTmd3Ui9FL05kQ3F3V3d3N3lSTm9oS0ZaSG04UTJqVTRORjhMVTdtYmRweFlpY2NMRjBmaFh4eHlmaUE9PTo6gzfd38oiMKah8c4tRZiGYA--&t=a1ff45c29c89790fa9555de3c781f6a9&op=NTE3MDM=', 'Episodio 10', 'El umbral'],
+	['https://jkanime.net/jkplayer/um?e=amU3Z3BSVkd0VFN0bkZzb0M4dXo1NFdUaUVmTHQ0MisrcFZtTVhjT1I2RXJZVW9mUXBLQXpEQy9HTGJDSVlSNjlySTRIWC9nS3QyOFhiNitwS3JtU04wVFVoeFdjdmFGa1VOWlI5bWNKMmc9OjpTlgf_QNt.Y34ysQSCSjSE&t=f2a4ddfca3d5e8c2fb6cfceed80c9a21&op=NTMzODg=', 'Episodio 11', 'Sexta ronda'],
+	['https://jkanime.net/jkplayer/um?e=S09jTlJKWHAvZUZpaGQyVWhiS3dLZlY4Y3JIbXprYk5OY0ZtQWZ6MzdSZVdaek9Ic2RkRmFtZ2NQVHNDeGU4ekZmaythMkpiT29vWTdoeHVBdmo4dStkY21jTnEyTy90blh0b1pvR0Jmd0U9OjpQaVVoWidZ2E7DusQMyNSI&t=dbd72b65e196f7114227c936090034a6&op=NTMzODk=', 'Episodio 12', 'Zero'],
+	['https://jkanime.net/jkplayer/um?e=UUgyblVOTHVONlFDeks5bkpKSFlMc05lcmo2c2hUYkcva29OcmNmT2pkYThDMHU5Nk82d0NBWEhxZCs4Nk9aSXhucUlSeFViY1RQdlJBQ3d6c1RhTXZkS0VyQVkrSTdFbjVsZXorWXJZNzA9OjpmvRWpVKkmwJmYOl1jS71l&t=ab5327746e1a6b54bc56bb1e9616b059&op=NTMzOTA=', 'Episodio 13', 'La pubertad más fuerte de la historia'],
+	['https://jkanime.net/jkplayer/um?e=TnRLM3ZJTmplVXkvN1JYTy8yNjB6UEJKMUt3ZTFSTVZHMjg0cVovN3BBSzVXbDRvNm83WXMvdWVqVUJ6VjlNRTZ4SkRZVmJiMWdzQjY2T05ZenZUNGM2eDkxL0IreGN6NGVFNE0wOGtJTVU9Ojp.yxELtP3OkBDxxgssUt_p&t=99900edeac56a01f08d5bbf62b476851&op=NTMzOTE=', 'Episodio 14', 'La leyenda del averno'],
+	['https://jkanime.net/jkplayer/um?e=RkphZ1lxMjBYKzFwNlN5R1o5MTJ3VVRlTUl5bERPS1EzMUtjVmprRkttTTdOSEpVWE5JTHR1MDNwTnV2akJ3Yk54eTBDNHc2eWFBRDNMTU9mY2NtaVpMaE1zNjY4NmZMeHo3cnQyNnZtUGc9OjqUvGy1EK8poHIZm47iaWJK&t=9e828a8cf66b7bf2f1563360b39085f3&op=NTMzOTI=', 'Episodio 15', 'El camino de la luz']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ragnarok/Portada-Tmp2-Cap${index + 1}-Ragnarok.jpg`,
+    'iframe'
+]);
+
+const ragnarokSeason3Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=bm1JYTEvSExYWm5NR2Zza0RWRXBlTEpnZDN0VUJlZVpWNzFVUjNqU0JlanV4MjN5aDFEUTV4Ui9jVGZFVkppdk0yRHhKbTMrYWFzV2NJenJsQkc2U0E9PTo6AgvKNhkYej4qafF.JrVKAg--&t=0f0c86ac9a332852f30cdadae54332e2&op=Njk4NDA=', 'Episodio 1', 'Prólogo:Recuerdos'],
+    ['https://jkanime.net/jkplayer/um?e=bTQzLzlwWW9xZ2lVbDRwMkZLRFZ1Y05QNVJpNFVIbWJGM2hkaGtzOExCSENOMk14WWxRdEVGeDczeGc3bDg4Q05OVnpjb2xMcGV4a3RrdERpWTB6TWc9PTo6ON1TsVAemqMIbmUG4sdFLw--&t=8b70634cbddc47a305231b6f41276fc0&op=Njk4NDE=', 'Episodio 2', 'Lucha de monarcas'],
+    ['https://jkanime.net/jkplayer/um?e=Wit6dEhZWlNLUElWbHR5RkZHM0xyMmJ0b1Jla1FVQWtWdU44UVIrYkovODJzUmh2UGpidXNobEk0enRkVDhDdzNJQTNDN0g4VEJVRjNQWmdRTHBkMFE9PTo6y_9VGJ8R6qgc4E9391QwXQ--&t=794e6ffa814930235ff72759bc1635da&op=Njk4NDI=', 'Episodio 3', 'Chi You'],
+	['https://jkanime.net/jkplayer/um?e=dUQ3U2ZXV21sejg3Q09SWjZUazI1NUpFV1hsWlI0VEplc3pZNGhiQjN4eTZHMlVwM0l6aFNSVVhsTUR2YVN1NTBCVGtKUVhIVDhEbjNDODV4TzQ4YXc9PTo6cCXm70XKNN2IukQDTufzfg--&t=64cb4409e8d0699a75ba3cea1ca239bf&op=Njk4NDM=', 'Episodio 4', 'Una promesa y un juramento'],
+	['https://jkanime.net/jkplayer/um?e=NExwOEdJRjcwWWFOZkErZ0tPZmxHT2RRZnBlMldYMFNmY0VZYisxMS92WDBiczViUFdZam9VMUU5R004MkRnSXVYb25FajA2Y3gxV2xXc21wS09KK2c9PTo6IgWA9GLYx3ShaEdKifPdmg--&t=8f11b21dd5855e3be499347bfcadee7a&op=Njk4NDQ=', 'Episodio 5', 'El orgullo del rey de Helheim'],
+	['https://jkanime.net/jkplayer/um?e=WDJ3RDlLQ0R6aEtpOGFWak04M3JycU9qd3FoL1BsM2Z2YzZTNXB1TllRSDBoNEpNNkJkNlNNN1B5QWg3RWR6ckZralFwdjAyTUJKQUlmYWpPRFl3dUE9PTo6UbmhVSSW7OoJw1tCfqPMxA--&t=80d89a3427b47b118cc2eda6220f67d4&op=Njk4NDU=', 'Episodio 6', 'El regreso del rey'],
+	['https://jkanime.net/jkplayer/um?e=SHpmby9xYTduVkJTSmQ3WmpIaGNFVkFNcFZ2Z3pRN3UyckZnTUlUWlBSRy9rcGU1TlBkWU03VlhjSW5UVFN0cHkwMzlENFpWdUwrTHd2R2NqNUthSHc9PTo60XMqqp2LGWC2PEU_GaOpoQ--&t=d10142c16d3ff705ea2b14354505d227&op=Njk4NDY=', 'Episodio 7', 'Satán'],
+	['https://jkanime.net/jkplayer/um?e=M1lDSFFBZnBLTkNoNjdzRGttUkhGTVJlaVFZalMrMGpYVW8zN0hsYnMrMFZnQkNDSWs1LzI1MWtHZkZyc2NocGhiRVJsVVRKQ2F2S1A4SWtBaWJmMnc9PTo6FtJao4jBaPTpr6EKLCA92A--&t=87f03533f5a85ad6abeb2db551c6d6c8&op=Njk4NDc=', 'Episodio 8', 'La luz contra la oscuridad'],
+	['https://jkanime.net/jkplayer/um?e=Vy91OFVHSXJoT0NBV1FQZkVwemdHdytyT3BUdExzL2NpMEhlZ05lWjUwUFlFcHZiYnRpR2t6ZE5uQTRYM2JyUGYxOUN0QUVkUXdJMkc4VkJ5Y1NvcUE9PTo6grjZWD4kitoBUwAVKfLOug--&t=a02d4cf2bddc426560747b18aa09f15a&op=Njk4NDg=', 'Episodio 9', 'Una maldición y una oración'],
+	['https://jkanime.net/jkplayer/um?e=RVFSSzQySVVpNlJIVTFjdTFPeGpnQ3dMVmMybUhZMTUrUDk1K0NBUEpySTZub0RRa21icy9ONXdWM29yeUJwNGpWTDdPVEhDYjJRRVRCdnZHN3VRQVE9PTo6iWLCiQ_FczEyJSwkpfGQ8Q--&t=9d78470c9e7b93f76671da55bd4940df&op=Njk4NDk=', 'Episodio 10', 'El traspaso del testigo'],
+	['https://jkanime.net/jkplayer/um?e=YnNnalozREJjRlNwRHpvZkVZWGVQa2x1TnlIRXI4Y0VuQ2JEM1BQc2xVSFpPMDVqOFFLeUVSV0pkRGtJSCthZGNyWm1GRWpHZE1tN3g5d0RDMGl4UkE9PTo6IXRuo4LMLfaZ4TbJ8wq.zA--&t=87d75af6a46af4534843b367f291157d&op=Njk4NTA=', 'Episodio 11', 'Evolución'],
+	['https://jkanime.net/jkplayer/um?e=M1Ewa2wxMy9MZHhOTVJyOERab1dMZ2JIdEo3ajNWMENrcGdpZ3dwY2dFU3BHdXEwRXNpVVNsZUErTjZZbURmSnE2MTZiWElMZWc1b2ZoSDRYWStqbEE9PTo68B5JHlB2mrAsSo5nvkmReQ--&t=c1e7067b4f37a18e42b497a6e98f9d6a&op=Njk4NTE=', 'Episodio 12', 'El dios del sol y el héroe rebelde'],
+	['https://jkanime.net/jkplayer/um?e=L2hyNmZ0NkJrRXN0LzhjV041ZmJWSVE5RitzZ0t2ajZKUWErQzFuc1QrRW9IQldvYVJFK3NoOHBEejRaNUY0ejBsN3M5Ym8rV04yVFBKald5MCs3S2c9PTo6y_37UyE87wEZGtx_Evbgdw--&t=56d14886f8f3c9caf9c3dfe1ccf7978b&op=Njk4NTI=', 'Episodio 13', 'Batalla de egos'],
+	['https://jkanime.net/jkplayer/um?e=ekZkWm5JQW9YNWw0WFIwVXN1NUF4RlpsdzlWYlJXRitoeEtKNGIyY2RUWndYVUErcStkU2U3VVQ5SjU2VHBnNllOdFZReEE4anAveEE5UWNoOEVPY0E9PTo6l7A3Tu1ZgfvJ96kSRzi3Ow--&t=ac26715d459890a73909b7267d03ba1d&op=Njk4NTM=', 'Episodio 14', 'Conócete a ti mismo'],
+	['https://jkanime.net/jkplayer/um?e=V2FlMktvc2ZuR2VVUHVKYXhkaXZ4TlNMVE5rb0RSb004NkZERTZneGV0cWo5M2JnRGM0V3dsaGdpT01hVUswMTFnYUREVU81aXI4Z3VyelhuRHlScVE9PTo6Lx4IEYx.xb5zsKeRlYRiNQ--&t=bc5a6278ed53123f56fc32160bf77305&op=Njk4NTQ=', 'Episodio 15', 'Combate entre almas']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ragnarok/Portada-Tmp3-Cap${index + 1}-Ragnarok.jpg`,
+    'iframe'
+]);
+
+const aotSeason1Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=WFlqZGMzQ3pKOGFBU2U1amZhN0NaMUg5TGlVY3hZRDVCREpWWmxCZ002NkhpdzBNY0E0ZytTU1BUZFJSVjZxTTdyREg0dkJwdWZkTnY0aENIUXJ0OWc9PTo6FM7_w5PVLll6KI5eQVE38g--&t=cb8dc18a7c165f79235e0c9552c6708b&op=NzM0Nzg=', 'Episodio 1', 'A ti, dentro de 2000 años - La caida de Shiganshina, parte 1'],
+    ['https://jkanime.net/jkplayer/um?e=a2hDSEY1SStWN2FCV3hTa3RjeHdmZXFLSmVtT1RnUk52WVliWXBaYXZFVGorQlJNVnNlb0VKeGJhZEpPWndmYnBYdUNQR1B3MTU1WUNCclk1VlVON1E9PTo63HecYfTYmQNYGJnyZNwSUw--&t=875fcc895a20b0e194c6810f2c345384&op=NzM0Nzk=', 'Episodio 2', 'Aquel día - La caida de Shiganshina, parte 2'],
+    ['https://jkanime.net/jkplayer/um?e=aElUY3hWTFRPU2hUQ242a2lDMWVFcVBIaS82aVRIUk9BSnZIbU44aTJPRFVaOFcrMDFQSmhBSk9JQVRyMkhHeGxYWXJkNmtTbFhPd2pocExZbUQ2YVE9PTo6QQ5f8.8m2cb7hti2NGJaMg--&t=ad947592c6679c36064235c4af457155&op=NzM0ODA=', 'Episodio 3', 'Una tenue luz en la desesperación n- La restauración de la humanidad, parte 1'],
+	['https://jkanime.net/jkplayer/um?e=TTFTSzFFRXBHTXRSdlFjNHB2dGZSSkFXcE0wWmljZStIUjczaHIrNzlmQU85REVLMzZEY2lzRm15aWpXK2V4Z092eWlZVzFzVlJHVW1uN0cxRG05dVE9PTo6t.U3UBTNcNYZIUw6pPXQAA--&t=97d86aa2cc45ad453bb7eb1f4a3cf1c4&op=NzM0ODE=', 'Episodio 4', 'La noche de la desbandada - La restauración de la humanidad, parte 2'],
+	['https://jkanime.net/jkplayer/um?e=bnloenI0Z0dmT0xPb295QjVGU0FxeE9iUXhSeCt0dzl2VkFBM0pjaG5KRTZ6bmZzOXByVzFmT3UvMTZCWXRidktqYThYQmdqc3ZTOTFHQTNPOTduU2c9PTo6U921Y66abnzVwEhprflALQ--&t=1b0ad208956c25a8b65b2b16b2796d14&op=NzM0ODI=', 'Episodio 5', 'La primera batalla - La defensa de Trost, parte 1'],
+	['https://jkanime.net/jkplayer/um?e=QXNGVjd1ZDMrakdqTkw0S2l2b1NWVlhBNTZNS1pNZEs5aGNJZUF5c1ZDOHdGVno3OEhhZTRxVnphbVlXZHhPL1dVWDl1UkNwNUlXNnVaS0toN01wdWc9PTo6HjHA5C7iMvwWKi3PNOt9gg--&t=1c6c24378c21352e0628cc5a798b00be&op=NzM0ODM=', 'Episodio 6', 'El mundo que ella vio - La defensa de Trost, parte 2'],
+	['https://jkanime.net/jkplayer/um?e=Qm93U0dhTGRUL3FPVTdwZGRwUmxJdURMelowN2hkWkNFcnJBUEFPU0pMc2dXTDNuNFBzdGdNT1diOVJ5ektvbTFsblBhbDM2MHlDeTRPZG5xM1NLS2c9PTo6_qgjrMI5F3XJO2J643DCjQ--&t=fd13812c2552100ec2ec236c2a932217&op=NzM0ODQ=', 'Episodio 7', 'Una espada diminuta - La defensa de Trost, parte 3'],
+	['https://jkanime.net/jkplayer/um?e=MUpqdHZxZHRPdGVZbGYxM3lMS2hndmc5dHA5TCtJVEdqaVpEQXhCWFZucUl5aTZBKzBvdDlXN0Q3ZlRkU2loMzNZVGhGRDZVYkx3OUtrUjdlNGdONXc9PTo6XIs3U033Y2vAYt3H2lGueg--&t=8b1ffd06f258459c75d12c8a18f17dd5&op=NzM0ODU=', 'Episodio 8', 'Se escucha un latido - La defensa de Trost, parte 4'],
+    ['https://jkanime.net/jkplayer/um?e=NzB5d0JBV05odEVkTlllMkU5RFFsSGczVVN3VXhrc0hjQUpvVUZ1MFQvTi9LdEdrQVBpQXhTZXpDWE9vYzVZRkJUR3ZaTEZhbExQVENWWm82TUxYalE9PTo6GilK_5PzXPWB2G91XmPjUA--&t=077592ee4c8ee70676382521f840f156&op=NzM0ODY=', 'Episodio 9', 'El paradero del brazo izquierdo - La defensa de Trost, parte 5'],
+    ['https://jkanime.net/jkplayer/um?e=VDIzVkVCMUwvZ043YnY4b0dvUWd0OE9HUFZJUHo0S2w2SGRpeEdERmkvcHFXM1N2TEI1TnBKOUZSNFNRTWJJdUYwMVV5dHcweTR6cWk3NkdaSE9YdXc9PTo6nDh4cBCxNegNU7xKOrclTg--&t=5a3b708a5b9ce75d0722f30810da1956&op=NzM0ODc=', 'Episodio 10', 'Respuesta - La defensa de Trost, parte 6'],
+    ['https://jkanime.net/jkplayer/um?e=UkRNQXZMN2ZlTFI4cGs4NEFpcnd3akwwNDFSalY3WWRieTkvQUVVSlA3NnpoR1BySmpSejBiSDNmUDlLaWJnMy9tWGdvZ3RJdEJZWkQvVEJDTlRZSEE9PTo6r9SvG5vdPOx76_QOfEAp7Q--&t=978e883abb1b0fe4ac963b9de370b4d2&op=NzM0ODg=', 'Episodio 11', 'Ídolo - La defensa de Trost, parte 7'],
+	['https://jkanime.net/jkplayer/um?e=MHQ0QzdEdHZ2aFVaSGszZlNsaGVzUGFqdC83cEpPR3FnQlhIbVpGeTRNb1ZIc0VLYjFBNjRuQUhDTnY4Wm1OeURFTjdYenBJbnVVQmdCeHg3akNDRVE9PTo6l3TL1WlhDpDnS1x4sXdFVA--&t=af10f04fe3f3aa25369189dbe21a78c3&op=NzM0ODk=', 'Episodio 12', 'Herida - La defensa de Trost, parte 8'],
+	['https://jkanime.net/jkplayer/um?e=cDdhRFpnNWZYUndaQ2FXaXhJZjFHd3hyWXN1RHlOK0FSNTFya3JDTEVBSDlweENhVEFtZ1QzUHJ6NllpenRCZlhLUUw5Y3JqQUJsMGd0TGd3UnY0Q2c9PTo6oaf5tOfDTfdy207M1SHm3A--&t=3020656528b7f48c4c550b30f4fc5a04&op=NzM0OTA=', 'Episodio 13', 'Herida - La defensa de Trost, parte 9'],
+	['https://jkanime.net/jkplayer/um?e=WTRNMUtwek01LzIwMmZVTy9tR2FBeEpKRGNiSUxsUCtDQ2hJTWViNkZJbHlUcUpnb045b1BwMEpYQUo5N1RvbU5ZUkNoWmhBOG12cHdUUVhTTU5lOHc9PTo6Pv1JBAimfLaFHLoU3I0dGw--&t=5233e3851e24f33224871fc44492259e&op=NzM0OTE=', 'Episodio 14', 'No puedo mirarle a los ojos - Preludio al coontrataque, parte 1'],
+	['https://jkanime.net/jkplayer/um?e=ZFc0aEtBbUppYzNtTG1lN3dXMnh5MGJvMXZ5Z0hMNHZZc1lYM2NCa01lYW96cmZJSUtUaXFkdlFkb2p4czdFaVdSakFXcGp5SGRKbVBlOUNKdDBKV2c9PTo6UFoZVGlTCG_WaBOT16GSFQ--&t=bd438cd1cd84add2dc5b685ecfa939ae&op=NzM0OTI=', 'Episodio 15', 'Escuadrón de operaciones especiales - Preludio al coontrataque, parte 2'],
+	['https://jkanime.net/jkplayer/um?e=aUx4dFJYQ2NCNml3TDFBd2tlOWg3dkNKQlFhaEVNaldpd2JWNFpYNS82K3N3ckNDN3BVNC9PMmR1RHI4T0tmTWVlNzFmeTJocFlWUjlUaGljVWVjdFE9PTo6EEg6nBwDEirQnrDA.LpqyQ--&t=78d2a79b18a2d70160f4710ab4a35c52&op=NzM0OTM=', 'Episodio 16', 'Lo que debería hacerse - Preludio al coontrataque, parte 3'],
+    ['https://jkanime.net/jkplayer/um?e=S1pxS0oyRklLRFhsUHRuVnVnL1JWc1hQRWUzL0tFNjluZDljd2RjRWFFUjZkbnlHR0R4dzY0MGptU2lScTFDODFrbjlMam9tcFRNSjRYZjZnMVdqaWc9PTo6btZzYizsJ9cD_G4cvnQYAg--&t=c08c75c97ff0ba13165614facd258a10&op=NzM0OTQ=', 'Episodio 17', 'Titán hembra - 57a Expedición más alla de los muros, parte 1'],
+    ['https://jkanime.net/jkplayer/um?e=ekY5MEo0NEMrb1Z4S3BYQ2s1V1VpalVqcXErSmk3NXZIYlZPdTBOaStTSVhSZ2NjekVlakxmVWdDeUxHS0toYjJjWnVvNXI3Ymp2TTZETlVVemxMeEE9PTo6QBGWW6M4NsCoEvrdzzGPqg--&t=4b3ce1941e0a4692ec88e856d1162e40&op=NzM0OTU=', 'Episodio 18', 'El bosque de los árboles gigantes - 57a Expedición más alla de los muros, parte 2'],
+    ['https://jkanime.net/jkplayer/um?e=eFFCaFZ1VlppSnZ4Y3ZMdFRXaGhmL0dVWEYxNXpmWjhnblc2Ni9aQllGTjlUZUQrWGJsOVVGSndnTW82YzNnbnFLOThUUXRyY0ZrY2FLUGJoc3NKaGc9PTo6O4Ln9xQdmaHYlYUF1WEjfw--&t=9cfb162f739818c85c471f1b1ad12fbe&op=NzM0OTY=', 'Episodio 19', 'Mordisco - 57a Expedición más alla de los muros, parte 3'],
+	['https://jkanime.net/jkplayer/um?e=RC9PNVIyR3huSzViMjdxVjlEZGVtVmVsaXk4WG5MMU1SMGI2OFYzM2NST1JleitrNENjVTgxaDdjOGUyTVIzR0JLVlhDNEVTS2Qza3ZhN3htRkRnbGc9PTo6HJuJmFVPdt7QFRSurIHyHg--&t=dfc445d66711c67d7e0dd5835fe2ed62&op=NzM0OTc=', 'Episodio 20', 'Erwin Smith - 57a Expedición más alla de los muros, parte 4'],
+	['https://jkanime.net/jkplayer/um?e=UGc2dFNSZEhlSVpkQWZqb0U3L0djcHhHaC9GbzhONlZ1dVNoZ2xmZnFIaHJLaXV5cVFnNmtjdXBodE5naXpqRjVxU1ZZTlNucGIxazVONjVTSGY5K1E9PTo68kdn3m.WlmE1kCYBSvVpzA--&t=10c9f9421c2a2892be5e2409a51a1514&op=NzM0OTg=', 'Episodio 21', '57a Expedición más alla de los muros, parte 5'],
+	['https://jkanime.net/jkplayer/um?e=N2xvaFpiTG56VGt3M0t2MllTSW1XMkxlT09admJ5bHpXQ3gxSEFyaGt0UjBXb3AzUS9hS25VZHg4SzNabmtrTU5hVnJIUzlCOUdzUjJCWGVLT3pMWlE9PTo66CwA5PbLQ6tiq5BTQ9y8YQ--&t=c052eee76897254c39a93576bf22346c&op=NzM0OTk=', 'Episodio 22', '57a Expedición más alla de los muros, parte 6'],
+	['https://jkanime.net/jkplayer/um?e=VzVMd09DczRCS05SbFFqdE1hdXN3a3FPdXhPbWJRMDQvTkVFNG8zTUJwS2ZjSS9RR1hpaXRSR1JoVXNKc3R0bHo3aDlQa0hyTXo1Z0tJWFpZcU5qVEE9PTo60gEX0LXGeFkqbdrREQAwLw--&t=3512622821ae443dbefc390bed8d11e4&op=NzM1MDA=', 'Episodio 23', 'Asalto al distrito de Stohess, parte 1'],
+	['https://jkanime.net/jkplayer/um?e=WkR0MWY1VHZxOXlDOEpLWmRQS2U2MHpRMVdHeUlONThocUU5dW81NlBqRUdEdzNxT29UUDJkR0F0c2UvRWo4K0hXdEVKZnh0cGhHQXBPVEV3L1J1OFE9PTo6jtDRbVGBjEmPvoHQAm.DkQ--&t=92793b679fcbdb98e329e631d624c7a2&op=NzM1MDE=', 'Episodio 24', 'Asalto al distrito de Stohess, parte 2'],
+	['https://jkanime.net/jkplayer/um?e=U3NHSU9xdnhZekQ5NGg3MVhFbHRDSUdvN25sZmNQUmpsTHNMM2JvencwZTdqQUkwY004WEZyUU4vSXlPa0FDZlNmMWVka0tRL0lCdnNXSjFtbS80T1E9PTo6OlLgbWljPX..H1cVwttzGg--&t=075145193b03dee949128f71fe64d06c&op=NzM1MDI=', 'Episodio 25', 'Asalto al distrito de Stohess, parte 3']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Aot/Portada-Tmp1-Cap${index + 1}-Aot.jpg`,
+    'iframe'
+]);
+
+const aotSeason2Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=NzVJSkRvOXBaQWNZRnl2N05ENzBoLzZlWlR0cXl2TGIyU0dhVUgzZHIwZ3NIQXVXUmh0QnBoTWVGb05HS0xpNDBOak1zbUVvTXpaYjVqMUJNcmtyVGc9PTo6t_Ean12F18H1.jA7GnPJjw--&t=adca3fbbc686891075a97939f99eacfb&op=MzQ0NTg=', 'Episodio 1', 'El titán bestia'],
+    ['https://jkanime.net/jkplayer/um?e=Z3RGSkxUWFRFQWMrU2VMN2paRktYNi9QSUZadmpuVWo5R0pOcEZZdTk5bENRTVd1amE4SGhqV1ZMSi81dXpzMXVQUCtXaU9DMDdkSEpZTXVRNEFMSmc9PTo6CbPjRRHsfexW4JCeAlX5zg--&t=060ddfc14bd2e3937814c157fdb33bc4&op=MzQ1MDE=', 'Episodio 2', 'Regreso a casa'],
+    ['https://jkanime.net/jkplayer/um?e=K1dKV0hDVm9heWxnOXhzYnNlRzFxREZyd0RwSWVYUitRQWU5VG1oWHA4NWJ4NGV0WEI2NmUxN3l3L3Fsdkk1d2RFRWh6WkZsRTduMVc3UzFiK2tIR3c9PTo6zcY3QFw9xjfAMLnMiUvweg--&t=a64419ad5643858004cdd6867f12acfb&op=MzQ1NTQ=', 'Episodio 3', 'Hacia el suroeste'],
+	['https://jkanime.net/jkplayer/um?e=ck80UWFDbm05T05UaXpla0x1dGExQ1RaakZsemNKbVNidHNVZ29KMS9Bb05YRWJqcDB3aGZXYTNVVXhwMUkreDRrcDB4eHlWbVVpL2VkTitWaFR3YVE9PTo6uUZ_a9i5.CfGdpDsQh9XgA--&t=5df4348e28f893850ceeaa7d67ac8513&op=MzQ2MTI=', 'Episodio 4', 'Soldado'],
+	['https://jkanime.net/jkplayer/um?e=RzRLNWNWWC9JUHBvK2FRWnprUWNhTkUyNnFDeUF1L3pVQk9veDRmc1haYld3R05uZ0g5M3QvSW53M3d1NWhjS21nMTZhR0NMWXQ1Vlp0QlI2bzc0S0E9PTo6DZbd0i3Jy7JjG50PGLlZHg--&t=8a45da3f21ea12d7948abeaf346c5bd1&op=MzQ2NjY=', 'Episodio 5', 'Historia'],
+	['https://jkanime.net/jkplayer/um?e=Q3Y3NEI3WGg0YjdZOUZ1YTZkY2JJemFTdUZqaU9KclIwaGZZYVBWQWhjUVNKekVhd01sZXVwV2JQbTc0bWQyUTk3a2NVOC9JNStYbXY5VlBYdzNYQnc9PTo6ogn0r9h0B8_rev8spOIe1g--&t=1148786f081772ed0fbfedee09d8d771&op=MzQ3MTU=', 'Episodio 6', 'Guerrero'],
+	['https://jkanime.net/jkplayer/um?e=S1NnL2pVdjIwZis5LzhTS2QwVWVCRHZpOVlFNkZ4Zy82eWJ2T1BGbG40ZHhSWXB2aVVNUXk1TVJLYnFKNFdvNXE0L00vcWhRMXhGbnUrbi9ONEpLMXc9PTo6RnsjzCXS4XTesVkHyvBf8g--&t=88561cd999906a644093dd56a0a0c821&op=MzQ3Njc=', 'Episodio 7', 'Golpea, arroja, somete'],
+	['https://jkanime.net/jkplayer/um?e=L3poTU9udXpBVVpIVW5YKzRwSUdDaFEydnM4SVF0K05uTHBoWFI3dmEyKzVpVEdjb1BPQi9Jd0lTaU9HZTliMGNBZk85YUtlR1kvUm9HcUVSTmZMSmc9PTo65bbfi93ov9R1R4OG1Ph4kA--&t=c6aae98722a05d2a1a2370faef8b1b66&op=MzQ4MTc=', 'Episodio 8', 'Perseguidores'],
+    ['https://jkanime.net/jkplayer/um?e=RFVWVUdsYjYraUdaOWgvMno0aHpsek5MYTFUNFNOTHRCNm5OSTlsTE42aXk3M1AzdmFJQktpb1c5dExXMWVldjRJeVYzc1pXY0lUU0ErS2tDaDZHelE9PTo6qGFbBGhMKAqRruQ25SYzFA--&t=d2a9c67619d9d37284ab7322ea242ee9&op=MzQ4NzA=', 'Episodio 9', 'Apertura'],
+    ['https://jkanime.net/jkplayer/um?e=UStDQzdIclZXUHRHVkczN2tyU3VWd1k5alptVG9ZRktCR1kzWUZmR2JoZDY4YmdqQ2FKalllS0JmajhTQXRYSndBWXFUTTJaTitIUFBiOERvTml6WGc9PTo6BT0vBW03sIXkSOPe7yqRlw--&t=cdeb4894869cbdaf5b55ed25012c0c10&op=MzQ5MjA=', 'Episodio 10', 'Niños'],
+    ['https://jkanime.net/jkplayer/um?e=SWIwNzcrU2dNUFozSnNsVnYrTXdaQTE4d2h5Z0xsS2FwRkFRd1lqL1hFVjdPSGtaUStrWm9veDgyU0xERTFaVVBxV2xvZnNESUFFMjZDczVWanJET3c9PTo6JdWCp8KX7KO9M1IhprstNQ--&t=eb2dfc3e9ab84de7c901b64f7c4a409a&op=MzQ5NzI=', 'Episodio 11', 'Asalto'],
+	['https://jkanime.net/jkplayer/um?e=MGZSdEF2WGlQdm5PK0RzdzJ6N25Tb2cwY0RZTFRTckIyT2M2bzlLTFh2bHFDcnoxaVAzNDB2L3pOUTNOTEcrcE9WbGVQMU1nd0pQdVY0V2lFaUR1UXc9PTo6bgI79STpLsMJ0RjpBxn5QA--&t=16757f4d90fa4e95156541c44c6c6ec9&op=MzUwMjM=', 'Episodio 12', 'Grito']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Aot/Portada-Tmp2-Cap${index + 1}-Aot.jpg`,
+    'iframe'
+]);
+
+const aotSeason3Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=U3E2alhoU3QxRkhSNE9YZDFIUUZGdlhZbzJZNVhKVk93b0NnL051L09zSGg5R2Y4eXh4MitwRjRBMWFGcU5GTEtZRGdzSDBVQ1pyb1FvSzh1WHFYS3c9PTo6SERA5DbxeEmyGifrtG3uoQ--&t=b20ec67004afcac446e4ee3294b9695c&op=Mzc1MDc=', 'Episodio 1', 'Señales de humo'],
+    ['https://jkanime.net/jkplayer/um?e=K0Z2ODF3d0FJd25ORUZFV2ROZDlFUW4zamd3ZnRCK1JYNkJrZk5VNFd1c1RHWFZ4bHFVTkJ1eU01MmVCK2twYTQ2NVNxZGwxWjNRUXRPVW1KMWIxTFE9PTo6Hbxz1u4HhDhPR_rTwb9gOg--&t=80da892b04cb3efb10f72a466ffa9c12&op=Mzc1NjM=', 'Episodio 2', 'Dolor'],
+    ['https://jkanime.net/jkplayer/um?e=TDZiYlg5U0w3UXNOR3NLWVF3Z0VFb3FqaGxNUU5PUWZJanpEcGR3M05reW41S21hNlNlRk9Ec2JXQUVDbGo4RlovN0dHL0lOQUlJa2k2OE5GdmVFb3c9PTo6o0GEAJ.Y2pmxCI7kjcCiXw--&t=07da625d725f8d78daf4576f397c6e82&op=Mzc1OTM=', 'Episodio 3', 'Relatos del pasado'],
+	['https://jkanime.net/jkplayer/um?e=d0F6WTh6b3dxd1FBMzJrRWV4aEl1TXpQTDZITy91eWdROXprVHc1ODdOMDN5RTlWUmdEc3lmZ0Yxb0ZSeS9EQWJZUGs5Vy96UmpDUTlMVmtYTzk4S2c9PTo6bqo.hsTJA7DpdVfeGvvcNA--&t=3fd38ec44ae1cc1f492f1c80ef9e0d1b&op=Mzc2MTc=', 'Episodio 4', 'Confianza'],
+	['https://jkanime.net/jkplayer/um?e=QmdvVTFxY1BhMW54bmtlNFJMUHc1Y05rZW92QmNpZUR0b2RPVWlKU1ZCTFZNVHhHVnUwZFV4RzQ0K0piSnNuaFFHeFdzRmpGbjUxSzRudzcxbUJKcWc9PTo6L1lDdrx.SpGRMWtFL1uMCw--&t=96dae50e60828c9bcccb990df4f52135&op=Mzc2NjU=', 'Episodio 5', 'Juicio'],
+	['https://jkanime.net/jkplayer/um?e=bWhraEM2SkxwNDkzTUxuakt5QndTWnBmeGNCZHpjQ2lXWTdjalVTNm5LdFoyZSt4UWV5L1BOU3U4WXlQY3gzWmNtaThDajJKbnp2U08rQWVnQzdudFE9PTo6pgM9tV2c5ivkD7o8DDjquQ--&t=1abc4fdd9a4618af701a709a0cf042fa&op=Mzc2OTM=', 'Episodio 6', 'El crimen'],
+	['https://jkanime.net/jkplayer/um?e=b1kvNzNscHoxK2NaWnk2dUxub09BOTdDdFcyaGFUa1VObkd0TS9XcUFDWGlZUVlOZ0Zibm12c1N4a2dIYTJ4ZmxyVitQaEU0NmhoMW1idUt3QUpRc1E9PTo6B62BEP6yhjskkNas2HPs_g--&t=1abcd28456bfceea24ad41e53a3f9a4a&op=Mzc3NDM=', 'Episodio 7', 'Deseos'],
+	['https://jkanime.net/jkplayer/um?e=VFVaMS9teEl6OVJOUGhaZEFIM2RoN1BrYVNaWGZ5VzUwcUJRL0NtN0V1S2cwNmtzTCt3VVNlRXdFbWJPMUIxV25ldWgvZ21UMXVpSndZb3RjR0l3Umc9PTo6YIv9epksRl9w_mqSZFsEPg--&t=70eb973ccf6d4d3c2b0e2a0cda52dbd3&op=Mzc4MTQ=', 'Episodio 8', 'El muro exterior del distrito de Orvud'],
+    ['https://jkanime.net/jkplayer/um?e=UkVSdHhHWEhSbVQ1QzAxVWlVbS9Jemg3dThGWE9DckcwU21pWjQydHViOGU2dVhJdDZ1RDVDR3Fzdjh1RlVEWmRGQXYrUUpwcEdqM3VwM2dYK3JlUFE9PTo6nGInp7dlvA1datlM2E3uVw--&t=9255e8df7dc6a615445f42c0fd94587a&op=Mzc4NzI=', 'Episodio 9', 'La reina del muro'],
+    ['https://jkanime.net/jkplayer/um?e=MVBUbDN2dnhjVzJJL2pCTCtaaEZnVnpacnFzRUkxZjhRellENlZiMXRTMkdCdFNjQjBJOXVVaXN4S1NZMmJCVWd5aERkK3dRNUt6SzhkWWIyeWtYdWc9PTo63ZCjDC7wy.9vd.JjEkx5kQ--&t=2c67bd5efc291f9ee3200673addcb2fd&op=Mzc4ODU=', 'Episodio 10', 'Amigos'],
+    ['https://jkanime.net/jkplayer/um?e=cTYxWXEvd2hSaEQwQzVEM0Jobk54SU5zR05DSllZV1dyS2FCRERTbGZMSmgwdUJmWEFzeGF4UzBobkc5dmlJaGkwSGlDTU9jWEwwRmdmaUcvSERXRlE9PTo6l.ZjohJBbjh1ZWkI4OzdVQ--&t=f33c692cfb7545f0588d168e6837e8b5&op=MzgwNTE=', 'Episodio 11', 'Un mero espectador'],
+	['https://jkanime.net/jkplayer/um?e=b2FEQXR1RkFnUkdlZXRGS0l6T2FBcFp4YVY4SzZ2eXEzVDl6b09VV2RpaEJFSDM0YnB0ekN0V05Gb1ZodDN2OHhIalUybUFHdFlkN0VlaWF4QUpZZ2c9PTo6QvBihkbiYcNzX9yaDiZ71Q--&t=43533afcfd8cdc5990d3bec6bcffccc1&op=MzgwODY=', 'Episodio 12', 'La víspera de la recuperación del muro'],
+	['https://jkanime.net/jkplayer/um?e=c3RxL08wNnJFaTJIOFFnVDJWbC9xZlU2ZUF6aS84aG5QUU9aR1VBLzV1QlgveCtwRm1GR1ZwN09hV3NleTg4NDo6zzTDx2KsbtsLesDQUyvUwg--&t=016b388b5ee40f99cc161d3aeb35b545&op=Mzk3Mjk=', 'Episodio 13', 'La ciudad del principio'],
+	['https://jkanime.net/jkplayer/um?e=NzNuVnNRZ204d1RyRyt1Z2RsdE1oSHdoVnZtb1ZtZ2U3Q2g2NGFzL3FYeitOb0xTZjZkazJKSmNzajJSVmtTOTo6Ybf9YUBuISeP77tuoB_C2g--&t=ab712090eb9a27881b63080c859147de&op=Mzk3ODE=', 'Episodio 14', 'Lanzas trueno'],
+	['https://jkanime.net/jkplayer/um?e=V0ZIZTNGTkdCMThKNVZlNGtidFVESUhqRk1GSFVldGF0Nnl3SXF0bldwcXFnd3NXY0lhNlYyL0dJR1NqSWtyeklZcWNPM0FwZHN3MjRudU14ZFJWV2c9PTo6pP5F4S53cY8hhMFUNZvQCw--&t=d372d4ba86f4a5e6d13b05144b47506e&op=Mzk4NTg=', 'Episodio 15', 'La llegada'],
+	['https://jkanime.net/jkplayer/um?e=YXdqY1BVWnUrYXBldjBraVRRaGVFc2JXZHFIaFFDVXRoWHdtUndHN3RCQ21kRGRRTmtmVWJ6SFNnTzZhM3NiMjo6uys3z8EWld_Lp26Z0n.5IA--&t=afb7f6f9b716939fedbce5b91d21c905&op=Mzk5MzM=', 'Episodio 16', 'La partida perfecta'],
+    ['https://jkanime.net/jkplayer/um?e=Nnp1akdmTVhuTlE3dGxQVUhDSW1PWVBHUXpKSGFqMzN1OWwyeU1sV2RSaFE0QWpXVlljYWlVZGZ6T1VqRUt3azo6.t9w3nUu86L3kcaUg3lN1g--&t=09a66d2b77b4ea8c659311f7ea5add01&op=NDAwMDU=', 'Episodio 17', 'Valiente'],
+    ['https://jkanime.net/jkplayer/um?e=UW8vamthTi9pV090Q1E3QWZHK3d5ZFFXM2VoRUs5R1k0dEE4blBSOWR4VHRIT3FSWDBJZkJYVTVJYWQrZ29yTjo6KvxYa8QENNFseJkg84ondA--&t=17a65bb1dc56c1235d7ee8029c94408b&op=NDAxNTc=', 'Episodio 18', 'Sol de medianoche'],
+    ['https://jkanime.net/jkplayer/um?e=cjJvSVYyRnRuMW5ZcjQ3ZmNDS3cwYjc3Nk5RSUowMWRGSnN6bUhGdURlOGFDVGxTc1l4M2NvNEJ0eENodkE5QTo6PPfkmbIX8Fid2TSpd8fLiA--&t=636fa06b74cdd6a17452e1e1ece7e7d7&op=NDAyMjg=', 'Episodio 19', 'El sótano'],
+	['https://jkanime.net/jkplayer/um?e=VmtxYWFXRHZJNGN5WGxna1BEQkxYTVpXUmJHcXREdDMzbFhGQXAzMk9MdnQ0aVlMdmhOOVBkSkN0WDVRU05aQjo6_9HudshhBNpVxUUEeHLbeA--&t=7451a2adba8556c1dd74192afb81fb07&op=NDAyNzM=', 'Episodio 20', 'Aquel día'],
+	['https://jkanime.net/jkplayer/um?e=UGRrTWlGY3A3R296azJuMlN3Zk1raHcyeHNHUWhocmtwMjdkanFmbjJ1ZmpPL3hoK1l1cGVlcFY5alY3djR3bDo6uKlhobaE7jWqIh4nMpKyyQ--&t=b328487b2b7959c38fd3c33a17bb6a00&op=NDAzMzU=', 'Episodio 21', 'El Titán de Ataque'],
+	['https://jkanime.net/jkplayer/um?e=dTVCRjBXSUN4ZkF6WXhSdEJCUUpQcy9GaXpyYlVFRnk2RExGOVpiZ3preE5vZ2x3aWZMV0ErN3RMRCtRNU85NTo6taexLtxboBGeyPal4SYABw--&t=95b4738e0867cc64385b42e3cb13d3b6&op=NDAzNzE=', 'Episodio 22', 'Más allá de los muros'],
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Aot/Portada-Tmp3-Cap${index + 1}-Aot.jpg`,
+    'iframe'
+]);
+
+const aotSeason4Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=V3ViOWRzUW5kYTdjSS9iK2NKN0QzUndyWTA3eWI4eG9tY08rd0R5dWk5RDUyQ1VvU29jalh0UWhtaGdQdUlweDo6LhfjkZ1btvi7rvd8AfjQFQ--&t=022d682784c20ccc9176ceff49b82c0b&op=NDQxNDc=', 'Episodio 1', 'Al otro lado del mar'],
+    ['https://jkanime.net/jkplayer/um?e=ZnM0YWhlRDRqc2dWa1p2ZW9MOHFwL0ZkemVLczJraGVDdnlGaTM5eUltdWlDbVAvR1NrOGxlM25UbGo4RjBjMzo6EJ40CYrDnd.sCyOfW5N9CA--&t=d6fb4d9874457402ccd9d7b4d8bea9ed&op=NDQyMDQ=', 'Episodio 2', 'El tren en la noche oscura'],
+    ['https://jkanime.net/jkplayer/um?e=Z3dxVXJlTnBDUzBlVDRTT3duaTBjSTFTa3k1T2VIWU9QSU9TclNIQWNMNFpEcUNUaUZlUXgxZjZWV0hSSjFpVTo6wJwzc7e3tgEQsdFJNon.CA--&t=97f1f1a1757711c30e2c40e41b9f262d&op=NDQyNTc=', 'Episodio 3', 'La puerta de la esperanza'],
+	['https://jkanime.net/jkplayer/um?e=Nm9JbGpydXFMMHVpODF0UnVabk42cjRCMWcxbkJyaHRGWU5FNUdTZG5LVDJWRkJ4Q3h1TlIrazVNR0sweFVCWjo6q7yzy5fLGToDaYulAEfr0Q--&t=35fd51d1e96fbe2f28760472a381534a&op=NDQyOTg=', 'Episodio 4', 'De una mano a otra'],
+	['https://jkanime.net/jkplayer/um?e=YnVsUTlFbzIwNUxya3V2NVdzMnp1UVhXZzIvVXNKaS9TdVNKWUVZQklsbnVKMmF6Y29UNVlVVUpsbXBxMzExazo65WFgz1kqPqKkVata_5OTMA--&t=e2909d1b3e9fd103f2e1b26562a7f707&op=NDQzNjM=', 'Episodio 5', 'Declaración de guerra'],
+	['https://jkanime.net/jkplayer/um?e=emoyVUpHQ282Y3BOU3Q5clFwMWw4aktob1JyVHNBNEpaL0JWNjl2NmlCeFIyVmFxVEgxbk9qUWFCWHVhMmtKWDo67_nasyAg.aXKwtvxEC4lqA--&t=daad2c59031ec67bcf6d5520e5da7af3&op=NDQ0MjY=', 'Episodio 6', 'El Titán Martillo de Guerra'],
+	['https://jkanime.net/jkplayer/um?e=UEJOSFNaeWRiUTJXUUNwMHN1QzFFbVJscHJIb1hWMjhOWURDaklQU1hXWXoreExFSHBxa01URUNxQU0yU2l6Kzo6dUpR4UlfvahhGRBdlveXdQ--&t=29d693a681fe3c0b8fa0a0d44435f9c2&op=NDQ0OTE=', 'Episodio 7', 'El asalto'],
+	['https://jkanime.net/jkplayer/um?e=L2x0bHNqdXkwVVkveE9Xc3I1MVpVSGlGY3BlUlk2cDdZN3NSN3hlWUJSekhWcmFIYzNUcXE1c0tlNzV1aHFQKzo6kkElpiq7RlP6g.5ZnxjNAA--&t=335656f07e73e44e19221e6649796c54&op=NDQ1NTc=', 'Episodio 8', 'Bala asesina'],
+    ['https://jkanime.net/jkplayer/um?e=ZzByVGhJMUpaa2lBaGpnNnpOYmVxdHdydU9ZVU5BbUFnbWRzVXRpTVVaTmtYZE5CMTlJSlA1WmVTanFZTDlBMjo6Sgtq1FbiElGhRjewbZ2SHw--&t=dd14d0cf33a086b45ecbc374f16f589c&op=NDQ2Mjk=', 'Episodio 9', 'Los voluntarios'],
+    ['https://jkanime.net/jkplayer/um?e=NENZNHlnUjVQUGFIZkxiSys1bWVkRzVIYy8vc0dNQnZncjhvcG9FS2dyQlhOakZtbVdLOUFRNEZnYjBlUjBsajo69GZll1Dn9FesrL23ZTRxlg--&t=5f1a8a8fddbc8a5ff4bf0f111dc69ff4&op=NDQ2OTU=', 'Episodio 10', 'Un argumento de peso'],
+    ['https://jkanime.net/jkplayer/um?e=a3hISWtHUWNkNGp5d0NyU3ZsVTlhc0tyZzNNUkdwQWt0T25ad0JRWGdXN0lGNmtNZzVEbVU5MGliZ0R5ZVN6ZDo6JiXvldZNMnJ4mhZgMWRswg--&t=0b60ce230e3a446d1cd7b818f84e3ca5&op=NDQ3NjQ=', 'Episodio 11', 'Impostores'],
+	['https://jkanime.net/jkplayer/um?e=dlRLTzlHZE1ZVU1XMEFFZlMzRzQyMXB0cUR0RUxxS04wblFiZUJOdFE1bm9TMytYZzY0TWY1UzY1dGxxb0lVLzo6idDHWSHDc3WW5sdcR2RvDA--&t=d10cf009b0a4345e83bb81dceabfc23f&op=NDQ4MzU=', 'Episodio 12', 'Los guías'],
+	['https://jkanime.net/jkplayer/um?e=MXpqdU1kY1ZKdWZPNGtwR3E0WE1aemcvY0ZsRGt0UjdMakk3MGF3RmRvK0VLczRvL1lhNmVGbUlWcEtoVVpEVzo6rRhiN3bF.J.ipVIPmuVl6Q--&t=29eafc27fdf31dfc7feae0d495fb8ead&op=NDQ5MDQ=', 'Episodio 13', 'Los hijos del bosque'],
+	['https://jkanime.net/jkplayer/um?e=ZFZrSkhjL1VWamF4bXBGQnlwTmszaGhKcU9mYXdzeGtLaEQra0R6MnQ2WklnaUJQY1h0WWRpZFRaOVNWVjV6QitnRHY2T3c0aG9hc1hUQk5VMEFLTmc9PTo628gvFisJdagh7d6kBKjoBw--&t=7c0cb6a5fbc472a08d3def1842ea6ac3&op=NDQ5Njk=', 'Episodio 14', 'Violencia'],
+	['https://jkanime.net/jkplayer/um?e=VHg3ZE5uSkJaNnpuZi9MOHdwRHhrTmYwNGZBNTVmRm1JQU4yNW1wem9jMFBDQnpZM1hta3gwQU1tWVVtUGxEeTo6KBVEzou3W_nw18g_6mEHZg--&t=4113e430544c25cc1af8e2317f4b7875&op=NDUwNDA=', 'Episodio 15', 'La única salvación'],
+	['https://jkanime.net/jkplayer/um?e=Rmlqb0J3TDQ5amsvY3dxTVdjV3ZZSE9COTFnbU5iYnBoMGZlUU9tVmh1SnBmMVB3aGR4SVA0ZWJmNVg3WkdVNTo66KcslcW5VbWTSx9zkUcUkA--&t=450b97a48568c3118ff397f73abe4e4a&op=NDUxMDM=', 'Episodio 16', 'Cielo y tierra'],
+    ['https://jkanime.net/jkplayer/um?e=R0FsQ0VjeGxVa0VDMkVMcDFYV3R6MHpmeVYwQWpiR1NlVEo2c1o5cExQdG1FT211YnlDUFcvM1p0U0tDRWJTZHF0eFR0MGhSeldVV29zS202UzQ0ekE9PTo6E1lpNAKl91V9__HNISP84g--&t=0db2e6f97f1d5c564366bea52764d5c6&op=NDc5NDE=', 'Episodio 17', 'El juicio'],
+    ['https://jkanime.net/jkplayer/um?e=cU5BVFc3c2ErOUQzMGVZb1FDSmNxaGllbmc0UW03VC9ZeXc1OUsvd0pnVVg4Ulh6U2xGVkUxcDJDL0ppVjdPMVVtVUd6T1c5dUZwMy8zd3FGSHlJSnc9PTo6Oyhm1aTyqCZuDPxgCN3crg--&t=19cfec4e0d8b27a83c4f50ff8305455c&op=NDc5ODk=', 'Episodio 18', 'Ataque sorpresa'],
+    ['https://jkanime.net/jkplayer/um?e=bldiTzRaRnczOFVGcGNNR3IySnBISkJmUnF3QkhhOXovSlZUUmZsbm9ISTVROXoyU1ljeFNWMWlIZlhrSVFPSVNlQms2SWl0SVp5UGlpZlFOS1h3VEE9PTo6I5sDBtPKHTS4EjJwDywGcw--&t=9f3a66823a9c66e1283f0505d6509768&op=NDgwNzI=', 'Episodio 19', 'Hermanos'],
+	['https://jkanime.net/jkplayer/um?e=cGEyQyszSTM3U2pCOEVjWWR0L1JxY2FOQlIwRFg3RXFzbnp6NkxLMG1IQSt6aHhLUVRENXFqZXpJejJlU1ZNajVBQ1I2K0U0S1Ruak1qdjRkVTdtVHc9PTo6VDpRnrv7P296kHcpv1o9Fg--&t=96e9f517d4be3ec69d10cbd6c5707e30&op=NDgxMzA=', 'Episodio 20', 'Recuerdos del futuro'],
+	['https://jkanime.net/jkplayer/um?e=M0VvRFEwTTlNTTJCU0ttenVVVXp2L3FCVkYrck9ld0lTUHRpRjdoQTAxaVFGZ08rZlh0OVdNYkxUdktsNDMzQmpXNzVzQ2Zha2pBTy9ZQUxRZ29pRFE9PTo6lCyNJYloMFSwuU.oOyZkQw--&t=2cb57605050b628f019002a2e8485f99&op=NDgyMDQ=', 'Episodio 21', 'De ti, hace dos mil años'],
+	['https://jkanime.net/jkplayer/um?e=QnRGV2prNnNrRlRjd2FRWVhWREhLUkU0K1ExdmV2Z1ZndTZ2azZJK3lEYmVFWndlQ0ROTXBqMlhHZFpyRk5pVy90SERTUlhMTUc0VExRb3EvUjg3MEE9PTo6f9dQ0MjV1Z_RBJQjxtCehQ--&t=bc05280b649b56ed783744d4bfe1e384&op=NDgyNjE=', 'Episodio 22', 'Romper el hielo'],
+	['https://jkanime.net/jkplayer/um?e=T3pTNVNxeEhEMEdjdGgxSml5N1pCaHRKWWYyekxFOGNrRG9JVFMrdnF1V3l3SWMvd1lXMzdhSGtBZzAzRlJnRjIwZEowUDd2NTlEL2JyWE1hWHNjL3c9PTo6uEl9mHHZn3rbN0j9vGiVDA--&t=240a1ab5beb30441e354ce8f5820daa1&op=NDgzMTQ=', 'Episodio 23', 'Crepúsculo'],
+	['https://jkanime.net/jkplayer/um?e=M1E5OFAyaHFTRkdFUUtXZ0xTTllqL1BQcEcyam9UbXlWeVlMM0x1aUVTdnl1TFp6REVzTUttai94cDJNa2pWWVpTOGhVcTlFYVN1V0k4RC9lZjNrd2c9PTo6_m88wCO8Dkrm_nXJ6dtsuA--&t=58350ebc61b97bd7c28aeaca836c9c26&op=NDg0MDk=', 'Episodio 24', 'Dignidad'],
+	['https://jkanime.net/jkplayer/um?e=SWU2YjVUU29Mc29Cdlg4UmNZd3hXVHM4aDUyMjFZYmpTT3hqRE9Hb1c2QWxQMzR1eWUzS1JYcEc5RWh5c0szRmVlUkd0QVA3Rkd4N3NSNUwrOWtZelE9PTo68Lw8RjcVpPiGBPgfLd0cig--&t=5c75765a72526e13a1a511b39cc7691c&op=NDg1MDQ=', 'Episodio 25', 'La noche del fin'],
+	['https://jkanime.net/jkplayer/um?e=WnBvR2paZ0k1K205VWxmMjd4ZWpaR3Bzek83bTg0S3hJSUZURzBOeE54bDNKTDVmRFo3dHBKOW91b1ZmeWp2bXBCdHorSlNxc3ZZU3VmRUdFVHJoUVE9PTo6t012y9cED89TJ.M0GGNfSw--&t=d6aebf3c270e28da6467427979d7d35f&op=NDg1NTY=', 'Episodio 26', 'Traidores'],
+	['https://jkanime.net/jkplayer/um?e=ZVFkWWV4Z1Zid3Z0azY1ZjNlZStuU0dYbkNzN1VqdDJaV1ByWGgrTGtaSjZPQzdwM3JJSUtncUl3ejk2R0FXckRpNjRTZVpwZFpKeURSaWtjTkFlSkE9PTo65MlZx5ijvOZHoWXUxi5YMQ--&t=204dbb40a6272d96566a58b0b2387bc5&op=NDg2MDM=', 'Episodio 27', 'Retrospectiva'],
+	['https://jkanime.net/jkplayer/um?e=eWlCVkxwRFBhUjZsaW01SkFkcjAvMkRzNkM0Y1ZQM3paYUhUOUhaZlA0VmoyTyt4VnFNNGhSci9QdndCam8zMk52VzhuNzc2bS9lc1NSUlZmb2UwYnc9PTo6xapunB7Y3JqyeW3yWA.7Tg--&t=9722c0e8faf86184d1021802ac2e5f79&op=NDg4Mjk=', 'Episodio 28', 'El amanecer de la humanidad'],
+	['https://streamtape.com/e/0rlw14KkybHbl8d/', 'Episodio 29', 'El retumbar - Los capitulos finales parte 1'],
+	['https://streamwish.to/e/1awrhczhxdxl', 'Episodio 30', 'La batalla del cielo y la tierra - Los capitulos finales parte 2']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Aot/Portada-Tmp4-Cap${index + 1}-Aot.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -1213,6 +1407,23 @@ const catalogData = {
 			{ title: 'Película La espada del rey mago', description: '1 Película', cover: 'img/Movie1-Clover.jpg', videos: cloverMovie1Episodes },
 			{ title: 'Temporada 1 - Parte 4', description: '16 Episodios', cover: 'img/Temp4-Clover.jpg', videos: cloverSeason4Episodes },
 			{ title: 'Temporada 2', description: 'En estreno', cover: 'img/Temp5-Clover.webp', videos: cloverSeason5Episodes }
+		]
+	},
+	ragnarok: {
+		label: 'CATÁLOGO 14', title: 'Record of Ragnarok', description: 'Antes de erradicar a los humanos de la faz de la Tierra, los dioses le dan una última oportunidad para demostrar su valía. ¡Que empiecen las batallas de Ragnarok!',
+		seasons: [
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Ragnarok.jpg', videos: ragnarokSeason1Episodes },
+			{ title: 'Temporada 2', description: '15 Episodios', cover: 'img/Temp2-Ragnarok.jpg', videos: ragnarokSeason2Episodes },
+			{ title: 'Temporada 3', description: '15 Episodios', cover: 'img/Temp3-Ragnarok.webp', videos: ragnarokSeason3Episodes }
+		]
+	},
+	aot: {
+		label: 'CATÁLOGO 15', title: 'Attack on Titan', description: 'Muchos años atrás, la humanidad estuvo al borde de la extinción con la aparición de unas criaturas gigantes que devoraban a todas las personas. Huyendo, la humanidad consiguió sobrevivir en una ciudad fortificada de altas murallas que se ha convertido en el último reducto de la civilización contra los Titanes que campan a sus anchas por el mundo. Ahora esa paz está a punto de verse interrumpida...',
+		seasons: [
+			{ title: 'Temporada 1', description: '25 Episodios', cover: 'img/Temp1-Aot.webp', videos: aotSeason1Episodes },
+			{ title: 'Temporada 2', description: '12 Episodios', cover: 'img/Temp2-Aot.webp', videos: aotSeason2Episodes },
+			{ title: 'Temporada 3', description: '22 Episodios', cover: 'img/Temp3-Aot.webp', videos: aotSeason3Episodes },
+			{ title: 'Final Season', description: '30 Episodios', cover: 'img/Temp4-Aot.jpg', videos: aotSeason4Episodes }
 		]
 	},
 };
