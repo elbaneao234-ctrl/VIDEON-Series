@@ -1308,6 +1308,112 @@ const aotSeason4Episodes = [
     'iframe'
 ]);
 
+const levelingSeason1Episodes = [
+    ['https://mega.nz/embed/4Htk2RgA#kBb0nNIIJiOZYcClwRmSAmWO-qljwlPgpgjuTilRcoE', 'Episodio 1', 'Ya estoy acostumbrado'],
+    ['https://mega.nz/embed/9CVjxIRJ#suYaujR65YCeYNW8QkUxQb2AXqtPfcm8W_epBZ5baNI', 'Episodio 2', 'Si tuviera otra oportunidad'],
+    ['https://mega.nz/embed/0rs3GCiS#hPTJymiDdTMqycbJCuqDSDRyDQ2X3KRAAIEZhyTg_S0', 'Episodio 3', 'Es como un videojuego'],
+	['https://mega.nz/embed/oeVE1arD#GhGhTAjTgm_oZpQZZnLu5LMJbYue7VL-ZWcry51amss', 'Episodio 4', 'Tengo que hacerme más fuerte'],
+	['https://mega.nz/embed/AzcFiAKQ#kvnEum1HrxSYIHvxpCsOvjEZbD3yZquqnVLSBOojRf0', 'Episodio 5', 'Un muy buen rato'],
+	['https://mega.nz/embed/t7EAkRAA#wfk2Cz96cIByWG3aGEZXGMeQ_C6x5LXuMZdisK9hWy4', 'Episodio 6', 'Comienza la verdadera caza'],
+	['https://mega.nz/embed/oOEDTbjb#pLoTfHMeTOcSebjfTYEbQzbTugR3hoUrpylpTCyDdKQ', 'Episodio 7', 'Veamos hasta dónde puedo llegar'],
+	['https://mega.nz/embed/RHdjHTgI#EOlZdevW_6CELRhVT8satl03cIqE-5ir0i_QOxjlUCg', 'Episodio 8', 'Esto es frustrante'],
+    ['https://mega.nz/embed/EycV0Zoa#K80gOk3Mu3O_YXN333nZfI3V1R9prXytQV3hLpx8hVA', 'Episodio 9', 'Has estado ocultando tus habilidades'],
+    ['https://mega.nz/embed/92VxXQSK#-_Xei9ZUJ-96BYXMhvoQyhRCTxTEUsqP18GB2-nuHLk', 'Episodio 10', '¿Qué es esto, un picnic?'],
+    ['https://mega.nz/embed/hGsmXSzT#DeNoTtOd_l6T-OZ4r25LwD5W-7kPIaVB1vKz2_6vUhk', 'Episodio 11', 'Un caballero defendiendo un trono vacío'],
+	['https://mega.nz/embed/ljlXmL6K#Nvl27t9Iffi40eGhdt61uc2ASwAGZlK9PV8zn1U4LwQ', 'Episodio 12', 'Álzate']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Leveling/Portada-Tmp1-Cap${index + 1}-Leveling.jpg`,
+    'iframe'
+]);
+
+const levelingSeason2Episodes = [
+	['https://mega.nz/embed/HFdi2LiT#WkjkJnDKAqXx7BB14ugfwtqyyoatlys8VUVIuiQ8Md8', 'Episodio 1', 'No eres de rango E, ¿verdad?'],
+    ['https://jkanime.net/jkplayer/um?e=ejBGZHhiUy9rVTg0NjdBSUVXUVV3Mjh6dkZidDdxRGVnRFA0UmxvVE9nMmxHTVZ5aG8zWk5zZlFvWnRmUnZjNk1KYjg0QWdmblNaMW90TTFmZlJ2NlZGbGMzM0dyR3cra1RNejNYSkxsRVE9OjouTDLQIRShkXbVrgmEkF.I&t=80525e4b2b01c40bbfd426549dc230cf&op=NjEzNTI=', 'Episodio 2', 'Parece que tú mismo no lo sabes'],
+    ['https://mega.nz/embed/y2JHkZIL#kackqxBzTfMbqkgptwm9smyCoQLrAdKjK8kWxcSJilk', 'Episodio 3', 'Aún queda mucho camino'],
+    ['https://jkanime.net/jkplayer/um?e=YmNjM1hMNXIvZjFwK291aDY3VnBmaDVPY3g3SG80d0d4ZjNSb0Y5NU9CRlI3bGJmMkFQYTNPNkxuTUJGZHJoeTl6ZWJzSlZ4UHJnWWFSYmVEWnhJUTZyYTFXNmxJcnU2aGV1QmY3Y21nbWM9OjoHxyr7Q0.nt.CPhi.6yWBr&t=0d6bd33ab42493582d2f904935e8c98f&op=NjE1OTY=', 'Episodio 4', 'Tengo que dejar de fingir'],
+	['https://jkanime.net/jkplayer/um?e=cVhOdkc0OWJPK252T1BaQ1JEUTIwczhGMXBReGNtWWwvb3gvQVpMcEpxOGJ5U2hvU25zak1nQ3pWczZFTmp4YWhuYzhJRzVHcTgzenZwaVdabHpKZGlwbWYzOVhTVlltanpxNmxXbnRXYzQ9Ojo2e8yo.ku34Oox74SzJN3K&t=619bb1d83a2d850d61dca80ce62b87f8', 'Episodio 5', 'Estamos entrenados para  esto'],
+	['https://mega.nz/embed/dEYxmQzL#g1WG9IKfyacEh5Wj90LWlzOBf5yc61tEr1xnJtIgq8E', 'Episodio 6', 'No menosprecies a los míos'],
+	['https://jkanime.net/jkplayer/um?e=ZkUvN0dNbGtmVnE1akRDakorcmxFUmhXclJLRnRLWlhma25uZURFYXpWcnQ3VVNWRVRjekNXYTZxeWJvZ2Zvb09GYzFlT1hDdzU4UHVrc2doUnpWSXpDbEhySXpFUXYvRmY3VmpSNWpaWUE9OjpQBosh_Zs1KC5_apNuEiLc&t=7f012d8776a55b1f6ec1cffcaf7302c7&op=NjE5Mzg=', 'Episodio 7', 'El décimo Cazador de rango S'],
+	['https://jkanime.net/jkplayer/um?e=Y3c4eDdDMUN0bm5WeVcxMTdtQWdlSDJ0QVJJN1ZteEM0TVd4KzZtZGR3NUpRUWJRZkNmR2pOdktnQ0VxZ0lxYUJvcjh1bXJwbjRIZ0ozTkhaM0p4dDBhZFlJaVdmT29qNFdvaVhtTW5EZVU9Ojpcj1a2i9QituyEXy4agMYR&t=e3bba492b291e670dd0b0465dadff3b8&op=NjIwMjY=', 'Episodio 8', 'Mirar hacia arriba me estaba cansando'],
+	['https://jkanime.net/jkplayer/um?e=NkZaSWlZSjVneHNLWWJJMDBkd0w2eGZzWFYyaUxMZkg1M2Z1M2cxUms0ZExqeXovZ0J2UmgwQjRWVGdYcUhwd2I4U3hQdUdRSmpML2Nsam1icGxHNmxUWXVQL3U5WGl4TTI3d0plZmhTQjA9OjpSdFv1S5TU1bPy9uct1PTK&t=d0d514f204719958d006b9e264be7cc3&op=NjIxMjM=', 'Episodio 9', 'Valió la pena'],
+    ['https://jkanime.net/jkplayer/um?e=Y1dxaGo0YTlUSTJ5bWRWaGsweEFHU3ZwQThBSytEYThHTHRkMU9rdmo3bXVHSDF1UW8wUTAwbEhHamJkaGdkc3ZaT1pWMklyQjZiWEZ2RzNwZmg5VXhBcG0wejd5WWQrMkV6SDh0ZGphZjA9OjqnxSOVhAvSGgKG4Rjv21_3&t=397fedb64966a7a644c1374ae95aecea', 'Episodio 10', 'Necesitamos un héroe'],
+    ['https://mega.nz/embed/IOdDQCKb#-zJWvt_fGnBFeExEy66VGJ1Vzcn_1K3-UVN2KHnl1AM', 'Episodio 11', 'Se va a poner aún más intenso'],
+    ['https://jkanime.net/jkplayer/um?e=YW1ZcWZ1bVZYa2ZpWmRiWTVMcEhCSHVKampla0lwcVN4bXpNRDlSKzlLcDl3QVRHRU4xZGRSYnBNT0w4YnorbTREelJwdnI4RTJYTTZIQ1dPMzNuYkpWT0E0YVlTWjg1bUFjdmF5dFFSeFE9OjrOEHVPTvuVyfEQirgxv9xS&t=1cf9a090a34f57d4606f733102284f0c&op=NjI0MTM=', 'Episodio 12', '¿Eres el rey de los humanos?'],
+	['https://jkanime.net/jkplayer/um?e=TFdQamNwdmY0dFU2RG0yUG1TbWk2cTJ2eWF4SldDT3dHV3J1L2FNODBWazBreG9KYSsxMXY4clJGSlRibWNnajliRkJLMmloRXVTZFpPY1pyQ2VXcjJ1SDRRN0JYRGl3akEwOHZrM25UM009Ojr_Inbld1AlLBLDzARyhm28&t=bc2f4235c7d6a01f005310905f727eff&op=NjI0OTk=', 'Episodio 13', 'A por el siguiente objetivo']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Leveling/Portada-Tmp2-Cap${index + 1}-Leveling.jpg`,
+    'iframe'
+]);
+
+const opmSeason1Episodes = [
+	['https://mega.nz/embed/s5UHjKzC#GIZnyvJDpc6VZhO4Q04ipHtHPS_8TOd8sCUk4ubS3d4', 'Episodio 1', 'El hombre más fuerte'],
+    ['https://mega.nz/embed/s0FjFKhB#sdZ263UW2cobXTS-azRcNL7gHX3NgRjzUArYRAnQGMA', 'Episodio 2', 'El cíborg solitario'],
+    ['https://mega.nz/embed/Z4FzlIgb#_y-s6vTAg9JKCWirOwc3plYfbNjum8ryasHiDl5PPPc', 'Episodio 3', 'El científico obsesivo'],
+	['https://mega.nz/embed/wkFXgCrA#iWwiBlG_zJTHYxhCC91Z62fEmU6RvsFmC5DWyPWy2hw', 'Episodio 4', 'El ninja moderno'],
+	['https://mega.nz/embed/80FXUALa#AgIwEJh0sby4GNOapMDElMSPToorPcyjWe3l06sZ3Ow', 'Episodio 5', 'El maestro supremo'],
+	['https://mega.nz/embed/R8FD3IgT#bO9U7u-h_flakrV35fy6iCuDiac_pkEL38p5xO9XkUU', 'Episodio 6', 'La ciudad aterradora'],
+	['https://mega.nz/embed/phETFK5I#ygQuapx6xMhZY2gprN62OTfiAp5A9_DWwvHh9Sp-Y74', 'Episodio 7', 'El discípulo supremo'],
+	['https://mega.nz/embed/1lEnGajJ#Dut74R84DYGvv4wC1PdKnuioccXaq6WIBBgi97CZu4M', 'Episodio 8', 'El rey del mar profundo'],
+    ['https://mega.nz/embed/glUjAQDR#i5tMFJol-hF-rjZgue7IlvlZLeTKW4GRJ5cv6KgLO-M', 'Episodio 9', 'Justicia inquebrantable'],
+    ['https://mega.nz/embed/t8EXBADb#7SMDQahtbHYAHa2TN0k3QbjuV9ZsGWTPd1iFTRDBIm8', 'Episodio 10', 'Peligro sin precedentes'],
+    ['https://mega.nz/embed/AhURFKKZ#LSvVo0SWVP3tl92vZT1QCM-bU3WOqWyydldNj1Z-x1o', 'Episodio 11', 'El conquistador del universo'],
+    ['https://mega.nz/embed/RtNxEIBC#f7KPFyhjVqZPH6IbBbNil7r_1ZI3gyZbgZd74AtHe9Q', 'Episodio 12', 'El heroe más fuerte']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/OPM/Portada-Tmp1-Cap${index + 1}-OPM.jpg`,
+    'iframe'
+]);
+
+const opmSeason2Episodes = [
+	['https://mega.nz/embed/jvQUzCgL#JCUeW-7cvq6XucVUbWD2adv1Z2c4pcLoOb8WAS-8lSY', 'Episodio 1', 'El regreso del héroe'],
+    ['https://mega.nz/embed/S7Z2iISa#gmmCfdyLmA6rQy8xh7w6zwSJgTI8dksiZKO4phUTI1Y', 'Episodio 2', 'El kaijin humano'],
+    ['https://mega.nz/embed/LiAgma6A#gVTXswhJMglO4kLjANlsq1p_Vo6GzOtAj5K-_kz_-NE', 'Episodio 3', 'Comienza la cacería'],
+	['https://mega.nz/embed/yjA2iIhC#DYgRrco4IaCcRC6jA9OObThecmv_o9gkZuxAVkKXBUU', 'Episodio 4', 'Bate Metálico'],
+	['https://mega.nz/embed/auQGxARI#ohtOy17sw_j_LLBhtcYRBJb80ast5RtkFxMW4hjjqiw', 'Episodio 5', 'El torneo de artes marciales'],
+	['https://mega.nz/embed/O3BiEKhb#tlBeFsthkeYOLSbQXwNK9yd1Ke0VTduwRe-1YGXVGck', 'Episodio 6', 'El levantamiento de los kaijin'],
+	['https://mega.nz/embed/urQigKrR#Vg5Z0KHbqBHbKfA9SS5_Vf-4Zje8hj2vMM2ZVTXdRgE', 'Episodio 7', 'Los héroes clase S'],
+	['https://mega.nz/embed/e2Q21CiK#Ec8XAVymTlsTJ-b-vfX-onDmPh0KqDWoj6LrW4vp8rQ', 'Episodio 8', 'La resistencia del más fuerte'],
+    ['https://mega.nz/embed/vqYS0AyY#mKdWJyacW_JUZDhe6YwqTMnP0u6mdQX5sgT5zMRqyVU', 'Episodio 9', 'Los problemas del más fuerte'],
+    ['https://mega.nz/embed/e7YkgSRb#2KBu9VzhXXfYtKTgML9aNCfCV-XTxUyIZ4eJUvZ2jhg', 'Episodio 10', 'Justicia bajo ataque'],
+    ['https://mega.nz/embed/KuZyGYRK#X8sBW_YsS3mtHvzT7HblTMDMSYt3DUYCqKEhW-QfIq8', 'Episodio 11', 'El orgullo de cada uno'],
+    ['https://mega.nz/embed/6vQ2kQ7b#C1_2MUtNcYm9IrayG9fjsB7Y5orboVMLgmZoal1_hpQ', 'Episodio 12', 'Responsabilizarse por un discípulo']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/OPM/Portada-Tmp2-Cap${index + 1}-OPM.jpg`,
+    'iframe'
+]);
+
+const opmSeason3Episodes = [
+	['https://mega.nz/embed/NRcXQLKI#gdCtc6jiNUTbxq_Yw55EasyXryfN5UkzZFRxAHnwTlA', 'Episodio 1', 'Reunión estratégica'],
+    ['https://mega.nz/embed/IAN2WSCD#rENp5Qv4pAPYnJUoKudDWIqKwoB4XMq8V4Jjoh3oL8M', 'Episodio 2', 'Las condiciones de los monstruos'],
+    ['https://mega.nz/embed/yBlSSTKY#mS6rQrQUful_d9NfOGEISmTIAi9jL79jvW_MK8rugIg', 'Episodio 3', 'El límite de un ser vivo'],
+	['https://mega.nz/embed/4Z91QQhY#i97yQzmQq8_b4tyxb4BNH8i_eLGF2XJGeAmKJKBGDrk', 'Episodio 4', 'La señal del contraataque'],
+	['https://mega.nz/embed/XBMXwLqZ#vkSm0HE8965vxE2e2JMCiaIVfNrCCyaqQyZT-IuQG8s', 'Episodio 5', 'El rey de los monstruos'],
+	['https://mega.nz/embed/MItFxTIQ#LnYUZ_mDmy-BQWnnatd-GeT2Jmb9T9IQZXVJYRxitaQ', 'Episodio 6', 'Superhéroes misceláneos'],
+	['https://mega.nz/embed/EiZ2jZBZ#CJREgnecYr27KyCTNTIZ-1oF1NZ1dF8AWrgC0BcpDlk', 'Episodio 7', 'Contraataque'],
+	['https://mega.nz/embed/GF1F2Yba#3oJWbjYw_lEQSTLrFdDgJQyWOXynzTw2pwUsc4a7rMQ', 'Episodio 8', 'Pergamino ninja'],
+    ['https://mega.nz/embed/j8YHhCSD#1fvoL0haP-3itXDEVyxsBEp2iQNRa7L6nBMtydIy318', 'Episodio 9', 'La valentía de un niño'],
+    ['https://mega.nz/embed/GdVX1Txa#pdpgBGIgfjCMNlYLFPAE1hj7X-jmqYN-P2IOeOcTe7U', 'Episodio 10', 'Una inmortal pelea pantanosa'],
+    ['https://mega.nz/embed/nQVjQYSQ#V2N8Sb-r_RhYC5AwiVRADo7ZxBhXtgVT3is13u3k9B0', 'Episodio 11', 'Líderes Dragón'],
+    ['https://mega.nz/embed/nh5j2bAS#SmCSqQO3k3tJ5OJaQ5Bt-opI_EwlmVCVzXKsecD39lg', 'Episodio 12', 'El ser vivo definitivo']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/OPM/Portada-Tmp3-Cap${index + 1}-OPM.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -1424,6 +1530,21 @@ const catalogData = {
 			{ title: 'Temporada 2', description: '12 Episodios', cover: 'img/Temp2-Aot.webp', videos: aotSeason2Episodes },
 			{ title: 'Temporada 3', description: '22 Episodios', cover: 'img/Temp3-Aot.webp', videos: aotSeason3Episodes },
 			{ title: 'Final Season', description: '30 Episodios', cover: 'img/Temp4-Aot.jpg', videos: aotSeason4Episodes }
+		]
+	},
+	leveling: {
+		label: 'CATÁLOGO 16', title: 'Solo Leveling', description: 'Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo, lo que lo mató lo hizo más fuerte. Después de ser brutalmente asesinado por monstruos en una mazmorra de alto rango, Jinwoo regresó con el Sistema, un programa que solo él puede ver y que eleva su nivel en todos los sentidos. Ahora, está decidido a descubrir los secretos detrás de sus poderes y la mazmorra que los engendró.',
+		seasons: [
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Leveling.jpg', videos: levelingSeason1Episodes },
+			{ title: 'Temporada 2', description: '13 Episodios', cover: 'img/Temp2-Leveling.webp', videos: levelingSeason2Episodes }
+		]
+	},
+	opm: {
+		label: 'CATÁLOGO 17', title: 'One Punch Man', description: 'Saitama comenzó a hacer héroe por pura afición, y tras tres años de un durísimo entrenamiento consiguió tal nivel de fuerza que puede acabar con cualquier enemigo de un solo puñetazo. La vida lo llevó a conocer a Genos, un cíborg que ahora es su fiel discípulo, y a convertirse en un héroe oficialmente bajo la Asociación de Héroes. Pero no todo es de color de rosa en la brillante (como su calva)...',
+		seasons: [
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-OPM.webp', videos: opmSeason1Episodes },
+			{ title: 'Temporada 2', description: '12 Episodios', cover: 'img/Temp2-OPM.jpg', videos: opmSeason2Episodes },
+			{ title: 'Temporada 3', description: '13 Episodios', cover: 'img/Temp3-OPM.webp', videos: opmSeason3Episodes }
 		]
 	},
 };
