@@ -221,11 +221,12 @@ const inazumaSeason2Episodes = [
 	['https://mega.nz/embed/vKI1kQoY#vVQSys4izRbRibIBpJdCRK2x9b9bIJjglf0kHq-KENA', '¡POR FIN, EN LA ACADEMIA ALIUS!'],
 	['https://mega.nz/embed/XCYTAIQL#1E381e8gjABbzqMEJCW0PkiaVw0g3EE5EdfdDBbwxJU', '¡LA AUTÉNTICA NATURALEZA DE LA ACADEMIA ALIUS!'],
 	['https://mega.nz/embed/mXwH1JgQ#je-LDQ0NuTWPqW_esoZkzTz-8ZoaezZqcRxSIms5HQ4', '¡EL PARTIDO DEFINITIVO! GÉNESIS, PRIMERA PARTE'],
-	['https://mega.nz/embed/CWYlDDAL#VG5-_751oihYPUPBcrSfftj7NwLIGrCMAeka0766z-I', '¡EL PARTIDO DEFINITIVO! GÉNESIS, SEGUNDA PARTE'],
-	['https://mega.nz/embed/PD4XwA5Z#MAL41LkbzVrdT-VM-YEAE3V1LNJG1RWLXlS9rAo-NVU', '¡LA AMENAZA CONTINUA!'],
-	['https://mega.nz/embed/DfwADZaA#mi7vUrOfn1OXqQE0t2uzs8iQGs7HRDHegmVrw8Jj4jM', '¡DUELO! ¡RAIMON CONTRA RAIMON!'],
-	['https://mega.nz/embed/KOIhyTbD#B3EEEc6Rcfvck6x9C4hNP0R7GA6ZJGWwskWX5l_CkVI', '¡LA ULTRA-SUPERTÉCNICA DE LA AMISTAD!'],
-	['https://mega.nz/embed/3HRVELLK#6J9muMD7s7sdUeTn5z2QFYYtUi2Uz-R9uoj6KHU1DgU', 'EL CAMINO AL MEJOR EQUIPO DEL MUNDO: LA VENTISCA']
+	['https://www.youtube.com/embed/GCOUNTJKJ80?si=zjLe3NlMVzczjPKP', '¡EL PARTIDO DEFINITIVO! GÉNESIS, SEGUNDA PARTE'],
+	['https://mega.nz/embed/CWYlDDAL#VG5-_751oihYPUPBcrSfftj7NwLIGrCMAeka0766z-I', '¡LA AMENAZA CONTINUA!'],
+	['https://mega.nz/embed/PD4XwA5Z#MAL41LkbzVrdT-VM-YEAE3V1LNJG1RWLXlS9rAo-NVU', '¡DUELO!¡RAIMON CONTRA RAIMON!'],
+	['https://mega.nz/embed/DfwADZaA#mi7vUrOfn1OXqQE0t2uzs8iQGs7HRDHegmVrw8Jj4jM', '¡LA ULTRA-SUPERTÉCNICA DE LA AMISTAD'],
+	['https://mega.nz/embed/KOIhyTbD#B3EEEc6Rcfvck6x9C4hNP0R7GA6ZJGWwskWX5l_CkVI', 'EL CAMINO AL MEJOR EQUIPO DEL MUNDO: LA VENTISCA'],
+	['https://mega.nz/embed/3HRVELLK#6J9muMD7s7sdUeTn5z2QFYYtUi2Uz-R9uoj6KHU1DgU', 'EL CAMINO AL MEJOR EQUIPO DEL MUNDO: EL FUEGO']
 ].map(([url, description], index) => [
 	url,
 	`Episodio ${index + 1}`,
@@ -1106,6 +1107,7 @@ const cloverSeason4Episodes = [
 const cloverSeason5Episodes = [
     ['https://mega.nz/embed/dBNghSbZ#wQxUlshkoSbUDQNYS506Uf-c_2wb_xXEWtFQqVdXqQQ', 'Episodio 171', 'Comienza la guerra'],
     ['https://mega.nz/embed/1UlRCayB#VpXA-JFbgyjBbd8Mtk_T7z3SZKwove80R2GwvivG1vI', 'Episodio 172', 'La puerta al infierno'],
+	['https://mega.nz/embed/AY9hiCrZ#hLekjdCShsNXkv0bL51sYw4BA75AR637yhdR57km9KQ', 'Episodio 173', 'El defensor cubierto de negro'],
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -1312,8 +1314,8 @@ const levelingSeason1Episodes = [
     ['https://mega.nz/embed/4Htk2RgA#kBb0nNIIJiOZYcClwRmSAmWO-qljwlPgpgjuTilRcoE', 'Episodio 1', 'Ya estoy acostumbrado'],
     ['https://mega.nz/embed/9CVjxIRJ#suYaujR65YCeYNW8QkUxQb2AXqtPfcm8W_epBZ5baNI', 'Episodio 2', 'Si tuviera otra oportunidad'],
     ['https://mega.nz/embed/0rs3GCiS#hPTJymiDdTMqycbJCuqDSDRyDQ2X3KRAAIEZhyTg_S0', 'Episodio 3', 'Es como un videojuego'],
-	['https://mega.nz/embed/oeVE1arD#GhGhTAjTgm_oZpQZZnLu5LMJbYue7VL-ZWcry51amss', 'Episodio 4', 'Tengo que hacerme más fuerte'],
-	['https://mega.nz/embed/AzcFiAKQ#kvnEum1HrxSYIHvxpCsOvjEZbD3yZquqnVLSBOojRf0', 'Episodio 5', 'Un muy buen rato'],
+	['https://jkanime.net/jkplayer/um?e=T1Rib1VYUU5HekcrSGJoRVh1U3Q2R0ZzdGdpNGxaNjNvRFgvZ1NCc1RCVXFEL3lYcjlGa251MDBIb0hidFBaNHVSSklkU3J3ckFpSDRkSHBBVEd4RVpDNFNkL2hJSE1GTFdINGhQaWNXNlU9Ojr_G4LUxVTEKfskXZNf9VTo&t=872a0592f5d9338d0ef888235dd28edc&op=NTU3NjI=', 'Episodio 4', 'Tengo que hacerme más fuerte'],
+	['https://mega.nz/embed/W9wRjIoY#s1q-rZGz2MPo4yUgpG4YrCVPQSIzhhQAcPGZGquyTP4', 'Episodio 5', 'Un muy buen rato'],
 	['https://mega.nz/embed/t7EAkRAA#wfk2Cz96cIByWG3aGEZXGMeQ_C6x5LXuMZdisK9hWy4', 'Episodio 6', 'Comienza la verdadera caza'],
 	['https://mega.nz/embed/oOEDTbjb#pLoTfHMeTOcSebjfTYEbQzbTugR3hoUrpylpTCyDdKQ', 'Episodio 7', 'Veamos hasta dónde puedo llegar'],
 	['https://mega.nz/embed/RHdjHTgI#EOlZdevW_6CELRhVT8satl03cIqE-5ir0i_QOxjlUCg', 'Episodio 8', 'Esto es frustrante'],
@@ -1793,6 +1795,145 @@ const fullmetalSeason1Episodes = [
     'iframe'
 ]);
 
+const drstoneSeason1Episodes = [
+    ['https://mega.nz/embed/ZbM0wa6R#JmALidGss83MugbbgvN9MZl8fxV4bvtYIGflo9lqQeM', 'Episodio 1', 'Mundo de piedra'],
+    ['https://mega.nz/embed/IbExVJhT#PTOwHO5ECk_xQJZpS0Cg9-qN7nmyupoC_QaTnUubqZs', 'Episodio 2', 'Rey del mundo de piedra'],
+    ['https://mega.nz/embed/ECdlgJAR#9x8sV9Teg2kgYX3Vhg9krKL2uV4sCKTb64baGfdCSrY', 'Episodio 3', 'Armas de la ciencia'],
+	['https://mega.nz/embed/pTFTGaQL#8ywE-iFVnZDpntIDxheqMxeHZlUuh5SzrDlkxocXKYA', 'Episodio 4', 'Dispara la señal de humo'],
+	['https://mega.nz/embed/gD0SlD6K#6bpyw_U_R7rYLisB5NMaPdqSi-XDswNrjNiNb8ysJN8', 'Episodio 5', 'El principio del mundo de piedra'],
+	['https://mega.nz/embed/JaFz3SwI#raQYRCOUcTYXXPJdf-Z35xU69F6uC_aCg4x0b6JfIGY', 'Episodio 6', 'Dos países del mundo de piedra'],
+	['https://mega.nz/embed/wKl3HbYJ#zeJXWmC-MqmtUNhqcol2TMMQbsHEy3IWfSGjw7JjN-s', 'Episodio 7', 'El paradero de dos millones de años'],
+	['https://mega.nz/embed/kXMFgbAD#oF9IbzPc4ADM0QMflG2Jav9m2Er2M7MUC6TYeLeuhMk', 'Episodio 8', 'Camino de piedra'],
+    ['https://mega.nz/embed/1uMQHbhB#MLNvlYn1w2bYp-uLNcQBOXejimmghbEpqxt1gSTag4Q', 'Episodio 9', 'Que se haga la luz de la ciencia'],
+    ['https://mega.nz/embed/RS9QxLYA#WqTYuuoiV11egjDxO-VFjHichRPRb7WX7f5DnJ_fH4k', 'Episodio 10', 'Una tenue alianza'],
+    ['https://mega.nz/embed/0S0TVSZK#sJYrbGLWw8nrv43seRlBnJ7HPsaMB689nUJFvOJJMfo', 'Episodio 11', 'Mundo claro'],
+	['https://mega.nz/embed/BeknSbiK#0Iv_vcl6z5bkpCJJy4QSs2g8QHipYWYOYFkxUspvINU', 'Episodio 12', 'Compañeros espalda con espalda'],
+	['https://mega.nz/embed/xTVy0BSL#2Fjb_sBI3vDP_yPbWAagbZVXlPTmqvEvOXQsXo9k_4o', 'Episodio 13', 'Guerrero enmascarado'],
+	['https://mega.nz/embed/dXNlGYzT#t1J3ivzHJLAX86iIvMcjtwzaRwa3AYeZ5_5IJUrWnmo', 'Episodio 14', 'Amo de la llama'],
+	['https://mega.nz/embed/lf0TzDAR#jAO7gYwBOAFZCBseD1mOrVMwJLK6DCKgVr32ZjYrvaU', 'Episodio 15', 'La culminación de dos millones de años'],
+	['https://mega.nz/embed/NXNwBKYR#p0FP3viMeMC5TxpKBVosNO6EM-dIgY4nJkQ_mzUpTqU', 'Episodio 16', 'Una historia para la eternidad'],
+	['https://mega.nz/embed/oK8lWDiL#XYK-d4OWZw8OveVdIUxLM956YOvpblcgeNKNk8rq25Y', 'Episodio 17', 'Cien noches y mil cielos'],
+	['https://mega.nz/embed/wS0XCJrB#FribpMbtrCjEcE50nACmyjfN6bJ8K9FHdCtQIXaFVsU', 'Episodio 18', 'Guerra de piedra'],
+	['https://mega.nz/embed/wPcEjThY#1J1PhgEDN99Eqt0QXCzS32Iuet4nqVbskA3L9CGiCMY', 'Episodio 19', 'A la modernidad'],
+	['https://mega.nz/embed/UXczHY5B#ujYSmPMSBjiG0ZHXgblI2d8dO686B5iIY1SqTeabY_Y', 'Episodio 20', 'La era de la energía'],
+	['https://mega.nz/embed/4bcwDCKZ#CNqAjpuZWIN6hrC7AJGCXz8qaImLoOd77QTbKAiJxKQ', 'Episodio 21', 'Club de manualidades pesadas'],
+	['https://mega.nz/embed/1C1QxIqB#Tx7a4JVyGf9OVWxjpT9rlthtvhuE2wXmLsHOpOqyg5g', 'Episodio 22', 'El tesoro'],
+	['https://mega.nz/embed/hOtmESKA#8xprQSwmNLRfv6Ja3UxVUmQ6PIp0OCGOCKy7jcpHknk', 'Episodio 23', 'Ola de ciencia'],
+	['https://mega.nz/embed/RX0yTAZT#8BLkCNSUi5efKgASADc2jpSH0it7IiXbKI3oDaKGras', 'Episodio 24', 'Oído a distancias infinitas']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/DrStone/Portada-Tmp1-Cap${index + 1}-DrStone.jpg`,
+    'iframe'
+]);
+
+const drstoneSeason2Episodes = [
+    ['https://mega.nz/embed/kilGAbhL#H27UkYlfc8uaFuyYjSz8OhiHNb2Ps-Bq6BP1d6UbTFM', 'Episodio 1', 'Comienza la Stone Wars'],
+    ['https://mega.nz/embed/catl2byQ#-LNRij9tl_nNTowSeEfpMKDwPQW3IJDJkb7iMe_8rfU', 'Episodio 2', 'Línea directa'],
+    ['https://mega.nz/embed/AeMhTZCQ#XtzTaBKrRw7C2sdzPXpBwwQvFcNtMocdA6wxhfXCUVE', 'Episodio 3', 'Los muertos llaman'],
+	['https://mega.nz/embed/ci8E2ABD#wA7kQUBxK6O5gzay0aSqYSq2HO0ZaIPlpTTHd-9v62U', 'Episodio 4', 'Marcha de todas las unidades'],
+	['https://mega.nz/embed/gmVyHRxR#Fnoq0Leq8CCfMlQZzkRO4guMAUAikywR9HyP_zUqWxU', 'Episodio 5', 'Gorila de vapor'],
+	['https://mega.nz/embed/07VlxLRT#aSGtfCMfmqDRqag2Ippft8US9DFyLTanioANUP2SUfY', 'Episodio 6', 'Escapar de prisión'],
+	['https://mega.nz/embed/N78EiaQT#Qla_UC7La_JadllFG0-muVmGJ95vDmX0xz-dUp6LrKE', 'Episodio 7', 'Misión secreta'],
+	['https://mega.nz/embed/oWkBkDCQ#LkLzqCtX0Fpp_vUOLP8Wp2Vy2NSIF5Nb8btlO9s28vY/AuthToken/kBkDCQ/LkLzqCtX0Fpp_vUOLP8Wp2Vy2NSIF5Nb8btlO9s28vY/-11', 'Episodio 8', 'Batalla final'],
+    ['https://mega.nz/embed/wLV1zSaR#N9Gy8_tg3vV7CdMF8MQrdiQaY6Koe0xAuGdKbTIt1vU', 'Episodio 9', 'El que destruye, el que salva'],
+    ['https://mega.nz/embed/oHcnjIwS#w7GLr-F0RNCWi9wK0BIp4g9dlqDDlXLkZYclmIdmgKc', 'Episodio 10', 'El dúo más fuerte de la humanidad'],
+    ['https://mega.nz/embed/xX0WEQgA#1y8EIhw58kYiFbadI1FPGBNz7qRs7q2ol6vADmH028I', 'Episodio 11', 'Prólogo de Dr. Stone']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/DrStone/Portada-Tmp2-Cap${index + 1}-DrStone.jpg`,
+    'iframe'
+]);
+
+const drstoneMovie1Episodes = [
+    ['https://mega.nz/embed/QC8UzaqC#dBZcHBRPDl_KuTkh_rfK8ddA-xgCXe0xIEAOTd9hqyg', 'Episodio 1', 'Dr.STONE Special Episode-RYUSUI']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/DrStone/Portada-Movie1-Cap${index + 1}-DrStone.jpg`,
+    'iframe'
+]);
+
+const drstoneSeason3Episodes = [
+    ['https://mega.nz/embed/OmpElC4b#g4ullSG1dJ68sWVOVSxMOQAcroz6RrUCTtYIUHSnU4E', 'Episodio 1', 'Un nuevo mapamundi'],
+    ['https://mega.nz/embed/aqQhnYxY#oULegxjJjsw5p-uitZE0Jh68UMImDBvbEPOVIYciAf4', 'Episodio 2', 'Lo quiero = Virtud'],
+    ['https://mega.nz/embed/6nZH0KoB#L7H4sQDXxqMZkFB3ngkbr84QbMrni2gWFWDD6pVqk0A', 'Episodio 3', 'Primer contacto'],
+	['https://mega.nz/embed/LmQkXDSQ#xPzgr4awCjQxcTtBEBNlfQipd4pT8QTeh1oQgs2EjSg', 'Episodio 4', 'Los ojos de la ciencia'],
+	['https://mega.nz/embed/CqRBHZrR#xHWH8HSkfviyATdAOhjA606y4zb1IUDUqwBtx1oxEd4', 'Episodio 5', 'El barco científico Perseo'],
+	['https://mega.nz/embed/qywhBDqB#oroDqjtIwzNyk_F0wFZcmUruEX9YjH1fiIh_42_u96U', 'Episodio 6', 'Cofre del tesoro'],
+	['https://mega.nz/embed/z74HHIob#xoWoRJZKAC53ytZ1JESIs4dbE4aUHrZjUoLctG_g-gs', 'Episodio 7', 'La luz de la esperanza y la desesperación'],
+	['https://mega.nz/embed/inJzAKCQ#OK_Tg_wRHhCoxyoXOGpYVbnPGzecN4YcmmHPQmBHrIg', 'Episodio 8', 'El as está en el barco científico'],
+    ['https://mega.nz/embed/r3ACBQTb#RbwzarUyLrppGQtsfy8nUKL9dvTspS8AQ1ZCwe_WnqU', 'Episodio 9', 'Ciencia hermosa'],
+    ['https://mega.nz/embed/3qI2lbRR#Mp9_EidFbEesoLHhbGEv5esiXlVfrhHb7jbQifpSgGg', 'Episodio 10', 'Guerras científicas'],
+    ['https://mega.nz/embed/vvJ3yQbD#V2rSL3flb16L4FmnS92Gy0dVO0wnsiDT0vUm_ZCWPUM', 'Episodio 11', 'Haremos un milagro'],
+	['https://mega.nz/embed/K2Y2wCZa#h-zdgDcYgfJ_kHgj9ohzv74kEtBPUaiai6hyjpR9hKs', 'Episodio 12', 'El reino científico contraataca'],
+	['https://mega.nz/embed/CywGEbpZ#e-wMmUgNGFdiOTNKfjjnbx45-BPZGN8QgNSAbIpYpKM', 'Episodio 13', 'El verdadero rostro de Medusa'],
+	['https://mega.nz/embed/bvBwHaiQ#dxbU-wZTWlnsuj8-gcTBICIv7B57PFE5iAGxPuBqMoc', 'Episodio 14', 'Maniobras intelectuales'],
+	['https://mega.nz/embed/HjhExZpA#9Z150UGthtt9ZYEdFZHzgLquslv9mzh-R9fHTpNCjZg', 'Episodio 15', 'Batalla decisiva tridimensional'],
+	['https://mega.nz/embed/3vRHmbaK#PdG9g195ZmNe0HsTuLdmb2VsMsE7hDTRPeckMGw7CkI', 'Episodio 16', 'Refriega por todo el territorio'],
+	['https://mega.nz/embed/SiZhBTJZ#VqyLGSAgoFrFafS3fh3xNUWrEm6AYL-VKYILby3PscE', 'Episodio 17', 'Joker'],
+	['https://mega.nz/embed/2vhSELbZ#GNxFQ2ko8awZMak2IjrAYAYjCQKMGgXjkS8KOLC78es', 'Episodio 18', 'El resplandor de la ruina'],
+	['https://mega.nz/embed/n7gl0JrI#NkTa7ennjdm5My1q8hXseNWmwXo6GN7SIZNrxkAySdY', 'Episodio 19', 'The last man standing'],
+	['https://mega.nz/embed/OnBn1bAQ#bFAglUKhX2jw9_d2bG9euiJ1bMU0omVTTkr-zPwLmnE', 'Episodio 20', 'Primer sueño'],
+	['https://mega.nz/embed/OiBGEB5K#ceOBrtjTD7MEsfe4G88PXPflB55DG6iuPuxpaoceT58', 'Episodio 21', 'La isla del tesoro'],
+	['https://mega.nz/embed/HjZ0XQZI#0cORNPKDIf9fC_ugtupg4OM1zxxClal-raqgMJ7d9Kw', 'Episodio 22', 'Más allá del nuevo mundo']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/DrStone/Portada-Tmp3-Cap${index + 1}-DrStone.jpg`,
+    'iframe'
+]);
+
+const drstoneSeason4Episodes = [
+    ['https://mega.nz/embed/6OQ2HJDY#WemNSb1lF5COJ77_ul4r-jt_O3dTy2pjZfwLe9UD0Sg', 'Episodio 1', 'Ryusui contra Senku'],
+    ['https://mega.nz/embed/yexj1aoJ#SLl9ubMp_7Ml6ZKeVfRApef8MSsPK0ClVzBK2lnb4tw', 'Episodio 2', 'Science Journey'],
+    ['https://mega.nz/embed/ueJVgLbJ#iSwPIMXG48rW_EU3S9WLTmbYPGaFsyzKOz0BcsMw0GU', 'Episodio 3', 'Trampa de luz en la oscuridad'],
+	['https://mega.nz/embed/uPpATSgR#XrwkRS83276VmuyA84UtihjY2R9wDZwpadeKduWT1JM', 'Episodio 4', 'Dr.X'],
+	['https://mega.nz/embed/DX5HnL4L#Z7q2K342n_IFAarwRk0SD3Rhjkajgt5DpUoaVmbL4vs', 'Episodio 5', 'Doctor VS. Doctor'],
+	['https://mega.nz/embed/3DwBXYyS#Y2avtphO_kSJ3SQngDSMMpfCMWLu_DWNEpND5Fjf1p8', 'Episodio 6', 'Science is elegant'],
+	['https://mega.nz/embed/LHAyEKgD#cF5yuEuPtvV4EHtF7Xn4Ht3HosclDzYJZteu2n97XTo', 'Episodio 7', 'Dos científicos'],
+	['https://mega.nz/embed/joxGDKLI#OptBDVGdoUJnuyCZ8WlDSAREDiHqqW4UrUJDKJX8OjM', 'Episodio 8', 'Lock on'],
+    ['https://mega.nz/embed/EiZgUDLL#BfYis4kwTkg__cNaH6Z0BzQuJsqylre108YTxjqZl9M', 'Episodio 9', 'La luz de la ciencia'],
+    ['https://mega.nz/embed/WgQQUSQa#LXeebp4H26ohL8sPVxyAGLojnFmQIH61ogbxc0Yfch0', 'Episodio 10', 'Un camino de tierra'],
+    ['https://mega.nz/embed/q4p2hA5L#B3DKd19jcb22p-e8T9NDN4_xFLsN6E0EHLsaYYcSM4o', 'Episodio 11', 'Quien conoce y quien hace las reglas'],
+	['https://mega.nz/embed/2sgXhTSb#aH1ZwDZW01NSdYKF_RkCdKcGGojnx0NsnKHMyWt_t9k', 'Episodio 12', 'Reencuentro'],
+	['https://mega.nz/embed/rw5S3LKZ#Enzc03inlEVbfrRiFRDK3OSdpsegSDRQAHGUL70SDRs', 'Episodio 13', 'Mirando la misma luna'],
+	['https://mega.nz/embed/6gRAAQCC#WriHXh0EkU7hqcNd3ilFpOerUQTUKL_z-el6quoRCu8', 'Episodio 14', 'Carrera terrestre'],
+	['https://mega.nz/embed/u4IlBZaT#6ttfc-wBo5u_h-9Xi3PZt4CGbLTo-OHk01IFWK2tCc8', 'Episodio 15', 'Zafarse de un asedio'],
+	['https://mega.nz/embed/iwBlBT6a#sJx3UeAZuFxX5Rom5DxuIG568WetMyuEtQXeORGT24Q', 'Episodio 16', 'Medusa Mechanism'],
+	['https://mega.nz/embed/H9pDgQbL#XZeC8xs2Vyh1uM-Zjx-UAe-I19qiIkij56nCDn_Qvok', 'Episodio 17', 'Repulsivo pero hermoso'],
+	['https://mega.nz/embed/GhhFEQiZ#BH1mFRVggN9xKiMSb_LSjweqpugKJ6DKILRgOt51B9I', 'Episodio 18', 'Diamond Heart'],
+	['https://mega.nz/embed/ePxFDb6I#IVdx0UWQnXYEu7qF-QaRwkxwRcWVGgY-447o-mqJGaQ', 'Episodio 19', 'Stone Sanctuary'],
+	['https://mega.nz/embed/7g5WAAjC#yKvCrOBATBtziUQInR4o-XqaePUT7EGMTaHfZ3NriiE', 'Episodio 20', 'Lo que una vez intenté destruir'],
+	['https://mega.nz/embed/2xpRySIC#NzecarA9mYBP1x6n77L8dvTEnSI82IdVXqAkxnyqwZo', 'Episodio 21', 'Our Dr. Stone'],
+	['https://mega.nz/embed/OwRGGSIZ#G0RwOtmivDb5RMGvAANZwLVjHnpvMOBc4cCYX7Lfln4', 'Episodio 22', 'Hasta que volvamos a vernos'],
+	['https://mega.nz/embed/K4Ax0S5C#O-fpQei2zxG2aV6luy643DBAgtKZqOsSnOsKyDbCPQg', 'Episodio 23', 'Una científica en soledad'],
+	['https://mega.nz/embed/6hBl0CKZ#0FmJ7HzuiIkZIQBddFIm-y0dxt8X1i5hEycF4LQib1g', 'Episodio 24', 'Whole New World'],
+	['https://mega.nz/embed/lutm3RhA#XfOeFIsEPOyVoKOKvF9xM5u8BtCPIzjSXXFgCC94yDQ', 'Episodio 25', 'Future Engine'],
+    ['https://mega.nz/embed/a1gXSCJZ#0a2QGgZgOAJp9OT7hWWII12w8BqUgzyZssLjCHj6hkQ', 'Episodio 26', 'Fire'],
+    ['https://mega.nz/embed/x6hzTbIb#dpQNbSwf84YRmu8OXwpg-aDuvg9e4ooQu3xfITekM_8', 'Episodio 27', 'El universo está hecho de números'],
+    ['https://mega.nz/embed/lrBGRaBb#KlOUVbc6LUxWfqm1f6nOUZ1WOnEcrTI685-bkuYjTiQ', 'Episodio 28', 'El amanecer de los ordenadores'],
+	['https://mega.nz/embed/TkJ0SZaD#PvQ4LtFMhQp_ZD2U0-Qf76J37UweHt3vX7QqgWGjUt4', 'Episodio 29', 'La verdad sobre los cohetes'],
+	['https://mega.nz/embed/SbZzWKjQ#NtEv0VpyFxmB_-GRhSKUr-GnKCz8VBtWhXvpodUGz-k', 'Episodio 30', 'Stone to space'],
+	['https://mega.nz/embed/BnhFwA7a#CFExM17Uz_LQNOMoORoOu-kwruUL8XgxJ1-0Pqz34Go', 'Episodio 31', 'Count down'],
+	['https://mega.nz/embed/Iz42lLgb#1AAJx2GTL2IG5JwezqCcygratWlEn6keXDbFjBs8Y_U', 'Episodio 32', 'Aspirantes de la ciencia'],
+	['https://mega.nz/embed/GbpyAJhQ#qMyZpnt1_N2qXg3Y51l7CGjQF6QSqu_5BnDpzSoPDi0', 'Episodio 33', 'Lo quiero todo'],
+    ['https://mega.nz/embed/Z75B3LAI#d4l6IfdBqCkywnUlE1wdIF3df4jBhASaMS6NNBVnAK0', 'Episodio 34', 'Count Down'],
+    ['https://mega.nz/embed/BmBixQhJ#vJ1G1V8F_LxlvcZf0orMjGH46PXhK1syt12EMjZXJLM', 'Episodio 35', 'Giant Step'],
+    ['https://mega.nz/embed/NqRCGbbb#AVCJ47IW72ey-F2Ws-R90JJHvniVyj0khjBrN_KTk3A', 'Episodio 36', 'Whyman'],
+    ['https://mega.nz/embed/trEggSLC#tqraDHMiXnMCbFgS0LyRNrcIk_hH8NgsJttJXE5OT6Y', 'Episodio 37', 'Lo que instiga el futuro']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/DrStone/Portada-Tmp4-Cap${index + 1}-DrStone.jpg`,
+    'iframe'
+]);
 
 const catalogData = {
 	aventuras: {
@@ -1807,7 +1948,7 @@ const catalogData = {
 		label: 'CATÁLOGO 02', title: 'Inazuma Eleven', description: 'Ramon Junior High School tiene un horrible programa de fútbol que está a punto de terminar. Endou Mamoru, un jugador estrella que alguna vez tuvo problemas, y un grupo de jugadores de rag-tag reconstituyen el equipo y crecen juntos mientras luchan para convertirse en formidables y agitan el mundo del fútbol.',
 		seasons: [
 			{ title: 'Temporada 1', description: '26 Episodios', cover: 'img/Temp1-Inazuma.jpg', videos: inazumaSeason1Episodes },
-			{ title: 'Temporada 2', description: '40 Episodios', cover: 'img/Temp2-Inazuma.jpg', videos: inazumaSeason2Episodes },
+			{ title: 'Temporada 2', description: '41 Episodios', cover: 'img/Temp2-Inazuma.jpg', videos: inazumaSeason2Episodes },
 			{ title: 'Temporada 3', description: '60 Episodios', cover: 'img/Temp3-Inazuma.jpg', videos: inazumaSeason3Episodes }
 		]
 	},
@@ -1957,6 +2098,16 @@ const catalogData = {
 		label: 'CATÁLOGO 21', title: 'Fullmetal Alchemist: Brotherhood', description: 'Una chica de una zona rural despierta de vez en cuando en el cuerpo de un chico de ciudad que vive esa vida emocionante con la que ella siempre ha soñado.',
 		seasons: [
 			{ title: 'Temporada 1', description: '64 Episodios', cover: 'img/Temp1-Fullmetal.jpg', videos: fullmetalSeason1Episodes },
+		]
+	},
+	drstone: {
+		label: 'CATÁLOGO 22', title: 'Dr. Stone', description: 'Senku es un joven extremadamente inteligente con un gran don para la ciencia y una acida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero mas apto para usar los musculos que para pensar. Cuando tras cierto incidente toda la humanidad acaba convertida en piedra, ellos logran despertarse en un mundo miles de años despues, con la civilizacion humana completamente desaparecida y con toda la humanidad congelada en piedra como ellos estuvieron. Ahora es su obligacion rescatar a la gente y crear un nuevo mundo',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-DrStone.jpg', videos: drstoneSeason1Episodes },
+			{ title: 'Temporada 2', description: '11 Episodios', cover: 'img/Temp2-DrStone.webp', videos: drstoneSeason2Episodes },
+			{ title: 'Pelicula: Ryusui', description: '1 Película', cover: 'img/Movie1-DrStone.jpg', videos: drstoneMovie1Episodes },
+			{ title: 'Temporada 3', description: '22 Episodios', cover: 'img/Temp3-DrStone.jpg', videos: drstoneSeason3Episodes },
+			{ title: 'Temporada 4', description: '36 Episodios', cover: 'img/Temp4-DrStone.jpeg', videos: drstoneSeason4Episodes }
 		]
 	},
 };
