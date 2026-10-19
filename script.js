@@ -685,6 +685,7 @@ const aoashiSeason1Episodes = [
 const aoashiSeason2Episodes = [
 	['https://mega.nz/embed/JFFywBSJ#NkkCh473m9T-qfKGJBlhvARdkyg0rdX7kh6OlTwJJlA', 'Episodio 1', 'Línea de salida'],
 	['https://mega.nz/embed/JUtkhYhC#QadwcqUwiRPKIK-7OrSF_PvnHqmSf78LW5uDHrdQXX0', 'Episodio 2', 'La caña pensante'],
+	['https://mega.nz/embed/sYtngDDJ#EYMXOpZL-UXG9-ilZCKjMtLU6dO5Oy2EECnhIMUJiPw', 'Episodio 3', 'Jornada 7, partido contra el IFP Kashiwa']
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -1935,6 +1936,58 @@ const drstoneSeason4Episodes = [
     'iframe'
 ]);
 
+const quintillizasSeason1Episodes = [
+    ['https://mega.nz/embed/9S8BTBRK#RH2vKvLhDlSUfgV7SMIZEzNTULFUDUBDLjecuTDX_DE', 'Episodio 1', 'Las quintillizas'],
+    ['https://mega.nz/embed/UGc1TZDB#LlrGxhU-l6urP-bHdBNrs_uO-CO9mf9CQVa2G9f18O0', 'Episodio 2', 'Declaración en el tejado'],
+    ['https://mega.nz/embed/sOsWiBZK#zVtaH53D5QPy35PbaqDqDO3IOQODVMaPjI_vgrYmgMM', 'Episodio 3', 'Un montón de problemas'],
+	['https://mega.nz/embed/celUHK7b#0VMXb5d5_tPM75ivrjrxY7gft6S-BN0biGnRHCmg7Jg', 'Episodio 4', 'Día libre'],
+	['https://mega.nz/embed/AGlhCRDK#RRhKTBTQeQs7KNJGLH8Eq-qKUhRcqplq1nWPEOuCLt0', 'Episodio 5', 'Cinco partes para todas'],
+	['https://mega.nz/embed/ZSlTFSzR#xk2YDjVWe5X51W6wMaHv5WO8uHd2sgw9alX78fEWQK4', 'Episodio 6', 'Lo que se ha acumulado'],
+	['https://mega.nz/embed/U6t1CQiA#vLxKIoY75Z5zhmP_S38r2MKrRqTEJKGI29ob2GPY1Mg', 'Episodio 7', 'Oso, oso, mentiroso'],
+	['https://mega.nz/embed/RGUQRRaL#d7e-THaxBiV36mWkLZiNr0QfvrDoJJFCMgO7b3p-cvM', 'Episodio 8', 'Fotos del comienzo'],
+    ['https://mega.nz/embed/YfkFCJpT#yXFJ1KlblwxgV8sobi2y3CVWVq15TAi3gw_jtgeE-hE', 'Episodio 9', 'La leyenda del destino - Día 1'],
+    ['https://mega.nz/embed/oTECWQLS#_zt-IrYPTi2GfeqIPrmTGe4OHL6ge_HuF-LSGtoV-Ac', 'Episodio 10', 'La leyenda del destino - Día 2'],
+	['https://mega.nz/embed/MKN1CAaC#OKc6nP75jz0_SVfvLLrH4uq9k3ssu8LidSRHZl5N-Es', 'Episodio 11', 'La leyenda del destino - Día 3'],
+	['https://mega.nz/embed/lTthCKKS#HA-TEBq-gsVl49SeisWk-7jyzNje4F03gOayklvgD_E', 'Episodio 12', 'La leyenda del destino - Día 2000']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Quintillizas/Portada-Tmp1-Cap${index + 1}-Quintillizas.jpg`,
+    'iframe'
+]);
+
+const quintillizasSeason2Episodes = [
+    ['https://mega.nz/embed/0FdkHAYL#ECaKu101zFDhn0UXUyOyNc_6MNoIUoO8SwAVf3h5ji0', 'Episodio 1', 'Enredos y desventuras en Kioto'],
+    ['https://mega.nz/embed/dZsRBJKD#vZf-NyXpMOgwz3YXz_J1yopZeO5HDdapB9Vz8EB0Pqk', 'Episodio 2', 'Siete despedidas (Primera parte)'],
+    ['https://mega.nz/embed/gINRHb5a#op9jE6i23yBwvX2kXBbW4fbN6NOlAoNH7fuJ_SGBb5U', 'Episodio 3', 'Siete despedidas (Segunda parte)'],
+	['https://mega.nz/embed/5Y12QKbQ#On3d4FFkglWW40Va67pYw6uFfTSArXwDdFa17mFUtbY', 'Episodio 4', 'Siete despedidas (Tercera parte)'],
+	['https://mega.nz/embed/JAtxiYSY#anBLL7G4BQCMKwWkaThp4xPRkgsV4ZzAhEMSj0E-mBU', 'Episodio 5', 'Muy buen trabajo'],
+	['https://mega.nz/embed/kJoGXIpD#9twpuO6FwxfGWzejhJ90P68nOXJrzlkvNLs0npnsD2c', 'Episodio 6', 'El último examen'],
+	['https://mega.nz/embed/RBVjzCDS#CD-7k0odE4AibirMz1n-HizAkdKWruXgRPw89Pli9Gs', 'Episodio 7', 'Comienza la ofensiva'],
+	['https://mega.nz/embed/YBtXmB5K#BI7OYYf26Iq-Bv-JqyFdfrbYwsq7pV9TEhBw2NHLxHs', 'Episodio 8', 'Huevos revueltos'],
+    ['https://mega.nz/embed/UN1jUDLA#6mkUzXY2aW7xz4saxYADL4pXhc4bCQXOLIE6uoP77tw', 'Episodio 9', 'Bienvenidos a la clase 3-1'],
+    ['https://mega.nz/embed/NUl1GZBR#p-KTspwvKDlSR0JYQoKYIhHPS9gjHsr9wcwkAaXczv8', 'Episodio 10', 'Las cinco grullas devuelven el favor'],
+	['https://mega.nz/embed/wYthFAhY#EL8AWh4kQuXB3vnxURiq0rXv3x0kUCWbrSL3jcYPnSA', 'Episodio 11', 'Guerra de hermanas (Primera parte)'],
+	['https://mega.nz/embed/gdNBlRYb#E51nTZVXe-WeeYLu6sfoccDUN7b8UXTEjhtdAo98xiI', 'Episodio 12', 'Guerra de hermanas (Segunda parte)']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Quintillizas/Portada-Tmp2-Cap${index + 1}-Quintillizas.jpg`,
+    'iframe'
+]);
+
+const quintillizasMovie1Episodes = [
+    ['https://uqload.is/embed-i1mirjycxfes.html', 'Episodio 1', 'The Quintessential Quintuplets Movie']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Quintillizas/Portada-Movie1-Cap${index + 1}-Quintillizas.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -2107,7 +2160,15 @@ const catalogData = {
 			{ title: 'Temporada 2', description: '11 Episodios', cover: 'img/Temp2-DrStone.webp', videos: drstoneSeason2Episodes },
 			{ title: 'Pelicula: Ryusui', description: '1 Película', cover: 'img/Movie1-DrStone.jpg', videos: drstoneMovie1Episodes },
 			{ title: 'Temporada 3', description: '22 Episodios', cover: 'img/Temp3-DrStone.jpg', videos: drstoneSeason3Episodes },
-			{ title: 'Temporada 4', description: '36 Episodios', cover: 'img/Temp4-DrStone.jpeg', videos: drstoneSeason4Episodes }
+			{ title: 'Temporada 4', description: '37 Episodios', cover: 'img/Temp4-DrStone.jpeg', videos: drstoneSeason4Episodes }
+		]
+	},
+	quintillizas: {
+		label: 'CATÁLOGO 23', title: 'Las Quintillizas', description: 'Fuutarou Uesugi es un estudiante de segundo año de instituto cuya familia siempre ha sido muy pobre. Un día recibe una suculenta oferta de trabajo como tutor a medio tiempo... ¡pero sus estudiantes resultan ser unas chicas de su propia clase! Para complicar más las cosas, son quintillizas... Las cinco hermanas son todas muy atractivas, pero no es lo único que tienen en común: todas odian...',
+		seasons: [
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Quintillizas.webp', videos: quintillizasSeason1Episodes },
+			{ title: 'Temporada 2', description: '12 Episodios', cover: 'img/Temp2-Quintillizas.webp', videos: quintillizasSeason2Episodes },
+			{ title: 'The Quintessential Quintuplets Movie', description: '1 Película', cover: 'img/Movie1-Quintillizas.jpg', videos: quintillizasMovie1Episodes }
 		]
 	},
 };
