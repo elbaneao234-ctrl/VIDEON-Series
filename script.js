@@ -1988,6 +1988,57 @@ const quintillizasMovie1Episodes = [
     'iframe'
 ]);
 
+const cyberpunkSeason1Episodes = [
+    ['https://mega.nz/embed/FedC2KKA#651SPhd_YgjS1fPtFHitXDbBuBZmJxGyxxJYX7eOAWc', 'Episodio 1', 'No quiero decepcionarte'],
+    ['https://mega.nz/embed/UOkjiJ7R#GjdDUdRqrGMyY1Ye4ACNXj0LSAi4vXiahksMyeXpyuA', 'Episodio 2', 'Como un chico'],
+    ['https://mega.nz/embed/sHtRmAZQ#JeNX5v8U0eXd9Y6UxBpcF45kpwPx___0rs1Ecl_LdRo', 'Episodio 3', 'Banda criminal'],
+	['https://mega.nz/embed/4P8VUZKA#y8Q9nzJtpSx1nO-MeJoloCxz3wvYKpJRACRFlN2J0mo', 'Episodio 4', '¡Que suerte la tuya!'],
+	['https://mega.nz/embed/4HNmyCjK#i7MswFNkzRoq1-BzYsNbXoJTYxrfb531c8h_3apobuM', 'Episodio 5', 'Todas las miradas sobre mí'],
+	['https://mega.nz/embed/hD9XAIKZ#w12xfEtSVi-Zm-fAp8RnfDTDyg_A1fQy1MNg_Lw7aac', 'Episodio 6', 'Chica en llamas'],
+	['https://mega.nz/embed/8f10wIjY#_WMzDSk9f28xHkGsegbq3OWfnoeoUC-GCeBr5ctnQbM', 'Episodio 7', 'Más fuerte'],
+	['https://mega.nz/embed/5XdgjIja#o_98JXuP26faXwdY01e8X1acS64hX98yiFZXyMy2gt8', 'Episodio 8', 'Quédate'],
+    ['https://mega.nz/embed/5LVw1C5a#_6KdCF8sXsa14nxzOH-vO4lIdY1ppD4kvbCSUPQcC3M', 'Episodio 9', 'Humanidad'],
+    ['https://mega.nz/embed/VaNDyTCS#1DGI7_ChAjs7tsGsNlAjtyoVPU0ir_iemyKRV--eARY', 'Episodio 10', 'Mi luna, mi hombre']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Cyberpunk/Portada-Tmp1-Cap${index + 1}-Cyberpunk.jpg`,
+    'iframe'
+]);
+
+
+const cyberpunkSeason2Episodes = [
+    ['', 'Episodio 1', '(Estreno 20 de octubre de 2026)']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Cyberpunk/Portada-Tmp2-Cap${index + 1}-Cyberpunk.jpg`,
+    'iframe'
+]);
+
+const tomodachiSeason1Episodes = [
+    ['https://mega.nz/embed/XsJ2zapL#le0WAeeGjyGJSoeMjUGkMXm3Y9DWVAIbQlLg_l0AHcE', 'Episodio 1', '¿Dudas de tus amigos, Yuichi?'],
+    ['https://mega.nz/embed/igJViJhZ#itI0UKXQ9kj3zHPU15zf8OoDsWFvmu6tnwCSH20Bpmw', 'Episodio 2', 'Tenemos cosas de las que hablar, ¿no?'],
+    ['https://mega.nz/embed/34g2DQpD#9qLKXUAPlnL-OEK_XjwxhuKtRgVUlKL1XLFUh3Sii0Y', 'Episodio 3', 'Eso no me lo creo'],
+	['https://mega.nz/embed/L4plnByJ#7nbAv12Blykfi2Dts6GemhZ3tufJVUaQqH7jbbj-PJw', 'Episodio 4', '¿En serio? Da mucha grima'],
+	['https://mega.nz/embed/Xlp23LbT#BNkRW3gYgwADjo3QaN4tWlJNcwg3UMC07W1IQBPbCWQ', 'Episodio 5', 'Eres bastante tonto, Yuichi'],
+	['https://mega.nz/embed/q9ZmRCCB#216EivZOg_WJI6Fpy7kanEPxqAJTiZ_-IkLey21GvsQ', 'Episodio 6', 'No puedo ser amigo de un asesino'],
+	['https://mega.nz/embed/btY0nBpZ#d78u1RoIzvcNU0Dt6C8-9cXxzM-p6xK34Yo7lEn6yh4', 'Episodio 7', 'Me quedo con tu vida por valor de 20 000 000 yenes'],
+	['https://mega.nz/embed/WlBHlDJY#izuBx2fZerS1A1QGGT_ppDd8VBvSHzSgBca3mAGWPhc', 'Episodio 8', 'Es un juego en el que esperas, esperas y sigues esperando'],
+    ['https://mega.nz/embed/fkgHXSjQ#ttr5DnxD4yUfM5SA1-vteKeOuvQFuFpkF7ZTVvaOeIM', 'Episodio 9', 'Cambia de bando de una vez'],
+    ['https://mega.nz/embed/mloRSCzT#06OgVnNJcHQgZJP5lR9KYO7SwIz_SIsHXNlY2yfU2DM', 'Episodio 10', '¡Se acabó el tercer juego!'],
+  	['https://mega.nz/embed/rgBgiYaT#xjeYdoTyIIm8TQMZIQ7TuN8N3kIdpi1vvY6nHtWeo7Q', 'Episodio 11', '¿De verdad que no tienes nada que te importe?'],
+    ['https://mega.nz/embed/f4gA1TKD#FPoSwn3D-b7vFHkK0PYyYO3v6TxpTgbHh5hU6lSAt7E', 'Episodio 12', 'Lo que más me importa es...']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Tomodachi/Portada-Tmp1-Cap${index + 1}-Tomodachi.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -2169,6 +2220,19 @@ const catalogData = {
 			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Quintillizas.webp', videos: quintillizasSeason1Episodes },
 			{ title: 'Temporada 2', description: '12 Episodios', cover: 'img/Temp2-Quintillizas.webp', videos: quintillizasSeason2Episodes },
 			{ title: 'The Quintessential Quintuplets Movie', description: '1 Película', cover: 'img/Movie1-Quintillizas.jpg', videos: quintillizasMovie1Episodes }
+		]
+	},
+	cyberpunk: {
+		label: 'CATÁLOGO 24', title: 'Cyberpunk', description: 'En una distopía de corrupción e implantes cibernéticos, un chico prodigioso y temerario busca convertirse en un mercenario proscrito, conocidos como edgeruners.',
+		seasons: [
+			{ title: 'Temporada 1', description: '10 Episodios', cover: 'img/Temp1-Cyberpunk.jpg', videos: cyberpunkSeason1Episodes },
+			{ title: 'Temporada 2', description: 'En estreno', cover: 'img/Temp2-Cyberpunk.jpeg', videos: cyberpunkSeason2Episodes }
+		]
+	},
+	tomodachi: {
+		label: 'CATÁLOGO 25', title: 'Tomodachi Game', description: 'Un grupo de cinco buenos amigos se ve involucrado en un incidente en el cual desaparece el dinero que la clase había reunido para una excursión. Las desconfianzas surgente, pero todo se complica cuando tienen que participar en un extraño juego de deudas y confianza que pondrá a prueba su amistad.',
+		seasons: [
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Tomodachi.webp', videos:tomodachiSeason1Episodes }
 		]
 	},
 };
