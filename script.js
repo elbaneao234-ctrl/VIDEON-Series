@@ -367,11 +367,11 @@ const vinlandSeason2Episodes = [
 	['https://mega.nz/embed/tKNxWYwB#DhKc-miF1l-8Njj7UMbuFVOsyI3lKXUvRDb0RX9TYUM', 'Episodio 17', 'El camino a casa', 'img/Vinland/Portada-Tmp2-Cap17-Vinland.jpg', 'iframe'],
 	['https://mega.nz/embed/8gxQ3bKI#leupnRC8lPX7tg26SHzorFLz76Ttrtyo3hEjLUPN71Q', 'Episodio 18', 'El primer método', 'img/Vinland/Portada-Tmp2-Cap18-Vinland.jpg', 'iframe'],
 	['https://mega.nz/embed/p04HjbaL#z7uXypmI5Svq4mwTX9lryyEMCnU-SLO37YtNhPPMJ4I', 'Episodio 19', 'La batalla de la granja de Ketil', 'img/Vinland/Portada-Tmp2-Cap19-Vinland.jpg', 'iframe'],
-	['https://mega.nz/embed/QkJT1YyB#evMlTL8CLau45OZLhGIfasgnGcnvh8oxBO5nmjxm9xc', 'Episodio 20', 'Dolor', 'img/Vinland/Portada-Tmp2-Cap20-Vinland.jpg', 'iframe'],
-	['https://mega.nz/embed/8lQSUYyL#aUSiCq4z3TpRKZQM_mApVK2-TMFBPw2SHOP3yO9TOr8', 'Episodio 21', 'Coraje', 'img/Vinland/Portada-Tmp2-Cap21-Vinland.jpg', 'iframe'],
+	['https://mega.nz/embed/Nr83hKCI#RefGrYWAG03FgrHFYSRtqeNwJBfQG9fo8hSMzgqIBjQ', 'Episodio 20', 'Dolor', 'img/Vinland/Portada-Tmp2-Cap20-Vinland.jpg', 'iframe'],
+	['https://mega.nz/embed/RzNTTaDI#4v0D6-wUW8z2JNUc8nSRD1vQCmQOHTgRr3zEKotDIuU', 'Episodio 21', 'Coraje', 'img/Vinland/Portada-Tmp2-Cap21-Vinland.jpg', 'iframe'],
 	['https://mega.nz/embed/JGkmmbba#79dFCnBi5zppf8Bzk3l3DXhz7xjrMRO75KUWlvC5AP4', 'Episodio 22', 'El rey de la rebelión', 'img/Vinland/Portada-Tmp2-Cap22-Vinland.jpg', 'iframe'],
-	['https://mega.nz/embed/95IhwbwC#QVV2ERisuHwef_zBG7UXU6RqOFitjkBlNml58O4-9_0', 'Episodio 23', 'Dos caminos', 'img/Vinland/Portada-Tmp2-Cap23-Vinland.jpg', 'iframe'],
-	['https://mega.nz/embed/s0IwRZTA#vM9ldrSLknrWzwGoEmRd6Xk-kcdNDjSjBgj-EvooPLs', 'Episodio 24', 'Hogar', 'img/Vinland/Portada-Tmp2-Cap24-Vinland.jpg', 'iframe']
+	['https://mega.nz/embed/g6FAkTCb#Mv5a7-SDb4faptqjU-18l3IdOG5rao4avOEt7La3pHw', 'Episodio 23', 'Dos caminos', 'img/Vinland/Portada-Tmp2-Cap23-Vinland.jpg', 'iframe'],
+	['https://mega.nz/embed/xntUHZpA#5I2DDTWqVOwLRrFpaYoW3hnfIj4Zj3bXhvuV2OuHvPI', 'Episodio 24', 'Hogar', 'img/Vinland/Portada-Tmp2-Cap24-Vinland.jpg', 'iframe']
 ];
 
 let hunterRemainingUrls = [];
@@ -2039,6 +2039,97 @@ const tomodachiSeason1Episodes = [
     'iframe'
 ]);
 
+const gachiakutaSeason1Episodes = [
+    ['https://ani.dramav1.cfd/player.php?ep=Z2FjaGlha3V0YTox&type=sub', 'Episodio 1', 'Altomundo'],
+    ['https://ani.dramav1.cfd/player.php?ep=Z2FjaGlha3V0YToy&type=sub', 'Episodio 2', 'Receptáculo'],
+    ['', 'Episodio 3', 'Sotomundo'],
+	['', 'Episodio 4', 'El cuartel general de los limpiadores'],
+	['', 'Episodio 5', 'Saqueadores'],
+	['', 'Episodio 6', '¡Te partiré la boca a puñetazos'],
+	['', 'Episodio 7', 'Conclusión'],
+	['', 'Episodio 8', 'Un paso al frente'],
+    ['', 'Episodio 9', 'La ciudad de los grafitis'],
+    ['', 'Episodio 10', 'Penta, el Dominio Prohibido Desértico'],
+  	['', 'Episodio 11', 'Las atenciones de Amo'],
+    ['', 'Episodio 12', 'Como una maldición'],
+	['', 'Episodio 13', 'Mirada mortecina'],
+    ['', 'Episodio 14', 'La tormenta antes de la tormenta'],
+    ['', 'Episodio 15', 'Oe, en serio'],
+	['', 'Episodio 16', 'De genios y mediocres'],
+	['', 'Episodio 17', 'Recuerdos de un mediocre'],
+	['', 'Episodio 18', 'Anterior empleo'],
+	['', 'Episodio 19', 'La colección Custodia'],
+	['', 'Episodio 20', 'Símbolo'],
+    ['', 'Episodio 21', 'Contra reloj'],
+    ['', 'Episodio 22', 'El poder del protector'],
+  	['', 'Episodio 23', 'El hombre que se hará fuerte'],
+    ['', 'Episodio 24', 'Excursión']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Gachiakuta/Portada-Tmp1-Cap${index + 1}-Gachiakuta.jpg`,
+    'iframe'
+]);
+
+const yourpancreasSeason1Episodes = [
+    ['https://jkanime.net/playlist/297aYnU8FEot9oe/?video=1', 'Japonés sub', 'Kimi no Suizou wo Tabetai - 1'],
+	['https://uqload.is/embed-sxpb5poprg4u.html', 'Dob Castellano', 'Me quiero comer tu páncreas - 1']
+
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/YourPancreas/Portada-Tmp1-Cap${index + 1}-YourPancreas.jpg`,
+    'iframe'
+]);
+
+
+const bunnygirlsenpaiSeason1Episodes = [
+    ['https://mega.nz/file/VK0CgYhT#tKNihXHbIgytLsf50eWLxoxKjw03Axv8mz7Cf7ZNxmo', 'Episodio 1', 'La senpai es una conejita'],
+    ['https://mega.nz/file/kfk3wBjS#A_91jsMOInLXT0Tzns0oZksTgfX4Hgk2SerUG0rQ9KU', 'Episodio 2', 'Siempre hay problemas en la primera cita'],
+    ['https://mega.nz/file/V3VyiBCL#tjNuw770PIbaDQAnffGozT4XY8PX5SW1Y4Ov8lPdjOE', 'Episodio 3', 'Un mundo sin ti'],
+	['https://mega.nz/file/4m1AxTyR#Flgn-Ax9gmhXqhdsL3JK-XchTf8k_k6qDGm1FDWYrfE', 'Episodio 4', 'Los cerdos no tienen mañana'],
+	['https://mega.nz/file/AnVUxK6B#K-OB7DjA6X_cwQ9OFKAsEPNjsLHROLQRcpQGLrrKscY', 'Episodio 5', 'Todas mis mentiras para ti'],
+	['https://mega.nz/file/k7txQTTJ#HtLlUqbPXUE7_CA97DufZOVIqwXYKof42yITWSod3eo', 'Episodio 6', 'El mundo que elegiste'],
+	['https://mega.nz/file/xytnAS7C#vNFF7TgIPOwazAqA5b65Rm6qRcd5PpEwj-ZL4W0kRvk', 'Episodio 7', 'La paradoja de la relatividad'],
+	['https://mega.nz/file/xmc0lQ5D#-db4LscgOkc9aXWMrqWnpF5HiM8eTkoW2k2LSH4HdQk', 'Episodio 8', 'Lava la rabia bajo la lluvia'],
+    ['https://mega.nz/file/AndzBCDZ#BqGCIMRMPadCk-7WM7FNtcTnn4-LLk1oaqGHxR22gvo', 'Episodio 9', 'Hermana en crisis'],
+    ['https://mega.nz/file/97FCGbpB#l_71kmjHsbmJWxWAmNioax8nHQ25iOdQ25b7fWttrp8/AuthToken/FCGbpB/l_71kmjHsbmJWxWAmNioax8nHQ25iOdQ25b7fWttrp8/-11', 'Episodio 10', 'Complejo insoportable'],
+  	['https://mega.nz/file/kjU2zJ6S#5vr-Y7lm6O6TCL0x6b9KWQItvcQZupk0hP2XCO-0JNA', 'Episodio 11', 'La pesadilla de Kaede'],
+    ['https://mega.nz/file/gjsx0KYQ#9R_1-v0EF6twtwDfQPtzUe9BQpf6B8KsIuNjfcWO_Ck', 'Episodio 12', 'Vivir en un sueño que no termina'],
+	['https://mega.nz/file/478lWawa#BbKfOKNGpVJaKMi_75MuGQ8QOJB6dy-329g3i3IRXqs', 'Episodio 13', ' El amanecer de una noche eterna']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/BunnyGirlSenpai/Portada-Tmp1-Cap${index + 1}-BunnyGirlSenpai.jpg`,
+    'iframe'
+]);
+
+const bunnygirlsenpaiSeason2Episodes = [
+    ['https://mega.nz/embed/OgRS2BKA#-wEF_pI3T3pyfl2Fl462jys_vN2UGaES4lG9LYuAZnI', 'Episodio 1', 'La pubertad no termina nunca'],
+    ['https://jkanime.net/jkplayer/um?e=R1BjSVJKNzBWRkIxc2ZEOUpxTjB0N2k2bTNpRXJTK3MrN3JvZG9HWlM2aWs1d1YrVFplZGpCd2JaYUNzVGhRbTZPNmFHOVJJQk9YU3FpOVRqZkZXRlB6QWRuSkNRZ05tcDZNMC9seHZqSlRiWnVzY2lpWkIxVDJQM3k5TFNJUEw6Oqr0bffEA4pw.kcT9H.wvLM-&t=a053c460dfb066676611c68ad8732c13&op=NjQ0NTc=', 'Episodio 2', '¿A qué sabe el aire?'],
+    ['https://jkanime.net/jkplayer/um?e=VkJIdHErU2YwdTVNSjIwaHVGOU9iYXBBVVNJSm1UM3B4VXk3Z1lsTE9qRFdZRWxCeklpTTRrSEozRE1vSWs3Njh0cXZxOGtROTNNUkxVQmxwblZXeXdSaExRZG9TUFlTc1FJMElMb2wrR3hFSS83eEF1UDVXOWpPTVFQdGwzV2w6OpQEyL5cWC9J4YvYgkxuFns-&t=5e9fc9b1cefdfa220e1024c4ed0d9243&op=NjQ1NTk=', 'Episodio 3', 'Canción de idol'],
+	['https://jkanime.net/jkplayer/um?e=K1JhZlB6Q2pERW9KeEVYZGlPdFltSnFVNkd1SDFZMitDZDN0dHc2cGFHR1ZqQWlyT3VtVGRYRzNBOVE4VGpIT2w1Wm1BU1F4K3MrdHltTzdFd2xEZTd3KzJ3ZGRUYkRIZW1VekExZ2Vock09OjowUvZ7C0l1aIRlF_MgAx_G&t=3c5db99810fd0b1d8df89cf6b190ddb0&op=NjUzNTY=', 'Episodio 4', 'Canción de cuna para una mentira'],
+	['https://mega.nz/embed/TeBnXAyQ#dzikOb4B3KkDbMopJBBicDJ0-1IzawpuuWVFAO5HEFE', 'Episodio 5', 'Atrapado en la partitura'],
+	['https://jkanime.net/jkplayer/um?e=eGx1UGZIbVo2cVFESDcrMVEwTDNwUWhuOFRMT3hGU2J5b0hLNGhKNW1SekpxMDBiYjVUd3M5QnhyQndQbG8ycHVoTFM3SFlTaWZpSDZHVS83MkM2cEl2K3pLcnhoZEpLaXpWUVNQLzR1bGM9OjqbWaWL5opkKOToLsM5vM_i&t=1c3843dce2683bd171a19dad307fd182&op=NjYxMTI=', 'Episodio 6', 'Escenario sin salida'],
+	['https://mega.nz/embed/q4QVRaAR#eFwj8CVTGwmw3klK3TNSQi_Xd915LNa-QYXLDfE8CSQ', 'Episodio 7', 'El ruiseñor no canta en invierno'],
+	['https://jkanime.net/jkplayer/um?e=aS9jTkxITW9VcmRPTTlyRzFxOTBQMW5xUEFIK3VKaHd6SHRsaTVSRTRBNGxGdnB4SEZPcWowQlBRMlI4MGZkNFloY25Yb2FXcjQ3RGlVUTVmSkZPVzcvaUgweVZ1Q3NYT3g4QjlvMVB1ZnM9Ojoa6rM4JtSJ.K3HTzoRfzEJ&t=5d4fc0627bcda19351e61982bc68d356&op=NjcwMzE=', 'Episodio 8', 'Una jaula llamada normalidad'],
+    ['https://jkanime.net/jkplayer/um?e=WWNlSFp0Zm0rUkFnbDF1a3Z4YWtza2xwcGpwSFB4Yk13SEVxVm13M0s1ZEJNMlZPMVZXbWErTGkrZDg5VklaOXJpbWdMWXRLR2VEaXJtV2h4YVpTdm96OHMvUjZpOVUvRHUvQlFtK28rMjQ9OjqGgij8nSKGFyqknBG.nEWZ&t=3a44602f2cc1fad96354789dd8a1553c&op=NjcyNzE=', 'Episodio 9', 'Adiós a las alas heridas'],
+    ['https://jkanime.net/jkplayer/um?e=bXk2TVFNQ2RjNnNrRGxPUUdNTkpaT1FJeXUvVjVQOHR5OHZNbEdQUXF6UTlGRmF6ZGQ3ZFExeWRyb1pGU2VkRTkyd2RtRkFLNHRsUi9NeDhTei96NkdTN1l1ZUh1RDJqTE9ibEdaamxVNm89Ojqg3HKuv5DNJAqC7EhP6ATi&t=acebc44d966d822cbb3853457b67fd03&op=NjczOTY=', 'Episodio 10', 'El primer alumno'],
+  	['https://jkanime.net/jkplayer/um?e=cGV1b1ZjSnRSaSthS3RYbjJRclI4ak4xTm1nSU1qb0ZIUk9tZDhzakFydjh2VXlMNkFNK0xrWXlCNXRITEpRK0xPNXdkd0NKY1RPOTNocGR6UlRNYU01T1pVZ2RrbWpMeTBBT0RIVGdZd0RxVnJ6YnE2ZnUyajdsaE1pNjk4SSs6OgVU1JU2K9uuG3yCXHNw8dw-&t=6251a54d8c003c41e7c3288c5c278ae5&op=Njc1MDY=', 'Episodio 11', 'Lecciones sobre el mañana'],
+    ['https://jkanime.net/jkplayer/um?e=bXV6VVQ4QVQ1YWdKY1JEWGM4aW9rRUwyaUpyVlJaRExYSUlKVnU5YlRFaUhLVzZHY2lGRlFjUFZLcjNheTZyTE4zVFJRQjMxRXhkK0g0UUpRRlNnTTlVNEFRR2d1SnU3eG5DRHBUa0RxNlU9OjqurBipQy5CENJXRT3FtvxF&t=725ecba44c00d95704874f926e9bdd53&op=Njc2MjI=', 'Episodio 12', 'La víspera del milagro'],
+	['https://jkanime.net/jkplayer/um?e=RDFUM2gvUnhwT3dEaHBHUlp0NDBaeE5EV1ZKZjlYbDUvK1dhNlJmV2pFZ1ZZcVVTVmQzbVlzbXJDb3h4b2NrZXBtZzZTczJ2elFkRmtKTXJ3KzVCZ2xocU9WdkNXRlBSQVVDaWdtQXBwZmM9Ojo6aQk4.evtQqwiFDymhqgs&t=8e8f9c841a6a8134d3985494086a752d&op=Njc3MTA=', 'Episodio 13', 'Un deseo para Papá Noel']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/BunnyGirlSenpai/Portada-Tmp2-Cap${index + 1}-BunnyGirlSenpai.jpg`,
+    'iframe'
+]);
+
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -2233,6 +2324,25 @@ const catalogData = {
 		label: 'CATÁLOGO 25', title: 'Tomodachi Game', description: 'Un grupo de cinco buenos amigos se ve involucrado en un incidente en el cual desaparece el dinero que la clase había reunido para una excursión. Las desconfianzas surgente, pero todo se complica cuando tienen que participar en un extraño juego de deudas y confianza que pondrá a prueba su amistad.',
 		seasons: [
 			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Tomodachi.webp', videos:tomodachiSeason1Episodes }
+		]
+	},
+	gachiakuta: {
+		label: 'CATÁLOGO 26', title: 'Gachiakuta', description: 'En una ciudad flotante donde los ricos desechan tanto basura como personas, a Rudo lo acusan de asesinato y lo lanzan al Abismo, un vertedero infernal habitado por bestias polutas. Para sobrevivir deberá utilizar su recién descubierto poder y unirse a los Limpiadores. Rudo no solo aspira a combatir contra los monstruos, sino que también quiere vengarse de quienes lo lanzaron a ese infierno.',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Gachiakuta.jpeg', videos:gachiakutaSeason1Episodes }
+		]
+	},
+	yourpancreas: {
+		label: 'CATÁLOGO 27', title: 'I Wanna Eat Your Pancreas', description: 'Trata sobre la inesperada y profunda relación entre Haruki, un estudiante de secundaria apático y solitario, y Sakura, una compañera de clase extravertida que sufre en secreto una enfermedad pancreática terminal',
+		seasons: [
+			{ title: 'Temporada 1', description: '1 Película', cover: 'img/Temp1-YourPancreas.jpg', videos:yourpancreasSeason1Episodes }
+		]
+	},
+	bunnygirlsenpai: {
+		label: 'CATÁLOGO 28', title: 'Seishun Buta Yarō', description: 'Síndrome de la pubertad: ciertas experiencias poco corrientes que se rumorea en Internet que son la causa del exceso de sensibilidad e inestabilidad durante la adolescencia. Este año, Sakura Azusagawa, estudiante de segundo en una preparatoria cercana a Enoshima, conocerá a varias chicas que están pasando por ese "síndrome de la pubertad". Por ejemplo, en la biblioteca conoce a una salvaje...',
+		seasons: [
+			{ title: 'Temporada 1', description: '13 Episodios', cover: 'img/Temp1-BunnyGirlSenpai.jpg', videos:bunnygirlsenpaiSeason1Episodes },
+			{ title: 'Temporada 2', description: '13 Episodios', cover: 'img/Temp2-BunnyGirlSenpai.jpg', videos:bunnygirlsenpaiSeason2Episodes }
 		]
 	},
 };
