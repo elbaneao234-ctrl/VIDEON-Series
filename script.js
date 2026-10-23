@@ -2040,8 +2040,8 @@ const tomodachiSeason1Episodes = [
 ]);
 
 const gachiakutaSeason1Episodes = [
-    ['https://ani.dramav1.cfd/player.php?ep=Z2FjaGlha3V0YTox&type=sub', 'Episodio 1', 'Altomundo'],
-    ['https://ani.dramav1.cfd/player.php?ep=Z2FjaGlha3V0YToy&type=sub', 'Episodio 2', 'Receptáculo'],
+    ['', 'Episodio 1', 'Altomundo'],
+    ['', 'Episodio 2', 'Receptáculo'],
     ['', 'Episodio 3', 'Sotomundo'],
 	['', 'Episodio 4', 'El cuartel general de los limpiadores'],
 	['', 'Episodio 5', 'Saqueadores'],
@@ -2073,8 +2073,8 @@ const gachiakutaSeason1Episodes = [
 ]);
 
 const yourpancreasSeason1Episodes = [
-    ['https://jkanime.net/playlist/297aYnU8FEot9oe/?video=1', 'Japonés sub', 'Kimi no Suizou wo Tabetai - 1'],
-	['https://uqload.is/embed-sxpb5poprg4u.html', 'Dob Castellano', 'Me quiero comer tu páncreas - 1']
+    ['', 'Japonés sub', 'Kimi no Suizou wo Tabetai - 1'],
+	['', 'Dob Castellano', 'Me quiero comer tu páncreas - 1']
 
 ].map(([url, title, description], index) => [
     url,
@@ -2086,19 +2086,19 @@ const yourpancreasSeason1Episodes = [
 
 
 const bunnygirlsenpaiSeason1Episodes = [
-    ['https://mega.nz/file/VK0CgYhT#tKNihXHbIgytLsf50eWLxoxKjw03Axv8mz7Cf7ZNxmo', 'Episodio 1', 'La senpai es una conejita'],
-    ['https://mega.nz/file/kfk3wBjS#A_91jsMOInLXT0Tzns0oZksTgfX4Hgk2SerUG0rQ9KU', 'Episodio 2', 'Siempre hay problemas en la primera cita'],
-    ['https://mega.nz/file/V3VyiBCL#tjNuw770PIbaDQAnffGozT4XY8PX5SW1Y4Ov8lPdjOE', 'Episodio 3', 'Un mundo sin ti'],
-	['https://mega.nz/file/4m1AxTyR#Flgn-Ax9gmhXqhdsL3JK-XchTf8k_k6qDGm1FDWYrfE', 'Episodio 4', 'Los cerdos no tienen mañana'],
-	['https://mega.nz/file/AnVUxK6B#K-OB7DjA6X_cwQ9OFKAsEPNjsLHROLQRcpQGLrrKscY', 'Episodio 5', 'Todas mis mentiras para ti'],
-	['https://mega.nz/file/k7txQTTJ#HtLlUqbPXUE7_CA97DufZOVIqwXYKof42yITWSod3eo', 'Episodio 6', 'El mundo que elegiste'],
-	['https://mega.nz/file/xytnAS7C#vNFF7TgIPOwazAqA5b65Rm6qRcd5PpEwj-ZL4W0kRvk', 'Episodio 7', 'La paradoja de la relatividad'],
-	['https://mega.nz/file/xmc0lQ5D#-db4LscgOkc9aXWMrqWnpF5HiM8eTkoW2k2LSH4HdQk', 'Episodio 8', 'Lava la rabia bajo la lluvia'],
-    ['https://mega.nz/file/AndzBCDZ#BqGCIMRMPadCk-7WM7FNtcTnn4-LLk1oaqGHxR22gvo', 'Episodio 9', 'Hermana en crisis'],
-    ['https://mega.nz/file/97FCGbpB#l_71kmjHsbmJWxWAmNioax8nHQ25iOdQ25b7fWttrp8/AuthToken/FCGbpB/l_71kmjHsbmJWxWAmNioax8nHQ25iOdQ25b7fWttrp8/-11', 'Episodio 10', 'Complejo insoportable'],
-  	['https://mega.nz/file/kjU2zJ6S#5vr-Y7lm6O6TCL0x6b9KWQItvcQZupk0hP2XCO-0JNA', 'Episodio 11', 'La pesadilla de Kaede'],
-    ['https://mega.nz/file/gjsx0KYQ#9R_1-v0EF6twtwDfQPtzUe9BQpf6B8KsIuNjfcWO_Ck', 'Episodio 12', 'Vivir en un sueño que no termina'],
-	['https://mega.nz/file/478lWawa#BbKfOKNGpVJaKMi_75MuGQ8QOJB6dy-329g3i3IRXqs', 'Episodio 13', ' El amanecer de una noche eterna']
+    ['https://mega.nz/embed/VK0CgYhT#tKNihXHbIgytLsf50eWLxoxKjw03Axv8mz7Cf7ZNxmo', 'Episodio 1', 'La senpai es una conejita'],
+    ['https://mega.nz/embed/kfk3wBjS#A_91jsMOInLXT0Tzns0oZksTgfX4Hgk2SerUG0rQ9KU', 'Episodio 2', 'Siempre hay problemas en la primera cita'],
+    ['https://mega.nz/embed/V3VyiBCL#tjNuw770PIbaDQAnffGozT4XY8PX5SW1Y4Ov8lPdjOE', 'Episodio 3', 'Un mundo sin ti'],
+	['https://mega.nz/embed/4m1AxTyR#Flgn-Ax9gmhXqhdsL3JK-XchTf8k_k6qDGm1FDWYrfE', 'Episodio 4', 'Los cerdos no tienen mañana'],
+	['https://mega.nz/embed/AnVUxK6B#K-OB7DjA6X_cwQ9OFKAsEPNjsLHROLQRcpQGLrrKscY', 'Episodio 5', 'Todas mis mentiras para ti'],
+	['https://mega.nz/embed/k7txQTTJ#HtLlUqbPXUE7_CA97DufZOVIqwXYKof42yITWSod3eo', 'Episodio 6', 'El mundo que elegiste'],
+	['https://mega.nz/embed/xytnAS7C#vNFF7TgIPOwazAqA5b65Rm6qRcd5PpEwj-ZL4W0kRvk', 'Episodio 7', 'La paradoja de la relatividad'],
+	['https://mega.nz/embed/xmc0lQ5D#-db4LscgOkc9aXWMrqWnpF5HiM8eTkoW2k2LSH4HdQk', 'Episodio 8', 'Lava la rabia bajo la lluvia'],
+    ['https://mega.nz/embed/AndzBCDZ#BqGCIMRMPadCk-7WM7FNtcTnn4-LLk1oaqGHxR22gvo', 'Episodio 9', 'Hermana en crisis'],
+    ['https://mega.nz/embed/97FCGbpB#l_71kmjHsbmJWxWAmNioax8nHQ25iOdQ25b7fWttrp8/AuthToken/FCGbpB/l_71kmjHsbmJWxWAmNioax8nHQ25iOdQ25b7fWttrp8/-11', 'Episodio 10', 'Complejo insoportable'],
+  	['https://mega.nz/embed/kjU2zJ6S#5vr-Y7lm6O6TCL0x6b9KWQItvcQZupk0hP2XCO-0JNA', 'Episodio 11', 'La pesadilla de Kaede'],
+    ['https://mega.nz/embed/gjsx0KYQ#9R_1-v0EF6twtwDfQPtzUe9BQpf6B8KsIuNjfcWO_Ck', 'Episodio 12', 'Vivir en un sueño que no termina'],
+	['https://mega.nz/embed/478lWawa#BbKfOKNGpVJaKMi_75MuGQ8QOJB6dy-329g3i3IRXqs', 'Episodio 13', ' El amanecer de una noche eterna']
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -2129,6 +2129,200 @@ const bunnygirlsenpaiSeason2Episodes = [
     'iframe'
 ]);
 
+const ippoSeason1Episodes = [
+    ['https://mega.nz/embed/Ve8X0IyR#rm5lB6ppnW1INPlDRo8gjflAF8DcXttWB2ijPRv-5ao', 'Episodio 1', 'El primer paso'],
+    ['https://mega.nz/embed/pS9QGAxC#dR5g4t8hIVRx1dX0luVLJasGvf91zre81EwI58t70PM', 'Episodio 2', 'El primer paso'],
+    ['https://mega.nz/embed/VH9xTZ4L#OjM0xfHwKF8pwQzgnhmVT-cXrZHJaBThLGvBAKIf3pw', 'Episodio 3', 'Lágrimas de alegría'],
+	['https://mega.nz/embed/tD0BhRrL#ORPsPZP_EzGe5PiFMWFikbnKVYcx2NcgbVCHk9jNSbM', 'Episodio 4', 'Sombra'],
+	['https://mega.nz/embed/4ClTzQSQ#uexkKPHFw6CFYM7nGi_N20dNXz9glQIsbZr2Q5uyzaA', 'Episodio 5', 'Tres meses para el debut'],
+	['https://mega.nz/embed/waEVlYhY#k8rcxgb3kQ-H23rXTqYDixIA9d9_QM9EqI41zhWguDI', 'Episodio 6', 'La campana de la revancha'],
+	['https://mega.nz/embed/cXlGSCoS#W6S6Od_ejf9Ta77QV3PX4pdfwc1fFCEtVC7ctXjDCkQ', 'Episodio 7', '1 cm de dinamita'],
+	['https://mega.nz/embed/1TNgXIha#moU7izYnYhHLKvaMsqz1WpspzxtohndLOJmU0KSBfK8', 'Episodio 8', 'Promesa de reencuentro'],
+    ['https://mega.nz/embed/pWtzSKhT#rW4IxOnQOStybNzxxjDGxDkVnoaRfhlZnDeGu20ysy4', 'Episodio 9', 'Licencia de clase C'],
+    ['https://mega.nz/embed/Fb9WTDCT#hxdLKcLvdDqKrxvzC4xBIf60vCdMie0ZaVElQtKNoyk', 'Episodio 10', 'Combate de debut'],
+  	['https://mega.nz/embed/tSMziTjb#vaADlnOpwC4YdnYDN4p-CB9lKvbRKbcTlc3AQPXxDd4', 'Episodio 11', 'Obsesión por la victoria'],
+    ['https://mega.nz/embed/kCsHHYRK#MlxwO-A3cN0BxUMhQsyfeGxUbJuSESTjO_ZCGtH2Z94', 'Episodio 12', 'Declaración de camarada'],
+	['https://mega.nz/embed/0S0X3ZCL#vV1gSQ_c6w2epNkSDe1IL7Xa2fjM13W4pqhuAjhxsBQ', 'Episodio 13', 'Torneo de novatos de Japón'],
+    ['https://mega.nz/embed/ZOMHAQCa#y7tfhkwdMGvbTpeu1z_ErpC3R-5RFIYX8JHL6KJZoAw', 'Episodio 14', 'Brazos fuertes. El gancho'],
+    ['https://mega.nz/embed/tSUyBDjT#Vx-ul-RKzK8GIs4t_Jjl5ZuWDgqxPRT_Rl4amPulJCA', 'Episodio 15', 'Prueba de resistencia'],
+	['https://mega.nz/embed/gXdBTQaR#fcLkJzmrBTEGl2ESWFzN-4UKqxw1y84Hz_WRZgO4aTU', 'Episodio 16', 'Premonición de un combate encarnizado'],
+	['https://mega.nz/embed/RLtDwDZB#8FVO7WtxfaGmmDKp2VtS3IfyGUF7khecUn5XAZTR0hg', 'Episodio 17', 'Ippo en la línea del frente'],
+	['https://mega.nz/embed/0D9wzRrJ#S1AQtE-ax96rZE_57PBb6AJH3cHnU1rbQS1X-v1iduQ', 'Episodio 18', 'Choque'],
+	['https://mega.nz/embed/FDtQiQaD#MxR5du2opEteoFa2MBqN3zPOnabvsDcRMFeFxEDI9AY', 'Episodio 19', 'KO técnico'],
+	['https://mega.nz/embed/IfsVAaaa#ZhNYN2XOFXnZTO4nbetdc94GDFRqF6bmeJpo-aS7RN0', 'Episodio 20', 'La amenaza de la mano izquierda'],
+    ['https://mega.nz/embed/tT9RgY6I#xa0lEWBR1FpWRMMH0TjjxeJIOkaBTPHljmhs2Suhf20', 'Episodio 21', 'El genio'],
+    ['https://mega.nz/embed/9HEwiI7L#J7vHCa1U0jrgIFd5rwRU4ApimbeYhy_I0cXRBqoqq6g', 'Episodio 22', 'Combate a muerte'],
+  	['https://mega.nz/embed/9HtBGaiJ#7p1oPHA9w6mpxlIuW5xEaVSFfmdGoC3D_IT5pK9tyJM', 'Episodio 23', 'Otra semifinal'],
+    ['https://mega.nz/embed/gHtT1ZAL#oamG0EC0EEwCVKBZe6Rzh3MSTUJr9HfQxD3l-Rj4ZZ8', 'Episodio 24', 'Al lugar prometido...'],
+	['https://mega.nz/embed/ELVxUZCb#htywF_Yc4uNHwHiqn7UMLL2t_ToZyfongF9SIVzKaRY', 'Episodio 25', 'Los pensamientos de cada uno'],
+	['https://mega.nz/embed/Ze1nyCLY#vhBcZo4H-dfPCxAi1VgCIsFunQl9Qsj1ey6gybUPbww', 'Episodio 26', 'Lucha por la distancia'],
+    ['https://mega.nz/embed/ZK8iSS5b#ZtRESbtvc8ci8iT0NNbwaAJzauD_CZbnqPdrlmCyZNI', 'Episodio 27', 'Combate a muerte en la distancia'],
+    ['https://mega.nz/embed/hbdijZKR#Qr2gU65SgYFnr5r9bue76KYKyTFPlrHf9mvwjJOHonw', 'Episodio 28', 'Victoria o derrota'],
+	['https://mega.nz/embed/5CsDER6J#7Vec4tpgqEgLGZPaDIPLyVnTgCqj3v_tJB6UDS2jXww', 'Episodio 29', 'El fénix de las zonas marginales'],
+	['https://mega.nz/embed/AbFCQZwI#xHSGpSJlCSxpQxSLeW0-fheecAD9kRpX7-l7Z11Uh5Q', 'Episodio 30', 'Petición'],
+	['https://mega.nz/embed/RTsxEIbb#TB58-58urXfUU_L97tA87oQqs-dySXgl3B5OjbfZ000', 'Episodio 31', 'La sombra del rival'],
+	['https://mega.nz/embed/9H9SzKbI#wjHl-BIIBRT6S_DSbWg0yF28VFJ0gSQIOCK3Kr5DrWU', 'Episodio 32', 'Volver a empezar'],
+	['https://mega.nz/embed/RTckzBaQ#SzB9pyvXIEOO4cwoRABhUoNh-5iVJm6YoMNSieikYkc', 'Episodio 33', 'El golpe maestro de la mano derecha'],
+    ['https://mega.nz/embed/1fFUiRyJ#zAYC-6V8pYy7Jppz5Vg83wjfWuQmEZ6v65yOe6y-EEw', 'Episodio 34', 'Novato del año de Japón Oriental'],
+    ['https://mega.nz/embed/UGtW2LoY#19ZV3CpY26GOlb9kgSJXbXah6cQX7swslqwg8nvnACE', 'Episodio 35', 'El viaje de vuelta'],
+  	['https://mega.nz/embed/5GFyzLbS#rqrA4pXqpe_hRvvdJl25teKzNMOXtsy9fhHwFprRuN4', 'Episodio 36', 'La determinación de la madre'],
+    ['https://mega.nz/embed/JbFSHDhQ#HSIMuuif3QO0eBVcYA3zdq39gMF0daks8gQEszhJMR0', 'Episodio 37', 'Un momento de paz'],
+	['https://mega.nz/embed/sTE1hAoD#UuDlRGg5QOQu0xAzz70YclKKwe22XGxntf12iaL-ak4', 'Episodio 38', 'Dos campeones de novatos'],
+    ['https://mega.nz/embed/pbdgxZLT#TMzwmhL1YhbDKgzbeexh3eSHv5Q0U3urLowz0bjCweA', 'Episodio 39', 'Desafío en tierra extranjera'],
+    ['https://mega.nz/embed/5P9ngKoC#z2B7L5ZIaP_8-tzM_GN5aoz000URzdnHyiCuWWuWPBY', 'Episodio 40', 'Un gancho que supera al Dempsey Roll'],
+	['https://mega.nz/embed/4C1QUIAA#SMuQHzvC_Gd9yl-v6JqAXg80LxPBMSmzDUHIMsK-Dj8', 'Episodio 41', 'El combate de Geromichi'],
+	['https://mega.nz/embed/tLdUWSzZ#nMgVIPCHW6XkGQcmVtkmIAwKK9quhuXD1kqw5KE9hIg', 'Episodio 42', 'Sentimientos compartidos'],
+	['https://mega.nz/embed/hOkT0YZT#Wi100-O8FUN-H108Q7BfMbhF5tiKE9oKJe6dDw4uUgw', 'Episodio 43', 'La determinación de Geromichi'],
+	['https://mega.nz/embed/kGsUCYZS#GjFTxrm9HEqN9rSPfVk7Dlv5ATTW7O8liFrvgMM2YvI', 'Episodio 44', 'Orgullo de hombre'],
+	['https://mega.nz/embed/sXNR3bTZ#6s-Wzd39c1Qg98Ev9rH_t6S-iLtBgNW2JOloFZG-tg8', 'Episodio 45', 'El lobo de Naniwa'],
+    ['https://mega.nz/embed/EPV0FaLI#gw-FSuhoBLKqy6YhPlZ36nZ6xgz-MxhfoVH9xuU5NDw', 'Episodio 46', '¡Conviértete en un lobo!'],
+    ['https://mega.nz/embed/FD91SD5L#ujHhWxWyBYcnlv01NnSbRJQ2tx4h1AKls0DLFZXI7cg', 'Episodio 47', 'Alma de luchador'],
+  	['https://mega.nz/embed/xfsTlYSJ#LNpP88CMF4hhXanhuT5kIer6z7_gvRG4PMsBBLEjX6Y', 'Episodio 48', 'El lobo rojo'],
+    ['https://mega.nz/embed/USNlUSYR#lk0Nz-VdA8e_-wgMWmfSwVZMe2et4rwZAbIFxj-Cl30', 'Episodio 49', 'Coraje para confiar'],
+	['https://mega.nz/embed/FG8QVJpK#QMG5t4vScj_esTPzM89mD0r4wLtFPJupIXw9SE2gqcE', 'Episodio 50', 'Palabras que transmitir'],
+    ['https://mega.nz/embed/Na1xCazA#tHPH9aRQExyotOz3eWBveECcELVrk25zUSYsCYOaUKM', 'Episodio 51', 'Cita'],
+    ['https://mega.nz/embed/Eb8wBKgS#K1xC9diRMKiahn6xm_2SyoCze_uncXFDOVA87AtC2-Y', 'Episodio 52', 'El regreso de la estrella'],
+	['https://mega.nz/embed/sGsT1IJS#9wEYlQnOve7pj20uGwgR3z4V8LdlB_0_rQFKaNYohGA', 'Episodio 53', 'Todo o nada'],
+	['https://mega.nz/embed/UD9n2IwA#TShYpYL9vZnb4w-YI9rxPiZAAWk4cDS8sUwXmHLBJ00', 'Episodio 54', 'Los puños del rey'],
+	['https://mega.nz/embed/JCNwEBTL#trR6nSWxeErZI7TCQ1epv2jAXC99gbr69XWkRk3oO8k', 'Episodio 55', 'El combate por el título de novatos de Japón'],
+	['https://mega.nz/embed/MLlGiZxA#EnigyhUt5wUf7j_uRLM27NGtlyY42cmur3MH7xJVHqo', 'Episodio 56', 'La fuerza para mantenerse en pie'],
+	['https://mega.nz/embed/Bb82ybxI#l3_Ba1OESIsP32zwzMmt9SJXPn0CE8o6A6CQMjvSv7o', 'Episodio 57', 'Decisión final'],
+    ['https://mega.nz/embed/5LMHzCTK#X9iOhz58-ly1tYXdBBC94RT1XL4FPeMh0lJFjEMWY5c', 'Episodio 58', 'Corazón roto'],
+    ['https://mega.nz/embed/BG0hVbjb#9pjy0Qd9WmY1bsooa8Q4IbHHDQuO-pWHAZvfz-ntNZ0', 'Episodio 59', 'Voluntad de hierro'],
+  	['https://mega.nz/embed/BbFS3Dja#oxfnz-LuX0rvZx_tT-Kj4v33MH0GFEpJdZh0qVOFBq4', 'Episodio 60', 'Rival'],
+    ['https://mega.nz/embed/VeUD2JJY#zAtTFJfecHtua7uR4R61X7EFTVxqaXQvsqcUIVcl030', 'Episodio 61', 'Ansiedad por el regreso'],
+	['https://mega.nz/embed/pbE1ESJS#dS7tmN_RS5w6t3njbshHOjVs04H34hXgDLIsoMMLPE4', 'Episodio 62', 'El camino de regreso'],
+    ['https://mega.nz/embed/Re8yQbKL#XS2d7g9piYWSorNpbbEysZPNyk_k9rtfjaZ1mqASASs', 'Episodio 63', 'Juventud ardiente'],
+    ['https://mega.nz/embed/BedDVARB#pvTOFX__2q7wE4Kj-AS8vmkS74lFlxpajPgb6qkN41g', 'Episodio 64', 'Época de pasión'],
+	['https://mega.nz/embed/oe1x0S6B#Tdcp6yOJ0Zv5LBbEUIxX9jV9fuzs0eKbgilnIbslnwU', 'Episodio 65', 'El campamento de entrenamiento de la familia Kamogawa'],
+	['https://mega.nz/embed/Zb1UGJSL#nbQn__Kyp2pwWVqxSo4T9lbrU7jKOc6DbAItyizZTow', 'Episodio 66', 'Las lágrimas de Takamura'],
+	['https://mega.nz/embed/NeNDlKqD#z1QYush48GaVmSX4t--pidfzQsuCauPZ1BsYsPr_pfs', 'Episodio 67', 'El gimnasio Kamogawa en movimiento'],
+	['https://mega.nz/embed/sW0lCLpT#pbiv7GCegf7Pjv7qAL2tnaqHG2ffeZBkWZQr1pPaReo', 'Episodio 68', 'La crisis del entrenador'],
+	['https://mega.nz/embed/IGcklBTS#GZxORAZRqPUf4nDHjIDFhKdaEw4DrN4gGOXtx71gews', 'Episodio 69', 'La trampa del Southpaw'],
+    ['https://mega.nz/embed/kG1XHZDB#aEIWnZy8j698m8opiKvSNKh5yoMEaf1jQn8W9Cxn7Io', 'Episodio 70', 'Un joven problemático'],
+    ['https://mega.nz/embed/ge9yWBYI#H4td14G9A5pAD8WfbFuuuiVKtsJSAZqHrtzJwOn6PPo', 'Episodio 71', 'Momento de luchar'],
+  	['https://mega.nz/embed/tSVDGRxL#ZXWzjpmHNgQ3NXj4WUNB4fswR_BvNnOj50D5JCZL0z0', 'Episodio 72', 'Lallapallooza'],
+    ['https://mega.nz/embed/xO1AxLDS#YCQbDjDRjI51XlQa54o_dlwgEHV6uKI_JVUsgTFELDw', 'Episodio 73', 'Superar el pasado'],
+	['https://mega.nz/embed/dL1FhYQa#CXB1k39wTLCD6WCxpRovrx33_n2O8YjbRrbS4fw7GFk', 'Episodio 74', 'Mezcla'],
+    ['https://mega.nz/embed/8PNRiAyA#gMSVENGB0PZ58DlAkM8WGVE6W2EMYJu05goJtulVji0', 'Episodio 75', 'Hacia el siguiente paso'],
+    ['', 'Episodio 76', 'Los puños del boxeador']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ippo/Portada-Tmp1-Cap${index + 1}-Ippo.jpg`,
+    'iframe'
+]);
+
+const ippoMovie1Episodes = [
+    ['https://www.mp4upload.com/embed-jakpauhaq364.html', 'Episodio 1', 'Hajime no Ippo: Champion Road (2003)']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ippo/Portada-Movie1-Cap${index + 1}-Ippo.jpg`,
+    'iframe'
+]);
+
+const ippoMovie2Episodes = [
+    ['https://www.mp4upload.com/embed-qcf8c8bz0kxn.html', 'OVA 1', 'Hajime no Ippo: Mashiba vs. Kimura (2003)']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ippo/Portada-Movie2-Cap${index + 1}-Ippo.jpg`,
+    'iframe'
+]);
+
+const ippoSeason2Episodes = [
+    ['https://mega.nz/embed/7zgyFSID#zspZROQ9YZOVX7RtElFNZmbGiiBzs0HmOibIYLNrYtU', 'Episodio 1', 'Un nuevo paso'],
+    ['https://mega.nz/embed/rv5EwCDJ#y6qRjRx4dJ7GdOxeuw7E_H5F5BNlQOM68ik_SwFGWaI', 'Episodio 2', 'Cruz sangrienta'],
+    ['https://mega.nz/embed/eip0HahY#mIzsg9ltCsjw0QD5Wjx8Z9oNXVeHiJmSHwD54JH-E_o', 'Episodio 3', 'Al lugar que prometimos'],
+	['https://mega.nz/embed/ezoSwCZK#peumYXn96N2wLWuoiPQ0bWNCIQL2E8RpwGRGvJnViJY', 'Episodio 4', 'A por el mundo'],
+	['https://mega.nz/embed/Srx0WQIY#EqSxMp2n0QzLkRSze5UfFCAlfOjAYF3e7P8AUZvGVeE', 'Episodio 5', 'La fuerza del mundo'],
+	['https://mega.nz/embed/CupATSoC#sAbOF8yrE0Lr8JdGJZ-j-YyVrFOpcjjBwRz9uuAhaSU', 'Episodio 6', 'La figura a seguir'],
+	['https://mega.nz/embed/nuokFaxC#xN1tkipN2tgE_hJfxrzLKgIptykJqyximNZmQHNr_xs', 'Episodio 7', 'La llegada del diablo'],
+	['https://mega.nz/embed/DzoUCYhT#0RLA0AOtXeliB9tU-8ALnja3tl0ws20O4YNt-3ZLMmM', 'Episodio 8', 'Espíritu de lucha para la derrota'],
+    ['https://mega.nz/embed/bvgwgQwL#fCqOGqgcqznPxH8iwt816QzHbl6QuBYncSCoET4KXLc', 'Episodio 9', 'Calificación para aspirar'],
+    ['https://mega.nz/embed/vjgUBAwb#f9puRHqyHwYdrIx-Z9eoXriBn9dBqzoFWs9p1CjSRSc', 'Episodio 10', 'Chatarra'],
+  	['https://mega.nz/embed/7v4mzSDZ#k8H4rdcInC2OQoxF2M1GxyFK2ers63pgaG8nR4YQ2Y8', 'Episodio 11', 'El puño de Kamogawa'],
+    ['https://mega.nz/embed/P2wAyC4B#nsfq1779Y6rKn2a6SrtGflKugH-WHKZQdGVkQLzEoHA', 'Episodio 12', 'La condición de la determinación'],
+	['https://mega.nz/embed/33hmga4A#K1mNhbqZHi2-S5JrvSw3cQIhc6ijPvvmQPm_0Sg4j_g', 'Episodio 13', 'Promesa de graduación'],
+    ['https://mega.nz/embed/KngmAQCZ#j52Op1a4e5TZoXdW-kwc4rfZrKJXONQJgLRjjCsQ1Tg', 'Episodio 14', 'Visión del combate'],
+    ['https://mega.nz/embed/nu4U3SCD#gJ_Iadj0NLXRTFPQGqgu3dAkroeU7wXlkH6G1fBK1pE', 'Episodio 15', 'El momento del juicio'],
+	['https://mega.nz/embed/Cz4GSCSB#3Zywda4CVB-agfEVbPVx07oplLAj8VHO0qzZjRMyqKw', 'Episodio 16', 'El corazón del campeón'],
+	['https://mega.nz/embed/v2pSBACQ#UeXILUYKcOua5Tfe3iEDyhBfzQRlUrrnoRl21L1eM8M', 'Episodio 17', 'La coronación'],
+	['https://mega.nz/embed/Cnx2XILJ#fVYs_Q77QJNIghPsq7cbfZmUXWFOgaDnffbB6I2Ig2I', 'Episodio 18', 'El rey de la contracarga'],
+	['https://mega.nz/embed/Gz5wlYDD#gd6g1y15dD4XTtHE-2FMyAwxtPJw-blwA-Gx8mPrGSI', 'Episodio 19', 'El desafiante'],
+	['https://mega.nz/embed/63oyEA4a#PlyYvvSrwPQVVFG_ILUQCWSrDdSqtqS2qUHsr4Z1CXU', 'Episodio 20', 'El cazador'],
+    ['https://mega.nz/embed/iyhw2KSD#m8mWa7FPBHgJhZPColhyEloAV3w7cW0wxStxoGwDbzc', 'Episodio 21', 'El regreso del campeón'],
+    ['https://mega.nz/embed/vz5UHaAK#V-HbR8D7MCLFVItqQdLiQNoYlyC9q5v40taefjJD-r0', 'Episodio 22', 'La técnica secreta de Shimabukuro'],
+  	['https://mega.nz/embed/ynxCTQgL#H5OUyDcqeQWG-pwX46ka4NRZ4umNJWyysLOPRyQ-3QU', 'Episodio 23', 'La noche antes de la batalla'],
+    ['https://mega.nz/embed/O35EBAbZ#Gftd1IZVdPS1pUSd71Y8_d9AarOQ0HEHG-hCPrCMfF8', 'Episodio 24', 'Combate a muerte en la profundidad'],
+	['https://mega.nz/embed/O2w2kaaT#JQYAhQWF5e_LXK3xZH_gxZj3BqQRnEklk45QdHYR5As', 'Episodio 25', 'La fuerza que impulsa'],
+    ['https://mega.nz/embed/WzxCkKRB#VZz-9DtGJo2XI9oGFMBGz2k1h1Y27K5Zxf9CkSgOBDE', 'Episodio 26', 'Hacia la cima']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ippo/Portada-Tmp2-Cap${index + 1}-Ippo.jpg`,
+    'iframe'
+]);
+
+const ippoSeason3Episodes = [
+    ['https://mega.nz/embed/bIYjWC6Y#X8t4kKZ6VK9XHMueHcqJ0PmlGgRQGxjMkKB_4WoQ23U', 'Episodio 1', 'El rival más fuerte'],
+    ['https://mega.nz/embed/vdYXkIzJ#8i_aefHNCTRYkOTnY7XKFceYBqqPAQKz0-WGTn3Q6vE', 'Episodio 2', 'Destruyendo el Dempsey Roll'],
+    ['https://mega.nz/embed/vERjhK7A#VMFb914re_neua926oLZ2h13qZ7Cis5C_Oxc4rJMPrA', 'Episodio 3', 'La batalla de las mujeres'],
+	['https://mega.nz/embed/fQQzGITS#8B5BuvZNRrRdZ_BeT4fjL6kOVPpv9EpnJPW-l_EHRDQ', 'Episodio 4', 'La diosa de la victoria'],
+	['https://mega.nz/embed/KMIxxaob#_0P3QEtEd3ThQBCJT_WJtqXVtOHTXg0Su71ZZiqw5Dw', 'Episodio 5', '100% farsa'],
+	['https://mega.nz/embed/6cIRWS6I#EPA_k4_vKsoCRirFidpvG6tOX6q_IDeP1lUMlm95RXA', 'Episodio 6', 'La lección de la victoria'],
+	['https://mega.nz/embed/qVJRCKhK#ecmaUpGA7jroaA2IHK3Wbt2aOQCe1QJ58AzHQUz5--U', 'Episodio 7', 'El queso del héroe'],
+	['https://mega.nz/embed/XNZjyICA#gYF97Yx4gldxXnxJUsX54nVNggrzHZvqfu2PUqkW2DI', 'Episodio 8', 'El perro rabioso y el lobo'],
+    ['https://mega.nz/embed/mNAB2QiK#wLgKYhYrXcLrDJZaOnS7XjnQltAGiSXQAJ0qIjbMCZU', 'Episodio 9', 'Un escenario despiadado'],
+    ['https://mega.nz/embed/eUBlgSSK#6HU9t3atO0Dbz2PUF7nx-5Dn3Ta-z6FvWO1hD6ts8dw', 'Episodio 10', 'La cara de la determinación'],
+  	['https://mega.nz/embed/2VIxQQCR#dvtBt9OGxJWUU31mhfRqdc9exj85eQs8ZQ66-BbE4no', 'Episodio 11', 'Un rival intrépido'],
+    ['https://mega.nz/embed/uBJl2QhZ#HOMZbVgU_qyh0tM-RUTK_kJP0aHMBQvPAGd1t-WcSMI', 'Episodio 12', 'El Anti-Dempsey perfeccionado'],
+	['https://mega.nz/embed/nFYjQCwT#Fb0Hv4dLNnEFItOQ1LrF3khmBX64QcggyCaj4gS4gBc', 'Episodio 13', 'El puño que te destruye'],
+    ['https://mega.nz/embed/jcYRyCrQ#WuZiNdQp-pj3pJX9xgr1L1B8rDl0Pjk3to2-eBBnVU4', 'Episodio 14', 'Palabras de fuerza'],
+    ['https://mega.nz/embed/3RYhFACZ#xWyX6W6OW34JEKC2eK2KBaohgs6J65xdLeTl_ZPnWj4', 'Episodio 15', '¡Tempestad! ¡En el bote de pesca Makunouchi!'],
+	['https://mega.nz/embed/PJwRkKwR#_rQKI0t4xN35MI4iDZuhCsVf8mAUEK1kyrnTXT_8ix4', 'Episodio 16', 'Águila dorada'],
+	['https://mega.nz/embed/nZBhEAaQ#pa_Om1TtSqgYr8UCE5NQajmoKPBv4WS16BOCh0A0q5M', 'Episodio 17', 'El impacto del drama'],
+	['https://mega.nz/embed/zdAlUChQ#D72ag-blIUEEWA6S53Hr4kQGrKR9JKddQDlZx7d-1Qc', 'Episodio 18', 'El nuevo novato'],
+	['https://mega.nz/embed/2VABACQS#PtuUAFLRfxNW-2gmebcLU4m1o30dJKLSO_VwELeLQ_E', 'Episodio 19', 'La noche antes del combate'],
+	['https://mega.nz/embed/zFRlBSjL#qvJkZ3W5iyaQ96TNBWUYBMymYH96wzE07A_5AZ1pHDU', 'Episodio 20', 'La lección americana'],
+    ['https://mega.nz/embed/HVYzHYqa#2658QzwEBk5-3QqwGFBRJJAsYp7WQ_pZgfx_D_NNL_U', 'Episodio 21', 'David Eagle'],
+    ['https://mega.nz/embed/WVBTzIrQ#EKfvBDxP_ANdbc-MxRPEZSM2jfULnKgobVcjCXqL3EY', 'Episodio 22', 'La flor de la esperanza'],
+  	['https://mega.nz/embed/7VRHQATQ#7eBiv4O7McaIPktfDVf6BjtiHxOTqsT1OcYOhSW-Yz0', 'Episodio 23', 'El coraje para vivir'],
+    ['https://mega.nz/embed/KYBVSS5a#aJNmgUm-yeoQNxNq6X0lZClVlyMoUqnXPaBv2Yje99k', 'Episodio 24', 'La promesa'],
+	['https://mega.nz/embed/eURVES5C#Zhja08STRGlJm-N4dEdzhWZtv3xUWwWVjA8Ph9foPG8', 'Episodio 25', 'El puño de la promesa']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Ippo/Portada-Tmp3-Cap${index + 1}-Ippo.jpg`,
+    'iframe'
+]);
+
+const erasedSeason1Episodes = [
+    ['https://mega.nz/embed/4qsUhTwT#KcFHmF3vpGA0wS4iKy_tdbKYaYK1iM7fljkZVpEkPjA', 'Episodio 1', 'Mi vida pasa ante mis ojos'],
+    ['https://mega.nz/embed/JndwkJSI#uOqSvp2tK5-y0sIaOZ5nMZYMVqrkYuN5glnEsIh2_w8', 'Episodio 2', 'La palma de su mano'],
+    ['https://mega.nz/embed/FrcyHIiZ#s_ciK2B7fjWC7efj5Q3OzdS61ghlCGVpKdZbuM6rANY', 'Episodio 3', 'Moretones'],
+	['https://mega.nz/embed/lylXEZjL#AcIPuLDAudIr84zDCm3iiRyBH32T1cvFFKs6IHi62G0', 'Episodio 4', 'Resultados'],
+	['https://mega.nz/embed/hzslgDqA#PtjxP4ysVcBiI_zEkUdru_w_iuqXWL5hqvca0YWhs9w', 'Episodio 5', 'Huida'],
+	['https://mega.nz/embed/Jm8DDRYI#NPjN68gFewQWKqCzxFjtRtHTGNauZiKMfbpZvz3eLSw', 'Episodio 6', 'El dios de la muerte'],
+	['https://mega.nz/embed/tmMT0BLZ#QSkbgvXWUVa9JkLGvfNxtj2NHobB0f6llun4uC55Ams', 'Episodio 7', 'Acciones temerarias'],
+	['https://mega.nz/embed/lvMgBRTD#4sjMHNGCqvHzIgNq_jumIQv7s5T49IZqOeHNpZYtuaM', 'Episodio 8', 'Espiral'],
+    ['https://mega.nz/embed/VmkUwAJD#Y0ohDsTFKUSvTqBTywbCnuG9IBv7rx-e2ZXozvAPDXo', 'Episodio 9', ' Cierre'],
+    ['https://mega.nz/embed/x2lU2RIZ#d-l8e-ZlxEfNoIXvGwlNh6rPEzlNK6CZZ6bEh_fnp-c', 'Episodio 10', 'Alegría '],
+  	['https://mega.nz/embed/lykxRb6S#d-SNs9itMUpf0yTxbW0MnNHSPa4MO4c1xPzxfTeeaL0', 'Episodio 11', 'Futuro'],
+    ['https://mega.nz/embed/AzEGQJoA#7PjZZQxmjYQy4bNHKY-EDL0YsgbQpIHOOK9qCvUpV5o', 'Episodio 12', 'Tesoro']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Erased/Portada-Tmp1-Cap${index + 1}-Erased.jpg`,
+    'iframe'
+]);
 
 const catalogData = {
 	aventuras: {
@@ -2343,6 +2537,22 @@ const catalogData = {
 		seasons: [
 			{ title: 'Temporada 1', description: '13 Episodios', cover: 'img/Temp1-BunnyGirlSenpai.jpg', videos:bunnygirlsenpaiSeason1Episodes },
 			{ title: 'Temporada 2', description: '13 Episodios', cover: 'img/Temp2-BunnyGirlSenpai.jpg', videos:bunnygirlsenpaiSeason2Episodes }
+		]
+	},
+	ippo: {
+		label: 'CATÁLOGO 29', title: 'Hajime no Ippo', description: '¡Ippo, un adolescente con un corazón puro y una determinación implacable, descubre su pasión por el boxeo después de que el veterano luchador Takamura lo salve de los matones.',
+		seasons: [
+			{ title: 'Temporada 1 (Español latino)', description: '76 Episodios', cover: 'img/Temp1-Ippo.jpg', videos:ippoSeason1Episodes },
+			{ title: 'Película Champion Road', description: '1 Película', cover: 'img/Movie1-Ippo.jpg', videos:ippoMovie1Episodes },
+			{ title: 'OVA Mashiba vs. Kimura', description: '1 Película', cover: 'img/Movie2-Ippo.jpg', videos:ippoMovie2Episodes },
+			{ title: 'Temporada 2', description: '26 Episodios', cover: 'img/Temp2-Ippo.jpg', videos:ippoSeason2Episodes },
+			{ title: 'Temporada 3', description: '25 Episodios', cover: 'img/Temp3-Ippo.jpg', videos:ippoSeason3Episodes }
+		]
+	},
+	erased: {
+		label: 'CATÁLOGO 30', title: 'Erased', description: 'Erased (Desaparecida) es una serie de ciencia ficción que cuenta la historia de Satory Fujinuma, un autor de manga sin mucho éxito que sufre de un peculiar fenómeno conocido como Resucitación en el cual se transporta a la fuerza atrás en el tiempo hasta el momento anterior de que ocurra algo que supone un peligro para una vida. Satoru no tarda en descubrir que el fenómeno persiste hasta que la...',
+		seasons: [
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Erased.jpg', videos:erasedSeason1Episodes }
 		]
 	},
 };
