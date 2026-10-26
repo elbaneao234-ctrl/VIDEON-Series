@@ -685,7 +685,8 @@ const aoashiSeason1Episodes = [
 const aoashiSeason2Episodes = [
 	['https://mega.nz/embed/JFFywBSJ#NkkCh473m9T-qfKGJBlhvARdkyg0rdX7kh6OlTwJJlA', 'Episodio 1', 'Línea de salida'],
 	['https://mega.nz/embed/JUtkhYhC#QadwcqUwiRPKIK-7OrSF_PvnHqmSf78LW5uDHrdQXX0', 'Episodio 2', 'La caña pensante'],
-	['https://mega.nz/embed/sYtngDDJ#EYMXOpZL-UXG9-ilZCKjMtLU6dO5Oy2EECnhIMUJiPw', 'Episodio 3', 'Jornada 7, partido contra el IFP Kashiwa']
+	['https://mega.nz/embed/sYtngDDJ#EYMXOpZL-UXG9-ilZCKjMtLU6dO5Oy2EECnhIMUJiPw', 'Episodio 3', 'Jornada 7, partido contra el IFP Kashiwa'],
+	['https://mega.nz/embed/JUVzSI7a#9YaMRzI6Nh0J0jxZj4rcKFYeKYDawVv9bzMoDoVPVL8', 'Episodio 4', 'Piedra angular']
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -1109,6 +1110,7 @@ const cloverSeason5Episodes = [
     ['https://mega.nz/embed/dBNghSbZ#wQxUlshkoSbUDQNYS506Uf-c_2wb_xXEWtFQqVdXqQQ', 'Episodio 171', 'Comienza la guerra'],
     ['https://mega.nz/embed/1UlRCayB#VpXA-JFbgyjBbd8Mtk_T7z3SZKwove80R2GwvivG1vI', 'Episodio 172', 'La puerta al infierno'],
 	['https://mega.nz/embed/AY9hiCrZ#hLekjdCShsNXkv0bL51sYw4BA75AR637yhdR57km9KQ', 'Episodio 173', 'El defensor cubierto de negro'],
+	['https://mega.nz/embed/IM1HQbiQ#p5IyAiuPLaNHy9Q_jVO7ja0Z4ZI0lfTfoPJfKGgX0lo', 'Episodio 174', 'El día de la expiación'],
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -2009,7 +2011,16 @@ const cyberpunkSeason1Episodes = [
 
 
 const cyberpunkSeason2Episodes = [
-    ['', 'Episodio 1', '(Estreno 20 de octubre de 2026)']
+    ['https://mega.nz/embed/5FJVXZZb#IsyHylWKYVDdKIN0X4e6PgHn_XrBSTSP3JduC-P-mok', 'Episodio 1', 'Última oportunidad para un baile lento'],
+	['https://mega.nz/embed/BEwWia6R#U0eT0ikbsksc7QNOBRWCc50Yf2k33UnVuSH814Omocw', 'Episodio 2', 'Dame un día más'],
+    ['https://mega.nz/embed/cAwnFLCB#af71Nhlxf10QMEfAXvWGUZxIx5BTJhAnF_zFMfVYtbw', 'Episodio 3', '0+2=1'],
+	['https://mega.nz/embed/kNRSlT6Y#U-6YRlU9Gckhe6z3GNyMI9160azGEWyd2fE1yqGLO9M', 'Episodio 4', 'Alguien que solía conocer'],
+	['https://mega.nz/embed/wM4inS6A#hf3wCMYqDx68H7AhwyXTI-TU-wS_zVJeQ__HWP7Cf5g', 'Episodio 5', 'Se desvanece (Pasa la distancia)'],
+	['https://mega.nz/embed/sJ4URSJL#dLFlx7hZqwVdtSaZUdz_yZLGD0rAzG1UeqE7b84rYm4', 'Episodio 6', 'Odio a todo'],
+	['https://mega.nz/embed/oV4igQQQ#eCfVKlii_u2AkSG1ODt2QYmQqBjdjAJRr-xwdgq9luQ', 'Episodio 7', 'Hacia lo más profundo contigo'],
+	['https://mega.nz/embed/kdAj2awD#S-lTwSTRQDcckHaEZgk_BgiYhrIoFHS09_6yoaUva78', 'Episodio 8', 'Corazón'],
+    ['https://mega.nz/embed/lIoV1AzT#uh9Zb81YsTS14CISDFZtbhPOpUYvZ7lAdoRV5kF9Rco', 'Episodio 9', 'Reservado estrictamente para ti'],
+    ['https://mega.nz/embed/cNZT2ZpQ#3FuYG5SRGJHwj9Sng_GoFv8hi-DIfyZ9GAYJlW94Bp0', 'Episodio 10', 'Al final, todos se fueron a casa']
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -2312,7 +2323,7 @@ const erasedSeason1Episodes = [
 	['https://mega.nz/embed/Jm8DDRYI#NPjN68gFewQWKqCzxFjtRtHTGNauZiKMfbpZvz3eLSw', 'Episodio 6', 'El dios de la muerte'],
 	['https://mega.nz/embed/tmMT0BLZ#QSkbgvXWUVa9JkLGvfNxtj2NHobB0f6llun4uC55Ams', 'Episodio 7', 'Acciones temerarias'],
 	['https://mega.nz/embed/lvMgBRTD#4sjMHNGCqvHzIgNq_jumIQv7s5T49IZqOeHNpZYtuaM', 'Episodio 8', 'Espiral'],
-    ['https://mega.nz/embed/VmkUwAJD#Y0ohDsTFKUSvTqBTywbCnuG9IBv7rx-e2ZXozvAPDXo', 'Episodio 9', ' Cierre'],
+    ['https://mega.nz/embed/VmkUwAJD#Y0ohDsTFKUSvTqBTywbCnuG9IBv7rx-e2ZXozvAPDXo', 'Episodio 9', 'Cierre'],
     ['https://mega.nz/embed/x2lU2RIZ#d-l8e-ZlxEfNoIXvGwlNh6rPEzlNK6CZZ6bEh_fnp-c', 'Episodio 10', 'Alegría '],
   	['https://mega.nz/embed/lykxRb6S#d-SNs9itMUpf0yTxbW0MnNHSPa4MO4c1xPzxfTeeaL0', 'Episodio 11', 'Futuro'],
     ['https://mega.nz/embed/AzEGQJoA#7PjZZQxmjYQy4bNHKY-EDL0YsgbQpIHOOK9qCvUpV5o', 'Episodio 12', 'Tesoro']
@@ -2321,6 +2332,47 @@ const erasedSeason1Episodes = [
     title,
     description,
     `img/Erased/Portada-Tmp1-Cap${index + 1}-Erased.jpg`,
+    'iframe'
+]);
+
+const deathparadeSeason1Episodes = [
+    ['https://mega.nz/embed/iuZFRIra#17sUh491364Pm0vGl1Vl04_xxxz3judfT7_2K74bFNo', 'Episodio 1', 'Siete dardos de la muerte'],
+    ['https://mega.nz/embed/7rQ1QKoB#EBVgDtBGWb9NPKGn6qAquVp3a9kLI9bHZz6Wd570-WU', 'Episodio 2', 'Muerte inversa'],
+    ['https://mega.nz/embed/CvRBmKaS#8zNacQjRlC2NDjjCh-U9qY3pezZgO8-gZt2mdXgx6YM', 'Episodio 3', 'Balada rodante'],
+	['https://mega.nz/embed/zmQjBYgD#nNDRy9dIzFw7OjmRsGOSQKv2JJEkcPOMBBqQqYG7fDY', 'Episodio 4', 'Arcade de la muerte'],
+	['https://mega.nz/embed/LiZHHSTR#VrVX_H-zfGbDd7JBVfiUKu72LQNm-VQqnC78pM_8F8s', 'Episodio 5', 'Marcha de la muerte'],
+	['https://mega.nz/embed/frAhmaJD#quwtZmvbAgPXB0fDmi3NqhhmRtbZ1hW3jGvpq1yN-VI', 'Episodio 6', 'Ataque al corazón cruzado'],
+	['https://mega.nz/embed/KyI1TCJT#PuEV4-PFvZe_dPcZv2gZYAYmM-OJ21e11LHxz9PUfl8', 'Episodio 7', 'Veneno del alcohol'],
+	['https://mega.nz/embed/ajIzjaKT#JXxlcuYhU8YGfiGnXhIRK_lrS7yflFLPUn8GamAFfp0', 'Episodio 8', 'Reunión de la muerte'],
+    ['https://mega.nz/embed/TiIDVCBT#9iaJb2_4Nt4JLnTwf15fEZ-96FVbI5Hky8HHFaX3wZ0', 'Episodio 9', 'Contador de muertes'],
+    ['https://mega.nz/embed/32JBTCZC#QxBnJn97NSm7BcsrLmWKU_dMChuZnyEk-XVmaGduED0', 'Episodio 10', 'Cuenta cuentos '],
+  	['https://mega.nz/embed/v7QlXIbZ#qBiHnrTr9Sb6YjO0zvXl7y_S10UxP7W6erpYLOQZr4Y', 'Episodio 11', 'Memento Mori'],
+    ['https://mega.nz/embed/vnYFxaiK#mDy7jphh-fWQ8oh15sxceyQdVBuMGXWSGKoPUbdvrjs', 'Episodio 12', 'Tour Suicida']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/DeathParade/Portada-Tmp1-Cap${index + 1}-DeathParade.jpg`,
+    'iframe'
+]);
+
+const pingpongSeason1Episodes = [
+    ['https://mega.nz/embed/mB5kAKbR#Z7ne15Hvs3Ibpr1kZVGmGOPltGmTBGCrl8TNTb4yvK4', 'Episodio 1', 'El viento obstruye el sonido'],
+    ['https://mega.nz/embed/zJwWiYiJ#s8cscsuWIKOjJ5ispzBIxjeqah4t2kQc00zzLamoQxM', 'Episodio 2', 'Smile es un robot'],
+    ['https://mega.nz/embed/eVhmSKZK#TMWlywVKd8h7S1nuAwBpmbG9C5l3Z5LwitzDvDRWkdk', 'Episodio 3', 'Arriesgar la vida por el tenis de mesa es repulsivo'],
+	['https://mega.nz/embed/KYh0wIaZ#PVqr0i6cG8wq4XeBQE0KthmnY-eVdiTuIAnFRMkDjDw', 'Episodio 4', 'La única forma segura de evitar la derrota es no pelear'],
+	['https://mega.nz/embed/eAgGwS5C#aM1Ttru3jIi3PuMHi88ggXaZ27SyOx1exU3fLR22hWU', 'Episodio 5', '¿Dónde me equivoqué?'],
+	['https://mega.nz/embed/aV4w1abC#penwCFx68dIjkdzlMQWKCUqsHfVtI3E8lPMzSWj5Oxg', 'Episodio 6', '¡Si amas el tenis de mesa más que a nadie!'],
+	['https://mega.nz/embed/TIhi0aTI#soPwMnxQ7hEsSGzl6fsENfDUK9_R2hc6GTtseocAyyg', 'Episodio 7', 'Sí, mi entrenador'],
+	['https://mega.nz/embed/GApm1QQK#Y7UXLQgdKBEznc2-cwPRBNK0ijCoD6Wty53wnmUSMD0', 'Episodio 8', 'Ven, héroe'],
+    ['https://mega.nz/embed/fIpWDS6Q#x4DckjhDq6yZ2qd9RlP1jb8UAHi_P1iNKlvkfCDO3gQ', 'Episodio 9', 'Voy a llorar'],
+    ['https://mega.nz/embed/iUo2ga6b#JDC_Xk1VHQz3bsSUgS-sf1_M-oL-QsDvTb1pmhWawDo', 'Episodio 10', '¡Eres un héroe, ¿Verdad?!'],
+  	['https://mega.nz/embed/6EwWXIyZ#6-HmvafWczzkNnBATkKwYV_UMv9W1apJ7iJNqhIj2ss', 'Episodio 11', 'La sangre sabe como el hierro']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/PingPong/Portada-Tmp1-Cap${index + 1}-PingPong.jpg`,
     'iframe'
 ]);
 
@@ -2511,7 +2563,7 @@ const catalogData = {
 		label: 'CATÁLOGO 24', title: 'Cyberpunk', description: 'En una distopía de corrupción e implantes cibernéticos, un chico prodigioso y temerario busca convertirse en un mercenario proscrito, conocidos como edgeruners.',
 		seasons: [
 			{ title: 'Temporada 1', description: '10 Episodios', cover: 'img/Temp1-Cyberpunk.jpg', videos: cyberpunkSeason1Episodes },
-			{ title: 'Temporada 2', description: 'En estreno', cover: 'img/Temp2-Cyberpunk.jpeg', videos: cyberpunkSeason2Episodes }
+			{ title: 'Temporada 2', description: '10 Episodios', cover: 'img/Temp2-Cyberpunk.jpeg', videos: cyberpunkSeason2Episodes }
 		]
 	},
 	tomodachi: {
@@ -2553,6 +2605,18 @@ const catalogData = {
 		label: 'CATÁLOGO 30', title: 'Erased', description: 'Erased (Desaparecida) es una serie de ciencia ficción que cuenta la historia de Satory Fujinuma, un autor de manga sin mucho éxito que sufre de un peculiar fenómeno conocido como Resucitación en el cual se transporta a la fuerza atrás en el tiempo hasta el momento anterior de que ocurra algo que supone un peligro para una vida. Satoru no tarda en descubrir que el fenómeno persiste hasta que la...',
 		seasons: [
 			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Erased.jpg', videos:erasedSeason1Episodes }
+		]
+	},
+	deathparade: {
+		label: 'CATÁLOGO 31', title: 'Death Parade', description: 'Hay un lugar después de la muerte que no es el Cielo o el Infierno. No puedes irte si no se termina el juego y, cuando acaba, quizá tu vida también acabe.',
+		seasons: [
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-DeathParade.webp', videos:deathparadeSeason1Episodes }
+		]
+	},
+	pingpong: {
+		label: 'CATÁLOGO 32', title: 'Ping Pong The Animation', description: 'Peco y Smile son dos estudiantes de instituto muy diferentes, pero grandes amigos con una afición en común: El Ping Pong. Peco es el animado, el decidido, el que se cree siempre un buen jugador, aunque en realidad sabe que Smile está siempre por encima de él. Smile es apático, casi un robot sin sentimientos. Cuando Peco es vencido por un jugador chino, decide dejar el deporte, mientras que Smile por su carácter, siempre evita ganar a Peco aunque sea mejor que él. Dos caminos diferentes en los que cada uno intentará aprovechar su potencial a su manera.',
+		seasons: [
+			{ title: 'Temporada 1', description: '11 Episodios', cover: 'img/Temp1-PingPong.jpg', videos:pingpongSeason1Episodes }
 		]
 	},
 };
