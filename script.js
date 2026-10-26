@@ -2051,30 +2051,30 @@ const tomodachiSeason1Episodes = [
 ]);
 
 const gachiakutaSeason1Episodes = [
-    ['', 'Episodio 1', 'Altomundo'],
-    ['', 'Episodio 2', 'Receptáculo'],
-    ['', 'Episodio 3', 'Sotomundo'],
-	['', 'Episodio 4', 'El cuartel general de los limpiadores'],
-	['', 'Episodio 5', 'Saqueadores'],
-	['', 'Episodio 6', '¡Te partiré la boca a puñetazos'],
-	['', 'Episodio 7', 'Conclusión'],
-	['', 'Episodio 8', 'Un paso al frente'],
-    ['', 'Episodio 9', 'La ciudad de los grafitis'],
-    ['', 'Episodio 10', 'Penta, el Dominio Prohibido Desértico'],
-  	['', 'Episodio 11', 'Las atenciones de Amo'],
-    ['', 'Episodio 12', 'Como una maldición'],
-	['', 'Episodio 13', 'Mirada mortecina'],
-    ['', 'Episodio 14', 'La tormenta antes de la tormenta'],
-    ['', 'Episodio 15', 'Oe, en serio'],
-	['', 'Episodio 16', 'De genios y mediocres'],
-	['', 'Episodio 17', 'Recuerdos de un mediocre'],
-	['', 'Episodio 18', 'Anterior empleo'],
-	['', 'Episodio 19', 'La colección Custodia'],
-	['', 'Episodio 20', 'Símbolo'],
-    ['', 'Episodio 21', 'Contra reloj'],
-    ['', 'Episodio 22', 'El poder del protector'],
-  	['', 'Episodio 23', 'El hombre que se hará fuerte'],
-    ['', 'Episodio 24', 'Excursión']
+    ['https://mega.nz/embed/1YgwXBCT#UJAC6QFdnwcVPRF52z2NMrMeriu7ubIpouEoUsEWPbc', 'Episodio 1', 'Altomundo'],
+    ['https://jkanime.net/jkplayer/um?e=MjRnSlJiaVdVMjVpOVB4OUJLMURzZVZIMFJXSy82NmJhTlR6dXVMUkExRXBSWTl4a3RIYTZpampuQXdWQ1FuVmdVK0d4VGJxN2ZjNk83UEZqdzQ4K2J4YU16QlZOR2NOeVBwMDE1KzFKMUE9Ojq8YVv6xr1sQMmuUSvOrSvW&t=2e58964c6d2bdddcfb69c7f9082a6832&op=NjQ0NzE=', 'Episodio 2', 'Receptáculo'],
+    ['https://jkanime.net/jkplayer/um?e=dms2WWJ0d0t5OEpZL3Bsemk0NzNJTjlRVzlnWVRoZEdCSVhob2JIbjZSaldXL2hPcGc4RUFxdkxHdzl4czNnY051VXJlWXQ3MkhGSURzOWZhVW9yTWc9PTo6yJs2._eW6wqveYnSj_ILoA--&t=3449034203344c7d4ec09dd6a990365b&op=NjU0MTA=', 'Episodio 3', 'Sotomundo'],
+	['https://mega.nz/embed/7V9WjYyZ#LsDTSEAiVf00Ki93b1-ji8VHEiqMJ7xEQIOowi0CVzg', 'Episodio 4', 'El cuartel general de los limpiadores'],
+	['https://mega.nz/embed/lc4R3Dyb#nM9e_ktzB27pCXLsOosluA0ks6xWIQvG-L7H6kAgKjo', 'Episodio 5', 'Saqueadores'],
+	['https://jkanime.net/jkplayer/um?e=MS9WUkdkbCtmMFBYdUtORGJoazYvUDB3MGd5V1d4RVpTT1UzMWlYMUlnaEVWc0loTVhtQVNQcVNrdlE3cUszQWVQMjRjbVdSSUxxc2NkT1o5eVVia2YwQlc2dm0wVlhxTTRjUkxuaEZ3VmM9OjobO71lOXE31Ez.9NIUMjyq&t=5d0727fedbc16cbe0a41b67ffe599a65&op=NjY5MzM=', 'Episodio 6', '¡Te partiré la boca a puñetazos'],
+	['https://jkanime.net/jkplayer/um?e=MlJ1eHg0NnorQ1dJSnNsT0tvZjlHdjY1WCtGVFNzZEVUTU5aMzVrOUNVRnVBdTA5MldWeGpPTyt2QTRacVZBOHRSc1dpbmkvVS8rSm0rc3ZISTBhWFZsRXdVVkhjbDVyUTRoTzViOFNUSHM9OjoTmaC.oJ.S9Hhi4XI_LvUj&t=f3cd793254cfa2bfc3fab8790826c22c&op=NjcwNTk=', 'Episodio 7', 'Conclusión'],
+	['https://mega.nz/embed/X4oBVJwS#RWK1LbKZ7fsLfdDHAL2vXZcFdPDfmvj6kCknb9SNnP8', 'Episodio 8', 'Un paso al frente'],
+    ['https://mega.nz/embed/9QJ0VK6S#aDh8FR3iTukSFyLVzph1-NV_0gcy2lN7HB_1ycMpn4M', 'Episodio 9', 'La ciudad de los grafitis'],
+    ['https://jkanime.net/jkplayer/um?e=ZEdjWlpXMnRTWVBmajc5Z1BEd0lnRW5TU0NUVHhNTGR1TC9BejFvbUtaWjdiazFKRG4vanJWejFXaks2a1VUMUo0Q3NEbXo1K0cya1J5OTYzMm5UVVE9PTo68TYzTaEmXZXVjBw3k7C4pw--&t=76fdff5821a16472a49559782ab13b25&op=Njc1Mjk=', 'Episodio 10', 'Penta, el Dominio Prohibido Desértico'],
+  	['https://mega.nz/embed/ntRTRIrK#Z-A_p_dQIKTQwSCJsrKkQPrhAD0wX22C3CK9okRT5gQ', 'Episodio 11', 'Las atenciones de Amo'],
+    ['https://jkanime.net/jkplayer/um?e=eHBFUjVRZWx1ZFhuVm5yUWxKZUIwSk5YS05DbDRWZUh3UVJPVjhCcDB3eHhQYTlNb1VWV0s2VW9nSmgyNjllOUxPZ2xnRjZ3UVNMWjdTaDVnRmxTSnc9PTo6bXIbdwhAz2.P3QcIKw9wEw--&t=77fddb942f85518f04048be60a7d8f25&op=Njc3MTY=', 'Episodio 12', 'Como una maldición'],
+	['https://jkanime.net/jkplayer/um?e=Q0JFMXVRYm5neTNwcUN3ZmpQY3FmazA4UGJUcC9Wd0wrbzhSQnZuU3NSZlA1Q1crb3ptempWRldFVzYxQUhYdjhFNElzN3lDZ01mMHZncXR1TUo0U2c9PTo6XUCH3zt8.LaCkipeQm42nA--&t=b2764bbe520f0f157f77439f93cb59e4&op=Njc3OTQ=', 'Episodio 13', 'Mirada mortecina'],
+    ['https://jkanime.net/jkplayer/um?e=R3FWR0tNSVB3Z2puVW1tZE1NVXA3UmRDRXNmQk1aeFE1bHBVRm1jS2wyemw0ejVlUWJJMzZIWlQ1VkR6YzJ3RVE4MHBpS25wakk5VFB6dXphN3dvamc9PTo6e75Ewrq3ohlPTa7kFLYK2w--&t=1c0857099b7ae80514cd0490ded52041&op=NjgwMDc=', 'Episodio 14', 'La tormenta antes de la tormenta'],
+    ['https://jkanime.net/jkplayer/um?e=QkFUMzBiYkkrWE5JZXBlMDNLelZ4MjRmSW5OZ29DbTBZYk5MUWhuUlFxTEJhdlQ5dGhvc1p6c0ZJWHg3ZkEreDFCU3NDYklvWE8rNEV0U2h6blNodkE9PTo6J6CkB6LcK.bM.NlbA7O_ww--&t=893aa6e87e56527a262c140eb93cd207&op=NjgxMTg=', 'Episodio 15', 'Oe, en serio'],
+	['https://jkanime.net/jkplayer/um?e=Q3hrMUlhV1J2N1c3NEdsMm9hZ0JWdHkyR3FqVW1lQlBTcmxmSW5nN0xzNWlNRTliQUNZQ0hLRGo2eFpKYTVvR1lmemh3MVFKTWdIY3JVOHZ6dzRiUVE9PTo6yH1vNj.GWvwP.6ioRWC5pg--&t=c2f9f2f9fada724fb5d675159ae7c970&op=NjgyNDc=', 'Episodio 16', 'De genios y mediocres'],
+	['https://jkanime.net/jkplayer/um?e=c3hGdWpPVXJSMHd5b1BSbElQZURVUmFlTCs1S2owbE01N0twcWRkYmVVd0p5M1dha2hEVyt6NHpVTVg4Y0xteEF5YnV4dkgxZ3h6RkRwazM1VFBJa3A2MHdvN3pUajRMTDlScGsxUU4xMG89Ojqysa7Ek0OLOHeRLYuz6gxZ&t=4055ac3f6fd08abca4f9b2422e067a7b&op=Njg0NTY=', 'Episodio 17', 'Recuerdos de un mediocre'],
+	['https://mega.nz/embed/GZNShTrD#4Vr0Fx0UkpTIrqLgvf55UnCjKOSiY9CaECwguHKdaHE', 'Episodio 18', 'Anterior empleo'],
+	['https://mega.nz/embed/blYn2LZD#frumPqoExTvUUvkEJ-R_VXNp9-fcpHixooEd1grtNZM', 'Episodio 19', 'La colección Custodia'],
+	['https://jkanime.net/jkplayer/um?e=eXFsSWNTSHM4OFBvZWxOZmRYRGVqQzJHRnpxZUJZd1FQNFY4eDc0MXRqRkc3QkFsWEsxclQ0RzJpOThOWkF6LzM0bXR0SnIvMHMwVnBXODFBc2w3VEE9PTo6UsadvoPlHDnd6ji.Gcz4zg--&t=57834e03f505192aed84abbd677d42a1&op=Njg4ODY=', 'Episodio 20', 'Símbolo'],
+    ['https://jkanime.net/jkplayer/um?e=S0VyUlFQdTlJYWU5K1hDNDNURXFKRExCUEM4bkFnQVlwenRhZEZ4Z25seWtkeWwwT09NZklJcFY1NVRKZ2lZZm5odjY1Vk81SVBESTRHMmRWcmswbEE9PTo6hw8sck9WVI3N_CYu54eQMg--&t=bd2c2fce752cb06005ef58788e42460a&op=NjkyNzU=', 'Episodio 21', 'Contra reloj'],
+    ['https://jkanime.net/jkplayer/um?e=YXdyQnBhR2Z5TGdiTHgweU1uTmcybHJncm9LNngybjJxbk91K2xQdERFUWdmQlN6ekJsaHFubVlZQVFHcytsY0wycnNBTmNPZzNDQWptSEZZUmJmTFE9PTo6QfvZusmiYKAFzoyIKQULUQ--&t=8d837da3cbae7ce65a42fc03a02d6590&op=Njk3NDQ=', 'Episodio 22', 'El poder del protector'],
+  	['https://jkanime.net/jkplayer/um?e=eGxwZkR6dCtqUGdWS21aT21uaFlmVldqTzh0SnJPaDZFZkJhUlNabWNWN0cydjRMM2RxVjNNcmZoOFVISVlndnl0b2FxMGxpUkJKWXQ0ckxCTzVtd0E9PTo6y10XasgsPK9b0CFNyMYcuw--&t=ec07a7d02bbe9d717ec086db2e3935f2&op=NzAxMDg=', 'Episodio 23', 'El hombre que se hará fuerte'],
+    ['https://jkanime.net/jkplayer/um?e=eFgwdjh0WStLUUtsRnljNGlqVmhMM0tSYng2Q3NNZG1FeFlrUmxMUjlWWkpkOGdTWkNCUmlGajRIbVRnd1pidzEvS1VWemk5R2VwYWhlSGw0ZklLYlE9PTo6EWn_qcLIe1GgR9.LGv4mUg--&t=00fac7cbed88bb0332f3e024e26de6a6&op=NzAyNjU=', 'Episodio 24', 'Excursión']
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -2084,9 +2084,7 @@ const gachiakutaSeason1Episodes = [
 ]);
 
 const yourpancreasSeason1Episodes = [
-    ['', 'Japonés sub', 'Kimi no Suizou wo Tabetai - 1'],
-	['', 'Dob Castellano', 'Me quiero comer tu páncreas - 1']
-
+    ['https://mega.nz/embed/ZuEAXIIB#1SNg0VA6mCLrRLK2Id7d4sQXd8X4w5BAwVyeNcR6ik8', 'Japonés sub', 'Kimi no Suizou wo Tabetai - 1']
 ].map(([url, title, description], index) => [
     url,
     title,
@@ -2376,6 +2374,181 @@ const pingpongSeason1Episodes = [
     'iframe'
 ]);
 
+const saoSeason1Episodes = [
+    ['https://mega.nz/embed/gfdEDKLJ#16ltZiNaANZA9ikRKcGoQh5_nQ0mniF1sLDWZLDm05U', 'Episodio 1', 'El mundo de las espadas'],
+    ['https://mega.nz/embed/8WcWUJiI#aX82BtvzxXP810cXJwGnMRLb3A94u5zTJumNxdBBSl0', 'Episodio 2', 'Beater'],
+    ['https://mega.nz/embed/ATNhkCja#6ecDplm1UHUWMvRDsuwWNKhPfTXno2-lsiTfh3hMmwY', 'Episodio 3', 'El reno de la nariz roja'],
+	['https://mega.nz/embed/QH0zEBaB#T--zMYJ74l6VCxSkiri69OYw3diQwClFwfUIpYrx_8g', 'Episodio 4', 'El espadachín negro'],
+	['https://mega.nz/embed/pW0D0S4L#FpRy0IWEGb_F-5E6L5vk56CcnS7MYCfBpvdfUSv1q0Q', 'Episodio 5', 'Incidente en la zona segura'],
+	['https://mega.nz/embed/oPkDTQJA#0SziKpo_wGYSER5f5uwTumPUqWReyaFoB4bicZguKDU', 'Episodio 6', 'El fantasma de la ilusión'],
+	['https://mega.nz/embed/gfFhSaRC#Ct6flKrwKpQO58DR4Aa3TooAE8yUWWi8DsHTj53T-Mk', 'Episodio 7', 'La calidez del corazón'],
+	['https://mega.nz/embed/VSlinRwB#qut7Wvt150IDDHgwgk22oJh5gtYYW6N6atvI8xVvTVU', 'Episodio 8', 'La danza de las espadas blancas y negras'],
+    ['https://mega.nz/embed/tXFWwSSY#INSeSfcm4IZQbPFBoeznm5Ub16E1E2eIuAkBbmitQEs', 'Episodio 9', 'El demonio de ojos azules'],
+    ['https://mega.nz/embed/xTcViJrD#0IsyHyOhwDshVXgxFRfjrQkzbt2dByolA3gARu0lOro', 'Episodio 10', 'Intención asesina carmesí'],
+  	['https://mega.nz/embed/wb9GVaYT#-h5qDQRnJ6g7S63VxMSHZdZ6vfEtnjyRgnqYkG2Nh3U', 'Episodio 11', 'La chica del rocío de la mañana'],
+    ['https://mega.nz/embed/kf0VwJBT#1yRYzqOCkay60AElcvws7gZHzBNd-Quh2MxZq6YrpCQ', 'Episodio 12', 'El corazón de Yui'],
+	['https://mega.nz/embed/RaVzkQLL#bA5fhXsXSUwa216B3GIab8ZnLrQ48EQ49Ts7_q6NrKU', 'Episodio 13', 'Al borde del abismo'],
+    ['https://mega.nz/embed/0atEVTRB#IYjqpSf32DDznKkly_rEnKtIuZUuFLu_RKnXCSCvoqE', 'Episodio 14', 'El fin del mundo'],
+    ['https://mega.nz/embed/Re1CTZKQ#PCuUTpgRn-LDQ3gs5x2D2XDczdYr6uzJ5oP1MYareKs', 'Episodio 15', 'Regreso al mundo real'],
+	['https://mega.nz/embed/4DcAACxZ#KZIEM1mftKGMC0ded-j4SrHZzVBFFzUr3VThmDCy8Fo', 'Episodio 16', 'El mundo de las hadas'],
+	['https://mega.nz/embed/Zb0wjaZK#BhDagzP_5fkMjVtopML8l47a_vCD0q5Cpcnt63PY6Lw', 'Episodio 17', 'La reina cautiva'],
+	['https://mega.nz/embed/AbEF3QzQ#hDC3U06zkjVpFbSVCotJNpQYzDWMfrvLOXPe3Xq-ei4', 'Episodio 18', 'Hacia el Árbol del Mundo'],
+	['https://mega.nz/embed/cONkBRIZ#kAfDwJLo9tzZ4Y1s5UHFmM83kEs4lP2Tp6MqxAhN2To', 'Episodio 19', 'El Corredor de Lugru'],
+	['https://mega.nz/embed/hTEhgAxB#K8RSOBltOmqILkYRt_IwPOksnbpkNivOzUKxcScBy68', 'Episodio 20', 'El general de las llamas rojas'],
+    ['https://mega.nz/embed/ADsFRD5I#_AJuooNJ4SelC6Vzzf24-qn6ZsGDp7DSLae7K2Y09BQ', 'Episodio 21', 'La verdad sobre Alfheim'],
+    ['https://mega.nz/embed/cS0A3YxD#VRiCPzkP1-gNZxXbPMYZArSz6oHcUyA-LcNRC37Tkd0', 'Episodio 22', 'La gran misión'],
+  	['https://mega.nz/embed/sGsSVQQA#fnIHI0xxVrPDoddWuHsrkDkeAFV4iCYvD1VdXn-3QCg', 'Episodio 23', 'Nexo'],
+    ['https://mega.nz/embed/sS0mTAqY#fTMhcMJY50Tyr2DzVS_hSwU7jVRXKWLahJ3UZnvD994', 'Episodio 24', 'El héroe dorado'],
+	['https://mega.nz/embed/Fe12nTRI#ngz_h2JrB9sI6qTWYQtHYQGVtTGiBwgb6GgAq23DVzk', 'Episodio 25', 'Semilla del mundo']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/SAO/Portada-Tmp1-Cap${index + 1}-SAO.jpg`,
+    'iframe'
+]);
+
+const saoExtra1Episodes = [
+    ['https://mega.nz/embed/NacVxbSa#-ftZeGUoXDZb91EzuWzUtcekbfo9CcUEClaej9b3v2M', 'Episodio 1', 'Sword Art Offline - Extra edition']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/SAO/Portada-Extra1-Cap${index + 1}-SAO.jpg`,
+    'iframe'
+]);
+
+const saoSeason2Episodes = [
+    ['https://mega.nz/embed/Q3EVCJjI#-mTB5OvnqvzFzzlGhudBJ9QSqx6ZlBin0Tgjty858Ns', 'Episodio 1', 'El mundo de las armas'],
+    ['https://mega.nz/embed/Iz9GXJDD#KgnsOaJq9lF6Xl7heC_DEwNUjcKz9qgsXxriIbstaY4', 'Episodio 2', 'La francotiradora de hielo'],
+    ['https://mega.nz/embed/si8CSBpI#3zn2X0Cr_bLrws7D59SvPoki8DoRVL7OQ88AWz1ZqU8', 'Episodio 3', 'Recuerdos de sangre fresca'],
+	['https://mega.nz/embed/479wRJAC#H3mzqWY-h-_BLM5893VuUtNKu9vh3leee0-1wTlY3J0', 'Episodio 4', 'GGO'],
+	['https://mega.nz/embed/82EmxRDS#m5oUW8VSwOuIIXEtjJqBx17HSWiCTfrEvPFnSb0KadU', 'Episodio 5', 'Pistola y espada'],
+	['https://mega.nz/embed/Mmk2kabQ#nTZkI4UDb3vwLuuY6vaL2q5vvdB5fBqFY9XHqv1itio', 'Episodio 6', 'Un duelo en el yermo'],
+	['https://mega.nz/embed/hvNEgJrB#3po490jFbFizFmRD7yCwYHqlRRhmxw-cn_Xzj1BOZo4', 'Episodio 7', 'Recuerdos escarlata'],
+	['https://mega.nz/embed/hzcyDBDA#zdb6w4SCXsp2SoTwOe5N8lkn5jzsdjrX6fIj8JwCNYY', 'Episodio 8', 'Bullet of Bullets'],
+    ['https://mega.nz/embed/Vi91ABqD#34nelrtRDBnjagiJlKfjwwnar6cv9QW3Ns0kefvbeVo', 'Episodio 9', 'Death Gun'],
+    ['https://mega.nz/embed/x6sHQQqa#T1PpczM9CX_BY-gIi3qJFX5JJB37Wmt1OzRCJAOZGao', 'Episodio 10', 'Perseguidor mortal'],
+  	['https://mega.nz/embed/luMDTBrS#psq0notR_VPGieJ73IGIvl7iCtG8o4B_G0Djg7l6fQI', 'Episodio 11', 'El significado de la fuerza'],
+    ['https://mega.nz/embed/86kVnA7I#c8YImci4ns5dYP5qY0AMVuNFhc49UwAuO2497IhvjXk', 'Episodio 12', 'El espejismo de la bala'],
+	['https://mega.nz/embed/Ar8EhKzZ#bzD0TFisnxuzepmM5FkILXPDnlZ2p1YHN2eX9VMzVVQ', 'Episodio 13', 'Phantom Bullet'],
+    ['https://mega.nz/embed/Y7FkHLQC#R8VtefL4C0tOCPvKDvUG4hlh97iZZoMbvTrEOaLfypw', 'Episodio 14', 'Un pequeño paso'],
+    ['https://mega.nz/embed/I3FwFYoQ#GjDUUDr7wLD0WiB42_vgdkmahaUquROh5_f6dkn0d4I', 'Episodio 15', 'La reina de los lagos'],
+	['https://mega.nz/embed/Y6UU1QjD#Pg7TDyi7CipyZNT1EZr-A7RAOEEk5uAZRJF84yUkcoY', 'Episodio 16', 'El rey de los gigantes'],
+	['https://mega.nz/embed/53cxyZJC#Ii4FOUvf8zaa7Pu6shPug5TN0N1f9z-ak7QijmFVnFM', 'Episodio 17', 'Excalibur'],
+	['https://mega.nz/embed/BuFByZzC#oSqq-X-w0NElSLut3gXT6lJkGbS_qFYOhEnT7yiUu1M', 'Episodio 18', 'El espadachín absoluto'],
+	['https://mega.nz/embed/AzlFlKhC#GGnqhE9_8-lHWz8Su9rBugD1qhZVAoZnP6d-gC8EHxM', 'Episodio 19', 'El fin del viaje'],
+	['https://mega.nz/embed/0y1zlDwQ#xOWezxww4D5jr4bQuXF9OQ_WXbrV_-hRIqbN89TgUjc', 'Episodio 20', 'Los Caballeros Durmientes'],
+    ['https://mega.nz/embed/5isWyR5K#7-CmLeevkWgQpHGVg6bPiZuwkhOz9JrkDLzrsEcPubo', 'Episodio 21', 'El monumento a los caídos'],
+    ['https://mega.nz/embed/16UATTKD#xH3gJFf9wQViZN6Qy98BR-8zuu2506MlMyOlvhutCZE', 'Episodio 22', 'El fin del viaje'],
+  	['https://mega.nz/embed/07tF2TgB#O-ktkKaAWRr2T9muXD3neGq9dAHTgoK9Q4BdrOclW7s', 'Episodio 23', '• El comienzo de un sueño'],
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/SAO/Portada-Tmp2-Cap${index + 1}-SAO.jpg`,
+    'iframe'
+]);
+
+const saoMovie1Episodes = [
+    ['https://mega.nz/embed/9msR2QDJ#uS9psEb8izciYPLU6YBmFLJ-ejwqqwEFWL6YuUXNU7o', 'Episodio 1', 'Sword Art Online: Ordinal Scale']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/SAO/Portada-Movie1-Cap${index + 1}-SAO.jpg`,
+    'iframe'
+]);
+
+const saoSeason3Episodes = [
+    ['https://mega.nz/embed/sSFxETgI#zoDh97jpeToXnORyPWu2KNmGfIu8BFQ4_TQSw4I0jxU', 'Episodio 1', 'Inframundo / Underworld'],
+    ['https://mega.nz/embed/1W0ijBSR#xFh4F0dwpYil1jOEcqGAdSPzKug3t3uJpzKT9uoDt84', 'Episodio 2', 'El árbol del demonio'],
+    ['https://mega.nz/embed/hLNTGQBS#yHIqO5GNdzkY6Y1GaWGsas1mY2FC3vRxaulYvP0jNoA', 'Episodio 3', 'Sierra Fronteriza'],
+	['https://mega.nz/embed/lXMwGIDa#mYII7zaxxcw-D47NnE-ikgQb13L2bKjl-o89GkJLm84', 'Episodio 4', 'Partida'],
+	['https://mega.nz/embed/wTtREDxY#h5Td1vl_gdCWn9MHEhywkWl6IKoYCl3gxBrfw6Nq7jg', 'Episodio 5', 'Ocean Turtle'],
+	['https://mega.nz/embed/sOl1zQ7Q#eETuFhwDWwpR6IvO9T4gMwAnPCqMQuMsJxmgf4sJ4Q0', 'Episodio 6', 'Proyecto Alicization'],
+	['https://mega.nz/embed/pacCQTqL#NlOjVdpK0i1CBrmOi5VDltbdruL0koxmOwgzsFmApm4', 'Episodio 7', 'Escuela de esgrima'],
+	['https://mega.nz/embed/8Cl2HbBB#IPnjPDBQ_L4seGfJy6Gc1plcO_fEG634_GttNCSOaL0', 'Episodio 8', 'El orgullo del espadachín'],
+    ['https://mega.nz/embed/EG0xxYAT#pEwaF5gXVjt7mGr3qpUn67olPUU7U44vN2ePO_tel18', 'Episodio 9', 'Responsabilidades de noble'],
+    ['https://mega.nz/embed/hbkjQLYL#1a-c-Sy-5eUadFyKTi_QRWq6kAc-R78ouf6GDsDNgYs', 'Episodio 10', 'Tabú grabado'],
+  	['https://mega.nz/embed/8HNBgB4D#uqbvu4HBpl2g1yPmggUXcN3uaBc_BvDPBArqOaUq_yM', 'Episodio 11', 'La Catedral Central'],
+    ['https://mega.nz/embed/Ff9VhZ4C#Gw7t8L1K1Rh37irNSmipE96su2_g-qNDp1e5XOG_t2o', 'Episodio 12', 'El sabio de la biblioteca'],
+	['https://mega.nz/embed/NHlUySaI#R5umTnO90ahZzU1d1bK2xO6B_dZFvSHqXHFSjYzfCE8', 'Episodio 13', 'El veredicto de la Administradora'],
+    ['https://mega.nz/embed/sW0ihQqa#SpD-SArQzlKfbzJEOdTzKBS3t3u4dn8m6qd6YV5_pNU', 'Episodio 14', 'El caballero carmesí'],
+    ['https://mega.nz/embed/sO0GHRgQ#7raihT7OdC6rY46xwJto_7Bv2LaaTqbnIZIjz9Q8ejM', 'Episodio 15', 'El Caballero de la Integridad implacable'],
+	['https://mega.nz/embed/QOEwBTBK#84Qqx9vOQC38KInf4I7McHTsX_nHKUiq3qcWx2yTyM0', 'Episodio 16', 'El Caballero del Osmanto'],
+	['https://mega.nz/embed/JWNxwQaT#Y1-4LuVVlIbzqQcm_2d7fbaCUUWMe2hZU0XdSIYVIAA', 'Episodio 17', 'Tregua armada'],
+	['https://mega.nz/embed/ZfMiAZ4R#9qNWBe0cnC80BDtHiPXlFHjPhGrGxyBBRpkMIdFf8EM', 'Episodio 18', 'El héroe legendario'],
+	['https://mega.nz/embed/AH8xWSTD#4twsVMrZdIc6uk8wPpuxQJCcxlZXzZh2MQK3B8lB170', 'Episodio 19', 'El sello del ojo derecho'],
+	['https://mega.nz/embed/0CETHJ6Y#KS1gdohPzlqPkwji-BTbUQr6GFoAcb9LMfCoADJ542k', 'Episodio 20', 'Síntesis'],
+    ['https://mega.nz/embed/8CM0AQDb#KIvK3yxKOBIr_9U8-lp-JwWi8rKhMEtV9B-IiVEHtyo', 'Episodio 21', 'El Caballero de la Integridad número 32'],
+    ['https://mega.nz/embed/8ekTDC6R#W-qBzB8yNh57Krl7Z6gEd8mKMtrADFzwonjK7zOYnAw', 'Episodio 22', 'El fin del titán'],
+  	['https://mega.nz/embed/ADdhmRoC#E6wE-049VYjisMdoSeTPtOXGKMwSbnpk5LKPwTbuXU4', 'Episodio 23', 'Administradora'],
+    ['https://mega.nz/embed/xKdihKxB#OB-_FTz0wX7aWCznBhxSpSaQLVSBITn_WM7q7H12hik', 'Episodio 24', 'Mi héroe'],
+	['https://mega.nz/embed/MSd0ELTT#EnY3_avWOKoJdRLJlL5DLDCZMDLTIpukQxFwGTTHK7s', 'Episodio 25', 'En el norte profundo'],
+    ['https://mega.nz/embed/Rb8mSaKJ#APVLZWrxhF2TUKLJahz-QvgilhaMy6H5PfCjoJYjFmY', 'Episodio 26', 'Ataque sorpresa'],
+    ['https://mega.nz/embed/hKt3TLSa#VP0Z6UHLq4LhV3njRl8h6MQmtRZNEvUI44KHCpjfbN8', 'Episodio 27', 'La carga final'],
+    ['https://mega.nz/embed/FKVjTJTZ#iQVAjhHVOxenZ5x6hOcJElLU6q1q8cSG9V4HaCH0YQU', 'Episodio 28', 'Dark Territory'],
+	['https://mega.nz/embed/JLdQXQTY#oHkXshF15LxZ99TOPDkOPkGh58ZS5Q1EPIP3vZYzPqg', 'Episodio 29', 'La noche antes del combate'],
+	['https://mega.nz/embed/UbskmRQb#FYXJmeO6KrOyvXe-yBaE8_EpEdTkrDHXc-W-2oRpimw', 'Episodio 30', 'Batalla de caballeros'],
+	['https://mega.nz/embed/8GFgXBAR#vwo4NwtD7RFe9DGaVOBdHLtTbw52K7-C286L9M4kmA8', 'Episodio 31', 'El estigma del perdedor'],
+	['https://mega.nz/embed/QC1QUQbR#xOKCTBlY0jkvNKZRF-_GvMbJ589aC9gZB9ECIN5ywSE', 'Episodio 32', 'Sangre y vida'],
+	['https://mega.nz/embed/NeEDiJAZ#tmk0_q1zbVfdn5fcqc37AyI_fYSP-Fmjd8fMpV5-Ew8', 'Episodio 33', 'La Espada y el Puño'],
+    ['https://mega.nz/embed/peEDyaYR#tW0UCTqgk5ZkOB8syrCixI4SiomwEEfT8ehuYAr5s54', 'Episodio 34', 'La diosa de la creación, Stacia'],
+    ['https://mega.nz/embed/UCVAhJ7L#TSnszCTnjcXAnq0HHUZAJLsczHQrzxL6srO70tyEiYc', 'Episodio 35', 'Elección despiadada'],
+  	['https://mega.nz/embed/0HMjka7T#pDq7DtZ0xh_68LGyBuLfgbieQjXUrc6Rzam8Xoo0Osc', 'Episodio 36', 'Un rayo de esperanza'],
+    ['https://mega.nz/embed/cv0BEC6K#80H3ZCuGyJuG3eipH7m94a4BbId-IWVuqqK4VRvBPFE', 'Episodio 37', 'Guerra sin cuartel'],
+	['https://mega.nz/embed/UmFjXJyB#P_UEwQi1MPcD8ASTnDX50fQQ4BKbCPj__W8A_n-6Ki8', 'Episodio 38', 'El fin de la eternidad'],
+    ['https://mega.nz/embed/tjsV3Sza#sFELR2EOaOgBhF0m_BGq1mUJOqg07vjZhGeTrkepQUw', 'Episodio 39', 'Agitación'],
+    ['https://mega.nz/embed/5j0gyTYI#IVGbPiWHxkd7muq5-J10Uj4G9tvDn4lqoetu1V7oSQY', 'Episodio 40', 'Código de conducta'],
+	['https://mega.nz/embed/An0j3ZbI#-Mc1pm2XXhOH6WNsM25UhTGaBCI9RymcrSuAiouvi3s', 'Episodio 41', 'Pecado original'],
+	['https://mega.nz/embed/YqUlFbTQ#JWV2uOOMlS9r45KHdREqcg2vp_PM-Y75FH7de9bncVc', 'Episodio 42', 'Recuerdos'],
+	['https://mega.nz/embed/k3lxhbra#Ts_Qlc5ltZEnF2f4tQ3nzKz1be8vLe_JunVUa2JKZ0k', 'Episodio 43', 'Despertar'],
+	['https://mega.nz/embed/c2NHEYzA#iYmfRHH2F-WXWsy_lY3VYIWkqySvau2F9kXvG_XWVXI', 'Episodio 44', 'La Espada del Cielo Nocturno'],
+	['https://mega.nz/embed/UzU0FbAI#3U6Q92NbF_w71wglagWJgwlpsvETm6zY-t6m-IoFU9A', 'Episodio 45', 'Más allá del tiempo'],
+    ['https://mega.nz/embed/wqsyXTxT#_5r5poKNzP7JLQnxeqEfVRqBHL0oPSu8VYDLNy3-gAs', 'Episodio 46', 'Alice'],
+    ['https://mega.nz/embed/RzlyxZZa#SIcBoR_QCkK0LWDVnYWGxtEZEVp4VIbbi99xjCEG3JE', 'Episodio 47', 'Un nuevo mundo']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/SAO/Portada-Tmp3-Cap${index + 1}-SAO.jpg`,
+    'iframe'
+]);
+
+const burstSeason1Episodes = [
+    ['https://mega.nz/embed/KGQVkAzR#S1ZFM_ShyZEbzYEk6jkNVecuxmRBvb3aGK_h0YT-BsE', 'Episodio 1', 'El infierno se acerca en silencio'],
+    ['https://mega.nz/embed/uXZhjIpB#nVXL1SpdOrBmXEv2HzjB3S1Y1H6GHP_L1GQaj8gMFXs', 'Episodio 2', 'El francotirador despiadado'],
+    ['https://mega.nz/embed/efAHESgb#_x_7NnK0Mjc6f8tK1w4jdwh2DdQPOg63vXRDOmc5H0c', 'Episodio 3', 'La ciudad donde las bestias aúllan'],
+	['https://mega.nz/embed/3CQljCqK#Yt65NsVwjqVndyEi-iBcKYxK-SYrTgtHmZircjRdSEE', 'Episodio 4', 'Los hermanos mueren al amanecer'],
+	['https://mega.nz/embed/zTBXwIgK#4JsvXi3Ds0shGEp05TEhNN8HSBBYg4zU4cw-xxn43JQ', 'Episodio 5', 'La mansión donde acecha el demonio'],
+	['https://mega.nz/embed/3GIDCKaC#b2TVokfbJ6-tsFcRRwD0Mzx7IlFpoA92mx-mzAMuUcQ', 'Episodio 6', '¡Limpia este jardín con sangre!'],
+	['https://mega.nz/embed/6CB3AQZY#bR5rizzqjYIqyLSA4UQR0GQeopAnz0qnIIuWqwX4tRE', 'Episodio 7', 'Cielos negros'],
+	['https://mega.nz/embed/LXZXlIJQ#s1B_QyMw0kNTbweCa_V5SYJOHsPzVr-EUK-dVUsGr9c', 'Episodio 8', 'El fugitivo herido'],
+    ['https://mega.nz/embed/qOZ10aRA#YNMaN2QcSIO3SS_m3JdUFvDc1ApIobXEsWeCyDUXlZM', 'Episodio 9', 'La fiesta del dragón'],
+    ['https://mega.nz/embed/neAThCRJ#mGC9DRIlfPuYrsNEv0iBd8esOZz9v7RnjmpuiHjXKO8', 'Episodio 10', 'Ciberespacio inexplorado.'],
+  	['https://mega.nz/embed/6DQxXCSI#3Xq7dGjQ8ZtKLTfjf6RBGbAmEOzJUt4ixEFiU9f4RKg', 'Episodio 11', 'Ángel del Este, Halcón del Oeste'],
+    ['https://mega.nz/embed/TPR2VQJK#iuZJo7uFqzqyC29XEJIHcPYGXdFhO7ki_I2IzX-q5Ns', 'Episodio 12', 'Torre Tsutenkaku, bañada en lágrimas'],
+	['https://mega.nz/embed/WCBD0I6Y#ZbCHEF_VQ27evj0GQ7_KU6Kdw7BhQfkzQKv3B_5peLI', 'Episodio 13', '¡Batalla Sangrienta! Los rufianes de Naniwa'],
+    ['https://mega.nz/embed/aTRRTIpS#dVEH7LAnrXQmkvi7J3WW6puEmJpB0tL0tPv8kTyjC3w', 'Episodio 14', 'Niños salvajes'],
+    ['https://mega.nz/embed/GHZgnIRS#p-wIJnA0tJuA-fClz6T4juFhS-j4qu7mGZmAICxM4Jo', 'Episodio 15', 'El mar, trajes de baño y un monstruo marino'],
+	['https://mega.nz/embed/fOZRjaCY#NK0Ld9PPfo5nLEMvOe5sPAwGTtd54tp_TX8KhZQF29Y', 'Episodio 16', 'El Demonio Guerrero del Reino Encantado'],
+	['https://mega.nz/embed/SHQWlCyQ#FZBz5uqQ-46enZeFkb-dUYY5FlJ2Dx9kepVLlHH5YLw', 'Episodio 17', 'Enfrentamiento de ángeles'],
+	['https://mega.nz/embed/DTRUASzY#M3LReiZlgsYpDZzstQbPCSG38sWKIHe5Njw6r2KsoZQ', 'Episodio 18', 'El compañero de clase inmortal'],
+	['https://mega.nz/embed/eGImhIAQ#6qozBOMWpWzsehYAvh2nZMwuZ0Lv9lmZO6mIJr1nwFA', 'Episodio 19', 'Plan de 24 horas'],
+	['https://mega.nz/embed/vSYWWACb#TFbbqSzolYmdEPsypIM2pS4jdgqqjHMeQDR1MsVUssc', 'Episodio 20', 'Autopista masacre'],
+    ['https://mega.nz/embed/jfZ01YJY#oz38r2TyHOhL7kv6MA6NNwdnqkliQTNF-8qV16WC-T4', 'Episodio 21', 'Balas en la Torre de Hierro'],
+    ['https://mega.nz/embed/rLYmGKjD#r9LkOFth02Tq77hTft8h5SdbI1ieARpObAXAuSipFzM', 'Episodio 22', 'Amado diablo'],
+  	['https://mega.nz/embed/7XAWHIBL#M5nhNNRk0clhiyO1MxkXyvkfUFdH24AT3O5XqPaWdaY', 'Episodio 23', 'Área de ejecución en los mares rojos'],
+    ['https://mega.nz/embed/WfRygQia#wHqXfwnG9XfD9_a1H8kuAjpAfyrUxg7wFe5F4Xpbvhg', 'Episodio 24', 'Ángeles explosivos']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Burst/Portada-Tmp1-Cap${index + 1}-Burst.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -2617,6 +2790,22 @@ const catalogData = {
 		label: 'CATÁLOGO 32', title: 'Ping Pong The Animation', description: 'Peco y Smile son dos estudiantes de instituto muy diferentes, pero grandes amigos con una afición en común: El Ping Pong. Peco es el animado, el decidido, el que se cree siempre un buen jugador, aunque en realidad sabe que Smile está siempre por encima de él. Smile es apático, casi un robot sin sentimientos. Cuando Peco es vencido por un jugador chino, decide dejar el deporte, mientras que Smile por su carácter, siempre evita ganar a Peco aunque sea mejor que él. Dos caminos diferentes en los que cada uno intentará aprovechar su potencial a su manera.',
 		seasons: [
 			{ title: 'Temporada 1', description: '11 Episodios', cover: 'img/Temp1-PingPong.jpg', videos:pingpongSeason1Episodes }
+		]
+	},
+	sao: {
+		label: 'CATÁLOGO 33', title: 'Sword art online', description: 'En un futuro cercano, un Virtual Reality Massive Multiplayer Online Role-Playing Game (VRMMORPG) llamado Sword Art Online permite que los jugadores se introduzcan en el juego directamente mediante el uso del Nerve Gear, un casco que les sumerge por completo.',
+		seasons: [
+			{ title: 'Temporada 1', description: '25 Episodios', cover: 'img/Temp1-SAO.jpg', videos:saoSeason1Episodes },
+			{ title: 'SAO: Extra edition', description: '1 Episodio', cover: 'img/Extra1-SAO.webp', videos:saoExtra1Episodes },
+			{ title: 'Temporada 2', description: '24 Episodios', cover: 'img/Temp2-SAO.webp', videos:saoSeason2Episodes },
+			{ title: 'Película Ordinal Scale', description: '1 Película', cover: 'img/Movie1-SAO.jpg', videos:saoMovie1Episodes },
+			{ title: 'Temporada 3', description: '47 Episodios', cover: 'img/Temp3-SAO.jpg', videos:saoSeason3Episodes }
+		]
+	},
+	burst: {
+		label: 'CATÁLOGO 34', title: 'Burst Angel', description: 'Jo es la nueva sheriff de la ciudad y es un enigma incluso para ella misma. Junto a Sei, Amy y Meg, lucha por los ciudadanos que no pueden defenderse. Enfrentándose a la corrupción y a la ciencia retorcida, estas chicas están en llamas y son la única esperanza de la ciudad herida.',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Burst.jpg', videos:burstSeason1Episodes }
 		]
 	},
 };
