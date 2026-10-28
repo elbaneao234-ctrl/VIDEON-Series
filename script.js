@@ -2549,6 +2549,82 @@ const burstSeason1Episodes = [
     'iframe'
 ]);
 
+const fireforceSeason1Episodes = [
+    ['https://mega.nz/embed/5GMiiJgA#KoCBpU_zfS2muHhJrpaCrUWhw0bHUX1jJGtfWKgpGJk', 'Episodio 1', 'Shinra Kusakabe se enlista'],
+    ['https://mega.nz/embed/AT1RULpQ#lTRWxiTYimH36qV2kcNGfy1gwo1LHqmi5ont5uJl-Kw', 'Episodio 2', 'Corazón de soldado de fuego'],
+    ['https://mega.nz/embed/hbkgBQiR#Sr5COXTqSz6DZcPtpDBWi4Vt4EdTrS6BV3gR4qzFJuU', 'Episodio 3', 'Juegos de novatos'],
+    ['https://mega.nz/embed/MDdzHQBQ#15JOyF8C5UHt9jki7dtO0ujx6ukMjUlZ3mx4QFYse_U', 'Episodio 4', 'El héroe y la princesa'],
+    ['https://mega.nz/embed/EWMTFYYI#BhXi6RmjKAj7Uej79PDxvcxdNuNqio6nh2UE2b_vn00', 'Episodio 5', 'Comienza la batalla'],
+    ['https://mega.nz/embed/GmwCgZwL#EFROsWauht8fjEhgzz4tOezKu1ORXWOXqNBhCZUQogw', 'Episodio 6', 'La chispa de la promesa'],
+    ['https://jkanime.net/jkplayer/um?e=REpZSUczZ2NwTXNpY0VGU0gwMmhmVDAzSmUvcXRLKzNLMncyZVB3dzBxc0h2a3RhaWtYNkNpZGY3WHlXK0JYcHE0ZEhtR3VCTHdFN1NzT2NLdDBreGc9PTo6taL5BwrqB01gu.c0v7ZS1Q--&t=03300a14fb9934cc5c613e26bdfbaab8&op=NDA3OTE=', 'Episodio 7', 'Comienza la investigación en la Primera'],
+    ['https://mega.nz/embed/pOkQlLRJ#8JPYMLuQlCynUZR2m9fXPRVsNGzUH9Xn-GL8jmzTcdU', 'Episodio 8', 'Insectos infernales'],
+    ['https://mega.nz/embed/lXUwgIiI#UCrtxxZvBD0bFW0t80qy8EeZJMc3Dd3GP6efhlmsxDk', 'Episodio 9', 'Malicia propagada'],
+    ['https://mega.nz/embed/1Gk30SgK#vFOsJg97Ym3piUxP-a_ixzxpffio1Gf4FQsZgWI8xz8', 'Episodio 10', 'La promesa'],
+    ['https://mega.nz/embed/YTURHAYR#ulfT3PmmZQ7RfLKDndAmtA30wJB07yahnWBk7Rjr6S0', 'Episodio 11', 'Formación del Escuadrón Fire Force 8'],
+    ['https://mega.nz/embed/ZXVnAKqQ#tz_-6eAnkrPhJ4SLU2HBwtG6kuLg41AjOfc4k5x5bYM', 'Episodio 12', 'Tarde de hostilidades en Asakusa'],
+    ['https://mega.nz/embed/QGFFSYoQ#0-qkciDLuzKO9euaotEZYVkvd4wL_oKHPHJYUNoA1Qg', 'Episodio 13', 'Se tiende la trampa'],
+	['https://mega.nz/embed/xa8VkSIY#EyJ_XXizALd88CNlW-dWJa2DUOj8YAjUSoYyiTc0dJk', 'Episodio 14', 'Por quien arden las llamas'],
+    ['https://mega.nz/embed/ASVDwCSJ#_HEc8IV_IXiFjZ_EW5FoKGx9U-Iq5u10Bazvjm3rc6E', 'Episodio 15', 'El sueño del herrero'],
+    ['https://mega.nz/embed/kD0wGICR#-gZFz0P0MVdpMKyEv7XL_ztE910M5gkdhgAXsLwbgBw', 'Episodio 16', 'Somos familia'],
+    ['https://mega.nz/embed/NOMX3RwS#JjLRel4pZKficw-4namBFrPryvduMeY5ZfkyZNoUvps', 'Episodio 17', 'Blanco, negro y gris'],
+    ['https://mega.nz/embed/5O9HlLyC#l9lagzf7U5hzZk2_nrdWKl_PNEPxM2FKR9eE1M3loOg', 'Episodio 18', 'Los secretos de la piroquinesis'],
+    ['https://mega.nz/embed/YOljgK7R#2exAr68cfEqjDaowN4RkXkCekUh448iTcB9TQbAhiMM', 'Episodio 19', 'Al Nether'],
+    ['https://mega.nz/embed/cXsgQIgb#0sN0kQrzm1u2QMPVqaqktoM4npWzYYKHCvGLHBCTGqM', 'Episodio 20', 'Su orgullo'],
+    ['https://mega.nz/embed/5DlyWIzY#MrCOv03OeLjEzh1-VCoDH9aAio4RyfaAOiMgEMqnYDc', 'Episodio 21', 'Los conectados'],
+    ['https://mega.nz/embed/FG0jkJCL#Z_hmYDeZxy92PLcN3kBRS_nlswrMn7xfgVaP7HPt9sc', 'Episodio 22', 'La determinación de un hermano'],
+    ['https://mega.nz/embed/Ma8j3IZR#9FBfkWVwIue6XR5JbKJWRDPJ2FheOWqqpYZc4bq-SCg', 'Episodio 23', 'Sonríe'],
+    ['https://mega.nz/embed/cCUwCLbZ#N5lUKUifnoK_IjY_gtWhI2G6UbTrJKwIppq1ALJQ0Zo', 'Episodio 24', 'El pasado ardiente']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/FireForce/Portada-Tmp1-Cap${index + 1}-FireForce.jpg`,
+    'iframe'
+]);
+
+const fireforceSeason2Episodes = [
+    ['https://mega.nz/embed/hq8FTDyI#0sC_YuKELSC6FcoV4bSiC5h944qHPs9KBLUKUluGb6U', 'Episodio 1', 'La lucha de un soldado de fuego'],
+    ['https://mega.nz/embed/py11XJIB#DCcOj3PpDeITO6yBpitCgrXaa7DCgZKEyD3GFYgR1qk', 'Episodio 2', 'Llamas de locura'],
+    ['https://mega.nz/embed/p3sGkZaD#R99QlZyJKzU2i659ljIGmM2gPqWLNwZNlsWwtFsV4Ck', 'Episodio 3', 'Un nuevo punto de ignición'],
+    ['https://mega.nz/embed/Z70xkR5R#qPtIoEphmKo7Tka4YR3DnxWc9FBN07tjPPmIkzlzv9c', 'Episodio 4', 'A ciegas a través del fuego'],
+    ['https://mega.nz/embed/xyEX2ApQ#IJB64EyfVDFqZGktmTTho6L1VtXrN94ko0KbMQ6nhpE', 'Episodio 5', 'Corna (La señal del diablo)'],
+    ['https://mega.nz/embed/5jNjCKST#0bRgOobBPmji9KZfau7bohTFiWPxRgoVaicTLCED5WQ', 'Episodio 6', 'Hora de elegir'],
+    ['https://mega.nz/embed/dukFFDgI#QxfALw-8AW3JR8xZfzyEQnd2V8uHsuvyzaaOM83cmcY', 'Episodio 7', 'Camino al oasis'],
+    ['https://mega.nz/embed/R7sWyKBK#zvOX2gyf3UYq4LQwS5o6w5ii_7fP7Jf3tRr-fOBWEJc', 'Episodio 8', 'Que arda la maldad'],
+    ['https://mega.nz/embed/sjkyjL7Z#RDB4-vmM3tTJ9nKqdyhzyzVNSCluO7cEX9YCtLANaOk', 'Episodio 9', 'El núcleo'],
+    ['https://mega.nz/embed/Fm9BmJaR#uEMkgIkQRiUWgG4ZyOVSmJ77F5sBBmlZNXbktIzzodQ', 'Episodio 10', 'La mujer de negro'],
+    ['https://mega.nz/embed/Jz8jELTK#6o0_oXiynNX_6vY60t-PAeQFoDTjkTdCOar6kQpaE-M', 'Episodio 11', 'Héroe oscuro'],
+    ['https://mega.nz/embed/BqNmVIxL#51FGqbyUYZIyshvsi4kvqQaIIaOCtNPW5Re6nx9RzKM', 'Episodio 12', 'Sombras creadas por la Luz Divina'],
+    ['https://mega.nz/embed/ECM11DLB#RMxpUy-NL_6Ukf0uJ5LXSRTnbORbLelgxD7BwkIMXvg', 'Episodio 13', 'Un par de tuertos'], 
+	['https://mega.nz/embed/R3MVERLJ#lcGFu5WTQmykzbs8p3xAEpZGdau3mFEGAOuf4z5j3DY', 'Episodio 14', 'El shinigami ceniciento'],
+    ['https://mega.nz/embed/wytBhYBT#BqNfNyV7F1MHgNAe2qfimXdonn90OPbj59o26L_rORo', 'Episodio 15', 'Una pelea a tres bandas'],
+    ['https://mega.nz/embed/grsGyBiA#q1LdUGfmqR63tpAiSUaGDrh3b2ndxtXsuFXCZhUs3BA', 'Episodio 16', 'Alucinante'],
+    ['https://mega.nz/embed/tjNUSCDL#DA0N2emYubKYM7aousc8RC0e9WZGdHKFdVJHTehkIkE', 'Episodio 17', 'Niños, sean débiles'],
+    ['https://mega.nz/embed/wr9X3BBK#VrYi73TPkRVX8hAV0z31eRy-E1V_4WmrGvOQ99WHSkU', 'Episodio 18', 'La angustia de la Mujer Santa'],
+    ['https://mega.nz/embed/ZzsC3DbQ#2G4KiW09zRorAQrrjT1EAfqVG4u5J8pIVTKIP1iBxu0', 'Episodio 19', 'La familia Oze'],
+    ['https://mega.nz/embed/Euc0nB4Q#AX4V9UHFwc8F8LCc4oRTexflTgzklNfLD-21Mxl6lT8', 'Episodio 20', 'Armas de destrucción'],
+    ['https://mega.nz/embed/IyUX3bxI#4ahZnxjJutry8yGMDio2Qlns3-g9K9SHE66TKC47BhI', 'Episodio 21', 'Contacto enemigo'],
+    ['https://mega.nz/embed/461khZ6I#HKKGndTRJyEMw0kz393Y30CO6tgaIyjDGB2_IQrBfoI', 'Episodio 22', 'Conspiración para la extinción'],
+    ['https://mega.nz/embed/IudhSI5S#mvmFyIQIVdVXzLMxxc4qSgUNKQLwnJUQ-X0GVMAtrKc', 'Episodio 23', 'Gato de fuego'],
+    ['https://mega.nz/embed/pitA2ZYK#g5oN_t_XbpzDjq_OFigPkYkU02HAIik9g6voGLT_TwA', 'Episodio 24', 'Signos de agitación']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Fireforce/Portada-Tmp2-Cap${index + 1}-fireforce.jpg`,
+    'iframe'
+]);
+
+const chihiroSeason1Episodes = [
+    ['https://mega.nz/embed/HloDWJBC#Wic3Cnkg26Bhu_60z8GWmilSkJiQKFiCp4xHIGnBcfg', 'Episodio 1', 'El viaje de Chihiro']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Chihiro/Portada-Movie1-Cap${index + 1}-Chihiro.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -2806,6 +2882,20 @@ const catalogData = {
 		label: 'CATÁLOGO 34', title: 'Burst Angel', description: 'Jo es la nueva sheriff de la ciudad y es un enigma incluso para ella misma. Junto a Sei, Amy y Meg, lucha por los ciudadanos que no pueden defenderse. Enfrentándose a la corrupción y a la ciencia retorcida, estas chicas están en llamas y son la única esperanza de la ciudad herida.',
 		seasons: [
 			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-Burst.jpg', videos:burstSeason1Episodes }
+		]
+	},
+	fireforce: {
+		label: 'CATÁLOGO 35', title: 'Fire Forcee', description: 'Tokio está ardiendo y los ciudadanos sufren misteriosas combustiones espontáneas por toda la ciudad. La responsable de apagar este infierno es la Brigada Especial Antiincendios y Shinra está listo para unirse a su lucha. Ahora, como parte del 8.º Escuadrón, usará sus poderes para evitar que la ciudad acabe reducida a cenizas.Sin embargo, un secreto de su pasado podría hacer arder todo.',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-FireForce.jpg', videos: fireforceSeason1Episodes },
+			{ title: 'Temporada 2', description: '24 Episodios', cover: 'img/Temp2-FireForce.jpg', videos: fireforceSeason2Episodes },
+			/*{ title: 'Temporada 3', description: '25 Episodios', cover: 'img/Temp3-FireForce.webp', videos: fireforceSeason3Episodes }*/
+		]
+	},
+	chihiro: {
+		label: 'CATÁLOGO 36', title: 'El viaje de Chihiro', description: 'Una niña de 10 años llamada Chihiro descubre un mundo misterioso gobernado por una bruja que convierte en animales a quienes lo desobedecen',
+		seasons: [
+			{ title: 'El viaje de Chihiro la Película', description: '1 Película', cover: 'img/Temp1-Chihiro.jpg', videos:chihiroSeason1Episodes }
 		]
 	},
 };
