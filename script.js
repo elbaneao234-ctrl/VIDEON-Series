@@ -2625,6 +2625,186 @@ const chihiroSeason1Episodes = [
     'iframe'
 ]);
 
+const kurokoSeason1Episodes = [
+    ['https://mega.nz/embed/USUjzDAb#fm32y4kso78NBeGGWTahlSbVnwLVGAxnNbVGYr9_ABM', 'Episodio 1', 'Yo soy Kuroko'],
+    ['https://mega.nz/embed/hGV3FRzD#_DZVffmDKiBxDrGrRcaYl5xT4fK5ldIx5E1ZTu_H2uk', 'Episodio 2', 'Hablo en serio'],
+    ['https://mega.nz/embed/Ve9TEQbY#zERC11ueI19Gb3plvX8QktGIEJ45M6n2FolIcMy2IrQ', 'Episodio 3', 'Es mejor si no puedo ganar'],
+    ['https://mega.nz/embed/oH12jQCb#pcOZdIs5p81miP47Gs0ZCY0S_8wHS9UmB6k-FK7cklo', 'Episodio 4', 'Les encargo el Contra-Ataque'],
+    ['https://mega.nz/embed/hSVCCaBT#Ihx4Fn0d98uc21lep2EBi3sKdDt_piEaGhUfEB0_SmM', 'Episodio 5', 'Tu baloncesto'],
+    ['https://mega.nz/embed/FL8g2QpA#nMBQCTSqWxhHrnFHtHuUC6cMAdO9fWktSYyAKj118bM', 'Episodio 6', 'Déjame decirte dos cosas'],
+    ['https://mega.nz/embed/pPMGXBpI#_wKmMkAEpP8MUPTp5ymDaPA8wlU0cj7x6Nx0G7G3_2A', 'Episodio 7', 'Verás algo asombroso'],
+    ['https://mega.nz/embed/xOEmSTaA#CPQqgQxWyBeyQjyeMOtS9tmCUk1rDmEYgHAtgy8pbY8', 'Episodio 8', 'Ahora que lo pienso'],
+    ['https://mega.nz/embed/ETtE1KbI#osKoX-wEcAnrbhQnthJmRtaqLKhLH4qVgMNHCrOjUPg', 'Episodio 9', 'A ganar'],
+    ['https://mega.nz/embed/cXtFTBaK#gli5OSq2oD7GJsliYmRGWO3whYZdTNMJbCd_5d2Ux-c', 'Episodio 10', 'No puedo aceptar eso'],
+    ['https://mega.nz/embed/wPlTzDTJ#JXUcDBFBv1Yj5Ouub3zqSDs_edz_3pxG9sbZ2m54ziw', 'Episodio 11', 'No es eso'],
+    ['https://mega.nz/embed/lSkkQT6S#4zh1fBYAfurrYskHOTMFNL9Jyz_w5gpSTDmUsjPs05w', 'Episodio 12', '¿Qué es la victoria?'],
+    ['https://mega.nz/embed/1XMHgLxI#xZMnrSGuvxeui5VyPC0CJ3k6ZHROpamAOp7fnF_zJDM', 'Episodio 13', 'Yo creí en ti'],
+    ['https://mega.nz/embed/FH91lBjS#Bc7TVNuO7kaIxMAqK2Syrbg28NPR6U-d_7AFiEfz9Uw', 'Episodio 14', 'Te pareces a él'],
+    ['https://mega.nz/embed/oTlFHYYZ#cJipZSFbHY8FCbv094r8vFJqILMdeTUWCIz1_0TL0aM', 'Episodio 15', 'No me hagas reír'],
+    ['https://mega.nz/embed/gX8GBJgI#W8DgAKOJj6nP3yA8ZMj2xJ2pPtJMYQgX-HNNhufmILY', 'Episodio 16', 'Hagámoslo'],
+    ['https://mega.nz/embed/BTVEAARb#0EGcn1ndcWEW4OFhtGpH_ogWAnVhEpQgXxQi4DsFT5Y', 'Episodio 17', 'Todos ustedes son ridículos'],
+    ['https://mega.nz/embed/4KtSDJJZ#4xbeoHMb3kw_FY7Gm7ddkgWWpu2OteTjL4-quhCS8gQ', 'Episodio 18', '¡No!'],
+    ['https://mega.nz/embed/lHVH3STD#ix7S9fOAnDymtaXWlyY1vQ5q-kmghLmbKXR7mFDHiBU', 'Episodio 19', 'En un nuevo desafío'],
+    ['https://mega.nz/embed/EGNWEDQC#pEEJAL2fIQLtMKtW5UuEtcQ70HpBxMjBwwanu0auu_s', 'Episodio 20', 'No quiero ser'],
+    ['https://mega.nz/embed/5fcX3YyT#IHvbvvbRzinxYnyQBVyOraGfVLcX_Q3UkDiKXpVJjj4', 'Episodio 21', 'Comencemos'],
+    ['https://mega.nz/embed/xe9ADZSJ#XecL4xHovjS-HQ_LjcWGLx9ZiHo0WnpM5xHyn1GMJbg', 'Episodio 22', 'Ganaré, incluso si eso me mata'],
+    ['https://mega.nz/embed/YeVGXQAI#4DrhsYybFbtnmjaJ3v1Rv0vXd5lVBEMBB4lWh5ACzQ0', 'Episodio 23', 'No soy lo suficientemente maduro'],
+    ['https://mega.nz/embed/VHUDHBLJ#teZnnV1_meoCsog7N75fruGCu0ghPT4pY58SGDrHTp8', 'Episodio 24', 'No me malinterpreten'],
+    ['https://mega.nz/embed/8bMmFI4B#ihodW9H9joulRC4owFCJkKfmlwCPOZFfhpCNhs083-Q', 'Episodio 25', 'El baloncesto tuyo y mío']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Kuroko/Portada-Tmp1-Cap${index + 1}-Kuroko.jpg`,
+    'iframe'
+]);
+
+const kurokoSeason2Episodes = [
+    ['https://mega.nz/embed/UHUQRRjB#TEcTRLErTEcAZmOMDgieZR5LurMDC7jVjehGNVR_O1s', 'Episodio 26', 'Nunca pensé que nos encontraríamos aquí'],
+    ['https://mega.nz/embed/5GsAzRqB#mW6xBVUTqyOCjOG6f9Gny2cgfNuACJmYAaL6-1u1Ulo', 'Episodio 27', 'En la Copa de Invierno'],
+    ['https://mega.nz/embed/df8n2RzL#A6NB_xB2YED6ZRkfXTXB_-2h4LxkYmeKP6mjhnQ2aW0', 'Episodio 28', '¡¡Empecemos!!'],
+    ['https://mega.nz/embed/ILVDhLDT#Qcvgp894mn0MSbThp-7c_TNjWbUvmSnpTZMbeO4t84M', 'Episodio 29', 'Solo hay una respuesta'],
+    ['https://mega.nz/embed/JCF3VITK#VeE6wIXjNNvzfA1fmxbE1fAajb8gdADFO5KDvMLdX1c', 'Episodio 30', 'He estado esperando esto'],
+    ['https://mega.nz/embed/FX0jzL4I#4qmFcpfkTIMUkEx-yxDQ81n3kGBXS5dVa_vnO09wVrQ', 'Episodio 31', 'Te superé hace mucho tiempo'],
+    ['https://mega.nz/embed/VO8wwYBQ#pZ_qVXEgyIr5urGj4Fo_jdoJo9shDSF7R32XXhUwjm4', 'Episodio 32', 'Rendirse'],
+    ['https://mega.nz/embed/QbUkDLDJ#lK80Fse4-79R5fe3B8P-svlMqTQz5r5uaqPsSf8V-IU', 'Episodio 33', '¡Somos el equipo de baloncesto de la Preparatoria Seirin!'],
+    ['https://mega.nz/embed/hXNSCSbI#x9UqE1U1hqqalTlcmZ94JDpxYIARecBNPCkhfxwLpWY', 'Episodio 34', '¡Te venceré!'],
+    ['https://mega.nz/embed/VClkHbQa#dUrstEll78J7Q1wPrjCGg6S6K60mC0-MEaOB1RClam8', 'Episodio 35', 'Es confianza'],
+    ['https://mega.nz/embed/IelFDCJb#9WRkEaPdfVs26GixyV_Zjg1f9sPozXfVSfGeHOzv6SQ', 'Episodio 36', 'No seas ridículo'],
+    ['https://mega.nz/embed/xPMjAIaT#1G3XzeTT7pm9R97zpEiRKwa-rRDn_gmrqF5ij6SMzPw', 'Episodio 37', 'Lo espero con ansias'],
+    ['https://mega.nz/embed/8WEHBawb#IodrisrvV5IMU0CA-_wr6Bpta9MlP-4uRf3pIVfahxw', 'Episodio 38', 'Esta vez, sin duda'],
+    ['https://mega.nz/embed/4X92DIrD#1GIU6eIYm-tJ2C4W7tZBFE3Dt2ehukI6oVoxn_7UImY', 'Episodio 39', 'Esfuerzo inútil'],
+    ['https://mega.nz/embed/1GNgAZKD#JVDAavzh4fNXF9XorzjdIbXD5PgRGLkdCIgBjvZ3CA0', 'Episodio 40', 'Está conteniendo su alegría'],
+    ['https://mega.nz/embed/oX1gBQLL#eAwuG90f4MbvuTWV5j8nbRAsN07dgguDmTEkq-mJPgg', 'Episodio 41', 'Ganar ahora'],
+    ['https://mega.nz/embed/RT9BAY7b#00H_V-HSxoMEDaWoGGwvBNteKi_cMP8lHI8fgZzGXJo', 'Episodio 42', 'Yo creo'],
+    ['https://mega.nz/embed/5f9WEIJJ#qymKdqPnO9oiwLYmUTROM5xW6oL0Ml6Za139Ud0u2lQ', 'Episodio 43', 'No perderé'],
+    ['https://mega.nz/embed/lS0DQaoR#RCwpeHfPrfSTV1fwtgGAV0CWtore27FIczasjiaqnt8', 'Episodio 44', 'Dime'],
+    ['https://mega.nz/embed/YLlD2YaS#mZorYnrkdYEfFitOaKQW1FfvWtoJLgFnFcCGBu9iUJU', 'Episodio 45', 'Claro que no es fácil'],
+    ['https://mega.nz/embed/sKNRlLJS#8tyA1bk8GcIBF0ijIcOew8Dpdq-zc7QoELqpDVQ2MSQ', 'Episodio 46', '¡Primera canasta!'],
+    ['https://mega.nz/embed/1al0TKhQ#7xUWzYBh9DKgnrsi9O5booA2mZfMnbCDJYcD64EAmoQ', 'Episodio 47', 'Es Obvio'],
+    ['https://mega.nz/embed/VelD3ZpJ#_vT7yRxQEAYSzsD-xJXqlfTevaGuFUSqRtPUgYNTF2U', 'Episodio 48', '¡No quiero perder!'],
+    ['https://mega.nz/embed/Nb9gkbCQ#lYX8UPkbPHcvZ97jzMqemTnX5XSMYBmS8aA9rNnD6k8', 'Episodio 49', 'Suficiente'],
+    ['https://mega.nz/embed/IHNkBIha#suhp76bSO6TAB6GRecbLDy7v_xgCQe0tdMYUMSa9Vnc', 'Episodio 50', '¡Gana!']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Kuroko/Portada-Tmp2-Cap${index + 1}-Kuroko.jpg`,
+    'iframe'
+]);
+
+const kurokoSeason3Episodes = [
+    ['https://mega.nz/embed/VS0GVZjC#xSlCTspQJXfT6MrKdxPxEDxLOgDU0_fULD-c0Dd1dpY', 'Episodio 51', 'Sólo he jugado a tope'],
+    ['https://mega.nz/embed/oTdwlaiA#w4CLcoi5ZTfeEqdmhBYpXgwFp3sQvHGJoi6vomDjnss', 'Episodio 52', 'Es mía'],
+    ['https://mega.nz/embed/VOsGiQya#2MT_-Z1GhcqGFJ3C0gog3k20INBAPOm2T7jgu-evAbc', 'Episodio 53', '¡Quítate de en medio!'],
+    ['https://mega.nz/embed/YX9z1Kaa#4bYZyy5NqYXzsroNcoxwiFQ3l_p3J88sARCm0mPPjYc', 'Episodio 54', 'Me las quedo'],
+    ['https://mega.nz/embed/cD12CIZD#VC5t8CWJ9_Yq_WtZbLjrWF2Znx4O2-bf9m55Dp8KWxA', 'Episodio 55', 'No lo conozco'],
+    ['https://mega.nz/embed/Ra0CjA5R#taZHp990AxNrDcFktXaZKcGJHzG4X1FHr5bbXH7eRcc', 'Episodio 56', 'Se los daré'],
+    ['https://mega.nz/embed/VflklB5S#DvTGiB36XLxPz_4jkPaH2lZxS39kL2LewppC-Cn6gKg', 'Episodio 57', 'Me vas a hacer reír'],
+    ['https://mega.nz/embed/RDtUxIZT#mz_HQLtLeebSpBZ9RntABs7iSve9HF4G3oXuGDIqOZ4', 'Episodio 58', 'La auténtica luz'],
+    ['https://mega.nz/embed/5XFSUTRY#RjbHNcRmgCGOyQP5oJOaPyRt8VY1_nk1XAA-V2KqOBs', 'Episodio 59', '¡No nos subestimen!'],
+    ['https://mega.nz/embed/tXNC0J4C#iZkZENCqzzgc-3Aspyrhmq5PivDUg20OxSVtcGibE4o', 'Episodio 60', 'Para ganar'],
+    ['https://mega.nz/embed/pCFxHBLR#XoLQNUh_UB1Mq5S71HS54B_zojUk-jUfNs6bUcNHCUM', 'Episodio 61', 'Esta vez sí'],
+    ['https://mega.nz/embed/oO0HGZqL#FCP_ySYsMOQYf0VFxK5hI3OOU5ZWU_0PrBIXkhiWjxQ', 'Episodio 62', 'El mejor jugador'],
+    ['https://mega.nz/embed/ZW9kUCra#pKFD3CEyuUrfDbYtwsK22OCP61RgQ5yXQ-9AKLVV_-Q', 'Episodio 63', 'Un día de cielo azul'],
+    ['https://mega.nz/embed/NCMESB5K#CVKMoDJcrQyZjIcqwyYwJ195T1jdDVT_BWlJC39jMJ8', 'Episodio 64', 'Lo lamento...'],
+    ['https://mega.nz/embed/ECkESDLS#qAmG0n56techJNOoD0qE_A49GsvFlRUuV3pSBfuijiU', 'Episodio 65', 'Nosotros ya no'],
+    ['https://mega.nz/embed/4eUXQbKL#lG8YNAlLiEWJKgvnESwVGwECkruGlKfPYZr3E7vfnSk', 'Episodio 66', '¿Qué es la victoria?'],
+    ['https://mega.nz/embed/IHsGXADL#drTAf3KyDaH3u3QgSD9xkocsHI_AM2uTrXrtLYtDc70', 'Episodio 67', 'El tip-off final'],
+    ['https://mega.nz/embed/AWFRXBjY#3io92sH8I7dokMdbonGjBwq7Swsk4LQAvJAwfNH6eMs', 'Episodio 68', 'Esto es lo mejor, ¿No crees?'],
+    ['https://mega.nz/embed/we00SIiY#A2j7bXYLK4q2ItLQwvzpH47QMu5psCpbGAMxKvYXjC8', 'Episodio 69', 'No sucederá ningún milagro'],
+    ['https://mega.nz/embed/sOVRHBSJ#cgJc2cR7rh1ElZiItp0KP98MFBRBYLlrt3IvZZqCHjY', 'Episodio 70', 'El peso de la determinación'],
+    ['https://mega.nz/embed/VL8FxBpZ#UlnCxzZPbETrelTzYVI8S8VaClSJbETDT4wsegk8XAA', 'Episodio 71', 'Hago todo lo que puedo'],
+    ['https://mega.nz/embed/MK9UlbxK#eX5-yB5EO4XHR6kSpe4KUmJB10EqWpKDenufaq1mC2E', 'Episodio 72', 'Es una advertencia'],
+    ['https://mega.nz/embed/MWNgyBTb#_5qo4-tlWe4fvU2wAK5FfKBlnHsYtmZhe_g0iLcOxfo', 'Episodio 73', '¿No te rendirás?'],
+    ['https://mega.nz/embed/xCVU1CIb#fcA7gsW2tuZp4zgRMJZK3SSqURlR9i9HPi2pC28M5i4', 'Episodio 74', 'Eras tú, ¿Verdad?'],
+    ['https://mega.nz/embed/hC0UVJrA#XNEeQnz4G-EQZmjqji2AlvCTdWxY6umNxoIompUQbbw', 'Episodio 75', 'Tantas veces como quieras']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Kuroko/Portada-Tmp3-Cap${index + 1}-Kuroko.jpg`,
+    'iframe'
+]);
+
+const kurokoMovie1Episodes = [
+    ['https://mega.nz/embed/UxUjzSzS#kPPrFlY_Br7KPWmsfcMgYl3JhrwQkhlkgL_6cI71TYQ', 'Episodio 1', 'Kuroko no Basket: Last Game']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Kuroko/Portada-Movie1-Cap${index + 1}-Kuroko.jpg`,
+    'iframe'
+]);
+
+const codegeassSeason1Episodes = [
+    ['https://mega.nz/embed/UHNWCKJY#0e1_scRqZmqP2JUvK5MYKQXdksFeLABzS7OsjcZGhRI', 'Episodio 1', 'El día que nació un nuevo demonio'],
+    ['https://mega.nz/embed/cT9jXLjC#XU92qtjj3Dy6NtC1IA0gz-CLCjkFL8NEzdyWRrRWXVg', 'Episodio 2', 'El despertar del caballero blanco'],
+    ['https://mega.nz/embed/NDFVjJba#ezQn0d4DgGR8Mk1uB3ZE7U2Q8lzdHYPW11r3U1fsD6k', 'Episodio 3', 'El compañero falso'],
+    ['https://mega.nz/embed/gSEF2AxZ#HrpFGvBJgZ_z7uDklUABw3ol0NYHYo36p1oeZy9M8UE', 'Episodio 4', 'Se llama Zero'],
+    ['https://mega.nz/embed/oC1mRQiJ#JmusXXzwa9X2UVSzocxDvBMF-uOX20zxJLazeKTUQys', 'Episodio 5', 'La princesa y la bruja'],
+    ['https://mega.nz/embed/dX83GDRa#XQSoak_yUznwlBpRGOe6lx-h1U1FEcNtVPfMeUsidoE', 'Episodio 6', 'La máscara robada'],
+    ['https://mega.nz/embed/NGN2kaAb#FwmvxjNHn2lWnAnAu-MboHhmPai8o35lkzWT6qj64vY', 'Episodio 7', 'El ataque de Cornelia'],
+    ['https://mega.nz/embed/YLMiwbyZ#qhfENaF9EgfnRltcNW6NK4o6x6UAMJNNwdaueZTMPUU', 'Episodio 8', 'Los Caballeros Negros'],
+    ['https://mega.nz/embed/oDEySZiA#Tx52Aj9EK8Oc-56jS_5xz8yV4CKEyB5aKr4gXM1y1yQ', 'Episodio 9', 'Refrain'],
+    ['https://mega.nz/embed/QL1HyL4J#1Ac8-ighplirGOBlcy96xxj0mRWEphGE0Box-QOSaeg', 'Episodio 10', 'La danza del Guren'],
+    ['https://mega.nz/embed/8al2QbiD#ufYto21z1IVowWRRRTpvWV0S_bZcYk0QW91DXY4J53w', 'Episodio 11', 'La batalla de Narita'],
+    ['https://mega.nz/embed/hDMlBIhZ#Igani0AGv1nyWvBYIwkKnf9zNswNiHKtxYd-GmUG53E', 'Episodio 12', 'El mensajero de Kioto'],
+    ['https://mega.nz/embed/wH8SlKKA#5Md957TJKhQ0HdXw6cDdAI0yHFhroCz3BlkRBt40qkk', 'Episodio 13', 'Shirley y la pistola'],
+    ['https://mega.nz/embed/0SkzED5R#idAagAIFpOmuHv47fzF6GlDpQrD3w3yXDWJJhdjnoWs', 'Episodio 14', 'Geass contra Geass'],
+    ['https://mega.nz/embed/tHV1zbSJ#_BtBZFRIo49fh8DxnlZnsCcud9Yra4IfooFFd4m4uDM', 'Episodio 15', 'El aplauso de Mao'],
+    ['https://mega.nz/embed/5LslkbaC#QaLYyQeRI4nb4kebIT5okuqM7MPZlDn0Yd5ESMyEEXQ', 'Episodio 16', 'Nunnally secuestrada'],
+    ['https://mega.nz/embed/BHFjxaYI#__8BjaNTw7Hb1PXyV11CxG64RG9kfX4esoZLG75zCD0', 'Episodio 17', 'Caballero'],
+    ['https://mega.nz/embed/ES913bJI#beN9-d9seFHHnFNrkhZJc9iWgcARjPp-XJ-5uAHyPVw', 'Episodio 18', 'La orden para Suzaku Kururugi'],
+    ['https://mega.nz/embed/JGM3QbaD#R9yaNTOlIIKM9WfkqLyVSVzeNSHN2oq_LNaCOcOhs10', 'Episodio 19', 'La isla de los dioses'],
+    ['https://mega.nz/embed/pPcWFQCQ#WJI99pcHIL70k3AwMe87ubJ1KjQjFmUw5eKD_RE6J5A', 'Episodio 20', 'La batalla de Kyushu'],
+    ['https://mega.nz/embed/RPFQiSAA#XC2YWMLdL7-fQGQ4dUVA9QO_TEO7e62lQ_e37cL8FZQ', 'Episodio 21', '¡Declaración en el festival escolar!'],
+    ['https://mega.nz/embed/xPUjyQzJ#6AC6ZTXi1QkCAKekkj4MUrJLLHwTC-EhAfmFVfK_ioI', 'Episodio 22', 'Euphemia manchada de sangre'],
+    ['https://mega.nz/embed/ESV0yIQY#T-W0dvtFhpp_I79MkRAaiiPra9q3ls5Uwy64t3Xz-q0', 'Episodio 23', 'Al menos con dolor'],
+    ['https://mega.nz/embed/ZCVwUK7C#mOtEBq-LmFoHeFoYLbAfm4w9cCCM6tDRBxI84p2JSj4', 'Episodio 24', 'El colapso del escenario'],
+    ['https://mega.nz/embed/cT1yQCxJ#o5SmHQpQuQlb9FYHICbbk8HuitizTUrhX8nUjZYRWzg', 'Episodio 25', 'Zero']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/CodeGeass/Portada-Tmp1-Cap${index + 1}-CodeGeass.jpg`,
+    'iframe'
+]);
+
+const codegeassSeason2Episodes = [
+    ['https://mega.nz/embed/Bb1WhbDC#sGsid_mjwl5jujKCu5TtdYFCXG4K_a2aNr_1eD-n42I', 'Episodio 1', 'El día que despierta el demonio'],
+    ['https://mega.nz/embed/VT9G1CTQ#WBLvN8BDMH8CNo4w9658FVL1U2jxRsESO1ZW-gPvmhQ', 'Episodio 2', 'El plan para la independencia de Japón'],
+    ['https://mega.nz/embed/daV3hQRJ#I2Xzv6mZALdTFjIbwXUrSodjxu_j--crV2hTy7XUhMs', 'Episodio 3', 'El campus encarcelado'],
+    ['https://mega.nz/embed/IXURyBwQ#DSFGg9ZXpD8CgmlWu9Zj2me584ayzVQcP4PZ-fvOqVE', 'Episodio 4', 'Contraataque en el patíbulo'],
+    ['https://mega.nz/embed/AG9zTZoY#dp-5eE5i4VKMStAlGLeVS5pv9BaSsscH5WTTzwTwcvk', 'Episodio 5', 'Knights of Round (Los Caballeros de la Tabla Redonda)'],
+    ['https://mega.nz/embed/RTFl2KAK#7BBPIGwRErVD66minTS_4ofdTCGQ6SiSYS5lrB25Ecs', 'Episodio 6', 'Operación de asalto sobre el océano Pacífico'],
+    ['https://mega.nz/embed/cecwQIzI#eLkO8gpGg8TrSBvKO79711XeT_YChVVj3oD3p0ltyDc', 'Episodio 7', 'La máscara abandonada'],
+    ['https://mega.nz/embed/cKkAGarT#F8N6iiYgAdALkZcMIky-2ZoTQnYfWnq1sf_34fRfq9Q', 'Episodio 8', 'Un millón de Zeros'],
+    ['https://mega.nz/embed/wed2iY4Y#alQpKyESmen8lWnp7g1xMVrPb-GNFzhhQ8cXXIlmafU', 'Episodio 9', 'La novia de la Ciudad Prohibida'],
+    ['https://mega.nz/embed/dD8E0CAI#QKbmsUGHjNm-NzjQln-BVwJ7NeJsM8CfhmZtAuWoGII', 'Episodio 10', 'El Guren brilla en Shen Shen'],
+    ['https://mega.nz/embed/lb1BiIjJ#pE1cWxYNuBxyMgTb9vCGKpUzGK2Qx4auVQhrh3XBBKs', 'Episodio 11', 'La fuerza de los sentimientos'],
+    ['https://mega.nz/embed/hO0lQSzZ#lxBzRl3XYcHGVLhUeYuExpxuPUuLCiu6toxGQBF5-4c', 'Episodio 12', 'El ataque del amor'],
+    ['https://mega.nz/embed/cCNmTQzL#dCLZiWU_S1i1HR3kXTnz_oNbz35X8hcmS3_UbNt2Xvc', 'Episodio 13', 'Asesino del pasado'],
+    ['https://mega.nz/embed/oCU3XbiZ#1dvLAHWijDX9fJVeBVRZq5p8I6A8CgzPnPv5tzOpqS0', 'Episodio 14', 'Caza de Geass'],
+    ['https://mega.nz/embed/QWlDyIiZ#lS-plo0xLqCKL4G8sMM8eaXHrZHBnRoa4fm6nW7zsFE', 'Episodio 15', 'El mundo de C'],
+    ['https://mega.nz/embed/pLNylIBY#YMt8fMV7YeX_C8pY1QnMRA5KpXCV96IrzoLsT4DVoDs', 'Episodio 16', 'Primera resolución de la Federación Unida de Naciones'],
+    ['https://mega.nz/embed/4T8zBZ7J#tuo1I4qK0sYgi4Ros_BMfGXk_8Pl2b8hTAAIXdfwUS8', 'Episodio 17', 'Sabor a tierra'],
+    ['https://mega.nz/embed/oOtV3JRY#Jvs0qrwFtDhjxRQ62kHF1WUkibRRtdaVS-oSlVIX1Ss', 'Episodio 18', 'La segunda batalla de Tokio'],
+    ['https://mega.nz/embed/lK9iGCTZ#BbdrFXSLArA9f2jXVzipNvjwltOLpVmo97D_m77yM4Q', 'Episodio 19', 'Traición'],
+    ['https://mega.nz/embed/helDXBLK#bCgfN9iXrWMPFLd6KfVwBocYSXCGbCgFEgayhU32iH0', 'Episodio 20', 'El emperador descalificado'],
+    ['https://mega.nz/embed/dPVW2bwL#9tGU9W3TbUq-UOtkEzYnRLb8pJZAckXyYoD7-J1NshI', 'Episodio 21', 'La conexión Ragnarök'],
+    ['https://mega.nz/embed/hCFWFYCL#mtjkO5HQJOZHHUC_4lXcN2aY1o4EOrHf0VGIPdFF6rY', 'Episodio 22', 'Lelouch Emperador'],
+    ['https://mega.nz/embed/xLlg0SzZ#GLjzOU4uyMhgQjuAI3il5e3IrZAJRP8P0iL9y6C3tsk', 'Episodio 23', 'El frente del Fleija'],
+    ['https://mega.nz/embed/QXNyDTQK#yLnTIcZPT0oEBmcnVxKAPVBHzIm_t3jCUYIUN_P4WoQ', 'Episodio 24', 'El cielo del Damocles'],
+    ['https://mega.nz/embed/VS9gnSSS#EXjbtv0AoO4yS7LL_DHJAeTPfBXlndLHYJCwlZL3wdo', 'Episodio 25', 'Re;']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/CodeGeass/Portada-Tmp2-Cap${index + 1}-CodeGeass.jpg`,
+    'iframe'
+]);
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -2885,7 +3065,7 @@ const catalogData = {
 		]
 	},
 	fireforce: {
-		label: 'CATÁLOGO 35', title: 'Fire Forcee', description: 'Tokio está ardiendo y los ciudadanos sufren misteriosas combustiones espontáneas por toda la ciudad. La responsable de apagar este infierno es la Brigada Especial Antiincendios y Shinra está listo para unirse a su lucha. Ahora, como parte del 8.º Escuadrón, usará sus poderes para evitar que la ciudad acabe reducida a cenizas.Sin embargo, un secreto de su pasado podría hacer arder todo.',
+		label: 'CATÁLOGO 35', title: 'Fire Force', description: 'Tokio está ardiendo y los ciudadanos sufren misteriosas combustiones espontáneas por toda la ciudad. La responsable de apagar este infierno es la Brigada Especial Antiincendios y Shinra está listo para unirse a su lucha. Ahora, como parte del 8.º Escuadrón, usará sus poderes para evitar que la ciudad acabe reducida a cenizas.Sin embargo, un secreto de su pasado podría hacer arder todo.',
 		seasons: [
 			{ title: 'Temporada 1', description: '24 Episodios', cover: 'img/Temp1-FireForce.jpg', videos: fireforceSeason1Episodes },
 			{ title: 'Temporada 2', description: '24 Episodios', cover: 'img/Temp2-FireForce.jpg', videos: fireforceSeason2Episodes },
@@ -2896,6 +3076,22 @@ const catalogData = {
 		label: 'CATÁLOGO 36', title: 'El viaje de Chihiro', description: 'Una niña de 10 años llamada Chihiro descubre un mundo misterioso gobernado por una bruja que convierte en animales a quienes lo desobedecen',
 		seasons: [
 			{ title: 'El viaje de Chihiro la Película', description: '1 Película', cover: 'img/Temp1-Chihiro.jpg', videos:chihiroSeason1Episodes }
+		]
+	},
+	kuroko: {
+		label: 'CATÁLOGO 37', title: 'Kuroko no Basket', description: 'El equipo de baloncesto de la preparatoria Teiko. La clase que produjo tres temporadas perfectas de un solo golpe, con cinco jugadores que solo se ven una vez en su generación, llamados "La Generación Milagrosa".',
+		seasons: [
+			{ title: 'Temporada 1', description: '25 Episodios', cover: 'img/Temp1-Kuroko.jpg', videos: kurokoSeason1Episodes },
+			{ title: 'Temporada 2', description: '25 Episodios', cover: 'img/Temp2-Kuroko.jpg', videos: kurokoSeason2Episodes },
+			{ title: 'Temporada 3', description: '25 Episodios', cover: 'img/Temp3-Kuroko.webp', videos: kurokoSeason3Episodes },
+			{ title: 'Película Last Game', description: '1 Película', cover: 'img/Movie1-Kuroko.jpg', videos: kurokoMovie1Episodes }
+		]
+	},
+	codegeass: {
+		label: 'CATÁLOGO 38', title: 'Code Geass', description: 'Año 2017 del calendario imperial. Lelouch, un joven cuyo derecho de sucesión al trono le fue arrebatado, se convierte en "Zero", el hombre enmascarado, y conduce una insurrección a gran escala, la "Rebelión Negra", contra su propia patria, la superpotencia del Sacro Imperio de Britannia. Mientras el sentimiento anti Britannia se hace más fuerte, el imperio decide utilizar su abrumador poderío...',
+		seasons: [
+			{ title: 'Temporada 1', description: '25 Episodios', cover: 'img/Temp1-CodeGeass.jpg', videos: codegeassSeason1Episodes },
+			{ title: 'Temporada 2', description: '25 Episodios', cover: 'img/Temp2-CodeGeass.jpg', videos: codegeassSeason2Episodes }
 		]
 	},
 };
