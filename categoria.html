@@ -11,21 +11,30 @@
 <body>
     <header class="navbar">
         <a class="logo" href="index.html">VIDEON</a>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="catalogo.html" aria-current="page">Catálogos</a>
-            <a href="index.html#sobre">Sobre nosotros</a>
-        </nav>
-        <button class="auth-button secondary report-trigger" type="button" data-feedback-open>Enviar informe</button>
-        <div id="auth-status" class="auth-status" aria-live="polite"></div>
+        <button class="mobile-nav-toggle" type="button" aria-label="Abrir navegación" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+        <div class="navbar-menu">
+            <nav id="primary-nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="index.html#sobre">Sobre nosotros</a>
+            </nav>
+            <div id="auth-status" class="auth-status" aria-live="polite"></div>
+            <button class="auth-button secondary report-trigger" type="button" data-feedback-open>Enviar informe</button>
+        </div>
     </header>
 
     <main class="catalog-page">
+        <nav class="breadcrumbs" id="breadcrumbs" aria-label="Migas de pan"></nav>
         <section class="catalog-header">
-            <a class="back-link" href="catalogo.html">← Volver a catálogos</a>
+            <a class="back-link" href="temporadas.html">← Volver a temporadas</a>
             <p class="hero-subtitle" id="category-label">COLECCIÓN</p>
             <h1 id="category-title">Vídeos</h1>
             <p class="hero-description" id="category-description">Elige un vídeo para reproducirlo.</p>
+        </section>
+
+        <section class="season-switcher-section" aria-label="Cambiar temporada">
+            <p class="season-switcher-label">Temporadas</p>
+            <nav class="season-switcher" id="season-switcher" aria-label="Temporadas disponibles" hidden></nav>
         </section>
 
         <section class="videos-section" aria-labelledby="videos-title">
@@ -43,6 +52,10 @@
             <button class="close-modal" type="button" aria-label="Cerrar vídeo">×</button>
             <video id="video-player" controls></video>
             <iframe id="video-frame" title="Reproductor de vídeo externo" allow="autoplay; fullscreen" allowfullscreen hidden></iframe>
+            <div class="video-modal-controls">
+                <p id="video-action-message" role="status" aria-live="polite"></p>
+                <button id="next-episode-button" class="auth-button primary" type="button">Siguiente episodio</button>
+            </div>
             <p id="video-error" class="video-error">No se ha encontrado este vídeo. Añade el archivo en la carpeta videos.</p>
         </div>
     </div>
@@ -65,9 +78,15 @@
     </div>
 
     <footer>
-        <p>© 2026 VIDEON</p>
+        <div class="footer-content">
+            <p>© 2026 VIDEON</p>
+            <nav class="footer-links" aria-label="Enlaces informativos">
+                <a href="aviso-privacidad.html">Aviso de privacidad</a>
+            </nav>
+        </div>
     </footer>
 
+    <script src="site-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-config.js"></script>
     <script src="auth.js"></script>

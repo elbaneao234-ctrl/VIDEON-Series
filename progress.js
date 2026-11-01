@@ -36,6 +36,11 @@ const VIDEON_PROGRESS = (() => {
     }
   };
 
+  const playerControls = {
+    activateEpisode: null,
+    markActiveEpisodeCompleted: null
+  };
+
   const saveVideoProgress = async (payload) => {
     const client = window.VIDEON_DB;
 
@@ -58,18 +63,17 @@ const VIDEON_PROGRESS = (() => {
       return null;
     }
 
-    const cache = getLocalProgressCache();
-    cache[payload.episodeId] = {
-      ...payload,
-      updated_at: payload.updatedAt || new Date().toISOString()
-    };
-    saveLocalProgressCache(cache);
-
     console.log('[VIDEON PROGRESS] guardando:', payload);
 
     try {
       const result = await client.upsertProgress(payload);
       if (result) {
+        const cache = getLocalProgressCache();
+        cache[payload.episodeId] = {
+          ...payload,
+          updated_at: payload.updatedAt || new Date().toISOString()
+        };
+        saveLocalProgressCache(cache);
         console.log('[VIDEON PROGRESS] guardado correctamente');
       }
       return result;
@@ -184,6 +188,33 @@ const VIDEON_PROGRESS = (() => {
     });
   };
 
+  const markEpisodeCardCompleted = (episodeId) => {
+    const card = [...document.querySelectorAll('.video-card')]
+      .find((item) => item.dataset.episodeId === episodeId);
+    const thumbnail = card?.querySelector('.thumbnail');
+
+    if (!card || !thumbnail) {
+      return;
+    }
+
+    let status = thumbnail.querySelector('.episode-status');
+    if (!status) {
+      status = document.createElement('span');
+      status.className = 'episode-status';
+      thumbnail.appendChild(status);
+    }
+
+    card.classList.remove('is-in-progress');
+    card.classList.add('is-completed');
+    status.textContent = '✓ Visto';
+    status.hidden = false;
+
+    const progressBar = thumbnail.querySelector('.episode-progress');
+    if (progressBar) {
+      progressBar.hidden = true;
+    }
+  };
+
   const bindVideoProgressTracking = () => {
     const modal = document.querySelector('#video-modal');
     const videoPlayer = document.querySelector('#video-player');
@@ -198,6 +229,7 @@ const VIDEON_PROGRESS = (() => {
     let progressTimer = null;
     let lastSavedSeconds = 0;
     let activeEpisode = null;
+    let closingEpisode = false;
 
     const getEpisodeFromCard = (card) => {
       const title = card.dataset.title || card.querySelector('h3')?.textContent?.trim() || 'Episodio';
@@ -222,21 +254,35 @@ const VIDEON_PROGRESS = (() => {
       };
     };
 
-    const activateEpisode = (card) => {
+    const activateEpisode = (episode) => {
+      const card = episode?.dataset ? episode : null;
+      const episodeDetails = card ? getEpisodeFromCard(card) : episode;
+
+      if (!episodeDetails?.episodeId) {
+        return;
+      }
+
+      closingEpisode = false;
       document.querySelectorAll('.video-card').forEach((item) => item.classList.remove('is-active'));
-      card.classList.add('is-active');
-      activeEpisode = getEpisodeFromCard(card);
+      card?.classList.add('is-active');
+      activeEpisode = { ...episodeDetails, card, completed: Boolean(episodeDetails.completed) };
       lastSavedSeconds = 0;
+
+      if (progressTimer) {
+        clearTimeout(progressTimer);
+        progressTimer = null;
+      }
 
       console.log('[VIDEON PROGRESS] episodio activo:', activeEpisode.episodeId);
 
       if (activeEpisode.type === 'iframe') {
-        activeEpisode.progressReady = window.VIDEON_DB.getEpisodeProgress(activeEpisode.episodeId).then((progress) => {
-          activeEpisode.completed = Boolean(progress?.completed);
+        const episodeToLoad = activeEpisode;
+        episodeToLoad.progressReady = window.VIDEON_DB.getEpisodeProgress(episodeToLoad.episodeId).then((progress) => {
+          episodeToLoad.completed = Boolean(progress?.completed);
 
-          if (!activeEpisode.completed) {
+          if (!episodeToLoad.completed) {
             return saveVideoProgress({
-              episodeId: activeEpisode.episodeId,
+              episodeId: episodeToLoad.episodeId,
               positionSeconds: Number(progress?.progress_seconds || 0),
               durationSeconds: Number(progress?.duration || 0),
               completed: false,
@@ -246,13 +292,17 @@ const VIDEON_PROGRESS = (() => {
           return null;
         }).catch((error) => {
           console.warn('[VIDEON PROGRESS] error leyendo progreso iframe:', error);
-          activeEpisode.completed = false;
+          episodeToLoad.completed = false;
         });
         return;
       }
 
       const cached = getVideoProgressFromCache(activeEpisode.episodeId);
-      window.VIDEON_DB.getEpisodeProgress(activeEpisode.episodeId).then((progress) => {
+      const episodeToLoad = activeEpisode;
+      window.VIDEON_DB.getEpisodeProgress(episodeToLoad.episodeId).then((progress) => {
+        if (activeEpisode !== episodeToLoad) {
+          return;
+        }
         const resumeTime = progress?.progress_seconds || cached?.positionSeconds || 0;
         if (resumeTime > 0) {
           videoPlayer.addEventListener('loadedmetadata', () => {
@@ -266,20 +316,20 @@ const VIDEON_PROGRESS = (() => {
       });
     };
 
-    const syncProgress = async (force = false) => {
-      if (!activeEpisode) {
+    const syncProgress = async (force = false, markCompleted = false, episodeToSync = activeEpisode, allowThreshold = false) => {
+      if (!episodeToSync || activeEpisode !== episodeToSync || (episodeToSync.completed && !markCompleted)) {
         return;
       }
 
-      if (activeEpisode.type === 'iframe') {
+      if (episodeToSync.type === 'iframe') {
         if (force) {
-          if (activeEpisode.progressReady) {
-            await activeEpisode.progressReady;
+          if (episodeToSync.progressReady) {
+            await episodeToSync.progressReady;
           }
 
-          if (!activeEpisode.completed) {
+          if (!episodeToSync.completed) {
             await saveVideoProgress({
-              episodeId: activeEpisode.episodeId,
+              episodeId: episodeToSync.episodeId,
               positionSeconds: 0,
               durationSeconds: 0,
               completed: false,
@@ -297,51 +347,102 @@ const VIDEON_PROGRESS = (() => {
       const currentTime = Number(videoPlayer.currentTime || 0);
       const duration = Number(videoPlayer.duration || 0);
       const percentage = duration ? Math.min((currentTime / duration) * 100, 100) : 0;
+      const completed = markCompleted || (allowThreshold && percentage >= 90);
 
       const payload = {
-        episodeId: activeEpisode.episodeId,
+        episodeId: episodeToSync.episodeId,
         positionSeconds: Math.floor(currentTime),
         durationSeconds: Math.floor(duration),
-        completed: percentage >= 90,
+        completed,
         updatedAt: new Date().toISOString()
       };
 
-      if (force || Math.abs(lastSavedSeconds - payload.positionSeconds) >= 1 || payload.completed) {
-        await saveVideoProgress(payload);
+      if (force || Math.abs(lastSavedSeconds - payload.positionSeconds) >= 1 || completed) {
+        const result = await saveVideoProgress(payload);
+        if (result && completed) {
+          episodeToSync.completed = true;
+          markEpisodeCardCompleted(episodeToSync.episodeId);
+        }
         lastSavedSeconds = payload.positionSeconds;
       }
     };
 
-    videoGrid.addEventListener('click', (event) => {
-      const card = event.target.closest('.video-card');
-      if (card) {
-        activateEpisode(card);
+    const markActiveEpisodeCompleted = async () => {
+      const episodeToComplete = activeEpisode;
+      if (!episodeToComplete) {
+        return { success: false, reason: 'no-active-episode' };
       }
-    }, true);
 
-    videoGrid.addEventListener('keydown', (event) => {
-      const card = event.target.closest('.video-card');
-      if (card && (event.key === 'Enter' || event.key === ' ')) {
-        activateEpisode(card);
+      let user;
+      try {
+        user = await window.VIDEON_AUTH?.getCurrentUser();
+      } catch {
+        return { success: false, reason: 'save-failed' };
       }
-    }, true);
+
+      if (!user) {
+        return { success: false, reason: 'unauthenticated' };
+      }
+
+      if (episodeToComplete.progressReady) {
+        await episodeToComplete.progressReady;
+      }
+
+      if (activeEpisode !== episodeToComplete) {
+        return { success: false, reason: 'episode-changed' };
+      }
+
+      const isIframe = episodeToComplete.type === 'iframe';
+      const result = await saveVideoProgress({
+        episodeId: episodeToComplete.episodeId,
+        positionSeconds: isIframe ? 0 : Math.floor(Number(videoPlayer.currentTime || 0)),
+        durationSeconds: isIframe ? 0 : Math.floor(Number(videoPlayer.duration || 0)),
+        completed: true,
+        updatedAt: new Date().toISOString()
+      });
+
+      if (!result) {
+        return { success: false, reason: 'save-failed' };
+      }
+
+      episodeToComplete.completed = true;
+      markEpisodeCardCompleted(episodeToComplete.episodeId);
+      return { success: true, episodeId: episodeToComplete.episodeId };
+    };
+
+    playerControls.activateEpisode = activateEpisode;
+    playerControls.markActiveEpisodeCompleted = markActiveEpisodeCompleted;
 
     videoPlayer.addEventListener('timeupdate', () => {
       if (progressTimer) {
         clearTimeout(progressTimer);
       }
 
-      progressTimer = setTimeout(syncProgress, 2000);
+      const episodeToSync = activeEpisode;
+      progressTimer = setTimeout(() => syncProgress(false, false, episodeToSync, true), 2000);
     });
 
-    videoPlayer.addEventListener('pause', () => syncProgress(true));
-    videoPlayer.addEventListener('ended', () => syncProgress(true));
+    videoPlayer.addEventListener('pause', () => {
+      if (!closingEpisode) {
+        syncProgress(true);
+      }
+    });
+    videoPlayer.addEventListener('ended', () => syncProgress(true, true));
 
     const saveBeforeClose = async () => {
-      if (activeEpisode) {
-        await syncProgress(true);
-        activeEpisode = null;
-        lastSavedSeconds = 0;
+      if (activeEpisode && !closingEpisode) {
+        const episodeToClose = activeEpisode;
+        closingEpisode = true;
+        if (progressTimer) {
+          clearTimeout(progressTimer);
+          progressTimer = null;
+        }
+        await syncProgress(true, false, episodeToClose);
+        if (activeEpisode === episodeToClose) {
+          activeEpisode = null;
+          lastSavedSeconds = 0;
+        }
+        closingEpisode = false;
       }
     };
 
@@ -558,7 +659,9 @@ const VIDEON_PROGRESS = (() => {
     applyEpisodeProgressToCards,
     generateEpisodeId,
     saveVideoProgress,
-    getVideoProgressFromCache
+    getVideoProgressFromCache,
+    activateEpisode: (episode) => playerControls.activateEpisode?.(episode),
+    markActiveEpisodeCompleted: () => playerControls.markActiveEpisodeCompleted?.()
   };
 
   window.VIDEON_PROGRESS = api;

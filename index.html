@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VIDEON</title>
+    <title>VIDEON | Anime para descubrir y seguir</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,46 +15,40 @@
     <!-- NAVEGACIÓN -->
     <header class="navbar">
 
-        <div class="logo">
-            VIDEON
+        <a class="logo" href="index.html">VIDEON</a>
+        <button class="mobile-nav-toggle" type="button" aria-label="Abrir navegación" aria-expanded="false" aria-controls="primary-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="navbar-menu">
+            <nav id="primary-nav" aria-label="Navegación principal">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="catalogo.html">Anime</a>
+                <a href="#sobre">Sobre nosotros</a>
+            </nav>
+            <div id="auth-status" class="auth-status" aria-live="polite"></div>
+            <button class="auth-button secondary report-trigger" type="button" data-feedback-open>Enviar informe</button>
+            <button id="logout-button" class="auth-button secondary" type="button" hidden>Cerrar sesión</button>
         </div>
-
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="catalogo.html">Anime</a>
-            <a href="#sobre">Sobre nosotros</a>
-        </nav>
-
-        <button class="auth-button secondary report-trigger" type="button" data-feedback-open>Enviar informe</button>
-        <div id="auth-status" class="auth-status" aria-live="polite"></div>
-
     </header>
-
-    <button id="logout-button" class="auth-button secondary" type="button" hidden>
-        Cerrar sesión
-    </button>
 
 
     <!-- PORTADA -->
     <main>
 
         <section id="inicio" class="hero">
-
+            <div class="hero-art" aria-hidden="true">
+                <img src="img/Mushoku/Portada-Tmp1-Cap1-Mushoku.jpg" alt="" fetchpriority="high">
+            </div>
             <div class="hero-content">
-
-                <p class="hero-subtitle">ANIME · SERIES · EPISODIOS</p>
-
-                <h1>Tu próxima<br>historia<br>empieza aquí.</h1>
-
+                <p class="hero-subtitle">VIDEON · TU ESPACIO DE ANIME</p>
+                <h1>Tu universo<br>de anime.</h1>
                 <p class="hero-description">
-                    Sigue tus series, temporadas y episodios favoritos
-                    en un solo lugar.
+                    Descubre series, recorre temporadas y retoma cada historia donde la dejaste.
                 </p>
-
-                <a href="catalogo.html" class="hero-button">
-                    Explorar anime
-                </a>
-
+                <div class="hero-actions">
+                    <a href="catalogo.html" class="hero-button">Explorar catálogo</a>
+                    <a href="#continue-watching" class="hero-secondary-link">Seguir viendo <span aria-hidden="true">↓</span></a>
+                </div>
                 <div class="social-links" aria-label="Redes sociales de VIDEON">
                     <a href="https://www.youtube.com/@Taperbrand09" target="_blank" rel="noopener noreferrer" aria-label="YouTube de VIDEON">YT</a>
                     <a href="https://www.tiktok.com/@el4nimado04" target="_blank" rel="noopener noreferrer" aria-label="TikTok de VIDEON">TK</a>
@@ -66,13 +60,23 @@
         </section>
 
 
-        <!-- SOBRE NOSOTROS -->
         <section class="continue-watching-section" aria-labelledby="continue-watching-title">
             <div class="section-header">
-                <p>CONTINUAR</p>
-                <h2 id="continue-watching-title">Continuar viendo</h2>
+                <p>RETOMA TU HISTORIA</p>
+                <h2 id="continue-watching-title">Seguir viendo</h2>
             </div>
             <div id="continue-watching" class="continue-grid"></div>
+        </section>
+
+        <section class="discovery-section" aria-labelledby="discovery-title">
+            <div class="section-header discovery-header">
+                <div>
+                    <p>ELIGE TU PRÓXIMA AVENTURA</p>
+                    <h2 id="discovery-title">Explora el catálogo</h2>
+                </div>
+                <a class="section-link" href="catalogo.html">Ver todos los animes <span aria-hidden="true">→</span></a>
+            </div>
+            <div id="featured-anime-grid" class="catalog-grid featured-anime-grid"></div>
         </section>
 
         <section class="profile-section" aria-labelledby="profile-title">
@@ -121,11 +125,15 @@
 
     <!-- FOOTER -->
     <footer>
-
-        <p>© 2026 VIDEON</p>
-
+        <div class="footer-content">
+            <p>© 2026 VIDEON</p>
+            <nav class="footer-links" aria-label="Enlaces informativos">
+                <a href="aviso-privacidad.html">Aviso de privacidad</a>
+            </nav>
+        </div>
     </footer>
 
+    <script src="site-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-config.js"></script>
     <script src="auth.js"></script>

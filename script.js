@@ -3457,6 +3457,37 @@ const catalogKey = new URLSearchParams(window.location.search).get('catalogo');
 const selectedCatalog = catalogData[catalogKey] || catalogData.aventuras;
 const animeSearch = document.querySelector('#anime-search');
 
+const renderBreadcrumbs = (items) => {
+	const breadcrumbContainer = document.querySelector('#breadcrumbs');
+	if (!breadcrumbContainer) {
+		return;
+	}
+
+	const list = document.createElement('ol');
+	items.forEach((item, index) => {
+		const listItem = document.createElement('li');
+		const isCurrent = index === items.length - 1;
+		if (item.href) {
+			const link = document.createElement('a');
+			link.href = item.href;
+			link.textContent = item.label;
+			if (isCurrent) {
+				link.setAttribute('aria-current', 'page');
+			}
+			listItem.appendChild(link);
+		} else {
+			const current = document.createElement('span');
+			current.textContent = item.label;
+			if (isCurrent) {
+				current.setAttribute('aria-current', 'page');
+			}
+			listItem.appendChild(current);
+		}
+		list.appendChild(listItem);
+	});
+	breadcrumbContainer.replaceChildren(list);
+};
+
 if (animeSearch) {
 	const animeGrid = animeSearch.closest('.videos-section')?.querySelector('.catalog-grid');
 	const emptyState = document.querySelector('#anime-search-empty');
@@ -3486,10 +3517,17 @@ if (seasonGrid) {
 	document.querySelector('#catalog-label').textContent = selectedCatalog.label;
 	document.querySelector('#catalog-title').textContent = selectedCatalog.title;
 	document.querySelector('#catalog-description').textContent = selectedCatalog.description;
+	const currentCatalogKey = catalogKey || 'aventuras';
+	document.querySelector('.back-link').href = 'catalogo.html';
+	renderBreadcrumbs([
+		{ label: 'Inicio', href: 'index.html' },
+		{ label: 'Catálogo', href: 'catalogo.html' },
+		{ label: selectedCatalog.title, href: `temporadas.html?catalogo=${currentCatalogKey}` }
+	]);
 
 	selectedCatalog.seasons.forEach((season, index) => {
 		seasonGrid.insertAdjacentHTML('beforeend', `
-			<a class="catalog-card" href="categoria.html?catalogo=${catalogKey || 'aventuras'}&temporada=${index}">
+			<a class="catalog-card" href="categoria.html?catalogo=${currentCatalogKey}&temporada=${index}">
 				<div class="catalog-cover catalog-cover-season"><img src="${season.cover}" alt="Portada de ${selectedCatalog.title}, ${season.title}"></div>
 				<div class="video-info"><h3>${season.title}</h3><p>${season.description}</p></div>
 			</a>
@@ -3504,16 +3542,46 @@ if (videoGrid) {
 
 	const seasonIndex = Number(new URLSearchParams(window.location.search).get('temporada')) || 0;
 	const selectedSeason = selectedCatalog.seasons[seasonIndex] || selectedCatalog.seasons[0];
-	document.querySelector('.back-link').href = `temporadas.html?catalogo=${catalogKey || 'aventuras'}`;
+	const currentCatalogKey = catalogKey || 'aventuras';
+	const seasonUrl = `temporadas.html?catalogo=${currentCatalogKey}`;
+	document.querySelector('.back-link').href = seasonUrl;
 	document.querySelector('#category-label').textContent = `${selectedCatalog.label} · ${selectedSeason.title}`;
 	document.querySelector('#category-title').textContent = selectedCatalog.title;
 	document.querySelector('#category-description').textContent = selectedSeason.description;
+	renderBreadcrumbs([
+		{ label: 'Inicio', href: 'index.html' },
+		{ label: 'Catálogo', href: 'catalogo.html' },
+		{ label: selectedCatalog.title, href: seasonUrl },
+		{ label: selectedSeason.title, href: `categoria.html?catalogo=${currentCatalogKey}&temporada=${seasonIndex}` }
+	]);
 
-	selectedSeason.videos.forEach(([video, title, description, thumbnail, type = 'video']) => {
+	const seasonSwitcher = document.querySelector('#season-switcher');
+	if (seasonSwitcher && selectedCatalog.seasons.length > 1) {
+		seasonSwitcher.hidden = false;
+		selectedCatalog.seasons.forEach((season, index) => {
+			const isCurrent = index === seasonIndex;
+			const item = isCurrent ? document.createElement('span') : document.createElement('a');
+			item.className = `season-switcher__item${isCurrent ? ' is-current' : ''}`;
+			item.textContent = season.title;
+			if (isCurrent) {
+				item.setAttribute('aria-current', 'page');
+			} else {
+				item.href = `categoria.html?catalogo=${currentCatalogKey}&temporada=${index}`;
+			}
+			seasonSwitcher.appendChild(item);
+		});
+	} else {
+		const seasonSwitcherSection = document.querySelector('.season-switcher-section');
+		if (seasonSwitcherSection) {
+			seasonSwitcherSection.hidden = true;
+		}
+	}
+
+	selectedSeason.videos.forEach(([video, title, description, thumbnail, type = 'video'], episodeIndex) => {
 		const episodeId = generateEpisodeId(selectedCatalog.title, selectedSeason.title, title);
 
 		videoGrid.insertAdjacentHTML('beforeend', `
-			<article class="video-card" data-video="${video}" data-type="${type}" data-episode-id="${episodeId}" role="button" tabindex="0" aria-label="Reproducir ${title}">
+			<article class="video-card" data-video="${video}" data-type="${type}" data-episode-id="${episodeId}" data-catalog-key="${catalogKey || 'aventuras'}" data-season-index="${seasonIndex}" data-episode-index="${episodeIndex}" role="button" tabindex="0" aria-label="Reproducir ${title}">
 				<div class="thumbnail">
 					<img src="${thumbnail}" alt="Portada de ${title}">
 					<span class="play-button" aria-hidden="true">▶</span>
@@ -3527,29 +3595,142 @@ if (videoGrid) {
 	});
 }
 
+const featuredAnimeGrid = document.querySelector('#featured-anime-grid');
+if (featuredAnimeGrid) {
+	Object.entries(catalogData).slice(0, 6).forEach(([key, anime]) => {
+		const firstSeason = anime.seasons?.[0];
+		if (!firstSeason) {
+			return;
+		}
+
+		const link = document.createElement('a');
+		link.className = 'catalog-card featured-anime-card';
+		link.href = `temporadas.html?catalogo=${encodeURIComponent(key)}`;
+		const cover = document.createElement('div');
+		cover.className = 'catalog-cover';
+		const image = document.createElement('img');
+		image.src = firstSeason.cover;
+		image.alt = `Portada de ${anime.title}`;
+		image.loading = 'lazy';
+		cover.appendChild(image);
+		const info = document.createElement('div');
+		info.className = 'video-info';
+		const title = document.createElement('h3');
+		title.textContent = anime.title;
+		const description = document.createElement('p');
+		description.textContent = firstSeason.title;
+		info.append(title, description);
+		link.append(cover, info);
+		featuredAnimeGrid.appendChild(link);
+	});
+}
+
 const videoModal = document.querySelector('#video-modal');
 const videoPlayer = document.querySelector('#video-player');
 const videoFrame = document.querySelector('#video-frame');
 const videoError = document.querySelector('#video-error');
 const closeModalButton = document.querySelector('#video-modal .close-modal');
+const nextEpisodeButton = document.querySelector('#next-episode-button');
+const videoActionMessage = document.querySelector('#video-action-message');
+let activeVideoEpisode = null;
 
-function openVideo(card) {
+const createEpisodeMetadata = (catalogKey, seasonIndex, episodeIndex) => {
+	const catalog = catalogData[catalogKey];
+	const season = catalog?.seasons?.[seasonIndex];
+	const videoData = season?.videos?.[episodeIndex];
+
+	if (!catalog || !season || !videoData) {
+		return null;
+	}
+
+	const [video, title, description, thumbnail, type = 'video'] = videoData;
+	return {
+		catalogKey,
+		seasonIndex,
+		episodeIndex,
+		series: catalog.title,
+		season: season.title,
+		title: title || 'Episodio',
+		description: description || '',
+		thumbnail: thumbnail || '',
+		video,
+		type,
+		episodeId: generateEpisodeId(catalog.title, season.title, title || 'Episodio')
+	};
+};
+
+const getEpisodeMetadata = (card) => {
+	const catalogKey = card.dataset.catalogKey || catalogKeyFromPage || 'aventuras';
+	const episode = createEpisodeMetadata(
+		catalogKey,
+		Number(card.dataset.seasonIndex || 0),
+		Number(card.dataset.episodeIndex || 0)
+	);
+
+	return episode ? { ...episode, card, episodeId: card.dataset.episodeId || episode.episodeId } : null;
+};
+
+const catalogKeyFromPage = catalogKey || 'aventuras';
+
+const getNextEpisode = (episode) => {
+	const catalog = catalogData[episode?.catalogKey];
+	if (!catalog) {
+		return null;
+	}
+
+	for (let seasonIndex = episode.seasonIndex; seasonIndex < catalog.seasons.length; seasonIndex += 1) {
+		const season = catalog.seasons[seasonIndex];
+		const firstEpisodeIndex = seasonIndex === episode.seasonIndex ? episode.episodeIndex + 1 : 0;
+		for (let episodeIndex = firstEpisodeIndex; episodeIndex < (season.videos || []).length; episodeIndex += 1) {
+			const nextEpisode = createEpisodeMetadata(episode.catalogKey, seasonIndex, episodeIndex);
+			if (nextEpisode?.video) {
+				return nextEpisode;
+			}
+		}
+	}
+
+	return null;
+};
+
+function openVideo(cardOrEpisode) {
 	if (!videoError || !videoModal) {
 		return;
 	}
 
+	if (videoPlayer && !videoPlayer.hidden) {
+		videoPlayer.pause();
+	}
+	if (videoFrame && !videoFrame.hidden) {
+		videoFrame.removeAttribute('src');
+	}
+
+	const episode = cardOrEpisode?.dataset ? getEpisodeMetadata(cardOrEpisode) : cardOrEpisode;
+	if (!episode?.video || !episode.episodeId) {
+		return;
+	}
+	activeVideoEpisode = episode;
+	window.VIDEON_PROGRESS?.activateEpisode(episode);
+	if (videoActionMessage) {
+		videoActionMessage.textContent = '';
+		document.body.classList.add('video-is-open');
+	}
+	if (nextEpisodeButton) {
+		nextEpisodeButton.disabled = false;
+		nextEpisodeButton.textContent = getNextEpisode(episode) ? 'Siguiente episodio' : 'Marcar como visto';
+	}
+
 	videoError.hidden = true;
-	if (card.dataset.type === 'iframe') {
+	if (episode.type === 'iframe') {
 		if (videoPlayer) videoPlayer.hidden = true;
 		if (videoFrame) {
 			videoFrame.hidden = false;
-			videoFrame.src = card.dataset.video;
+			videoFrame.src = episode.video;
 		}
 	} else {
 		if (videoFrame) videoFrame.hidden = true;
 		if (videoPlayer) {
 			videoPlayer.hidden = false;
-			videoPlayer.src = card.dataset.video;
+			videoPlayer.src = episode.video;
 			videoPlayer.play().catch(() => {});
 		}
 	}
@@ -3570,6 +3751,11 @@ function closeVideo() {
 		videoModal.classList.remove('is-open');
 		videoModal.setAttribute('aria-hidden', 'true');
 	}
+	if (videoActionMessage) {
+		videoActionMessage.textContent = '';
+	}
+	document.body.classList.remove('video-is-open');
+	activeVideoEpisode = null;
 }
 
 window.catalogData = catalogData;
@@ -3604,6 +3790,42 @@ if (videoModal) {
 
 	if (closeModalButton) {
 		closeModalButton.addEventListener('click', closeVideo);
+	}
+
+	if (nextEpisodeButton) {
+		nextEpisodeButton.addEventListener('click', async () => {
+			if (!activeVideoEpisode || nextEpisodeButton.disabled) {
+				return;
+			}
+
+			const nextEpisode = getNextEpisode(activeVideoEpisode);
+			nextEpisodeButton.disabled = true;
+			nextEpisodeButton.textContent = 'Guardando…';
+			if (videoActionMessage) {
+				videoActionMessage.textContent = '';
+			}
+
+			const result = await window.VIDEON_PROGRESS?.markActiveEpisodeCompleted();
+			if (!result?.success) {
+				nextEpisodeButton.disabled = false;
+				nextEpisodeButton.textContent = nextEpisode ? 'Siguiente episodio' : 'Marcar como visto';
+				if (videoActionMessage) {
+					videoActionMessage.textContent = result?.reason === 'unauthenticated'
+						? 'Inicia sesión para guardar tu progreso.'
+						: 'No se pudo guardar el progreso. Inténtalo de nuevo.';
+				}
+				return;
+			}
+
+			if (nextEpisode) {
+				openVideo(nextEpisode);
+			} else {
+				nextEpisodeButton.textContent = 'Visto';
+				if (videoActionMessage) {
+					videoActionMessage.textContent = 'No hay más episodios disponibles. El episodio se marcó como visto.';
+				}
+			}
+		});
 	}
 
 	videoModal.addEventListener('click', (event) => {

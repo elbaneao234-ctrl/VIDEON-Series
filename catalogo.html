@@ -11,16 +11,25 @@
 <body>
     <header class="navbar">
         <a class="logo" href="index.html">VIDEON</a>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="catalogo.html" aria-current="page">Anime</a>
-            <a href="index.html#sobre">Sobre nosotros</a>
-        </nav>
-        <button class="auth-button secondary report-trigger" type="button" data-feedback-open>Enviar informe</button>
-        <div id="auth-status" class="auth-status" aria-live="polite"></div>
+        <button class="mobile-nav-toggle" type="button" aria-label="Abrir navegación" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+        <div class="navbar-menu">
+            <nav id="primary-nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html" aria-current="page">Anime</a>
+                <a href="index.html#sobre">Sobre nosotros</a>
+            </nav>
+            <div id="auth-status" class="auth-status" aria-live="polite"></div>
+            <button class="auth-button secondary report-trigger" type="button" data-feedback-open>Enviar informe</button>
+        </div>
     </header>
 
     <main class="catalog-page">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+            </ol>
+        </nav>
         <section class="catalog-header">
             <p class="hero-subtitle">BIBLIOTECA DE ANIME</p>
             <h1>Elige tu<br>serie.</h1>
@@ -457,9 +466,15 @@
     </div>
 
     <footer>
-        <p>© 2026 VIDEON</p>
+        <div class="footer-content">
+            <p>© 2026 VIDEON</p>
+            <nav class="footer-links" aria-label="Enlaces informativos">
+                <a href="aviso-privacidad.html">Aviso de privacidad</a>
+            </nav>
+        </div>
     </footer>
 
+    <script src="site-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-config.js"></script>
     <script src="auth.js"></script>
