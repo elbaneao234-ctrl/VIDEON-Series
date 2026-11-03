@@ -320,6 +320,17 @@ const chainsawSeason1Episodes = [
 	['https://mega.nz/embed/Bv8mwTzI#0C_CpdEOtb7JOHp72gxEGhjJFYv9-l4zwPCAiUU3fIo', 'Episodio 12', 'Espada vs Motosierra', 'img/Chainsaw/Portada-Tmp1-Cap12-Chainsaw.jpg', 'iframe']
 ];
 
+const chainsawMovie1Episodes = [
+    ['https://mega.nz/embed/rMkyVRrT#8TDv6IbX9MlebS07mEKVvWSh3XtCE7gMfCfZgUPmKKE', 'Opción 1: MEGA', 'Chainsaw Man: El arco de Reze'],
+    ['https://jkanime.net/jkplayer/um?e=Ymk0bGNqL3E5OVdwTGkwQnNyMG0wZjVmR1lMYXBTYjdLSm1lUGd1SjlhVEh3L2dmREJTMXRTVEdlTjdVK1ZhSTZnTHRKUjdxNU12QitlV2JYOU9NY3o0NGMyRGdNdzJEQjdvS0R1OXlRTDA9OjoMhjdtCw0n3lbFRWbxnwoZ&t=8f87754b4e9f4a5d2ac3f10358d62527&op=Njk4MTI=', 'Opción 1: Jkanime', 'Chainsaw Man: El arco de Reze'],
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/Chainsaw/Portada-Movie1-Cap${index + 1}-Chainsaw.jpg`,
+    'iframe'
+]);
+
 const vinlandSeason1Episodes = [
 	['https://mega.nz/embed/arI3wayA#hSzqrNMvxga-6tWbUAZYjUAk0TAoF40INwU1oxjjVBk', 'Episodio 1', 'En cualquier otro lugar', 'img/Vinland/Portada-Tmp1-Cap1-Vinland.jpg', 'iframe'],
 	['https://mega.nz/embed/DjRDwKST#JnA2R-T1ygCRwdb2fwkO5pjdWpSdYsP51sy0__jfdCg', 'Episodio 2', 'Espada', 'img/Vinland/Portada-Tmp1-Cap2-Vinland.jpg', 'iframe'],
@@ -3130,6 +3141,94 @@ const souleaterSeason1Episodes = [
     'iframe'
 ]);
 
+const tokyoghoulSeason1Episodes = [
+    ['https://mega.nz/embed/lrN00BRD#Q2NdNW-6qq27q9pX_bGHQh-TeNGvYpl9oFwffxq0PvU', 'Episodio 1', 'Tragedia'],
+    ['https://mega.nz/embed/E6t1AawR#sgM99C_j8-T1nTwX56Z2zM7lAMUMxhQDUdbdGvKrhao', 'Episodio 2', 'Incubación'],
+    ['https://mega.nz/embed/Bv912JoQ#1fr1v0RMozCwvE1ExaUy-ELam80TKMMlE_K5gvgQeKU', 'Episodio 3', 'Paloma'],
+    ['https://mega.nz/embed/47lRUJra#Lgu10RFgF1KYDRCHCKNro2iquDTXFYlrtW2OYQmSrEI', 'Episodio 4', 'Cena'],
+    ['https://mega.nz/embed/h2EBXJrJ#Nc9433XteKsAgIb_DfWPrpePrXPUVMEknXMztYsTmro', 'Episodio 5', 'Cicatriz'],
+    ['https://mega.nz/embed/h2kTnK7Y#0AayV0im14L7JvE8DRkwUqCh8WMYcLksJa3stJ9hwFc', 'Episodio 6', 'Aguacero'],
+    ['https://mega.nz/embed/9uNkEaCR#Yu-1TaMP2xdHoS7zGaOUjCGtNXkcr6efpXTG-_0vkDk', 'Episodio 7', 'Cautiverio'],
+    ['https://mega.nz/embed/Fmsh0CKD#yJRxgc_OO_RYLmsUuVaQq6WVq9czjHlfMZVKcY1QH50', 'Episodio 8', 'Circular'],
+    ['https://mega.nz/embed/omFygApa#FzeqmR6rJWPHcmpnRNatiiN0uyRlQB-iswCx8K1uh5w', 'Episodio 9', 'Jaula'],
+    ['https://mega.nz/embed/0qdUHBTa#ITVzgrtcIqZ6gU4uMEGdZfAtyW9LkyTQfNzqDqFpXw4', 'Episodio 10', 'Aoshima'],
+    ['https://mega.nz/embed/U70SmCSJ#i8ufya8dMWdHjBbQkjovKofPgtN2-B5YH5XbRGKRRU8', 'Episodio 11', 'Euforia'],
+    ['https://mega.nz/embed/l6MCyJiR#PYr1KSzQ0GH5jFX4YBOSO316L5-5RXQJkytGZV7bvgk', 'Episodio 12', 'Ghoul']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/TokyoGhoul/Portada-Tmp1-Cap${index + 1}-TokyoGhoul.jpg`,
+    'iframe'
+]);
+
+const tokyoghoulSeason2Episodes = [
+    ['https://mega.nz/embed/B3VRHbpY#h_FaYdQb6AZOUH5elPT7DEOAndf8DrWhNJrZJuJW8ko', 'Episodio 1', 'Nuevos brotes'],
+    ['https://mega.nz/embed/NrMUDACK#pj9By4we13In2Ozo8IYhfR8k2UTOjvrB9_eAcOdMhoA', 'Episodio 2', 'Flores bailando'],
+    ['https://mega.nz/embed/Zj1RXTCA#YaXDY2460XWMIXFAUy6GY8wQ-5ZX0V8nyYMTrax6-ck', 'Episodio 3', 'Colgando'],
+    ['https://mega.nz/embed/F6cDUJ5I#bAlaW2_Y0Jy8y390U4e0f7Li1Uayr2Boff0j26h4hLc', 'Episodio 4', 'Profundidades'],
+    ['https://mega.nz/embed/4rlUiIYY#v5uYP7WKXy0nRd5Rnva8IL79N1LZYXqKySgAQMeAopQ', 'Episodio 5', 'Grieta'],
+    ['https://mega.nz/embed/UrFFiLIb#T5Pj_OADfkpLrgJUendyX4IzcIhElIKF4uCKc5UCSJA', 'Episodio 6', 'Miles de caminos'],
+    ['https://mega.nz/embed/Yyl02YYa#PKJKZL-wJP9hn-HGH7jY3rif50XvPBK-jaMeD-TmpqE', 'Episodio 7', 'Transmisión'],
+    ['https://mega.nz/embed/Ui1XnTya#NeUbivm2oHjTZj-2i_vOka4nqCXvQpGCq9zJjXVpwSo', 'Episodio 8', 'Antiguo nueve'],
+    ['https://mega.nz/embed/gnUwgayR#WSmBy7ONXhU5bKuBRP7mHTVKiJZeFAJACWzVLisuGos', 'Episodio 9', 'Ciudad en espera'],
+    ['https://mega.nz/embed/kj9hmLLL#cWvFpK0legIPwtx15Vl0QiBeJ4E_ZzG1vUEWC0Zxe48', 'Episodio 10', 'Lluvia de disparos'],
+    ['https://mega.nz/embed/VqtkAC4J#tZhyIEYSWuL45p2nYfdbtPbuhfUD8ECEeqh7vsIxBng', 'Episodio 11', 'Diluvio de flores'],
+    ['https://mega.nz/embed/8msVXBoK#SdVf6KzEabAuadSmhN0-zWhbuDfPXNXP3QGbFCa8l3E', 'Episodio 12', 'Ken']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/TokyoGhoul/Portada-Tmp2-Cap${index + 1}-TokyoGhoul.jpg`,
+    'iframe'
+]);
+
+const tokyoghoulOVASEpisodes = [
+    ['https://mega.nz/embed/5HU0VZZS#9U-RK6kv_y-relXJF5qbFXSafQXb4sr0pE0CKJpahbA', 'OVA 1 (LATINO)', 'OVA Tokyo Ghoul: "Jack"'],
+    ['https://mega.nz/embed/5a0ghCKZ#S0peCaKC16oHWFHl_HRXT5r5KDrx8IbE7IvBCjmlWMo', 'OVA 2 (JAP SUB)', 'OVA Tokyo Ghoul: "Pinto"']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/TokyoGhoul/Portada-OVA1-Cap${index + 1}-TokyoGhoul.jpg`,
+    'iframe'
+]);
+
+const tokyoghoulSeason3Episodes = [
+    ['https://mega.nz/embed/trVh0YCL#f9A4uptaGdp0r3CAmoGY9BRuANk0GPE4oFcFygvMxIo', 'Episodio 1', 'Cazadores'],
+    ['https://mega.nz/embed/d2dVnb5a#ZfDZBmUANYOEGHJ4eBz1VlWc84o004x1oqM43jAnQR4', 'Episodio 2', 'Fragmentos'],
+    ['https://mega.nz/embed/gz8DVCDJ#BFabGiRdlThsE0obRwi3bKoaEEfZo-vMjSEo9dTJhxA', 'Episodio 3', 'La víspera'],
+    ['https://mega.nz/embed/UylWlTwQ#N0YWNA8pgYObPyvYjxve6AWBD7nkF7NbKub_eKStsa0', 'Episodio 4', 'Subasta'],
+    ['https://mega.nz/embed/02UWnTrB#bWQtvgH_7w-uETsBTwEdKUFT25biZEuYGViNFCzd1ao', 'Episodio 5', 'Fin de la noche'],
+    ['https://mega.nz/embed/lucE1Aqa#JQYUzCpVX7gg1R0UDBkxCHfOMnQM1Yk2UMi88ql2wIc', 'Episodio 6', 'Al final'],
+    ['https://mega.nz/embed/xrMVjB7L#3mIfNOinh_1Ux6VzlNNAdVxf5S9826Tu-BVM3wRK910', 'Episodio 7', 'Recuerdos de días pasados'],
+    ['https://mega.nz/embed/o6tiwQrY#-edPDNagn2Xz2dS3Md4HN5yumjQB1b4-mboxLeVyxgQ', 'Episodio 8', 'Gusano'],
+    ['https://mega.nz/embed/86swWL4Z#EdeMJydl4kwdIiHDN18bzPiv3mtD5TX2TBl7QQj2dP4', 'Episodio 9', 'Fantasma'],
+    ['https://mega.nz/embed/xjkxxC6L#JFAf7eOuTBLCI86lxwMlTD0wlZkQ6dOW4KbvF-OstLg', 'Episodio 10', 'Temblor'],
+    ['https://mega.nz/embed/8m9kHazB#vACkTp9GJfa9FRnu9uRd7D06aCZnuDDeATujsyhOrVI', 'Episodio 11', 'Defecto'],
+    ['https://mega.nz/embed/QiEGDLCA#tp7gWhML8Fd6WJN95K22SZq_HcqbuytjFFK1KJdZSYY', 'Episodio 12', 'Amanecer'],
+    ['https://mega.nz/embed/8msgQIyT#zz4bnOvFOuX2uCUt7TijqPAfqUDqCdwqNe0ldl6z1SQ', 'Episodio 13', 'Y de nuevo'],
+    ['https://mega.nz/embed/oqty1KiD#3Endf8vQ2HB1bNCi53VYHPYhMoaRBjugNRNzAbV1Jug', 'Episodio 14', 'Blanco'],
+    ['https://mega.nz/embed/0yUjSYiY#jay5GbqGNpR4XpVZ2Ci1BSEkvqExjpARDBvzM60xFvk', 'Episodio 15', 'Cruce'],
+    ['https://mega.nz/embed/M61iEIBQ#4QDe2Yh7w4QUGxtyQPTziqfGzqNwpgb5PdC_9oUpyKI', 'Episodio 16', 'Despertar'],
+    ['https://mega.nz/embed/5mFjhDjS#oQ4UQc0tKxliBjuyPOChylonoYXIv8JroI_Xlxnpbq8', 'Episodio 17', 'Recuerdo'],
+    ['https://mega.nz/embed/E28ESDZI#KqVVakRECdg7EMEkRugvTFXToM4wuti1LPkgrRxSxAw', 'Episodio 18', 'Lazos'],
+    ['https://mega.nz/embed/RzkVmbyY#65LW65gGfWpx3Ajr3u0Ai6k0FZLYTUIk19T_kD3z3gE', 'Episodio 19', 'Tragedia'],
+    ['https://mega.nz/embed/l3lixIZI#EkFtR8oDFfSlxNRSNisSuZz78K8Evz4rHdbR96yv0AM', 'Episodio 20', 'Encuentro'],
+    ['https://mega.nz/embed/Q61WDLZL#rT14SAeOB80FB5Gt0Id6UzexZaGo5n4vXQXhj872rTA', 'Episodio 21', 'Desazón'],
+    ['https://mega.nz/embed/I3tliTRD#MS8w6gDm1KrHR2V6KpA0LfSgDDoqBuf6rHL1RWahFqc', 'Episodio 22', 'Eclipse'],
+    ['https://mega.nz/embed/hu0FTCCZ#odp7qJD7QpBrSubzn_R79mjSOLxLvBMootYtVxmcmHE', 'Episodio 23', 'El fin del dolor'],
+    ['https://mega.nz/embed/dq0kFB6a#aNV6pD0SQChRKWVrhw-B7PeQKY3geEWkP9xjHlumnDI', 'Episodio 24', 'El final']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/TokyoGhoul/Portada-Tmp3-Cap${index + 1}-TokyoGhoul.jpg`,
+    'iframe'
+]);
+
+
+
 const catalogData = {
 	aventuras: {
 		label: 'CATÁLOGO 01', title: 'Mushoku Tensei', description: 'Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su...',
@@ -3156,7 +3255,8 @@ const catalogData = {
 	chainsaw: {
 		label: 'CATÁLOGO 04', title: 'Chainsaw Man', description: 'Denji es un adolescente que vive con un demonio motosierra llamado Pochita. Para pagar la deuda que le dejó su padre tras su muerte, ha tenido que ganarse el pan como puede matando demonios y vendiendo sus cadáverse a la mafia, aunque su vida siempre ha sido miserable. Cuando una traición provoca la muerte de Denji, Pochita hace un contrato con él y Denji revive como "Chainsaw Man", un ser...',
 		seasons: [
-			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Chainsaw.jpg', videos: chainsawSeason1Episodes }
+			{ title: 'Temporada 1', description: '12 Episodios', cover: 'img/Temp1-Chainsaw.jpg', videos: chainsawSeason1Episodes },
+			{ title: 'Chainsaw Man: Arco de Reze', description: '1 Película', cover: 'img/Movie1-Chainsaw.jpg', videos: chainsawMovie1Episodes }
 		]
 	},
 	vinland: {
@@ -3447,6 +3547,15 @@ const catalogData = {
 		label: 'CATÁLOGO 42', title: 'Soul Eater', description: '¡Luchando con ghouls y monstruos junto con sus compañeros de clase, Maka y Soul son la última línea de defensa del mundo contra la maldad!',
 		seasons: [
 			{ title: 'Temporada 1', description: '51 Capitulos', cover: 'img/Temp1-SoulEater.jpg', videos:souleaterSeason1Episodes }
+		]
+	},
+	tokyoghoul: {
+		label: 'CATÁLOGO 43', title: 'Tokyo Ghoul', description: 'Dos años después de la incursión en Anteiku, el CCG selecciona al joven Haise Sasaki para liderar un equipo rebelde de humanos infundidos con poderes ghoul.',
+		seasons: [
+			{ title: 'Temporada 1 (Tokyo Ghoul)', description: '12 Capitulos', cover: 'img/Temp1-TokyoGhoul.jpg', videos:tokyoghoulSeason1Episodes },
+			{ title: 'Temporada 2 (Tokyo Ghoul √A)', description: '12 Capitulos', cover: 'img/Temp2-TokyoGhoul.jpg', videos:tokyoghoulSeason2Episodes },
+			{ title: 'OVAS ("JACK" y "PINTO")', description: '2 OVAS', cover: 'img/OVA1-TokyoGhoul.webp', videos:tokyoghoulOVASEpisodes },
+			{ title: 'Temporada 3 (Tokyo Ghoul:re)', description: '24 Capitulos', cover: 'img/Temp3-TokyoGhoul.jpg', videos:tokyoghoulSeason3Episodes }
 		]
 	},
 };
