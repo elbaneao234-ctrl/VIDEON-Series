@@ -3227,7 +3227,150 @@ const tokyoghoulSeason3Episodes = [
     'iframe'
 ]);
 
+const tokyorevengersSeason1Episodes = [
+    ['https://mega.nz/embed/tisiiA6a#CoXRTOTL9Dh7Ne6TCdu1s9Bl_JshoviMztlDDIe-ioI', 'Episodio 1', 'Renacer'],
+    ['https://mega.nz/embed/g7UDiazA#ewzlcs4YoCXi3HhrNmMGfKcYLxcur_v03MyPuNI4sLA', 'Episodio 2', 'Resistencia'],
+    ['https://mega.nz/embed/5nNlmZzL#czkcukD0s4OgrvGzOyZsIaWjPsL4mQykbMGVKqMhNwM', 'Episodio 3', 'Determinación'],
+    ['https://mega.nz/embed/1D012IAY#ezkHnaxgYSEQEnY89tFJLQgvl4D9E9oV2bk79_nS8uM', 'Episodio 4', 'Regreso'],
+    ['https://mega.nz/embed/E29CRQ4A#jwfsrEe_m7iggafJMyB9jSeNhqs2U0mNtOBBwyyPFBI', 'Episodio 5', 'Releap'],
+    ['https://mega.nz/embed/QvcAgRgC#B3O87gXcz6FksFHP6SZ-xbs1RM6GhbGBhDsF0jaetSY', 'Episodio 6', 'Arrepentimiento'],
+    ['https://mega.nz/embed/EGkHzIoR#BqEq4ZzCIhzBp4hFMiDh36FwR9YS2k1f639RxmM417Q', 'Episodio 7', 'Revive'],
+    ['https://mega.nz/embed/cPFFgbwS#ITNDDpFSFg25Ry9s7mIwf66OjFNcEy7q9GCA06j0iMA', 'Episodio 8', 'Rechange'],
+    ['https://mega.nz/embed/pHMF1aYL#4RDDvteDX2EFKwHLaCdOlOtILy2Vg2CpF4Ix1TUnLCE', 'Episodio 9', 'Revolt'],
+    ['https://mega.nz/embed/wzN2haSA#KNfk7TLEf4sP_rVK3z_bMm_jYOJJc02YQ3IP-ioZO0Y', 'Episodio 10', 'Rerise'],
+    ['https://mega.nz/embed/hz0lSRpL#St2lTMixgajowec63XEcfmzoRC86JazuAK4h1CreshU', 'Episodio 11', 'Respect'],
+    ['https://mega.nz/embed/5bNklTqK#OvTglafHif2nn4VjD8FsrUZZ3asgolE0co11ZuwgpEI', 'Episodio 12', 'Revenge'],
+    ['https://mega.nz/embed/xDshXRIQ#BKSabKH_I1eluiDlHpp4glvmc7cH2Io5uz7zyI3RcKw', 'Episodio 13', 'Odds and Ends'],
+    ['https://mega.nz/embed/hbNiFSwb#5DXIaOkoqC3imPM-9OsVfvB7xaGjfoSxnOuK-in6p0I', 'Episodio 14', 'Break up'],
+    ['https://mega.nz/embed/5OMCELJa#KfNoVYGgyi8oSMnuGcyj-tZWqW2ntBUVh-5Uq1K_0E8', 'Episodio 15', 'No pain, no gain'],
+    ['https://mega.nz/embed/0ntBWYgC#VCSnS-lt6fckD3Kx3v2A3cIbFvrJKI3GtgPbAiXRuYs', 'Episodio 16', 'Once Upon a Time'],
+    ['https://mega.nz/embed/MvcAlZ6B#dlF5M66lt-ca5GKqdngCS4GqwY1yESOl6lI-tYQe4Do', 'Episodio 17', 'No way'],
+    ['https://mega.nz/embed/J3NR3JjC#4XEYzeIicC2bqaWRVoIl4h3GBMVYkn49WV0IQ3hjVVU', 'Episodio 18', 'Abrir fuego'],
+    ['https://mega.nz/embed/57lylCRK#pPMn97a4s42GgGc4pAGGqwO8VgkPibDtirmRMmPCqeQ', 'Episodio 19', 'Turn Around'],
+    ['https://mega.nz/embed/FO0FRZiS#rUIfy6wUPSicKUcmxIXHGsaUldSZuuotG-8NL8sv6Dc', 'Episodio 20', 'Dead or Alive'],
+    ['https://mega.nz/embed/Ai8A1BKZ#GY6k2lZYxC98xLPnTtYTWaUOGce1jm_BGgxzN0sLl14', 'Episodio 21', 'One and Only'],
+    ['https://mega.nz/embed/IiFUwKYZ#XGY0KaurpljgOWVSErVNdmlCD_0K1MuyW92RPXiPi8U', 'Episodio 22', 'One for all'],
+    ['https://mega.nz/embed/saF1EBgZ#EIIJ9Bt5q8d2hhpMRsdKy9I4iX5HzCKMqh0kQ9Rjchc', 'Episodio 23', 'End of War'],
+    ['https://mega.nz/embed/IT1k1KQB#VhmyJZwVECutLHmVpz2L7jcJflffzeFc0EzyV_l13Eg', 'Episodio 24', 'A Cry baby']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/TokyoRevengers/Portada-Tmp1-Cap${index + 1}-TokyoRevengers.jpg`,
+    'iframe'
+]);
 
+const tokyorevengersSeason2Episodes = [
+    ['https://mega.nz/embed/kicjkAoY#LKALC4raWlGQQ3OG5SH-N4opotPNoM0KNn1rbPRW7YY', 'Episodio 1', 'Es lo que hay'],
+    ['https://mega.nz/embed/Qn1TSK4B#vkUr_wLBrQODIxrqn2I29AK3LjzA_mWMtFRM372GuKY', 'Episodio 2', 'Tengo que irme'],
+    ['https://mega.nz/embed/M28xFawI#igJVymLYAPDqjsiYoxZgGdgpTPeMky1iOS5UROg4deo', 'Episodio 3', 'Mantén la cabeza alta'],
+    ['https://mega.nz/embed/FPkmkSaB#q_lcHgM5IFDRRHHDykazfR4rj9TBNLX_uqd3R77zgX4', 'Episodio 4', 'Lazos familiares'],
+    ['https://mega.nz/embed/ACEEUIxI#meyts9p_az2pL4_qWaVe2mHPmeIy2yKBtcilWABQJkg', 'Episodio 5', 'Nochebuena'],
+    ['https://mega.nz/embed/MvF3gRyS#cn23jq2CI7lRRVuUdQznUz5xbr3Je9CQWxIV9BMAENs', 'Episodio 6', 'Las desgracias nunca vienen solas'],
+    ['https://mega.nz/embed/8qlCzJDb#xAwQj708W-JFIVplcdj5HKpvJcbwq8pHNQAwQc4yo0Y', 'Episodio 7', 'Rivalidad entre hermanos'],
+    ['https://mega.nz/embed/t3913DCQ#ElcTCMTmv_dzMNeMH2GqiZFi4og6I9ajw2Yp1mHf4sU', 'Episodio 8', 'Luchemos juntos'],
+    ['https://mega.nz/embed/BaNmHbgY#ppRuoN0j-wb93Ads_G_j1N7BTECPMbzadlVMQa1I6fY', 'Episodio 9', 'Un hábito horrible'],
+    ['https://mega.nz/embed/pH8nHR7B#DGaPoz7MgRnWUWK6G8cyIARrkxR6LELea3WcmHBCIeI', 'Episodio 10', 'El tesoro sagrado'],
+    ['https://mega.nz/embed/ISlixAbT#zVeNLNpDolXb9nfZeODbWznyNlWYGh6KThIrxSzxV8M', 'Episodio 11', 'Érase una vez en Tokio'],
+    ['https://mega.nz/embed/MnciXSqI#o_rtqZKhgKLxpbIOv3a8UybIfcM1WSKus30nSBHJFGQ', 'Episodio 12', 'Última orden'],
+    ['https://mega.nz/embed/teE3xahL#iAkuxmPeGRDfJ8g2RleFKcSJrAeQ_WPbQgmooohsSrU', 'Episodio 13', 'Cuando llueve, llovizna']
+].map(([url, title, description], index) => [
+    url,
+    `Episodio ${index + 1}`,
+    description,
+    `img/TokyoRevengers/Portada-Tmp2-Cap${index + 1}-TokyoRevengers.jpg`,
+    'iframe'
+]);
+
+const tokyorevengersSeason3Episodes = [
+    ['https://mega.nz/embed/BikgxQhC#1qb2RegGoFN96JV10jgsMjI2XxovFrM99CM3u4t3Nqo', 'Episodio 1', 'La disolución'],
+    ['https://jkanime.net/jkplayer/um?e=TVV5YUg4U01EbGNSam9zZGN5VGcveXpUam5STWVwWFpITHA3YmxGSWhuYzRxMFRjQk5sZGM3TE1IZ0Z4akplZkdaa1JoZWdRU1NMRWJXVVBBOTJSVVE9PTo6sut0LlqWY5Q2LdcsrUXo8A--&t=b91814cf5cecf826f20ad6b6b2b0a41e&op=NTQ0MDg=', 'Episodio 2', 'Quedarse en el pasado'],
+    ['https://jkanime.net/jkplayer/um?e=OW9xN1pLazFIaWVRRjFTMzh2TzFIZTArNk9NUVFIdlFDdjczL1VESng0MFVhNW5sMmFMYVZIVC9jY3V4cjVFS1pLOU5IZzhTNWZhbW1mbEwydGlpZXc9PTo6yMUHzegyub8VNGnQi8m41Q--&t=efde915850f175d3192d41fa22f51317&op=NTQ0OTY=', 'Episodio 3', 'Sonríe'],
+    ['https://mega.nz/embed/8L9Hlb6Q#0xdyQY8-pXKbL6mngXct1PJOqzh5rCRcO3m4HGpjiX8', 'Episodio 4', 'Dame una mano'],
+    ['https://mega.nz/embed/tzUTCSKD#8xsbU4dYwoAzuEt6OAiuCQPdnClSoz-TRHKJWri2-ag', 'Episodio 5', 'El día más largo'],
+    ['https://mega.nz/embed/prcCyDqB#XnsWTyilqxaTLrZCkoxJrVY-RjdyGUDG5BW52DgwJHc', 'Episodio 6', 'Amor fraternal'],
+    ['https://mega.nz/embed/h2MRmJiJ#Pkyz5fAwkNyjr9rOWB0dd8Sur_ckTtI5UMf0hSr3Tis', 'Episodio 7', 'Cambiar las tornas'],
+    ['https://mega.nz/embed/MbUBQS5J#fCuCTBqvE0TCJJnczvn1eObd-k75_lehO_GszgUqyqg', 'Episodio 8', 'El cielo y la tierra'],
+    ['https://mega.nz/embed/kmcRjTia#J104MqIZockowLn7oxed_7JWiT79G8d9ulYssy1S89Y', 'Episodio 9', 'Agallas de guerra'],
+    ['https://jkanime.net/jkplayer/um?e=WVF2d2doV3ZNakxsTmUrMWJ4L21QcCtvMThVQ29vQkVObThTRUtnNW12cFZMVnFML2J0ZElhVUFqeVVObGxBOENIRUs1VUxhTElRWlErb1RnQlYydWc9PTo69.YRLV296JppVzx9jHbfDw--&t=8e01541dc0ec2935558317011504c68a&op=NTUxODA=', 'Episodio 10', 'Ataque banzai'],
+    ['https://mega.nz/embed/Iz11gJaI#mx3T0j7U-4VGW8OHV74KADf3i6v-WsRFwM53CH9KMiY', 'Episodio 11', 'Detrás de escena'],
+    ['https://mega.nz/embed/t7kAkDhS#PhIp-LtG8OhsPBotFiKdB9knHc5BD1D9j3MJB6_8ztc', 'Episodio 12', 'Una noche fatídica'],
+    ['https://mega.nz/embed/gucAgC6Q#XLvv7syyG5j-iOCOFjgaCwbx7d3SK-gK8CFApvnM8uQ', 'Episodio 13', 'Cumplir su destino']
+].map(([url, title, description], index) => [
+    url,
+    `Episodio ${index + 1}`,
+    description,
+    `img/TokyoRevengers/Portada-Tmp3-Cap${index + 1}-TokyoRevengers.jpg`,
+    'iframe'
+]);
+
+const tokyorevengersSeason4Episodes = [
+    ['https://mega.nz/embed/HK5gFCgS#tAFI8fPWetg177p4DYl5A0smfpHPeGi7g3XgQO4Ybok', 'Episodio 1', 'Ruptura'],
+    ['https://jkanime.net/jkplayer/um?e=cjZib21VWllEemJTR0JGQ24zdmhUS0dOejNlcXpvZEJQWnNiYkV6S1V5czFtdWYxdTJsbU1CN1hURXdOaFFlc1FpQXNFa21uZ0RUZDl1T3EzdWVVUGtHMmd5c1YxMUlTU0hCcWg1REgyejg9OjoY0LcsLRYobmfXfBx5k_XW&t=b8e9b180932efe4e6ee14ca880a167e0&op=Nzg0NTA=', 'Episodio 2', 'Un enfrentamiento inevitable'],
+    ['https://mega.nz/embed/1BwXFTCI#qdcAcLxFgp0MpEsSox68QD6Oh1DE0XzaGa_4QkD9VPk', 'Episodio 3', 'Choque de titanes'],
+    ['https://mega.nz/embed/52sCEBBY#vIFGy-TEAb0ftEpb8sVq4t0liPxM_8GAwRjlrc2IR2M', 'Episodio 4', 'Échame una mano'],
+	['https://mega.nz/embed/z65xyAAb#KwuTNwdvpWuVBrcyxMInwxpeQRGw2xTjJhAqFfzyYPk', 'Episodio 5', 'Periodo Turbulento'],
+].map(([url, title, description], index) => [
+    url,
+    `Episodio ${index + 1}`,
+    description,
+    `img/TokyoRevengers/Portada-Tmp4-Cap${index + 1}-TokyoRevengers.jpg`,
+    'iframe'
+]);
+
+const madeinabyssSeason1Episodes = [
+    ['https://mega.nz/embed/1X8imLAC#nSt4-GkHEd9HkeR_YC2RKcKr7luDmFpKFPLFQseBHjQ', 'Episodio 1', 'La ciudad del Gran Pozo'],
+    ['https://mega.nz/embed/hXUkzZ5L#N5QJq2pJeP8AwQ9ot2jexsakjly2lIcBdXVxprYTF8k', 'Episodio 2', 'Festival de la resurrección'],
+    ['https://mega.nz/embed/cLcEwBrI#mcIOks58e3l7z-_ulPFF4n8ymz6_kUa-3bbceJYp4ag', 'Episodio 3', 'Partida'],
+    ['https://mega.nz/embed/YH8SQRLB#RfGDoFnnfyU86JVCnBbxT-50g0lgfeDhB4-8ViMn49Q', 'Episodio 4', 'El borde del abismo'],
+    ['https://mega.nz/embed/tPswxYDJ#Ckn-mr-e_JRDRy8hQZPQYki1UEhKjL36lB3TkVW3BaI', 'Episodio 5', 'Incinerador'],
+    ['https://mega.nz/embed/xe1gVRTQ#qKl3e8DCjNDt82POFrL29BGJnMa_IV9-uLV3fdJ9qT4', 'Episodio 6', 'Campamento del vigía'],
+    ['https://mega.nz/embed/hGMzhbaa#p3X6J320BGiOxHKmg-IcsdjNv0sJPEoDsjuBY_H69YM', 'Episodio 7', 'La soberana inamovible'],
+    ['https://mega.nz/embed/BSN0lKyZ#RbNt2QHkFL02oAWXSmUnA60xdpOwouwiUifX0lVC6mU', 'Episodio 8', 'Entrenamiento de supervivencia'],
+    ['https://mega.nz/embed/EOcGACBb#LOxqy1kPKZv0p60s5YuiKpEXBHj7wLRXOd7tA7ZR_cs', 'Episodio 9', 'El gran laberinto'],
+    ['https://mega.nz/embed/4e8j3RiZ#VrAONwmXPwcKEbGltxyo_GMN35MlEQhqgiQS02028uc', 'Episodio 10', 'Veneno y maldición'],
+    ['https://mega.nz/embed/VS1zTbAC#8khWoO2L_pBPn0OsCjn6MBlTjLqu612NVgM3q__N00s', 'Episodio 11', 'Nanachi'],
+    ['https://mega.nz/embed/sDs1wCjT#Aq6vuXSKiSvAdxsvfDzFAeaLtWoK_wrc2op9NJHWI_c', 'Episodio 12', 'La verdadera naturaleza de la maldición'],
+	['https://mega.nz/embed/0fVmBRKC#ryl23y3yA7Ahka9l5WbxaBlg9-_DmSAPpJ52inAXZUc', 'Episodio 13', 'Los retadores']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/MadeInAbyss/Portada-Tmp1-Cap${index + 1}-MadeInAbyss.jpg`,
+    'iframe'
+]);
+
+const madeinabyssMovie1Episodes = [
+    ['https://mega.nz/embed/ky9FhAba#rglqCzoOLiEbrcsAywJmaLAGJ603S1YqolqKff2cntM', 'Opción 1: MEGA', 'Made in Abyss: Dawn of the Deep Soul'],
+	['https://jkanime.net/jkplayer/um?e=dkxOLzRqaFpTTC9vTkM5cFgrRlp6Sk9lM1ZwUXQvbmd3c01nZlhBaWtmeU9XNGg0dmJyeWJZTEVOL1pVSnd6SkZJRm9zNmFmNm1JL2g0NGdHSjBjQVE9PTo6iGG2L8E0Tc4_K71hzHFAhA--&t=42f9c6d8b3b6858c6659b0d4b04030ac&op=NDY4OTg=', 'Opción 1: Jkanime', 'Made in Abyss: Dawn of the Deep Soul']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/MadeInAbyss/Portada-Movie1-Cap${index + 1}-MadeInAbyss.jpg`,
+    'iframe'
+]);
+
+const madeinabyssSeason2Episodes = [
+    ['https://mega.nz/embed/Ye1FTZLC#U5kRYEd6515JnGOIgdBaeBBw0wTKTaE7LzAq--cFxKY', 'Episodio 1', 'La brújula apuntaba a la oscuridad'],
+    ['https://mega.nz/embed/lDcmACYR#jldzRwg6r_Sdp5CBhezxLSZoalp_Mpe8twshcJutnFM', 'Episodio 2', 'La capital de los que no regresan'],
+    ['https://mega.nz/embed/pftg0KjL#bFe8C9Ljw-nnfoLFs1_fA4Zz2dAumAckvCVR5kaCYxQ', 'Episodio 3', 'La aldea de los residuos'],
+    ['https://mega.nz/embed/gKM0SBpb#x2HJU7esqVkGd8RqtVMNwrFCWKaIL2puad-SyzFXZgE', 'Episodio 4', 'Amistad'],
+    ['https://mega.nz/embed/M2cVjbSb#Y2ZxaajQ6piO5VIp0b5mkYQGawV99LWOwEy1wXFrgxs', 'Episodio 5', 'Ocultación'],
+    ['https://mega.nz/embed/p61mXTzD#zkl6hgi8lXyPingySQS8p_1gjTAa75V5QVMDOnKgxz8', 'Episodio 6', 'El anzuelo'],
+    ['https://mega.nz/embed/ov10wBaK#d7PcufPTkPW7DZgOhaAEgr1DvrtyIA7F-bcQJ4mNJXM', 'Episodio 7', 'La cuna de los deseos'],
+    ['https://mega.nz/embed/g3kwxYTI#_GP7hSx4bL9tXbbhnX11b79T8AygIQ57I5r6cpJen8A', 'Episodio 8', 'La forma que toma el deseo'],
+    ['https://mega.nz/embed/Bq5jBSBZ#qs_8Rtave8p2ixsT4rFAYRZMc7yefF5VEEtv07ULxL0', 'Episodio 9', 'El regreso'],
+    ['https://mega.nz/embed/pjNRxADT#4f1ytJRm4BiCaewYZ8sdH1w2Sj_q3UZQe1kWG9iz1T8', 'Episodio 10', 'Todo lo que recolectas'],
+    ['https://mega.nz/embed/haUAFCaR#5-kqy-UA8YfvV1QVw41h01M89OL0uI5jKvg8fYNryfw', 'Episodio 11', 'El valor'],
+    ['https://mega.nz/embed/QOkyhaiT#HFBKTRQO17b99tMlZDEymPDeATJujrA6WLZqi5UGiQk', 'Episodio 12', 'Oro']
+].map(([url, title, description], index) => [
+    url,
+    title,
+    description,
+    `img/MadeInAbyss/Portada-Tmp2-Cap${index + 1}-MadeInAbyss.jpg`,
+    'iframe'
+]);
 
 const catalogData = {
 	aventuras: {
@@ -3556,6 +3699,23 @@ const catalogData = {
 			{ title: 'Temporada 2 (Tokyo Ghoul √A)', description: '12 Capitulos', cover: 'img/Temp2-TokyoGhoul.jpg', videos:tokyoghoulSeason2Episodes },
 			{ title: 'OVAS ("JACK" y "PINTO")', description: '2 OVAS', cover: 'img/OVA1-TokyoGhoul.webp', videos:tokyoghoulOVASEpisodes },
 			{ title: 'Temporada 3 (Tokyo Ghoul:re)', description: '24 Capitulos', cover: 'img/Temp3-TokyoGhoul.jpg', videos:tokyoghoulSeason3Episodes }
+		]
+	},
+	tokyorevengers: {
+		label: 'CATÁLOGO 44', title: 'Tokyo Revengers', description: 'Takemichi Hanagaki es un trabajador que ha tocado fondo en la vida. Entonces descubre que la única novia que tuvo jamás, en sus años de secundaria, la joven Hinata Tachibana, ha muerto a manos de la pandilla Tokyo Manji. El día que descubre la noticia de su muerte, está en la estación de tren cuando alguien lo empuja a las vías. Cierra los ojos pensando que está a punto de morir, pero cuando...',
+		seasons: [
+			{ title: 'Temporada 1', description: '24 Capitulos', cover: 'img/Temp1-TokyoRevengers.jpg', videos:tokyorevengersSeason1Episodes },
+			{ title: 'Temporada 2', description: '13 Capitulos', cover: 'img/Temp2-TokyoRevengers.jpg', videos:tokyorevengersSeason2Episodes },
+			{ title: 'Temporada 3', description: '13 Capitulos', cover: 'img/Temp3-TokyoRevengers.jpg', videos:tokyorevengersSeason3Episodes },
+			{ title: 'Temporada 4', description: 'En emisión', cover: 'img/Temp4-TokyoRevengers.jpg', videos:tokyorevengersSeason4Episodes }
+		]
+	},
+	madeinabyss: {
+		label: 'CATÁLOGO 45', title: 'Made in Abyss', description: 'En las profundidades del Abismo, una chica llamada Riko se topa con un robot que parece un niño pequeño. Riko y su nuevo amigo descienden a un territorio inexplorado para desvelar sus misterios, pero ¿qué les aguarda en la oscuridad?',
+		seasons: [
+			{ title: 'Temporada 1', description: '13 Capitulos', cover: 'img/Portada-MadeInAbyss.jpg', videos:madeinabyssSeason1Episodes },
+			{ title: 'Película: Dawn of the Deep Soul', description: '1 Película', cover: 'img/Movie1-MadeInAbyss.jpg', videos:madeinabyssMovie1Episodes },
+			{ title: 'Temporada 2', description: '12 Capitulos', cover: 'img/Temp2-MadeInAbyss.webp', videos:madeinabyssSeason2Episodes }
 		]
 	},
 };
