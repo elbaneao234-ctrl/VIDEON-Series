@@ -885,6 +885,27 @@ footer {
     overflow-wrap: anywhere;
 }
 
+.privacy-content ul {
+    display: grid;
+    gap: 8px;
+    margin-top: 16px;
+    padding-left: 22px;
+    color: #b9b6ba;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.privacy-content a {
+    color: #ff7777;
+    overflow-wrap: anywhere;
+    text-decoration-color: rgba(255, 119, 119, 0.5);
+    text-underline-offset: 3px;
+}
+
+.privacy-content a:hover {
+    color: white;
+}
+
 @media (max-width: 700px) {
     .privacy-page {
         padding: 112px 7% 68px;
