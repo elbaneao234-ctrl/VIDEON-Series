@@ -386,6 +386,7 @@ const vinlandSeason2Episodes = [
 ];
 
 let hunterRemainingUrls = [];
+let hunterDisplayEpisodeNumber = 1;
 
 const hunterEpisodeSet = (arc, titles, urls, thumbnailPrefix) => {
 	const sourceUrls = urls?.length
@@ -408,7 +409,9 @@ const hunterEpisodeSet = (arc, titles, urls, thumbnailPrefix) => {
 		`Episodio ${index + 1}`,
 		title,
 		getThumbnailPath(index),
-		'iframe'
+        'iframe',
+        [],
+        `Episodio ${hunterDisplayEpisodeNumber++}`
 	]);
 };
 
@@ -700,6 +703,8 @@ const aoashiSeason2Episodes = [
 	['https://mega.nz/embed/JUVzSI7a#9YaMRzI6Nh0J0jxZj4rcKFYeKYDawVv9bzMoDoVPVL8', 'Episodio 4', 'Piedra angular', 'https://m.media-amazon.com/images/M/MV5BMmYyN2FjMzktMjdhYi00YzJjLWI0NzItYzRkNzc1YzVmZmQ2XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
 	['https://mega.nz/embed/AJEg1ZaR#1iWPV9bbWWKinEK6UpzU_hc61eUVcCdLear-S3DWowY', 'Episodio 5', 'No dejes de pensar', 'https://m.media-amazon.com/images/M/MV5BZjg5NGM5YTUtNmIwYy00ZjcxLTk0MWMtNjJiYWU5YTI1ZTQxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
     ['https://mega.nz/embed/QN0DwahT#Sn72EPCMmgq0ENmRMGDGNOhLtMpEH5sRqUdNUacIl6g', 'Episodio 6', 'Enséñame', 'https://m.media-amazon.com/images/M/MV5BZTAwNDJjMGMtZGExNy00ZDZlLTlmYTMtZWNlNDc5MDRlZGVhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/FUllHADa#n9X5l5L7aOQNpw2UZ0awvTrHGWfRABH4vh-bpRr61e4', 'Episodio 7', 'Cuaderno', 'https://m.media-amazon.com/images/M/MV5BZTAwNDJjMGMtZGExNy00ZDZlLTlmYTMtZWNlNDc5MDRlZGVhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/1AMyCBBb#2tlh8OIiqJnFsFYU4pDAmtMMJtxskUIOPjKPvYXtlds', 'Episodio 8', 'Aspira a llegar alto', 'https://m.media-amazon.com/images/M/MV5BZTAwNDJjMGMtZGExNy00ZDZlLTlmYTMtZWNlNDc5MDRlZGVhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
 ].map(([url, title, description, image]) => [
     url,
     title,
@@ -1126,6 +1131,8 @@ const cloverSeason5Episodes = [
 	['https://mega.nz/embed/IM1HQbiQ#p5IyAiuPLaNHy9Q_jVO7ja0Z4ZI0lfTfoPJfKGgX0lo', 'Episodio 174', 'El día de la expiación', 'https://m.media-amazon.com/images/M/MV5BN2FlMGE4OGUtYjI1OC00NzMzLWE4MmQtMDEwMGIxZjA4YzlmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
 	['https://mega.nz/embed/hN1mlLiD#ohVZA4qx-MUaUrN1YSGZ4zxI-L6JUstCvy8fh_jnZt8', 'Episodio 175', 'El mejor contra el peor', 'https://m.media-amazon.com/images/M/MV5BZjk4MTkwYWMtNjZhMy00YWQ0LTk3NzAtYzA5NDQ2NDUzY2ZiXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
     ['https://mega.nz/embed/FIkCkSAS#FYoKo1zXsT7_OVvOLKk0yqer72TmKapWSZ-6t3MyhTU', 'Episodio 176', 'La valquiria sagrada', 'https://m.media-amazon.com/images/M/MV5BZmRjM2ZkY2EtYWQ2MC00Nzg5LTlmNDktZTQ4NTZhNTlkNWE5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/IJsijCAL#ZtiHZeYaVisE3vqNgTqsNdr51yRKndNkSddYfppzNTU', 'Episodio 177', 'Al no rendirnos', 'https://m.media-amazon.com/images/M/MV5BMGI5NDUwZjctNGUxNy00YWZkLWExNmUtNzFiMTFjN2ZhYzMyXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/YAEyRBwZ#AvNBrIazT-jCl6WCVfnwXTxJ-2evdXEyF0I3uns1-ho', 'Episodio 178', 'El corazón del demonio', 'https://m.media-amazon.com/images/M/MV5BMWFjYzI3MzEtNGNhNS00ZmVmLWI4NjAtM2MzNDg0MWYzNDUxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
 ].map(([url, title, description, image]) => [
     url,
     title,
@@ -2224,6 +2231,18 @@ const bunnygirlsenpaiSeason1Episodes = [
     title,
     description,
     `img/BunnyGirlSenpai/Portada-Tmp1-Cap${index + 1}-BunnyGirlSenpai.jpg`,
+    'iframe'
+]);
+
+const bunnygirlsenpaiMovie1Episodes = [
+    ['https://mega.nz/embed/Av8nkQ4Q#gaXi2pb_JmQoNzfG_uXAj6LuWbzjEScICwN-K1GZQpM', 'Película 1', 'Seishun Buta Yarō wa Yumemiru Shōjo no Yume wo Minai', "https://m.media-amazon.com/images/M/MV5BYjQzYjVmMTEtNzljNi00OGIyLWJiMTgtOWE3ZmQxYjhiYTg4XkEyXkFqcGc@._V1_QL75_UX389_.jpg"],
+    ['https://mega.nz/embed/A3M0gIpQ#H1ByN9bpsmakg86BectKMSYAvQ1w2hbD_W97wvFRVkY', 'Película 2', 'Seishun Buta Yarō wa Odekake Sister no Yume wo Minai', "https://m.media-amazon.com/images/M/MV5BODYzZTI0YzQtMGY5Zi00ZWYwLTkwYTEtYzg2YzA1YTJhODMzXkEyXkFqcGc@._V1_QL75_UX393_.jpg"],
+    ['https://mega.nz/embed/3gZgEBZT#sgLJNbjWnvfyAvQJhjwbfxM5z7KHEerKMPjnXTttCF4', 'Película 3', 'Seishun Buta Yarō wa Ransel Girl no Yume wo Minai', "https://m.media-amazon.com/images/M/MV5BYTU0NDgyYTUtZWE5OC00YmYxLTk1NDUtZWI3NDBhZWYzYzliXkEyXkFqcGc@._V1_QL75_UX388_.jpg"],
+].map(([url, title, description, image]) => [
+    url,
+    title,
+    description,
+    image,
     'iframe'
 ]);
 
@@ -3704,50 +3723,50 @@ const onepieceSeason3Episodes = [
 ]);
 
 const onepieceSeason4Episodes = [
-    ['https://mega.nz/embed/ZqVnCILA#EHHG2cB0CcqvnVwRzqwmIZSOamekVsSNd0abFfqhk-Y', 'Episodio 207', '¡Gran aventura en Long Ring Long Land!', ''],
-    ['https://mega.nz/embed/NzlgXLYL#oZ-dZm0qn6Vq4SUyxWUGBGJzeneFYvM1kJY9Am0P0tk', 'Episodio 208', '¡La banda pirata de Foxy y el Davy Back Fight!', ''],
-    ['https://mega.nz/embed/huUABR7C#yU3qZi_3fsCb0hVC6dw2NipuWk_CBw8BSIGlBTNgbj0', 'Episodio 209', '¡La primera ronda! Un juego alrededor de la isla, el Donut Race', ''],
-    ['https://mega.nz/embed/B2dVXDhI#e0rvNDxObPL7qYrADI_XYz8cxJN6qFwOXI_rCWRz2HU', 'Episodio 210', '¡Foxy el Zorro Plateado! Una interferencia violenta', ''],
-    ['https://mega.nz/embed/E2FXgbCC#TyVL-Qnbs28PzRt64qy-ATId2NKoGDcGm97x3xsjJnI', 'Episodio 211', '¡La segunda ronda! El combate del Groggy Ring', ''],
-    ['https://mega.nz/embed/QndnzY6D#hL752eN0ajKwZ5rezcGFe8BWoIzrbvBNubrEftcTpQQ', 'Episodio 212', '¡Sucesión de tarjetas rojas! El Groggy Ring', ''],
-    ['https://mega.nz/embed/Zyc2DagR#ShIc9iiXKjEFNPlKgQDbIZN4CaAhbDHwuZ8jf7JAEpY', 'Episodio 213', '¡La tercera ronda! El torneo de la carrera de patines', ''],
-    ['https://mega.nz/embed/Av8kVYhD#bdCZokVqoROHl_7tgs4Lpse-tHBU9oQ1f0E47e3jKRU', 'Episodio 214', '¡Clímax de la carrera! El pelotón entra en la segunda vuelta', ''],
-    ['https://mega.nz/embed/QiMQXChT#B9Mi2JDcbSFe0tcjZzPdGTICZ1a27wLa9r1sZ4WtJIg', 'Episodio 215', '¡El servicio veloz de Foxy! El balón prisionero pirata', ''],
-    ['https://mega.nz/embed/Mmc2XToD#FBTk8tIMNrrVG08uGGTdT2Zo7YmKmZ2E4CUxn1NlF60', 'Episodio 216', '¡Combate definitivo en el acantilado! ¡Un, dos, tres, pollito inglés!', ''],
-    ['https://mega.nz/embed/169g2ICY#e1zJ3Z2o3dV2oVgIjHRCSxQh6T29rPL_c-3mXRP6rog', 'Episodio 217', '¡El combate de los capitanes! El juego final: ¡Combate de boxeo!', ''],
-    ['https://mega.nz/embed/R7NXGSzA#epJ4OfNhXI4yizZE4UiqHrAKU0z90RdRYiWnsuPOfRQ', 'Episodio 218', '¡El rayo de lentitud de Foxy contra el Luffy de goma!', ''],
-    ['https://mega.nz/embed/ZrlB3axJ#IBHJCkA4qiNKRHarnpClDHQZlOcCzYYVyJEbNmpSdXM', 'Episodio 219', '¡Feroz combate a muerte! El final del Davy Back Fight', ''],
-    ['https://mega.nz/embed/sq10yCjJ#roSJ28E53Egv42_m2eAq8PyL_U5teR-4TUCVfw6p01I', 'Episodio 220', '¿Habéis perdido la memoria? El barco pirata sin rumbo', ''],
-    ['https://mega.nz/embed/g2NUHB4C#VDauQhJFWzrO9MQCsmMRgClgcipsqIlHN0AwQXLI8eI', 'Episodio 221', '¡El misterioso muchacho de la flauta y la deducción de Robin!', ''],
-    ['https://mega.nz/embed/VvkFzbLC#2yNO2N3FW9-stM91mydWX48k4RUW3c5iR1cFGYvgjlQ', 'Episodio 222', '¡Recuperemos los recuerdos! Los piratas desembarcan en la isla', ''],
-    ['https://mega.nz/embed/UvUTxYqT#dXyFXYU2eqJ7rGd9CzKt6_8q9-cmgrpN-KDhSOWMCdE', 'Episodio 223', '¡Zoro afila sus colmillos! ¡Combate contra un compañero de la banda!', ''],
-    ['https://mega.nz/embed/53smHDiJ#hDMxehIzGnZfOXvcOlGrnYwzpw4zXnDlaSXTd4ilPfk', 'Episodio 224', '¡El contraataque del ladrón de recuerdos revela su verdadera naturaleza!', ''],
-    ['https://mega.nz/embed/g7EHCLRA#MkIfCspFKo6cE1bju14SSmVYf9-zMnRIu8NCeIEn3es', 'Episodio 225', '¡El hombre de orgullo increíble! ¡El zorro plateado Foxy!', ''],
-    ['https://mega.nz/embed/U6tQHIAS#V-7q8yd89V4ygqEF6CaBN9ax5I4-qjy0nxbhu2S1I34', 'Episodio 226', '¿Un poder invencible se aproxima? El hombre más peligroso', ''],
-    ['https://mega.nz/embed/12kT3T6Y#enF77fNrNopHtqp_h1k8tqx_hFsl-gJAhwDOMHzQzk8', 'Episodio 227', '¡Almirante de la Marina Aokiji! La amenaza del poder militar más fuerte', ''],
-    ['https://mega.nz/embed/96d0VZJL#6nJbLikrEDtJdvz5lAHmGcdpmuMYbPCnFoDDFsYFqfw', 'Episodio 228', '¡Goma contra hielo! El combate uno contra uno de Luffy contra Aokiji', ''],
-    ['https://mega.nz/embed/g79jCRxY#xTkCqow6xOAQP4F66nC5uz8OAbVsHWM-hzBmO9_PISw', 'Episodio 229', '¡El veloz tren marino y la ciudad del agua, Water Seven!', ''],
-    ['https://mega.nz/embed/Qjs3yYKb#RRIEgGge6uPYx08C5bM3-TPpHX9wDrgkBYwCA2YDUBw', 'Episodio 230', '¡Aventura en la ciudad del agua! Rumbo al gran astillero', ''],
-    ['https://mega.nz/embed/V7l1VbTQ#K3QfsC_idY0fLWgkxFbfdGEJKTbSOrd-oCjg6LCMZlM', 'Episodio 231', '¡La familia de Franky y el señor Iceberg!', ''],
-    ['https://mega.nz/embed/c7dASSzb#Cg3e55EF6vxfPljE4GHVT2JGfSH5rai9JYN4cLHxMr0', 'Episodio 232', '¡Galley-La Company! El muelle uno es una magnífica obra de arte', ''],
-    ['https://mega.nz/embed/cq9DQKJD#ON4xL00rj9q8VJoxkywFAQ09DkLb8oeB2UpAKFXOXEE', 'Episodio 233', 'El secuestro del pirata. El Going Merry espera la muerte', ''],
-    ['https://mega.nz/embed/JnFlmJKZ#jbLLAmONPf1QGt9muq10qkzYrZaLkilDMT11ULmf9YQ', 'Episodio 234', '¡Salvar al compañero! Asalto a la Franky House', ''],
-    ['https://mega.nz/embed/FuFzGZZI#Rs5wmc0wCGiWeqCWszOBNZ7x2o3VFzkzYgLayJTZxnM', 'Episodio 235', '¡Gran combate bajo la luna! La bandera pirata ondea con tristeza', ''],
-    ['https://mega.nz/embed/wrUgVCpA#bHbdKa2woNTUAHwysmMrPm9VB9XJsWG_0NnWJqabppU', 'Episodio 236', '¡Luffy contra Usopp! El choque del orgullo de dos hombres', ''],
-    ['https://mega.nz/embed/RqkimKqa#G_LXN3obW5KxcS6_-pkqh65_drlXv5b6Ulx8KErGE1k', 'Episodio 237', '¡La ciudad del agua tiembla! ¡Iceberg es el objetivo!', ''],
-    ['https://mega.nz/embed/A7kFybTD#oYQX4Ofbp_bkoVYZ5Ka1f3k-PGILtg_GLhLYG4iLzMA', 'Episodio 238', 'El hombre de goma contra el cyborg que escupe fuego', ''],
-    ['https://mega.nz/embed/Zi1iURKD#juyS1ZXvgb-_d3DzGlnPwwGJ7xVe4ZkVA_mhLbGVBRw', 'Episodio 239', '¿Los culpables son los Sombrero de Paja? Los protectores de la ciudad del agua', ''],
-    ['https://mega.nz/embed/wy1zQQiS#Im5H3Hb7q6TeEBtkJGCYLLi8rnVDHGTDv237Ekeor5U', 'Episodio 240', '¿Despedida eterna? Nico Robin, la mujer que arrastra la oscuridad', ''],
-    ['https://mega.nz/embed/wnFE0KAa#wNu3ISOUUHfk1SIWz64UdTwMOxasqd_1u8y_ZC7qzdA', 'Episodio 241', '¡Atrapar a Robin! La determinación de los Sombrero de Paja', ''],
-    ['https://mega.nz/embed/0itDDbZR#lNtfU6L8whrzuymVNJU0ix0IN5937_Rlg8Cv0n9uOKw', 'Episodio 242', '¡La señal es la explosión! El CP9 se pone en marcha', ''],
-    ['https://mega.nz/embed/RuNzhaAb#i4v9-r0vfpFGvV9Cvu4x_6XFrpPh-_1czjiW5ZE8uC4', 'Episodio 243', '¡El CP9 se quita la máscara! Sus verdaderas identidades reveladas', ''],
-    ['https://mega.nz/embed/hr1zhDbJ#u3-YseqpFvQ1mqqChqPE03QkRO8heI7zLnCW6oRsUlw', 'Episodio 244', '¡El lazo secreto! Iceberg y Franky', ''],
-    ['https://mega.nz/embed/o2UVVZxb#s1il6s1PUbK9XABWOWwPkkUYfer3hqjW8NsySKZ_L6o', 'Episodio 245', '¡Regresa, Robin! ¡El enfrentamiento con el CP9!', ''],
-    ['https://mega.nz/embed/V6EkyZhC#FGuo7dlKshYQF6MsBaaHdaNk4ZdEGhSav3XeYAe4V5c', 'Episodio 246', '¿La banda de los Sombrero de Paja aniquilada? La amenaza del modelo leopardo', ''],
-    ['https://mega.nz/embed/MrVnSbxS#GJ1mNZFMpUP36Dy57b3C-73NoK7_1MjwI9y8xRaZ5Pk', 'Episodio 247', '¡El amor de un hombre por su barco! Las lágrimas de Usopp', ''],
-    ['https://mega.nz/embed/EqFXECpD#bztPmUFhKKkuOzd2VCLWawV9NSAzYNOcAdxPNiOD-Wg', 'Episodio 248', '¡El pasado de Franky! El día en que el tren marino corrió', ''],
-    ['https://mega.nz/embed/oi9ESAqL#KTVcPbHOkiafQSU3cl-bFLAlB0I3ATew5kPRbTPsWLU', 'Episodio 249', '¡La conspiración de Spandam! El día en que el tren marino tembló', ''],
-    ['https://mega.nz/embed/MvcCFbZD#nh6r3TyHuFvLlYKZk6V45v5meAEpgXEqRmn54WsLVw8', 'Episodio 250', '¡El final de un hombre legendario! El día en que el tren marino lloró', ''],
+    ['https://mega.nz/embed/ZqVnCILA#EHHG2cB0CcqvnVwRzqwmIZSOamekVsSNd0abFfqhk-Y', 'Episodio 207', '¡Gran aventura en Long Ring Long Land!', 'https://m.media-amazon.com/images/M/MV5BYWQzY2ZjMTctMWFlNC00ZGNkLWJiYWUtNDg3NjA0ZWUwNTg5XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/NzlgXLYL#oZ-dZm0qn6Vq4SUyxWUGBGJzeneFYvM1kJY9Am0P0tk', 'Episodio 208', '¡La banda pirata de Foxy y el Davy Back Fight!', 'https://m.media-amazon.com/images/M/MV5BZTgzZjAwOTQtZmNhOC00NjllLTkxMDMtN2Q2ZmNkOGJkNDdmXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/huUABR7C#yU3qZi_3fsCb0hVC6dw2NipuWk_CBw8BSIGlBTNgbj0', 'Episodio 209', '¡La primera ronda! Un juego alrededor de la isla, el Donut Race', 'https://m.media-amazon.com/images/M/MV5BZTNhNjczNDgtOGNhZS00MGIyLTkwODEtODdhZGFkMTgzNmFlXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/B2dVXDhI#e0rvNDxObPL7qYrADI_XYz8cxJN6qFwOXI_rCWRz2HU', 'Episodio 210', '¡Foxy el Zorro Plateado! Una interferencia violenta', 'https://m.media-amazon.com/images/M/MV5BZTU1NzE4MjktOWQ0Yi00M2JhLWIzY2EtODg1Yjg0MjE3M2U5XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/E2FXgbCC#TyVL-Qnbs28PzRt64qy-ATId2NKoGDcGm97x3xsjJnI', 'Episodio 211', '¡La segunda ronda! El combate del Groggy Ring', 'https://m.media-amazon.com/images/M/MV5BYTIwZWNiYjktMWMyYS00NWMzLWJmZTktNWQyNjMyOTliMzIxXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/QndnzY6D#hL752eN0ajKwZ5rezcGFe8BWoIzrbvBNubrEftcTpQQ', 'Episodio 212', '¡Sucesión de tarjetas rojas! El Groggy Ring', 'https://m.media-amazon.com/images/M/MV5BZTc0ODFlZjMtYmYzMC00MDYwLWE5NmYtNzVjYmQzYTIzY2Q5XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/Zyc2DagR#ShIc9iiXKjEFNPlKgQDbIZN4CaAhbDHwuZ8jf7JAEpY', 'Episodio 213', '¡La tercera ronda! El torneo de la carrera de patines', 'https://m.media-amazon.com/images/M/MV5BZjJhNjc4ZGEtMGJmMy00NzZhLWJiMzQtZTMwMjZkZWUxMDVmXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/Av8kVYhD#bdCZokVqoROHl_7tgs4Lpse-tHBU9oQ1f0E47e3jKRU', 'Episodio 214', '¡Clímax de la carrera! El pelotón entra en la segunda vuelta', 'https://m.media-amazon.com/images/M/MV5BNTNiOWI0MmYtZDcwZS00NmQ3LThhMzAtMjA1YThhODJhNzcxXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/QiMQXChT#B9Mi2JDcbSFe0tcjZzPdGTICZ1a27wLa9r1sZ4WtJIg', 'Episodio 215', '¡El servicio veloz de Foxy! El balón prisionero pirata', 'https://m.media-amazon.com/images/M/MV5BZjJjMjk4YTEtMzZiMS00MzFkLWFiYjEtZmVlNDgyNDE4NzEzXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/Mmc2XToD#FBTk8tIMNrrVG08uGGTdT2Zo7YmKmZ2E4CUxn1NlF60', 'Episodio 216', '¡Combate definitivo en el acantilado! ¡Un, dos, tres, pollito inglés!', 'https://m.media-amazon.com/images/M/MV5BZGQ4MThmNDctNjZiYS00MWUwLWEwYzEtZGU1MzZjMTdlODIyXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/169g2ICY#e1zJ3Z2o3dV2oVgIjHRCSxQh6T29rPL_c-3mXRP6rog', 'Episodio 217', '¡El combate de los capitanes! El juego final: ¡Combate de boxeo!', 'https://m.media-amazon.com/images/M/MV5BY2MxMmZlOGUtNGY4OS00ODRkLWIzYmQtOWViZDY1YjMwODUwXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/R7NXGSzA#epJ4OfNhXI4yizZE4UiqHrAKU0z90RdRYiWnsuPOfRQ', 'Episodio 218', '¡El rayo de lentitud de Foxy contra el Luffy de goma!', 'https://m.media-amazon.com/images/M/MV5BNDM2MGJhMWYtNWE5Yy00YTk3LWI4MzktMzRlYjZjM2EwMmM4XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/ZrlB3axJ#IBHJCkA4qiNKRHarnpClDHQZlOcCzYYVyJEbNmpSdXM', 'Episodio 219', '¡Feroz combate a muerte! El final del Davy Back Fight', 'https://m.media-amazon.com/images/M/MV5BNGZjZDY3MzEtZTI2NS00MzY5LWIxZDYtZjM1Yjk1ZmEyYjIwXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/sq10yCjJ#roSJ28E53Egv42_m2eAq8PyL_U5teR-4TUCVfw6p01I', 'Episodio 220', '¿Habéis perdido la memoria? El barco pirata sin rumbo', 'https://m.media-amazon.com/images/M/MV5BZDA3YzIwZTItYTVmOS00OTk1LTk4ZTItYzM1ZGY2OGRjM2Y4XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/g2NUHB4C#VDauQhJFWzrO9MQCsmMRgClgcipsqIlHN0AwQXLI8eI', 'Episodio 221', '¡El misterioso muchacho de la flauta y la deducción de Robin!', 'https://m.media-amazon.com/images/M/MV5BOTcwNzg0YjUtMWUwYi00NmQwLTg5YWYtMmNkYjU3NWNmZTlkXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/VvkFzbLC#2yNO2N3FW9-stM91mydWX48k4RUW3c5iR1cFGYvgjlQ', 'Episodio 222', '¡Recuperemos los recuerdos! Los piratas desembarcan en la isla', 'https://m.media-amazon.com/images/M/MV5BMjVkYmRiNjAtZDk5NC00YTc1LTliNDEtMDc2ODBhYjgwZmViXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/UvUTxYqT#dXyFXYU2eqJ7rGd9CzKt6_8q9-cmgrpN-KDhSOWMCdE', 'Episodio 223', '¡Zoro afila sus colmillos! ¡Combate contra un compañero de la banda!', 'https://m.media-amazon.com/images/M/MV5BZGQxYTdkZGYtM2I4YS00MDdkLWFhZWItNDFhZDRiZTdjNzYxXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/53smHDiJ#hDMxehIzGnZfOXvcOlGrnYwzpw4zXnDlaSXTd4ilPfk', 'Episodio 224', '¡El contraataque del ladrón de recuerdos revela su verdadera naturaleza!', 'https://m.media-amazon.com/images/M/MV5BYzdjNjlhZmEtMDIxMC00NDYzLTkzMzYtYjFmNjI5YThhZmY4XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/g7EHCLRA#MkIfCspFKo6cE1bju14SSmVYf9-zMnRIu8NCeIEn3es', 'Episodio 225', '¡El hombre de orgullo increíble! ¡El zorro plateado Foxy!', 'https://m.media-amazon.com/images/M/MV5BODBmZmZhNDMtNDM1Ni00YjM4LWFjZGEtMjNjMzU4OWRjNmYyXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/U6tQHIAS#V-7q8yd89V4ygqEF6CaBN9ax5I4-qjy0nxbhu2S1I34', 'Episodio 226', '¿Un poder invencible se aproxima? El hombre más peligroso', 'https://m.media-amazon.com/images/M/MV5BYTk2NzNiOTctYzU3Zi00NTc5LWI3ODUtOTI0YmM0ZTM5ZmFhXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/12kT3T6Y#enF77fNrNopHtqp_h1k8tqx_hFsl-gJAhwDOMHzQzk8', 'Episodio 227', '¡Almirante de la Marina Aokiji! La amenaza del poder militar más fuerte', 'https://m.media-amazon.com/images/M/MV5BZGQxN2M5ZjEtMzdjOC00MTNjLWEwYmItMGVjMTllMzY5M2QzXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/96d0VZJL#6nJbLikrEDtJdvz5lAHmGcdpmuMYbPCnFoDDFsYFqfw', 'Episodio 228', '¡Goma contra hielo! El combate uno contra uno de Luffy contra Aokiji', 'https://m.media-amazon.com/images/M/MV5BMjQ1YmFiNTUtN2ZjMi00ZjliLWFmYTMtZWIxYzE0ODk0NjA5XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/g79jCRxY#xTkCqow6xOAQP4F66nC5uz8OAbVsHWM-hzBmO9_PISw', 'Episodio 229', '¡El veloz tren marino y la ciudad del agua, Water Seven!', 'https://m.media-amazon.com/images/M/MV5BZGVkY2RhODYtOGEwOS00YTg2LWI4Y2EtZGQ3OTViZmE4MzlkXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/Qjs3yYKb#RRIEgGge6uPYx08C5bM3-TPpHX9wDrgkBYwCA2YDUBw', 'Episodio 230', '¡Aventura en la ciudad del agua! Rumbo al gran astillero', 'https://m.media-amazon.com/images/M/MV5BOWQ4NGU4ZDEtNGU5OS00ZjEzLWIzYTItOTI2MjMwMTNiNGRlXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/V7l1VbTQ#K3QfsC_idY0fLWgkxFbfdGEJKTbSOrd-oCjg6LCMZlM', 'Episodio 231', '¡La familia de Franky y el señor Iceberg!', 'https://m.media-amazon.com/images/M/MV5BNWJiYmNhMDUtZWYwNi00OTYwLWI0MDQtZTQzNjc4NmFhNzRmXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/c7dASSzb#Cg3e55EF6vxfPljE4GHVT2JGfSH5rai9JYN4cLHxMr0', 'Episodio 232', '¡Galley-La Company! El muelle uno es una magnífica obra de arte', 'https://m.media-amazon.com/images/M/MV5BZWJjZWY2OGItM2FmMi00NWVhLTg0YzctZmYwMWJjNWQyYTY2XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/cq9DQKJD#ON4xL00rj9q8VJoxkywFAQ09DkLb8oeB2UpAKFXOXEE', 'Episodio 233', 'El secuestro del pirata. El Going Merry espera la muerte', 'https://m.media-amazon.com/images/M/MV5BZWVkYmZhMWYtYTEyMC00ZTIyLWE4YTEtMWYzMDVlYWI4NmY3XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/JnFlmJKZ#jbLLAmONPf1QGt9muq10qkzYrZaLkilDMT11ULmf9YQ', 'Episodio 234', '¡Salvar al compañero! Asalto a la Franky House', 'https://m.media-amazon.com/images/M/MV5BNGFlZDM5M2QtODBlYy00ZDcyLTkxMGQtMTZkZTYyY2UxZGZlXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/FuFzGZZI#Rs5wmc0wCGiWeqCWszOBNZ7x2o3VFzkzYgLayJTZxnM', 'Episodio 235', '¡Gran combate bajo la luna! La bandera pirata ondea con tristeza', 'https://m.media-amazon.com/images/M/MV5BM2NlZDgwZTAtNjhjMC00MGUzLTk1MDItZGJiMDhmNTZlMjgzXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/wrUgVCpA#bHbdKa2woNTUAHwysmMrPm9VB9XJsWG_0NnWJqabppU', 'Episodio 236', '¡Luffy contra Usopp! El choque del orgullo de dos hombres', 'https://m.media-amazon.com/images/M/MV5BNWIyNmJjY2YtYmQ1NS00NDY3LWI2ZDUtMDI2ZmU5NzQxNTYxXkEyXkFqcGc@._V1_QL75_UX437_.jpg'],
+    ['https://mega.nz/embed/RqkimKqa#G_LXN3obW5KxcS6_-pkqh65_drlXv5b6Ulx8KErGE1k', 'Episodio 237', '¡La ciudad del agua tiembla! ¡Iceberg es el objetivo!', 'https://m.media-amazon.com/images/M/MV5BNDI1MGNlOTUtNjdlMi00MGNlLWFkZGUtMGZlOWEzMDcyNTkxXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/A7kFybTD#oYQX4Ofbp_bkoVYZ5Ka1f3k-PGILtg_GLhLYG4iLzMA', 'Episodio 238', 'El hombre de goma contra el cyborg que escupe fuego', 'https://m.media-amazon.com/images/M/MV5BOTk1MjUwYWItMjM5OS00YzcyLTgyM2EtZGJkMzMzY2Y5NTlhXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/Zi1iURKD#juyS1ZXvgb-_d3DzGlnPwwGJ7xVe4ZkVA_mhLbGVBRw', 'Episodio 239', '¿Los culpables son los Sombrero de Paja? Los protectores de la ciudad del agua', 'https://m.media-amazon.com/images/M/MV5BZTc3MjU4MDUtMjQ4ZS00YjU4LThjNGQtZGUzY2IwOTljM2NkXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/wy1zQQiS#Im5H3Hb7q6TeEBtkJGCYLLi8rnVDHGTDv237Ekeor5U', 'Episodio 240', '¿Despedida eterna? Nico Robin, la mujer que arrastra la oscuridad', 'https://m.media-amazon.com/images/M/MV5BNDNmYWRhODYtMDRmZi00NDFkLWIyNGUtZjQ4M2UzZDM5MzMwXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/wnFE0KAa#wNu3ISOUUHfk1SIWz64UdTwMOxasqd_1u8y_ZC7qzdA', 'Episodio 241', '¡Atrapar a Robin! La determinación de los Sombrero de Paja', 'https://m.media-amazon.com/images/M/MV5BYTU1YzRjZmMtODEzZi00OWVhLWE3ZDktNDY4ODdlNjYyMjhjXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/0itDDbZR#lNtfU6L8whrzuymVNJU0ix0IN5937_Rlg8Cv0n9uOKw', 'Episodio 242', '¡La señal es la explosión! El CP9 se pone en marcha', 'https://m.media-amazon.com/images/M/MV5BNjM4N2U4MjktYjBlMy00OWI5LWE4MmQtNjk1ZGVhMTY2NWUwXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/RuNzhaAb#i4v9-r0vfpFGvV9Cvu4x_6XFrpPh-_1czjiW5ZE8uC4', 'Episodio 243', '¡El CP9 se quita la máscara! Sus verdaderas identidades reveladas', 'https://m.media-amazon.com/images/M/MV5BZGUwNjZkMmEtNGM0YS00ZWE1LWIyMjgtNmQzYTNkMjM1MmU4XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/hr1zhDbJ#u3-YseqpFvQ1mqqChqPE03QkRO8heI7zLnCW6oRsUlw', 'Episodio 244', '¡El lazo secreto! Iceberg y Franky', 'https://m.media-amazon.com/images/M/MV5BNmFmNTQ2NDEtOGUyNy00N2I5LWIzMjgtNTY5MDcwZTQ0ZmRiXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/o2UVVZxb#s1il6s1PUbK9XABWOWwPkkUYfer3hqjW8NsySKZ_L6o', 'Episodio 245', '¡Regresa, Robin! ¡El enfrentamiento con el CP9!', 'https://m.media-amazon.com/images/M/MV5BYmQ2ZTJkMjgtYjY0ZC00ODNiLThlM2UtNDU0NjQwYWFjODNmXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/V6EkyZhC#FGuo7dlKshYQF6MsBaaHdaNk4ZdEGhSav3XeYAe4V5c', 'Episodio 246', '¿La banda de los Sombrero de Paja aniquilada? La amenaza del modelo leopardo', 'https://m.media-amazon.com/images/M/MV5BNzhiZjk3ZmUtYTk0YS00NWVmLWI1NTktNDhmM2RjODhlMjY3XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/MrVnSbxS#GJ1mNZFMpUP36Dy57b3C-73NoK7_1MjwI9y8xRaZ5Pk', 'Episodio 247', '¡El amor de un hombre por su barco! Las lágrimas de Usopp', 'https://m.media-amazon.com/images/M/MV5BMDJjMjUzNDctYjY3Yy00YmE2LTg2NDQtMTNmMjUxOThiOTU4XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/EqFXECpD#bztPmUFhKKkuOzd2VCLWawV9NSAzYNOcAdxPNiOD-Wg', 'Episodio 248', '¡El pasado de Franky! El día en que el tren marino corrió', 'https://m.media-amazon.com/images/M/MV5BOWQ0MDE5ODktMzlhZC00ZjQzLTkwYjItYWM0Yzg1ODZhZjk4XkEyXkFqcGc@._V1_QL75_UX389_.jpg'],
+    ['https://mega.nz/embed/oi9ESAqL#KTVcPbHOkiafQSU3cl-bFLAlB0I3ATew5kPRbTPsWLU', 'Episodio 249', '¡La conspiración de Spandam! El día en que el tren marino tembló', 'https://m.media-amazon.com/images/M/MV5BZjViYzk4NDEtMjljMS00MzM4LTgxOGMtOGJmNWQzNTM4MTVmXkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
+    ['https://mega.nz/embed/MvcCFbZD#nh6r3TyHuFvLlYKZk6V45v5meAEpgXEqRmn54WsLVw8', 'Episodio 250', '¡El final de un hombre legendario! El día en que el tren marino lloró', 'https://m.media-amazon.com/images/M/MV5BOGFiYjg4OGMtNDhhOC00ZGFkLTgwZDEtNmRkNjFmZDhiZjE5XkEyXkFqcGc@._V1_QL75_UX388_.jpg'],
     ['https://mega.nz/embed/F3ERTKwR#atzYiR5N21Zf2gTe7fjczCevdMkHFKvK5lif1N6oi8I', 'Episodio 251', '¡La verdad tras la traición! ¡La dolorosa decisión de Robin!', ''],
     ['https://mega.nz/embed/N6EnUKrK#tEXoUF-Na82DhRQLpsVnM2V7jF4brNW9pEraAtnvg0E', 'Episodio 252', '¡El silbato que separa a los compañeros! El tren marino se pone en marcha', ''],
     ['https://mega.nz/embed/F2sR2AYQ#tDPWvtAEetRNGEsOHg9GuNw759RDsoocQ0uVeV05ZPs', 'Episodio 253', '¡Sanji al asalto! ¡El tren marino en la tormenta!', ''],
@@ -5026,44 +5045,44 @@ const jojosSeason3Episodes = [
 
 const jojosSeason4Episodes = [
     ['https://mega.nz/embed/JQN3CY6Z#BvWR1LZPrZB6E0pI5rBp-qV9DrN8ciskcOY1DKJBLWY', 'Episodio 1', '¡Jotaro Kujo conoce a Josuke Higashikata!', 'https://m.media-amazon.com/images/M/MV5BMTYyOGU3YzItZmQxNS00OTBhLWE5MTAtOWE0OWJkNWY2OTQ1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 2', '¡Josuke Higashikata conoce a Angelo!', 'https://m.media-amazon.com/images/M/MV5BNmI5YjI4NTgtNzZjMC00ODA5LWEyNGQtM2Q1ZTFjODc4NjUzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 3', 'Los hermanos Nijimura, parte 1', 'https://m.media-amazon.com/images/M/MV5BOTgxNDk3NTYtNTUwNC00ZmQ5LTk2MWUtNDg5ZWY4N2QxYTcwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 4', 'Los hermanos Nijimura, parte 2', 'https://m.media-amazon.com/images/M/MV5BM2E0MmRiZTYtNDNjOS00NWE3LTgzMmMtYTI5ZGQ1MTRkMDE2XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 5', 'Los hermanos Nijimura, parte 3', 'https://m.media-amazon.com/images/M/MV5BY2ViYzUyNDQtYTBmMy00MmZhLWE1M2QtNzgxN2IzZTNjOWU5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 6', 'Koichi Hirose (Echoes)', 'https://m.media-amazon.com/images/M/MV5BYTFhNDQ1OWItNDIyYS00OWRlLWFkYzAtNGNhZjQwZDg4ZTZjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 7', 'Toshikazu Hazamada (Surface)', 'https://m.media-amazon.com/images/M/MV5BZmNlNWExNTctY2FlMy00MDk4LWFjNDgtYWZiOTdiZGVjYTRlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 8', 'Yukako Yamagishi se enamora, parte 1', 'https://m.media-amazon.com/images/M/MV5BNzdhODJhNmQtNTg2My00ZThhLWJjZmUtMjBkOWQwZDY0Zjc3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 9', 'Yukako Yamagishi se enamora, parte 2', 'https://m.media-amazon.com/images/M/MV5BOTI3MWY3MmMtYmMzZS00YjE2LWIyZGEtOGUxOWM5NWJkYmRjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 10', 'Vamos al restaurante italiano', 'https://m.media-amazon.com/images/M/MV5BMjMyMGE4YWItZDFkZS00YmI3LTk4ZGEtZDZlZDM4ZTlmNzhhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 11', 'Red Hot Chili Pepper, parte 1', 'https://m.media-amazon.com/images/M/MV5BNmIwNTA2M2ItYjdmNy00Y2Q3LTg4MDUtZTM5NTkzMTliZDE0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 12', 'Red Hot Chili Pepper, parte 2', 'https://m.media-amazon.com/images/M/MV5BYjRkMzJiZDctYzBkNC00MzIzLWJkOTUtMzdiNTNkZGE1YmM3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 13', 'Hemos encontrado algo flipante', 'https://m.media-amazon.com/images/M/MV5BMDU4ZGE0ODEtNmFkMy00MTMzLTkzZmUtYTk3ZjA5ODNiNzkyXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 14', 'Vamos de visita a casa del mangaka, parte 1', 'https://m.media-amazon.com/images/M/MV5BZGQyODdiMTAtNzdjZC00MmRkLTk1YjYtNWJmMzhjYTUxMGY2XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 15', 'Vamos de visita a casa del mangaka, parte 2', 'https://m.media-amazon.com/images/M/MV5BZWMzODdhZWEtNDA0OS00MjJkLTg2YmQtNDVhNzBiZjI4MDU3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 16', 'Vámonos de caza', 'https://m.media-amazon.com/images/M/MV5BZmJiNTk5NTgtNzdkYy00NDk5LWJhMmQtNGVjZjIxMjYxMzlkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 17', 'La aventura de Rohan Kishibe', 'https://m.media-amazon.com/images/M/MV5BZWI0OWFhYjQtMzIzMi00MThiLTkwOTYtMmUxYmFkM2U4Y2I5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 18', 'El Harvest de Shigechi, parte 1', 'https://m.media-amazon.com/images/M/MV5BYzExMDk1ZDUtODFhYy00ZTdhLWJhN2QtMWNlNjJiYzY5ZjJmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 19', 'El Harvest de Shigechi, parte 2', 'https://m.media-amazon.com/images/M/MV5BOTIxOGM1YzUtYjE0YS00YWJhLWEyOWUtOGRlNjNmM2M5ZjY4XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 20', 'Yukako Yamagishi sueña con ser cenicienta', 'https://m.media-amazon.com/images/M/MV5BMThkMjhlMmEtYzMwYy00OWIwLTk1MDktNzVmZDdiYzBlNDdkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 21', 'Yoshikage Kira quiere una vida tranquila, parte 1', 'https://m.media-amazon.com/images/M/MV5BMjQzMWQ1NTUtNGFlZi00OWQ2LTg0NmMtMjVmYzI3N2UzZWNkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 22', 'Yoshikage Kira quiere una vida tranquila, parte 2', 'https://m.media-amazon.com/images/M/MV5BZWQ5OGI2MGItNWMzMS00ZGZmLWIyYzEtMjQ4M2RlZmRjODY5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 23', 'Sheer Heart Attack, parte 1', 'https://m.media-amazon.com/images/M/MV5BNjRiODRjZmEtZmQ1ZS00MDYxLWFjNjMtZGNkMGZlM2IwODdhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 24', 'Sheer Heart Attack, parte 2', 'https://m.media-amazon.com/images/M/MV5BYmFlN2IyZDctZGM4Mi00ZDFjLWFkZjctNzAyMGViYzZjNDQxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 25', 'Atom Heart Father', 'https://m.media-amazon.com/images/M/MV5BZDVjMGM2OTEtY2IzNi00ODhmLThmOGEtNmIyYTM2MTA2OGEzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 26', '¡Llega el chico de piedra-papel-tijera!', 'https://m.media-amazon.com/images/M/MV5BOTgyODVhYjctYzc4MC00YTMzLWFlZjYtYTUzNmRjOTRlZjYzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 27', 'Soy un extraterrestre', 'https://m.media-amazon.com/images/M/MV5BN2RlYmFiMmMtMjJmZi00Yjk2LWE1ZjItYjM5NzdlZmRjYTZlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 28', 'Highway Star, parte 1', 'https://m.media-amazon.com/images/M/MV5BNjJjZjcwOGMtZDNjNC00OTFiLWEyOWItYjk4Y2NjZjU3NWQzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 29', 'Highway Star, parte 2', 'https://m.media-amazon.com/images/M/MV5BZmQyZGI3MWEtMDAwMi00ZWUyLWI5MmQtYzNmN2M4YTQyMzMxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 30', 'Al gato le gusta Yoshikage Kira', 'https://m.media-amazon.com/images/M/MV5BMjJkMTYwOTEtZWQ3My00NGUzLThjNjMtMWZlZmY1ZjM5ZjU0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 31', 'Jueves 15 de julio, parte 1', 'https://m.media-amazon.com/images/M/MV5BOWYxYWU3MTUtMGQzYi00YzlhLWExMjMtMTZkNDVlMWJmMzZhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 32', 'Jueves 15 de julio, parte 2', 'https://m.media-amazon.com/images/M/MV5BNjkwNWQ1MWYtN2U1Ny00NjVlLTg2OTAtNTdiZGExOTQ2ZmI3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 33', 'Jueves 15 de julio, parte 3', 'https://m.media-amazon.com/images/M/MV5BOWFkMjkyN2ItNDQ0MS00MmMxLWI2YWMtNTM0YzdhYjg5ZDczXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 34', 'Jueves 15 de julio, parte 4', 'https://m.media-amazon.com/images/M/MV5BZjliODg5NmQtMmJmNC00MmYxLTgwZmEtOGZmMjJjNGViYmViXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 35', 'Another One Bites the Dust, parte 1', 'https://m.media-amazon.com/images/M/MV5BMTc3YzY3MDAtODliNy00YjFiLWJmMmEtMWJlMjFhZGVhMGRlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 36', 'Another One Bites the Dust, parte 2', 'https://m.media-amazon.com/images/M/MV5BYzZkOWI1YzEtODRlMy00MWNjLWE5MDUtNWM5NDhkYmVkMDIwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 37', 'Crazy Diamond es irrompible, parte 1', 'https://m.media-amazon.com/images/M/MV5BZWVmN2RiYTItNGFhNC00NjcwLWEzZTktOWQyNzQ3MDFjNTM1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 38', 'Crazy Diamond es irrompible, parte 2', 'https://m.media-amazon.com/images/M/MV5BNTE5NmQ0NjEtMzY5NS00MDM5LTljOWItYzczNjA4ZWI4NmYyXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
-    ['', 'Episodio 39', 'Adiós, Morioh. Un corazón de oro', 'https://m.media-amazon.com/images/M/MV5BMDMzZGQyYzQtNzQ5Zi00ODc0LTg1YzAtYTdmZjc3MDRkOWVmXkEyXkFqcGc@._V1_QL75_UX800_.jpg']
+    ['https://mega.nz/embed/QbMiAKpZ#jAUU8x61kW3MNy1CM1oNmDJAbhNdHdv6-n57TwgJpyg', 'Episodio 2', '¡Josuke Higashikata conoce a Angelo!', 'https://m.media-amazon.com/images/M/MV5BNmI5YjI4NTgtNzZjMC00ODA5LWEyNGQtM2Q1ZTFjODc4NjUzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/BGEzFbYI#hK41ISFSMlEqcy9phmhU6bdTWsbNpepp0ZibbnYD0V0', 'Episodio 3', 'Los hermanos Nijimura, parte 1', 'https://m.media-amazon.com/images/M/MV5BOTgxNDk3NTYtNTUwNC00ZmQ5LTk2MWUtNDg5ZWY4N2QxYTcwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/VGsR3apJ#Mp5qJgqC7viiA5jOkLdnmbL44P9SkGEbD38xtEwvbqM', 'Episodio 4', 'Los hermanos Nijimura, parte 2', 'https://m.media-amazon.com/images/M/MV5BM2E0MmRiZTYtNDNjOS00NWE3LTgzMmMtYTI5ZGQ1MTRkMDE2XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/hHsVVZbJ#8x1AD1Ev1GVHr8kCt7Jsb2bSkLEJArjYrcOcmKvFG4Q', 'Episodio 5', 'Los hermanos Nijimura, parte 3', 'https://m.media-amazon.com/images/M/MV5BY2ViYzUyNDQtYTBmMy00MmZhLWE1M2QtNzgxN2IzZTNjOWU5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/UL90iDZR#Rbr52dSbDTluZq2o72pIo2t6qf75mAOBHvkzBrH0Uv8', 'Episodio 6', 'Koichi Hirose (Echoes)', 'https://m.media-amazon.com/images/M/MV5BYTFhNDQ1OWItNDIyYS00OWRlLWFkYzAtNGNhZjQwZDg4ZTZjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/JT1HTJJL#OHnZv4I9kYLz3YkVT9Igws3XQLikWDRHuGb9lRPZ9Mo', 'Episodio 7', 'Toshikazu Hazamada (Surface)', 'https://m.media-amazon.com/images/M/MV5BZmNlNWExNTctY2FlMy00MDk4LWFjNDgtYWZiOTdiZGVjYTRlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/MH1R0ToB#SPOmBQTcaRdfiZZV4EJkzJE2wsQbUyKwp5q-dLCNzQA', 'Episodio 8', 'Yukako Yamagishi se enamora, parte 1', 'https://m.media-amazon.com/images/M/MV5BNzdhODJhNmQtNTg2My00ZThhLWJjZmUtMjBkOWQwZDY0Zjc3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/4TFTCRTb#j9KUqse4MyDqY-KQOsVsVboSa4VNFIqKwxlMScNU0i0', 'Episodio 9', 'Yukako Yamagishi se enamora, parte 2', 'https://m.media-amazon.com/images/M/MV5BOTI3MWY3MmMtYmMzZS00YjE2LWIyZGEtOGUxOWM5NWJkYmRjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/AW9inTKZ#v0UKOkDK_U6sBZzMVGV0p3wUbFwbm4O4AyIB_ggY6KM', 'Episodio 10', 'Vamos al restaurante italiano', 'https://m.media-amazon.com/images/M/MV5BMjMyMGE4YWItZDFkZS00YmI3LTk4ZGEtZDZlZDM4ZTlmNzhhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/xG0W3bwD#JLzoAiStwG6lZm-R7XR0bmL6gcZMuw5p_K9wUZD3J_k', 'Episodio 11', 'Red Hot Chili Pepper, parte 1', 'https://m.media-amazon.com/images/M/MV5BNmIwNTA2M2ItYjdmNy00Y2Q3LTg4MDUtZTM5NTkzMTliZDE0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gC1mTBIR#rffjSPvVLOn3Hiqd_7ISxAGLJhfZROog50PdIanjscc', 'Episodio 12', 'Red Hot Chili Pepper, parte 2', 'https://m.media-amazon.com/images/M/MV5BYjRkMzJiZDctYzBkNC00MzIzLWJkOTUtMzdiNTNkZGE1YmM3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/A38i1ArJ#Qg0HhJTyyOkDWXkAVaM_LrtOHOCWXcM6VzcyfLbdllM', 'Episodio 13', 'Hemos encontrado algo flipante', 'https://m.media-amazon.com/images/M/MV5BMDU4ZGE0ODEtNmFkMy00MTMzLTkzZmUtYTk3ZjA5ODNiNzkyXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/JPMARa5T#eMWtH8DCrDag-ZvSgQPSRuBJXyK7EZN0-kglZvFGLCs', 'Episodio 14', 'Vamos de visita a casa del mangaka, parte 1', 'https://m.media-amazon.com/images/M/MV5BZGQyODdiMTAtNzdjZC00MmRkLTk1YjYtNWJmMzhjYTUxMGY2XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/VStHiJTa#dSLIvKZ-yB6r0CLUuqqpJCgUe1hRjFx8BERqHgDXvdI', 'Episodio 15', 'Vamos de visita a casa del mangaka, parte 2', 'https://m.media-amazon.com/images/M/MV5BZWMzODdhZWEtNDA0OS00MjJkLTg2YmQtNDVhNzBiZjI4MDU3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/lOdTWIbI#5q2q6FFUHolJjm9QwnOZ4WPW-ZqcG6FzNWZ6UGsXN7Q', 'Episodio 16', 'Vámonos de caza', 'https://m.media-amazon.com/images/M/MV5BZmJiNTk5NTgtNzdkYy00NDk5LWJhMmQtNGVjZjIxMjYxMzlkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/kb9nSAoD#5XUFbaCRLHKp_Hck7HwMoEqq3VaJpfH3XP3rWYvQ6ak', 'Episodio 17', 'La aventura de Rohan Kishibe', 'https://m.media-amazon.com/images/M/MV5BZWI0OWFhYjQtMzIzMi00MThiLTkwOTYtMmUxYmFkM2U4Y2I5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/MP9D2bpI#5xJ9TgeES3WnMdmf5VEN0mztL0uT68VTyO7VD8TPhZ8', 'Episodio 18', 'El Harvest de Shigechi, parte 1', 'https://m.media-amazon.com/images/M/MV5BYzExMDk1ZDUtODFhYy00ZTdhLWJhN2QtMWNlNjJiYzY5ZjJmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/4CkCxIjR#-wijcc7KyeJzP8auQzSyvKhC3D1LbejoCWlKjykylQg', 'Episodio 19', 'El Harvest de Shigechi, parte 2', 'https://m.media-amazon.com/images/M/MV5BOTIxOGM1YzUtYjE0YS00YWJhLWEyOWUtOGRlNjNmM2M5ZjY4XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/UD1zCCYZ#g_yR5-tA9iXqGFpi4GWJteksPXkRRYrGzhll3gXRfiM', 'Episodio 20', 'Yukako Yamagishi sueña con ser cenicienta', 'https://m.media-amazon.com/images/M/MV5BMThkMjhlMmEtYzMwYy00OWIwLTk1MDktNzVmZDdiYzBlNDdkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/wbNgSaIa#Rec-CY92A6CMGH8vRuT8sCR-kgEW6SBrC28S2xmWKLY', 'Episodio 21', 'Yoshikage Kira quiere una vida tranquila, parte 1', 'https://m.media-amazon.com/images/M/MV5BMjQzMWQ1NTUtNGFlZi00OWQ2LTg0NmMtMjVmYzI3N2UzZWNkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/xCd1xJTK#Bp9QNWnOkq4RMWdpY6W5_hPzNN4W49bqY7dWZZhvy3U', 'Episodio 22', 'Yoshikage Kira quiere una vida tranquila, parte 2', 'https://m.media-amazon.com/images/M/MV5BZWQ5OGI2MGItNWMzMS00ZGZmLWIyYzEtMjQ4M2RlZmRjODY5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/xCkUjboD#lJLNH6-iUgf5BgLHMWK_VH-P1YiGI7mkzU35jQjQYXk', 'Episodio 23', 'Sheer Heart Attack, parte 1', 'https://m.media-amazon.com/images/M/MV5BNjRiODRjZmEtZmQ1ZS00MDYxLWFjNjMtZGNkMGZlM2IwODdhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/xednWAwT#dlNXPkVilcazxBfQwYmR8Bkcx5MOq3en7JBNH7oBKw0', 'Episodio 24', 'Sheer Heart Attack, parte 2', 'https://m.media-amazon.com/images/M/MV5BYmFlN2IyZDctZGM4Mi00ZDFjLWFkZjctNzAyMGViYzZjNDQxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/8S9G3ZDA#_8KAH2M-RN8TxV_Hz6m7EqTBvrseDY0KMKzvZHpBwn0', 'Episodio 25', 'Atom Heart Father', 'https://m.media-amazon.com/images/M/MV5BZDVjMGM2OTEtY2IzNi00ODhmLThmOGEtNmIyYTM2MTA2OGEzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/4TsmRJKJ#CVgoS13_RaoofuPdWVDezag-9i2VLmBAaB6hPUX_sOE', 'Episodio 26', '¡Llega el chico de piedra-papel-tijera!', 'https://m.media-amazon.com/images/M/MV5BOTgyODVhYjctYzc4MC00YTMzLWFlZjYtYTUzNmRjOTRlZjYzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/8PURkD5Y#8mq1xVtaB3FEpdIpjl2zuUrdK1O_jRrdnZDQgWJB50U', 'Episodio 27', 'Soy un extraterrestre', 'https://m.media-amazon.com/images/M/MV5BN2RlYmFiMmMtMjJmZi00Yjk2LWE1ZjItYjM5NzdlZmRjYTZlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/E6VXWRTS#kru6TpkcTf_CuKW578SoDJ2Bd6Il3WFsj-PziR_T0tI', 'Episodio 28', 'Highway Star, parte 1', 'https://m.media-amazon.com/images/M/MV5BNjJjZjcwOGMtZDNjNC00OTFiLWEyOWItYjk4Y2NjZjU3NWQzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/BHNExLaY#Kl5N3tS8XdhOk8uAPOjZCJGPlq9X-7MTQN9dfsn0Aus', 'Episodio 29', 'Highway Star, parte 2', 'https://m.media-amazon.com/images/M/MV5BZmQyZGI3MWEtMDAwMi00ZWUyLWI5MmQtYzNmN2M4YTQyMzMxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/JG1CjJQa#Ckwgob4uKCv8xeNep5AKT-VLOGrN7NvdB0ZQPGmIw88', 'Episodio 30', 'Al gato le gusta Yoshikage Kira', 'https://m.media-amazon.com/images/M/MV5BMjJkMTYwOTEtZWQ3My00NGUzLThjNjMtMWZlZmY1ZjM5ZjU0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/Ve1ADRyA#qgucta5dRV2Jfb-tvlP5iWofutY8Hj0p3fUT1plzioo', 'Episodio 31', 'Jueves 15 de julio, parte 1', 'https://m.media-amazon.com/images/M/MV5BOWYxYWU3MTUtMGQzYi00YzlhLWExMjMtMTZkNDVlMWJmMzZhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/cesijDbK#L8hSI-qSfY_P83Mo7tcOHDQue3HsSL4K2zFDEOgjcxw', 'Episodio 32', 'Jueves 15 de julio, parte 2', 'https://m.media-amazon.com/images/M/MV5BNjkwNWQ1MWYtN2U1Ny00NjVlLTg2OTAtNTdiZGExOTQ2ZmI3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/YWMAkZxS#VvCh-1wVaZiWuH2ySTcvLDLBdyEnjAY5vQLQkBsnoEY', 'Episodio 33', 'Jueves 15 de julio, parte 3', 'https://m.media-amazon.com/images/M/MV5BOWFkMjkyN2ItNDQ0MS00MmMxLWI2YWMtNTM0YzdhYjg5ZDczXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/Mas0ULhT#pcAiwphXHHG-mJhqQTcWou-VAl38qkUDOFkzk7O16CQ', 'Episodio 34', 'Jueves 15 de julio, parte 4', 'https://m.media-amazon.com/images/M/MV5BZjliODg5NmQtMmJmNC00MmYxLTgwZmEtOGZmMjJjNGViYmViXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/hWN1nAiL#dlHInVQx5XlE_B1MmVXjHgZjvSH2JTb2tZBNgAMAK6E', 'Episodio 35', 'Another One Bites the Dust, parte 1', 'https://m.media-amazon.com/images/M/MV5BMTc3YzY3MDAtODliNy00YjFiLWJmMmEtMWJlMjFhZGVhMGRlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/1XEBGL7T#gk5i6rAuWJPFXvX3pbxcTFUgC2L6dezH2cLA8blHUzU', 'Episodio 36', 'Another One Bites the Dust, parte 2', 'https://m.media-amazon.com/images/M/MV5BYzZkOWI1YzEtODRlMy00MWNjLWE5MDUtNWM5NDhkYmVkMDIwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/EKdUCS7b#oCOGeeNkllcONTAD_eM-XKijt5AePIQLf1CDkdOr64c', 'Episodio 37', 'Crazy Diamond es irrompible, parte 1', 'https://m.media-amazon.com/images/M/MV5BZWVmN2RiYTItNGFhNC00NjcwLWEzZTktOWQyNzQ3MDFjNTM1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/d6V2kJib#iVSahy0cr8mzd0yUIqHG576sd1bAdcmf8dwkqD8VFVw', 'Episodio 38', 'Crazy Diamond es irrompible, parte 2', 'https://m.media-amazon.com/images/M/MV5BNTE5NmQ0NjEtMzY5NS00MDM5LTljOWItYzczNjA4ZWI4NmYyXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/xbdX2ZaS#2GF0fLgxOuQDCdcrIPj100qdQ5dF-EYKjT8wUNczcCs', 'Episodio 39', 'Adiós, Morioh. Un corazón de oro', 'https://m.media-amazon.com/images/M/MV5BMDMzZGQyYzQtNzQ5Zi00ODc0LTg1YzAtYTdmZjc3MDRkOWVmXkEyXkFqcGc@._V1_QL75_UX800_.jpg']
 ].map(([url, title, description, image]) => [
     url,
     title,
@@ -5086,6 +5105,120 @@ const jojosOVASEpisodes = [
     ['https://mega.nz/embed/ZD8GlYTQ#dnTwoN0hi7z7uvDnruq8cUcxwnhBfRsRbrJiGW8xOLs', 'Episodio 11', 'Vanilla Ice, el miasma del vacío', 'https://m.media-amazon.com/images/M/MV5BY2JmYWY5YzctZjIzNi00MDdhLWIxMjYtMTViZmJjODc2ZDQ1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
     ['https://mega.nz/embed/wPsyWZBB#fSq3WhGEEd0E84m17W8pFtUs5GhmUvfmvaUwuLpi1ug', 'Episodio 12', 'Kakyoin: Duelo en la barrera de Hierophant', 'https://m.media-amazon.com/images/M/MV5BMzQ4MGQzMGItOTA3YS00NWViLWI5ZTktZDg4ZjdkZDJkODcxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
     ['https://mega.nz/embed/oKFTVJiK#W1S3lu6pUNt5529P64J4kkSM9EV9mCGjThEozKAn5lU', 'Episodio 13', 'Adiós, amigos míos', 'https://m.media-amazon.com/images/M/MV5BMDcwZDBmMzItYmNjZS00ZDljLTkxNmItMWM2YWYwOWExOWYzXkEyXkFqcGc@._V1_QL75_UX800_.jpg']
+].map(([url, title, description, image]) => [
+    url,
+    title,
+    description,
+    image,
+    'iframe'
+]);
+
+const jojosSeason5Episodes = [
+    ['https://mega.nz/embed/ZW9FUKzb#ig_SrR0rU5pRjaAHUDahwxAWiVIJLVoM0B9g4k5nA5Q', 'Episodio 1', 'Gold Experience', 'https://m.media-amazon.com/images/M/MV5BNTIzZmVhNjgtMDZkYy00MTcyLThjM2QtMTNlNjhmNzExOTc1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/pTMBnLRB#JTZLS2szFI1_IMVEFxAKdsOQ1d-rzB6rQjGEQr4pxrU', 'Episodio 2', 'La Llegada de Bucciarati', 'https://m.media-amazon.com/images/M/MV5BOWFjNzFjYTAtOTViNy00MGUxLWJmOGMtNWEyYzc2NjJmMDAxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/Vj8EWD5S#4qJXdW_PI5-8uV1iMV4LiaUlVU2p8gSM6j3Qq7n2t4o', 'Episodio 3', 'Conociendo al Gángster Detrás del Muro', 'https://m.media-amazon.com/images/M/MV5BZWE3NGE3NDYtYTM1MS00YjZhLWIyYjctYmI4MGI2ZTY0ZGUxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gyNgjRob#82FZkkoZAvAWs1HTEW4STK2ZRcXZw0mCvxpcn9LxdE8', 'Episodio 4', 'El Camino a la Mafia', 'https://m.media-amazon.com/images/M/MV5BNTRiOGRiMWItN2I2Yy00MmNmLWFhMmQtMDU5M2UxZWI4ZDZhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/wP0Uha7Y#8dJEU2iF8QVvuHOte_0TyxVIvSENVUwRjXO3-YCcw1M', 'Episodio 5', '¡Recuperemos el Tesoro de Polpo!', 'https://m.media-amazon.com/images/M/MV5BYzJjNGEzNzgtNGY4Ni00MDNhLWJiYjgtMTcyODg1NmIwNTIzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/lWt3TQqY#5shFWyZBbP1Rwb-aCszuheL3stV83FefSlMP1fvNStk', 'Episodio 6', 'El Contraataque de Moody Blues', 'https://m.media-amazon.com/images/M/MV5BZTU3YmI2Y2QtMDg4ZS00NmY0LTk3ZDgtY2E0MTM1NWU1ODIwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/Vi1RCCTS#3Oa_PPCKojd3GfFt4QPFsG5PkzKQxR4f6kfFIZYqjMg', 'Episodio 7', 'Aparece Sex Pistols, parte 1', 'https://m.media-amazon.com/images/M/MV5BMTQwNzkxOGQtZmQ0ZS00Y2U3LTk4ZjAtMTljM2RmYjljOWM4XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/ZKMQRaiD#PAdhbXE0cWSjn97iy_sDOZDzVvsVuaGd5HnLOQpEbts', 'Episodio 8', 'Aparece Sex Pistols, parte 2', 'https://m.media-amazon.com/images/M/MV5BMmViYzg5ZDMtZjBhMC00MDAwLWJjNDUtNmI1NjIzOGVmNTU4XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=WVV3OVFlb3p3aGRhQ3BkVFVDd0d5N0xCejFaalZwWnZRRDVqQ0R2L2FvUitEcjNFVkZlbzBSd3BVWng1V1BXMWRBTVdPSjZXY1NTRDlrYzdVenpsSUM2TEJVV0dGdWhWcWx0R2ovV1JVUTA9Ojr5VRb5KCjgCmjcMll_UEYY&t=bd8581995b520d5df3b7e28a47b427b1&op=Mzg0MDI=', 'Episodio 9', 'La Primera Orden del Jefe', 'https://m.media-amazon.com/images/M/MV5BOTNlYTcwY2MtYWRkOC00ZTc5LWFhMDYtODgyNzdiMjA2ZTViXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/w21H0BCK#2aOdlu2shj8fzFF6F7l30Cv-jJYVnAlvmHOGuopb4mI', 'Episodio 10', 'El Equipo de Asesinos', 'https://m.media-amazon.com/images/M/MV5BZjdiNzJmYWMtYTVlMy00YTBmLWIzNTQtMmY0ZTViOGNiNzRkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/wX9yVLLQ#J9KRdhOZLfYswaw5tPIOprPRhCJj7p6qj-ias28g9ak', 'Episodio 11', 'Aerosmith de Narancia', 'https://m.media-amazon.com/images/M/MV5BZDQwZTBlMDgtYzBlYy00ZDA0LTg4YTQtMzU2N2E4MTM5MDYwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/Re8AwBxB#_OExCvCUZ2uGtenZlA4fr_Qi_KVvjbR4lj0yCKAfIWI', 'Episodio 12', 'La Segunda Orden del Jefe', 'https://m.media-amazon.com/images/M/MV5BZDg5Y2ViMjktYzcwZS00NDNiLWE0NWYtYzY1MzEzNWY0YWI5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/03l3GLiZ#NacMMRneiidlnsgmOEYwG7Ma43RbMYRt0YRFKudU5eY', 'Episodio 13', 'Man in the Mirror y Purple Haze', 'https://m.media-amazon.com/images/M/MV5BMzc0MmRhZTgtMmNmZi00N2EwLTlhNWUtNWRkNWU1YzBkYTdjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/UXl33K4T#k_fX9h2MSboSlIvyMR1_MskBM1kZACSZL7CHdsoJnH8', 'Episodio 14', 'El Tren Expreso a Florencia', 'https://m.media-amazon.com/images/M/MV5BOWM5NGNiNTAtNjJlNi00OTBhLWFkMmYtMWExMDNlOWNlYjlhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/xH8RCCSb#eAQmqok083KtFFvQ8Lqj4uzkWjUmUyL0wI_ImZjSBUs', 'Episodio 15', 'The Grateful Dead, parte 1', 'https://m.media-amazon.com/images/M/MV5BNjYwOTc1YmItZmY0Mi00MmM2LWE5MmEtNGM0ZDY5OTUxZGFhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/RDUUxYBT#ICPmVMcFKUHynIA4keKHTwsv7N3mQKd7Cal4qJQ8iXg', 'Episodio 16', 'The Grateful Dead, parte 2', 'https://m.media-amazon.com/images/M/MV5BYzdiMTUwMTgtOTI2Zi00YjFjLTg0NjItZTlkNWU0ZGVlNjQ0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/oOMAURJY#8X98vMCxac50OoMFyfbDbTE5FvAgWyp3frQNVaoSqD8', 'Episodio 17', 'Baby Face', 'https://m.media-amazon.com/images/M/MV5BMGMwZjdjNTgtOGQwZC00NDg1LWE1M2MtMmU4YWFiM2Y3MGU0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/NPVgFCCZ#p50z-NHThAJcQZ5Jgrt9oAUsB03P-J9Stfz_bgkwP60', 'Episodio 18', '¡A Venecia!', 'https://m.media-amazon.com/images/M/MV5BY2E2ZDc4ZTUtYzdmMS00NTE0LTg1MGMtYzJjMTNmNThjYTMzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/N7FxAYzZ#kaVpf6UTveTI8jvN88nAckL3O_hFNJKNcuLt78EjViU', 'Episodio 19', 'White Album', 'https://m.media-amazon.com/images/M/MV5BZjlkZWUyMDMtMTYzYi00M2UyLWJmNzMtYTBhMmE1ZmUzYjI3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/wXFXAQYS#le0VgXGAWYkykzCRg6alHyA0TV_iD44Q8XH1o0ateKA', 'Episodio 20', 'Las Últimas Órdenes del Jefe', 'https://m.media-amazon.com/images/M/MV5BNTkxMWE2OTctMzg0ZC00MzIxLWJlNzYtODhmZjQzMTkyMzJmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gndjRDbY#Ww8w1_Iq1R1HKqKrrp2pfCOefbNvmhSmxwXXpu8Gi80', 'Episodio 21', 'El Misterio de King Crimson', 'https://m.media-amazon.com/images/M/MV5BNTk4MTY1MDctZThmOC00ODgwLWJlNDAtODNkODExNzA5OTI1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/oj0RkQZA#RlIa5TOOy5jV6TC5UrsNdnhggdNbeGm2fiRd03UXvp4', 'Episodio 22', 'La \"G\" de Guts', 'https://m.media-amazon.com/images/M/MV5BNzZjNjg2MTEtN2U1NC00MmZkLThjZmMtY2YyZWEwMzc1OTNkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gj1nkS7Q#75g8t1QNdX-JC1iTY-AkTI3xVSsX3fOKS5vyp2CjLEA', 'Episodio 23', 'Clash y Talking Head', 'https://m.media-amazon.com/images/M/MV5BMGE1M2VkNWItN2IxZi00OTcyLThhMjItYWIyM2MwOGM3YmNmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gHFmESJZ#ilD2HAg8tmZELoI-zHNYmuj35hsP8OtI9Q729zyqoNM', 'Episodio 24', 'Notorious B.I.G', 'https://m.media-amazon.com/images/M/MV5BODcwYWMyODEtYzk3MS00NzEzLWE5ZWEtNzQ4ZmUwZTkwNjNiXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/92VmgZSA#ExpggCP-nxdB6VvuC0uQeameVYvvVwMF4j8jxdFOaow', 'Episodio 25', 'Spice Girl', 'https://m.media-amazon.com/images/M/MV5BZjQ4MTFiY2ItMmU2OS00Yzg0LThmMzktZjgwYTlmZDM3NGVlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/JGsH3KQI#wtrn2VkFtS5yd7ZU2xrFbfFt5bPX3ewytA_nKPc47nI', 'Episodio 26', 'Una Pequeña Historia del Pasado ~ Mi Nombre es Doppio', 'https://m.media-amazon.com/images/M/MV5BYTk5NjRjY2YtNzkyNy00ZjkzLWExMGQtMzkwYTJmYzRmN2YzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/wvdF0ZyK#IaEOa3fKtodbEVizcc-G4wH_bdrGHi561BB6fdL3K8c', 'Episodio 27', 'King Crimson vs. Metallica', 'https://m.media-amazon.com/images/M/MV5BYWRhMzgwMjYtZTc4Ny00ZTRmLWI0N2MtNDAyZWQyOGZmNTk4XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/JmEW0QQZ#XlgL9TFWiBcXbw7LystLMUxbcqSQpsz03E6SP9K5qS8', 'Episodio 28', 'Bajo un Cielo Que Pareciera Estar a Punto de Caer', 'https://m.media-amazon.com/images/M/MV5BN2IwMmJhZmQtZmNlYi00ZWE0LTk3MjYtZGE3MDc0MGY4NGY5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/8j1i1BBQ#j-pMuMPahtIqyKaUTfbVR2AjPqgVNlZo8XaUi4Fyvtk', 'Episodio 29', '¡Destino: Roma! El Coliseo', 'https://m.media-amazon.com/images/M/MV5BZDgyNzYzODYtMDRhNy00NTJkLTg2ZTQtYjAxMDA4OTMzZGYwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/9u9SzA4D#9Ex7wqpw0QGU-oP_ABApVNvKnVk0AqGtCW4tKDHRZTg', 'Episodio 30', 'Green Day y Oasis, parte 1', 'https://m.media-amazon.com/images/M/MV5BYmEyMjA0NjEtZDE1Ny00ZWM1LWFmOWQtMWViMDk2ZWU1OTM3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/cm13QJ7a#0ZKne30kZhrfT2xsAs8FjNuxwzgRmzZDlhPlZ-axbCE', 'Episodio 31', 'Green Day y Oasis, parte 2', 'https://m.media-amazon.com/images/M/MV5BN2VlNTFmM2QtNDhiMC00NGU4LWE1MmItMzkyYzM3MGM2YjBhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/l79UmCLB#aXrsgfe42I_N93OvcQlQPh3VFZ_23M0bLIxFf77I56k', 'Episodio 32', 'Green Day y Oasis, parte 3', 'https://m.media-amazon.com/images/M/MV5BMmIwMDFlZWEtNzMyYi00ZTRkLWI0NjEtNTA3YTIzZjA4ZjUxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/ViFFzLKJ#ZItQvxt0pzwiDPICjOAVCGnBuW_7SVBuu-_59jd4Pto', 'Episodio 33', 'Su Nombre es Diavolo', 'https://m.media-amazon.com/images/M/MV5BZWM3NWFlNGEtOGM4Mi00N2M5LTg2N2EtNThlYTAzY2YyNzRmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/J2EGEIgD#-GOrf-sc54e7-9XXx1NtrecZBNNkZz6boCzHtmSLHOg', 'Episodio 34', 'El Réquiem Suena Tranquilamente, parte 1', 'https://m.media-amazon.com/images/M/MV5BYmZlMDUyZDAtYWE4ZS00OGZiLThlZjQtMjA4YmM3NzA0MGE5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/oSsQDLjJ#JxbZiGpu7XqIxVfZ75wAACDHNH8SSk4x_M902ElcZqs', 'Episodio 35', 'El Réquiem Suena Tranquilamente, parte 2', 'https://m.media-amazon.com/images/M/MV5BZDM5Y2QzN2UtYzZjZC00Y2I0LWIwYzUtYTEwMzAyZWY3ZTU5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gDlGVATJ#uc797nnFhbVEMvv3DO_UfFcmL5mQePusvDWIEhQmL1g', 'Episodio 36', 'Diavolo Asciende', 'https://m.media-amazon.com/images/M/MV5BODBhODYyMzktNDhiYi00OWRiLWJjOWQtNjgxNjM2NTRhZTRmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/FbdWgbxT#z1wn-4K5llHTIDAc4YV0fm5Uiwl35IW5t8c9NnhhTL4', 'Episodio 37', 'Rey de Reyes', 'https://m.media-amazon.com/images/M/MV5BMWQxMjE1MWItZWNkNC00ODQ0LWEyNjctM2ZmY2IwYWFlMGU2XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/QKUxVJJY#3jZRTk3vZHOnsP1YS1jG0g59Li1rAda7TkgNpT78gBQ', 'Episodio 38', 'Gold Experience Requiem', 'https://m.media-amazon.com/images/M/MV5BMWE1NTFkYzMtMTk3MC00MDA2LTk1YjctM2U4MzA1ZmQ0NzVmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gC8lFarL#_slrKdTNI2V7NuLm0GhwWLlhAS-tCBjAr9Gi2dApqmU', 'Episodio 39', 'Esclavos Durmientes', 'https://m.media-amazon.com/images/M/MV5BYWM2YzliYzUtMTI2My00NWE4LTg1NGYtNDliZWVjODEwM2IzXkEyXkFqcGc@._V1_QL75_UX800_.jpg']
+].map(([url, title, description, image]) => [
+    url,
+    title,
+    description,
+    image,
+    'iframe'
+]);
+
+const jojosSeason6Episodes = [
+    ['https://mega.nz/embed/ZKdAQQwT#Jq7rDlC98M6PLdL4Tnvu9CBB4RrDGtHcB19JEfmku38', 'Episodio 1', 'Océano de piedra', 'https://m.media-amazon.com/images/M/MV5BNjEyMjhhNDAtN2E2ZC00ZGYwLWE3OWEtYjI1MzE4MzljMGNiXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/wWc2DIZJ#tjf49jXlSkXU7zYN4I4XpS0yON51iRaMTQOiLQaST5Y', 'Episodio 2', 'Prisionera FE40536: Jolyne Cujoh', 'https://m.media-amazon.com/images/M/MV5BZTJhOTIyMmItYjA5YS00MjQ2LTk1ZWMtNTg0YmY3NThhZGIzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/teNDlJqA#q9Wds-hzvHQBUpUmhCDJrYdJpqa52HQ5ivN07mhCg_c', 'Episodio 3', 'La visita, 1ª parte', 'https://m.media-amazon.com/images/M/MV5BMDY2NWU5MDMtZmQ5Ny00OWQ1LTk2NWEtMGEyNjZjNjYwYjVlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/JWti3SAC#St2znHFF00Sa-gA6Hhp-BB2MHOpypuUvjJS216pJH3U', 'Episodio 4', 'La visita, 2ª parte', 'https://m.media-amazon.com/images/M/MV5BMGU2NDE0Y2EtMDc3ZS00OGY5LWFiZDEtMmRjMjc1MGY2MGQyXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/VCkXVLBJ#G1JVBgTV1e8___md5jQGQLoRW9be_4_fN_jmF1_gRl8', 'Episodio 5', 'Presa del amor', 'https://m.media-amazon.com/images/M/MV5BZTZkZDQzNDAtMTYzNi00NzcyLWFmMjQtNDE0MWQxOTQ0YTM2XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/EW8WkITD#EhkINnI2rFk1O61xJLkx8xclWcYpjat50aYZ5oWs_lE', 'Episodio 6', 'Las pegatinas de Ermes', 'https://m.media-amazon.com/images/M/MV5BZGY0ODJjMjktMjgyNS00ZDc4LWI5MGUtODg2YmM1NzVmNjk3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/FbFCHASS#APLDM45hjBZ8O3rp9FRigYag2YkKT_NNVRd_93_x5qU', 'Episodio 7', '¡Somos seis!', 'https://m.media-amazon.com/images/M/MV5BMWQ0OGE5NWYtNzIwNS00N2MzLTg1ZjAtYjQwYzgxMmVmOGQwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/VXlWjYQa#hJptl_adsZqiOPZHRg8ZWbCl9sXoY00m_rESdW_OtDk', 'Episodio 8', 'F. F.', 'https://m.media-amazon.com/images/M/MV5BZDdiYTQwOTctZWI4Zi00YTAzLTgzZTktYjM3Zjg2ZTkxNzZiXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/gKE2AJ4D#RHtUhXCo0s_kNvqlEUWTbF7orqkR-lJzG18nFTYzPSc', 'Episodio 9', 'Mary Lynn Manson, el cobrador de deudas', 'https://m.media-amazon.com/images/M/MV5BYmZhZDc4ZWUtZGVjMS00M2ZhLTg2MmUtZDhmNjgwY2ExMmNlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/UbkiwJqa#rZ_Z54zIycdcgQ3GZSWjDHPB2bqEOU-ot0A4lVRg770', 'Episodio 10', 'Operación Savage Garden: ¡Diríjanse al patio!, 1ª parte', 'https://m.media-amazon.com/images/M/MV5BYzIyMmM5YWQtNDhmNi00ZTA1LWIzYzEtOTE1YmIwNjE3ZDgwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/UG0B0B4I#hLXgVIFygxfwFWOWKeL5GGvcbHZ4FH3Uxvy6nju_8Os', 'Episodio 11', 'Operación Savage Garden: ¡Diríjanse al patio!, 2ª parte', 'https://m.media-amazon.com/images/M/MV5BY2RmZjc5N2YtMjkxOS00MmFiLThhNjktOWY3OTg5NThiODUxXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/MfNGxCrJ#WXlER5he7w1MABHkrxaKtsdqd_KvNz8JARFHSTPINXE', 'Episodio 12', 'Aviso de lluvias torrenciales', 'https://m.media-amazon.com/images/M/MV5BMmY1YjVhMTctYmMzNy00ZTczLThjNDQtZDg1YjUzMzI2OTI3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/saFyFBJQ#iZ2T4ifIzzAClzUaJUhEoRhBhOgTD2BzNECrFFALqIE', 'Episodio 13', 'Amor y venganza, 1ª parte', 'https://m.media-amazon.com/images/M/MV5BOGVkMTEyNjEtN2Q0NC00NTNhLWFiZTYtNjc0ZTNmMGY0Y2RjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/4HE0kDAA#1ReSQNb3THzWlxlwgf4M4kTvdEwLAG3Beum3CaTK4M0', 'Episodio 14', 'Amor y venganza, 2ª parte', 'https://m.media-amazon.com/images/M/MV5BMThjMjk2NWYtMzkxYy00M2Y1LTg2NGYtNDU5YTM3NzM1OGY1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=cy9WS01FVVUzU2JaMUdkakpGaDZBNG1zajIyMmNpbUdxSVZWTE14TDV0NmY2dTRSNTNPQmdwOC9NOVQxMHhDejdzbTFqSitETUUxdGt6M2ZSNmJNRnJVZUkzbXBWclN6MnBtTldyWW01Q0J5SXIvbDYza3NFbG43SXBMazZKdlE6OmPaZjftss1dv2cchOCDlc4-&t=3a06a5cb2e1396d64383d814302f62de&op=NTgxMzU=', 'Episodio 15', 'Celda de castigo de máxima seguridad', 'https://m.media-amazon.com/images/M/MV5BYzZmYWNjYzAtNDYwZC00MmVlLWExMDYtMmI3YzFlNzQ4OTExXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=R0U5VDlycUJhNm1HbllqOFNzU0NxOWhLZ1lQcE1GZTVlcTVveTBsQ05YM0Fremp4RDU1ZGo3N2F0NkUxNkVYb3MrcXJtUEptTWpxMnpobkd4cWpVN0N1QTROc0tZbGc3YklEMGNRRzdpQVlwcHNOQkdUdlIwZXQwWDA0blV0dGo6OjBNKp4DkGbiajII5r8YVYE-&t=ddd0026d29d2275601baf3749de8f6d5&op=NTgxMzY=', 'Episodio 16', 'El secreto de Westwood', 'https://m.media-amazon.com/images/M/MV5BNTQyNmQzMjctNDg4OC00Zjg1LWJmMTctY2U3MGM0NjgxZDcwXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=RkFiZ1VOT1ZLTTE3dXZubE5BNTlOVkg0MlRRTDFKZDZZbzMwQWJteWFwTjhJOTFlS1M1Rko1OXBYcEk1dU5VUlZ4WU1SUDFKalovaThrMW5kVUdpRHZXbFBWaVdpSDVjTis4NkNpOWR2SUVuUW02bjlRTUtRTUF1WXFua25xNzM6Ot3azAoQvb5haFM9TziYxXc-&t=f0e17942cd48f2777c9252e5a7c5a836&op=NTgxMzc=', 'Episodio 17', 'El sueño del dragón', 'https://m.media-amazon.com/images/M/MV5BOTlhZmM3ZjMtN2M2NS00OTljLWE1YTctNDcxMTQ1ZTRiNmJkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=dWhWdncvTlMreUtPODBITW1FMG16YW5yMXg2QnF4SkR6NTU0WHJFelZOTklQVjlUSWtqMDFaRkhYVUlpK2xPM2MzWDU4MU5ka2RxMUJFQ3hEUGFCc1Nkek9aZ0dBUXZjN1dkKzFVTU9pbXBtMEFiMFZsY2NhaFRia00zVzkxQVk6OpsGUazEFitw8GAgKFekho4-&t=b5eecafeeaf4a9509a2a951a22c32179&op=NTgxMzg=', 'Episodio 18', 'F.F.', 'https://m.media-amazon.com/images/M/MV5BOGI4NTVlZjQtNjk1ZS00ZjZhLWFjMTgtYTEzMTExOGE3ODNhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/9WFhSSCL#GtRsj5JeCDp2ElzYbxFPYKLBWQgyS6lweBFH2foqM-o', 'Episodio 19', 'El nacimiento', 'https://m.media-amazon.com/images/M/MV5BYmUzOTg1ZTYtMjE1NC00Njk5LWI1MjAtMGZkNzMzMjE1NjllXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=NmROZmdiWTdWV1lmSy80Ym16QWlRQTRqRDkzUy9NR2cvUjRnWEtWVDN1cjQ0ZVpuL2dUU3JjU3FCRzZ2RnRNOTNuVVVtcEpqd1ZndVYxcEVQQWZVUmdJQ01nSU1QZ1lVSitSaGZKaE5mYWxwalpSaTBJRjdTRm5rcStPWkR5V2s6OqyGLWe.sBW20gNKhE_olO8-&t=b9a0a2dea3ce0771187a411df1a60a64&op=NTgxNDA=', 'Episodio 20', 'F.F.: Testigo', 'https://m.media-amazon.com/images/M/MV5BOGVkMDAyMzUtNTE2My00M2U0LWEyYzEtZDI5MzhlYzBjYzBhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/ICMUDBzI#oZU_amQIZFt_0eO7sLlCwFEq4vsnbA7A725ZHke8fL0', 'Episodio 21', 'El despertar', 'https://m.media-amazon.com/images/M/MV5BZTBkMzFmNDItYzFmMy00ZWEyLWIwMGMtMmQ5NDRiZDQ3OTJhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=VEw1MVJnV04xMjhrN3VtWVJQNG5xU1NBbURUclpicUhmTDJTOG1jZVZnSkc3NkRSNjFuUysrVExnSjRqdVJhMlFCaGNKNTcvNG5qVXJYbExIZ2s4R241RE41NDB2d09VWEtRMHQ1K09Vc0dzV1FDdjRROENLdEhIdWY5a0pLUnE6OiyGIC7hU70yED8Pf8UJ.5Q-&t=7f273b79d7628910c0db78002080a2fe&op=NTgxNDI=', 'Episodio 22', '¡Hora del cielo! ¡Luna nueva! ¡Nuevo sacerdote!', 'https://m.media-amazon.com/images/M/MV5BYzhmNDMxMjYtNjg2Yi00ZTZhLWI2NTYtZWZhY2VlNzNkMzhhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=U29wMXp6WFkvZnM2UWN6dWcwN3ZiaE1vTFFVcG4va3hiS1dPUWpHTk1QclBubFFoN3NsR3YrS2p0YWxxMkZkZjl3Nno3eGVNU21DZXQrK3prZHhZTXZzcjJWbVlLaHBoZDVZODJ3ME4zQ1BTTGJwL0ZSZStuL1JlRVhKUnNtVFg6OmqB55oBWvwtWhVkMPbFTyU-&t=287b0a2820a5e8754a800f954ebfa179&op=NTgxNDM=', 'Episodio 23', '¡Se cierra la prisión!', 'https://m.media-amazon.com/images/M/MV5BOTdlMzRhNzgtZWViYy00MjM2LTkyYjktNDhjOTA4N2JiYzg0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=V2RqQXhhTitpa293MXlKUGhOWDdja3pLcE1ER3k4VXB2U0JkeDhKaDJpYi9sV05mbHF2RStrS2xCRitSMWgrbTYyV0pKckxJTktxSmgwazE4bkMxNXJkWkV6WGEvUnIwTXNvb2NsekJSRnlRSzBEL1BPVmttTCtGN2lFbVozUmI6OmtZTvf.82yf8Rq81507smM-&t=45c753cb180208c7522f8a5c7bc3ee95&op=NTgxNDQ=', 'Episodio 24', 'Evasión...', 'https://m.media-amazon.com/images/M/MV5BMmFhODllMjktYTA2Mi00YjYzLTk0MGEtNDBkZWJiMWJlOTI0XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/zlASmTrQ#9erIbj3nkKsHizRWLgW5_HcTgi0t2m37Qtk_8BCoZlc', 'Episodio 25', 'Bohemian Ecstatic, 1ª parte', 'https://m.media-amazon.com/images/M/MV5BMzYwZGI2ODEtMWVkOC00NDc3LTlkMzMtYjVkYTcyNzhjZWVlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/7khVjaqS#5Ybt_j3t9EX1ZSvieaRA7KFQOIfM7CM-DCIGTW0yX_M', 'Episodio 26', 'Bohemian Ecstatic, 2ª parte', 'https://m.media-amazon.com/images/M/MV5BNDkzODgyZjAtZThiMC00ZjU5LWJlYjgtNzE1NWYxZDBiMzc1XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/r8oEHCJZ#hVCDyaQRSkXB73HHUeiQ9tkko2lkZ5BtWu8LclNai2o', 'Episodio 27', 'Sky Guy', 'https://m.media-amazon.com/images/M/MV5BOTY3ZWRiN2YtY2E2Mi00YmI5LTljNzctYmUyNjE1NDkxOThmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/XwQ1lbga#uiTnZnRJ0W1RxnM5dQDFvu3c2LsoF4p7AhiREpkrCTU', 'Episodio 28', 'El paraíso está a un paso: Tres días hasta la luna nueva', 'https://m.media-amazon.com/images/M/MV5BYzg5YTE2MjEtZTM0Yi00NGM1LWFiNjktYjY2MjU0ZmI2OGEzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/uhxElbwC#YVihOKWxIHhHa3xk5ll15qcdm9b57J30SeUp0EDSVS4', 'Episodio 29', 'Netherworld', 'https://m.media-amazon.com/images/M/MV5BMjgyZGU0NTktMjZjNi00MDcwLTk5ZDUtZWMyZGQ5ZDUyOGYyXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/i4ZH3CTA#w9wT8dIIDWIPbCsNinFeOySTH5FyTHhh8CIlgI8SpVY', 'Episodio 30', 'Heavy Forecast, 1ª parte', 'https://m.media-amazon.com/images/M/MV5BYzVkOWJkOGEtYjI0Yi00MmQyLTg1MmMtZDVlMDBkNGZlNWNjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/W9wn0aLB#J02h9ja6e6WY-R9B1jSY41bmxl0nWoXtsKR4ZTh-cjw', 'Episodio 31', 'Heavy Forecast, 2ª parte', 'https://m.media-amazon.com/images/M/MV5BNGQ4M2I2OGYtMmNmOC00ZmViLTlhMjMtNWVhOGNlODE5MzYzXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/TlZDnYjQ#RFzKIAo513ulUFJIkoO_SHjxSD-GZW6Sqhf69dNLu3s', 'Episodio 32', 'Heavy Forecast, 3ª parte', 'https://m.media-amazon.com/images/M/MV5BNTUxYTZjZTAtMWQ0ZS00NTNiLWFiN2ItNTI0MjY5NDQzNmVmXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/nthETQDB#WK6IhRthw5G417p7YxNDKeLWVYzZ67GlYKKFfHA4lpQ', 'Episodio 33', 'La gravedad de la luna nueva', 'https://m.media-amazon.com/images/M/MV5BMmZkOGFkZjQtYTAyNy00ZDhkLTgwOWQtOTU2ZmIyYjFjYWE3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/js4HDA7T#7wOga2Y9vx_LEeIbWtH3OZdv3_Xrfyx2zSSliGz6CKE', 'Episodio 34', 'See Moon, 1ª parte', 'https://m.media-amazon.com/images/M/MV5BYjYzMDFhNTUtOWU4NS00Y2JkLWJhZmYtMDU1MWVjOTBjOGFlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/espmCDDI#nhTm8WAvli3SJTSACXVQmeayTDli_-olRCqRmMVNm5E', 'Episodio 35', 'See Moon, 2ª parte', 'https://m.media-amazon.com/images/M/MV5BNTQxNzQ0OTEtNTE5My00ODI4LTkzNzEtMmQ3YTZkOWZjYTk3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/T4JmGJjI#mg4LhMkIeEs-a4LaJP2-F8t3ytDLkZUPOnAT4Ro7pZY', 'Episodio 36', 'Maiden Heaven, 1ª parte', 'https://m.media-amazon.com/images/M/MV5BNTYwZmEwNjEtNzM3OC00M2U1LWI1MzMtYjI4ZDMyZmMyYmI4XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/e0YgAKqZ#zNbIxacu3qjUmh40gYlhHgl-4JvWaUkczA3NYQW9JSg', 'Episodio 37', 'Maiden Heaven, 2ª parte', 'https://m.media-amazon.com/images/M/MV5BNGU2Y2U5NjQtMDcwMi00YzgwLTk1ODItMTEyOGJlOTllNDE3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/vxAEwAhS#77R1mUk3kRMOM8lAbDAws-1Ikx_UYKLzPH58ziA5S5c', 'Episodio 38', 'Un mundo maravilloso', 'https://m.media-amazon.com/images/M/MV5BZmZiMTNhYzUtOWQxYS00NGI2LTg0NDYtMWJjYWQ2MWJjOWNjXkEyXkFqcGc@._V1_QL75_UX800_.jpg']
+].map(([url, title, description, image]) => [
+    url,
+    title,
+    description,
+    image,
+    'iframe'
+]);
+
+const jojosSeason7Episodes = [
+    ['https://jkanime.net/jkplayer/um?e=N2JJeXEzRFczdEQrQVN5dUhyYmlwOGVqd2ZrcGpjbWt3NldUNVg1c1N5Z2h0Z1pRbnVKczVCZFFuRUNiSmlQbXBINXVwT3g2MTBHWEQ5YXZQTG82ekkxS3g0c3BMYjQzZkdMaUYzY3ZzYW43QnJqQ1pKZkJwd0phK09nMVRYK1A6OmdmFDyE.BiADOoXboYvOj8-&t=7317e21572cd8002c9ab16bfd20f793d&op=NzIxNjk=', 'Episodio 1', 'La carrera de la bola de acero', 'https://m.media-amazon.com/images/M/MV5BZmQ5MWFjY2QtYjZjNy00YmIxLWJiOWMtY2RkNjE0MDM3NTlhXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/sB4iGTBS#DH6hb32Nq7YyjjyEKmdtJnymTlnUaT5fJPYwgKLf_c8', 'Episodio 2', 'La petición del sheriff a Mountain Tim', 'https://m.media-amazon.com/images/M/MV5BZWZjOGVkOGEtYTFlNS00NGMyLWJlZjItODhiMzE2NGNmY2U3XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/fbRgSCqA#ZDwUVPM6O_6cDjb9sblI-gzAElmBEGIwMgIAuQeEC8U', 'Episodio 3', 'Forajidos del desierto', 'https://m.media-amazon.com/images/M/MV5BZGNmODgxOTUtN2M3MS00NTdhLTkzODgtY2RhYTQzOWIxNjZlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://jkanime.net/jkplayer/um?e=SXFLeXFxSEJHZFdNYlcyWjdkb1U0Qk8yUHNIMzl0OUdsVFB1YTE2MDB5Q1Z5ZFRrSDBnejlzRDlWWW8wVVpJWFpxOVRyUHd6QVlmMEgrMTNtWGMvVkRLejdlR2lTa0IrcWRVcVhtYUR0cXc9OjqUQ_h0w0ODLVU56aUxM5rb&t=cd9cceb4bdcfbcdc67a8df62736f5ebb&op=Nzg0NDM=', 'Episodio 4', 'Devil\'s Palm', 'https://m.media-amazon.com/images/M/MV5BNzg0YmM1MjYtOWVkNC00YjliLWI4MWEtODIwMzc4MGJmOWU5XkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/5IQGCRCT#b6ESALBOzGgLJ6HboCOwZ8bn9eYDovnhtUaMIwtKVTQ', 'Episodio 5', 'El terrorista de un país extranjero muy lejano', 'https://m.media-amazon.com/images/M/MV5BNGI0NGZjMDctNTg0NS00MDgyLTlmNWUtOGRkYjJiYmEyNWNjXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/siMQxbYY#HRqE_N7qsF_l1Gll2d3twhn6YOu2vxz2VgI7wVDJ9bM', 'Episodio 6', 'El destino de Gyro Zeppeli', 'https://m.media-amazon.com/images/M/MV5BMTdjMTZlZjYtNDk2MC00OTExLWFhNDAtZmI2MDMzMjE1ZGRlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/zzQC0Z5Z#E4RgmsMMNvka4eGLprk7P0DEJ_YoSyGeTEF2jhLVIOQ', 'Episodio 7', 'Tusk, parte 1', 'https://m.media-amazon.com/images/M/MV5BZmU1NGRkNjgtMmFjOC00YTEyLTkxZWItMDYyYTJiN2MzNmVlXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/lv4lRaJQ#mSt9rCWolN1UmfJ4NqgJwWHVOKZNv3zrw9AnWEJU6bA', 'Episodio 8', 'Tusk, parte 2', 'https://m.media-amazon.com/images/M/MV5BY2RmMzlmMWQtOGMxYS00NGVhLWE4YmYtMmQzNTY3NzZmOGJiXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/IIt3UTjD#l33YzOdjIJVaukIaAYqGFSL3OIyNu1ngU907WxNQyDs', 'Episodio 9', 'Frightening Monsters, parte 1', 'https://m.media-amazon.com/images/M/MV5BOTUwZjE1OGUtNTJjMC00NjMwLWE5MmUtZmU5OTMyZDU5ZTNkXkEyXkFqcGc@._V1_QL75_UX800_.jpg'],
+    ['https://mega.nz/embed/HlQC1aBQ#7DZn-gXNW71WIiAG8YdTseewEFmPQwyQbhEi7gMeTSA', 'Episodio 10', 'Frightening Monsters, parte 2', 'https://m.media-amazon.com/images/M/MV5BNzcxOWU1YTMtMTRmZi00Y2ZjLWJjOTUtNDk4OGFlYTlhZDg5XkEyXkFqcGc@._V1_QL75_UX800_.jpg']
 ].map(([url, title, description, image]) => [
     url,
     title,
@@ -5191,7 +5324,7 @@ const catalogData = {
 			{ title: 'Temporada 1 - Parte 1', description: '51 Episodios', cover: 'img/Temp1-Clover.jpg', videos: cloverSeason1Episodes },
 			{ title: 'Temporada 1 - Parte 2', description: '51 Episodios', cover: 'img/Temp2-Clover.webp', videos: cloverSeason2Episodes },
 			{ title: 'Temporada 1 - Parte 3', description: '52 Episodios', cover: 'img/Temp3-Clover.webp', videos: cloverSeason3Episodes },
-			{ title: 'Película La espada del rey mago', description: '1 Película', cover: 'img/Movie1-Clover.jpg', videos: cloverMovie1Episodes },
+            { title: 'Película La espada del rey mago', description: '1 Película', cover: 'img/Movie1-Clover.jpg', videos: cloverMovie1Episodes, tags: ['noCanon'] },
 			{ title: 'Temporada 1 - Parte 4', description: '16 Episodios', cover: 'img/Temp4-Clover.jpg', videos: cloverSeason4Episodes },
 			{ title: 'Temporada 2', description: 'En estreno', cover: 'img/Temp5-Clover.webp', videos: cloverSeason5Episodes }
 		]
@@ -5310,6 +5443,7 @@ const catalogData = {
 		label: 'CATÁLOGO 28', title: 'Seishun Buta Yarō', description: 'Síndrome de la pubertad: ciertas experiencias poco corrientes que se rumorea en Internet que son la causa del exceso de sensibilidad e inestabilidad durante la adolescencia. Este año, Sakura Azusagawa, estudiante de segundo en una preparatoria cercana a Enoshima, conocerá a varias chicas que están pasando por ese "síndrome de la pubertad". Por ejemplo, en la biblioteca conoce a una salvaje...',
 		seasons: [
 			{ title: 'Temporada 1', description: '13 Episodios', cover: 'img/Temp1-BunnyGirlSenpai.jpg', videos:bunnygirlsenpaiSeason1Episodes },
+			{ title: 'Películas', description: '3 Películas', cover: 'https://a.storyblok.com/f/178900/640x905/2c0ae16a93/ccee7688cefbbd36a68df0f8b6da19ec1553508591_full.jpg/m/640x905', videos:bunnygirlsenpaiMovie1Episodes },
 			{ title: 'Temporada 2', description: '13 Episodios', cover: 'img/Temp2-BunnyGirlSenpai.jpg', videos:bunnygirlsenpaiSeason2Episodes }
 		]
 	},
@@ -5484,8 +5618,78 @@ const catalogData = {
 			{ title: 'JoJos Bizarre Adventure: Stardust Crusaders Egypt Arc', description: '24 Episodios', cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1aflSHqppxzqtquwc8VQzZxF8uaK4RChVcH_evH10RY04cmd9dy8EakM&s=10', videos: jojosSeason3Episodes },
             { title: 'JoJos Bizarre Adventure: Diamond is Unbreakable', description: '39 Episodios', cover: 'https://static.wikia.nocookie.net/jojo/images/d/d3/JoJos_Bizarre_Adventure_-_Diamond_Is_Unbreakable.jpg/revision/latest/thumbnail/width/360/height/360?cb=20160828164845&path-prefix=es', videos: jojosSeason4Episodes },
             { title: 'JoJos Bizarre Adventure (OVAS)', description: '13 Episodios', cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEDK9D26ERN0mvvpnUytpe4XTsON92hPYdGAQpXi76Q&s=10', videos: jojosOVASEpisodes },
+            { title: 'JoJos Bizarre Adventure: Golden Wind', description: '39 Episodios', cover: 'https://upload.wikimedia.org/wikipedia/en/6/66/JoJo_Part_5_Golden_Wind.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original', videos: jojosSeason5Episodes },
+            { title: 'JoJos Bizarre Adventure: Stone Ocean', description: '38 Episodios', cover: 'https://static.wikia.nocookie.net/wiki-doblaje-espana/images/8/83/JoJo%27s_Bizarre_Adventure_Stone_Ocean.png/revision/latest?cb=20220830011433&path-prefix=es', videos: jojosSeason6Episodes },
+            { title: 'JoJos Bizarre Adventure: Steel Ball Run', description: 'En emisión', cover: 'https://m.media-amazon.com/images/M/MV5BZDFmY2JjYmYtNjZhOC00ODJkLTliMjYtM2Y4YzBjMWE0ZGZjXkEyXkFqcGc@._V1_.jpg', videos: jojosSeason7Episodes },
 		]
 	},
+};
+
+const episodeTagRanges = {
+    clover: {
+        relleno: [[29], [66], [68], [82], [123, 125], [131], [134, 135], [142, 149]]
+    },
+    hunter: {
+        relleno: [[13], [26]]
+    },
+    dragonball: {
+        relleno: [[29, 33], [45], [79, 83], [127, 132], [149, 153]]
+    },
+    onepiece: {
+        relleno: [
+            [54, 60], [98, 99], [102], [131, 143], [196, 206], [213, 216], [220, 226],
+            [279, 283], [291, 292], [303], [317, 319], [326, 336], [382, 384], [406, 407],
+            [426, 429], [457, 458], [492], [542], [575, 578], [590], [626, 628], [747, 750],
+            [780, 782], [895, 896], [907], [1029, 1030], [1084]
+        ],
+        noCanon: [[291, 292], [303], [406, 407]]
+    }
+};
+
+const expandEpisodeRanges = (ranges) => {
+    const numbers = new Set();
+    for (const [start, end = start] of ranges) {
+        for (let episodeNumber = start; episodeNumber <= end; episodeNumber += 1) {
+            numbers.add(episodeNumber);
+        }
+    }
+    return numbers;
+};
+
+Object.entries(episodeTagRanges).forEach(([catalogKey, classifications]) => {
+    const anime = catalogData[catalogKey];
+    const episodeNumbersByTag = Object.fromEntries(
+        Object.entries(classifications).map(([tag, ranges]) => [tag, expandEpisodeRanges(ranges)])
+    );
+
+    anime.seasons.forEach((season) => {
+        season.videos = season.videos.map((episode) => {
+            const episodeNumber = Number(String(episode[6] || episode[1] || '').match(/(?:episodio|cap[ií]tulo)\s*(\d+)/i)?.[1]);
+            const existingTags = Array.isArray(episode[5]) ? episode[5] : [];
+            const tags = Object.entries(episodeNumbersByTag)
+                .filter(([, episodeNumbers]) => episodeNumbers.has(episodeNumber))
+                .map(([tag]) => tag);
+            const combinedTags = [...new Set([...existingTags, ...tags])];
+            return combinedTags.length ? [...episode.slice(0, 5), combinedTags, ...episode.slice(6)] : episode;
+        });
+    });
+});
+
+const contentTagLabels = {
+    relleno: { label: 'RELLENO', className: 'filler', accessibleName: 'Relleno' },
+    noCanon: { label: 'NO CANON', className: 'non-canon', accessibleName: 'No canon' }
+};
+
+const renderContentTags = (tags = []) => {
+    const badges = tags.map((tag) => {
+        const contentTag = contentTagLabels[tag];
+        if (!contentTag) {
+            return '';
+        }
+        return `<span class="content-badge content-badge--${contentTag.className}" aria-label="${contentTag.accessibleName}" title="${contentTag.accessibleName}">${contentTag.label}</span>`;
+    }).join('');
+
+    return badges ? `<span class="content-badges">${badges}</span>` : '';
 };
 
 const videoGrid = document.querySelector('#video-grid');
@@ -5563,10 +5767,11 @@ if (seasonGrid) {
 	]);
 
 	selectedCatalog.seasons.forEach((season, index) => {
+        const seasonTags = renderContentTags(season.tags);
 		seasonGrid.insertAdjacentHTML('beforeend', `
 			<a class="catalog-card" href="categoria.html?catalogo=${currentCatalogKey}&temporada=${index}">
 				<div class="catalog-cover catalog-cover-season"><img src="${season.cover}" alt="Portada de ${selectedCatalog.title}, ${season.title}"></div>
-				<div class="video-info"><h3>${season.title}</h3><p>${season.description}</p></div>
+                <div class="video-info"><div class="episode-heading"><h3>${season.title}</h3>${seasonTags}</div><p>${season.description}</p></div>
 			</a>
 		`);
 	});
@@ -5582,7 +5787,7 @@ if (videoGrid) {
 	const currentCatalogKey = catalogKey || 'aventuras';
 	const seasonUrl = `temporadas.html?catalogo=${currentCatalogKey}`;
 	document.querySelector('.back-link').href = seasonUrl;
-	document.querySelector('#category-label').textContent = `${selectedCatalog.label} · ${selectedSeason.title}`;
+    document.querySelector('#category-label').innerHTML = `${selectedCatalog.label} · ${selectedSeason.title}${renderContentTags(selectedSeason.tags)}`;
 	document.querySelector('#category-title').textContent = selectedCatalog.title;
 	document.querySelector('#category-description').textContent = selectedSeason.description;
 	renderBreadcrumbs([
@@ -5599,7 +5804,10 @@ if (videoGrid) {
 			const isCurrent = index === seasonIndex;
 			const item = isCurrent ? document.createElement('span') : document.createElement('a');
 			item.className = `season-switcher__item${isCurrent ? ' is-current' : ''}`;
-			item.textContent = season.title;
+            const label = document.createElement('span');
+            label.textContent = season.title;
+            item.appendChild(label);
+            item.insertAdjacentHTML('beforeend', renderContentTags(season.tags));
 			if (isCurrent) {
 				item.setAttribute('aria-current', 'page');
 			} else {
@@ -5614,17 +5822,18 @@ if (videoGrid) {
 		}
 	}
 
-	selectedSeason.videos.forEach(([video, title, description, thumbnail, type = 'video'], episodeIndex) => {
+    selectedSeason.videos.forEach(([video, title, description, thumbnail, type = 'video', tags = [], displayTitle = title], episodeIndex) => {
 		const episodeId = generateEpisodeId(selectedCatalog.title, selectedSeason.title, title);
+        const tagMarkup = renderContentTags(tags);
 
 		videoGrid.insertAdjacentHTML('beforeend', `
-			<article class="video-card" data-video="${video}" data-type="${type}" data-episode-id="${episodeId}" data-catalog-key="${catalogKey || 'aventuras'}" data-season-index="${seasonIndex}" data-episode-index="${episodeIndex}" role="button" tabindex="0" aria-label="Reproducir ${title}">
+            <article class="video-card" data-video="${video}" data-type="${type}" data-title="${title}" data-episode-id="${episodeId}" data-catalog-key="${catalogKey || 'aventuras'}" data-season-index="${seasonIndex}" data-episode-index="${episodeIndex}" role="button" tabindex="0" aria-label="Reproducir ${displayTitle}">
 				<div class="thumbnail">
-					<img src="${thumbnail}" alt="Portada de ${title}">
+                    <img src="${thumbnail}" alt="Portada de ${displayTitle}">
 					<span class="play-button" aria-hidden="true">▶</span>
 				</div>
 				<div class="video-info">
-					<h3>${title}</h3>
+                    <div class="episode-heading"><h3>${displayTitle}</h3>${tagMarkup}</div>
 					<p>${description}</p>
 				</div>
 			</article>
