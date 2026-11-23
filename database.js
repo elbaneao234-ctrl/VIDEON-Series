@@ -52,11 +52,19 @@ const VIDEON_DB = (() => {
     durationSeconds,
     completed,
     updatedAt
-  }) => {
+  }, expectedUserId, expectedGeneration) => {
     const client = getClient();
 
     if (!progressTableAvailable) {
       console.error('[VIDEON PROGRESS] error: watch_progress no está disponible');
+      return null;
+    }
+
+    // La identidad debe venir explícitamente de la petición original. Nunca se
+    // infiere de la sesión actual como valor por defecto: eso permitiría que una
+    // escritura antigua se guardara bajo otra cuenta tras un cambio de sesión.
+    if (!expectedUserId) {
+      console.error('[VIDEON PROGRESS] error: se requiere expectedUserId para guardar');
       return null;
     }
 
@@ -74,8 +82,24 @@ const VIDEON_DB = (() => {
       return null;
     }
 
+    if (user.id !== expectedUserId) {
+      console.error('[VIDEON PROGRESS] error: la sesión actual no coincide con el propietario de la petición');
+      return null;
+    }
+
+    // La generación distingue dos sesiones del mismo usuario. No se persiste:
+    // solo se valida contra auth.js inmediatamente antes de iniciar el upsert.
+    if (expectedGeneration) {
+      const session = window.VIDEON_AUTH?.getSessionIdentity?.();
+
+      if (session?.generation && session.generation !== expectedGeneration) {
+        console.error('[VIDEON PROGRESS] error: la generación de sesión no coincide con la petición');
+        return null;
+      }
+    }
+
     const payload = {
-      user_id: user.id,
+      user_id: expectedUserId,
       episode_id: episodeId,
       progress_seconds: Number(positionSeconds || 0),
       duration: Number(durationSeconds || 0),
@@ -83,54 +107,10 @@ const VIDEON_DB = (() => {
       updated_at: updatedAt || new Date().toISOString()
     };
 
-    const { data: existing, error: lookupError } = await client
+    const { data, error } = await client
       .from('watch_progress')
-      .select('id')
-      .eq('user_id', user.id)
-      .eq('episode_id', episodeId)
-      .maybeSingle();
-
-    console.log('[VIDEON DEBUG] consulta previa watch_progress:', {
-      data: existing,
-      error: lookupError,
-      code: lookupError?.code,
-      message: lookupError?.message,
-      details: lookupError?.details,
-      hint: lookupError?.hint
-    });
-
-    if (lookupError) {
-      if (isMissingProgressTableError(lookupError)) {
-        progressTableAvailable = false;
-        console.error('[VIDEON PROGRESS] error: watch_progress no existe');
-        return null;
-      }
-
-      console.error('Error buscando progreso:', lookupError);
-      console.error('[VIDEON PROGRESS] error:', lookupError);
-      return null;
-    }
-
-    console.log('[VIDEON DEBUG] operación watch_progress:', {
-      operation: existing?.id ? 'update' : 'insert',
-      payload
-    });
-
-    const query = existing?.id
-      ? client.from('watch_progress').update(payload).eq('id', existing.id)
-      : client.from('watch_progress').insert(payload);
-
-    const { data, error } = await query.select();
-
-    console.log('[VIDEON DEBUG] respuesta watch_progress:', {
-      payload,
-      data,
-      error,
-      code: error?.code,
-      message: error?.message,
-      details: error?.details,
-      hint: error?.hint
-    });
+      .upsert(payload, { onConflict: 'user_id,episode_id' })
+      .select();
 
     if (error) {
       if (isMissingProgressTableError(error)) {
@@ -140,7 +120,6 @@ const VIDEON_DB = (() => {
       }
 
       console.error('Error guardando progreso:', error);
-      console.error('[VIDEON PROGRESS] error:', error);
       return null;
     }
 
@@ -180,17 +159,128 @@ const VIDEON_DB = (() => {
     return data || [];
   };
 
-  const getEpisodeProgress = async (episodeId) => {
+  // Construye errores identificables: null queda reservado exclusivamente para
+  // "consulta correcta sin fila".
+  const createProgressReadError = (code, message, cause) => {
+    const error = new Error(message);
+    error.name = 'ProgressReadError';
+    error.code = code;
+    if (cause) {
+      error.cause = cause;
+    }
+    return error;
+  };
+
+  // Contrato de getEpisodeProgress():
+  //   fila encontrada     -> la fila
+  //   consulta sin fila   -> null
+  //   cualquier fallo     -> lanza ProgressReadError con un code reconocible
+  // La identidad del propietario es obligatoria: se capturó al iniciar la lectura.
+  const getEpisodeProgress = async (episodeId, expectedUserId, expectedGeneration) => {
     const client = getClient();
 
-    if (!progressTableAvailable) {
-      return null;
+    if (expectedUserId === undefined || expectedUserId === null || expectedUserId === '') {
+      throw createProgressReadError(
+        'PROGRESS_IDENTITY_MISMATCH',
+        '[VIDEON PROGRESS] se requiere expectedUserId para leer el progreso'
+      );
     }
 
-    const user = await window.VIDEON_AUTH.getCurrentUser();
+    const expectedGen = Number(expectedGeneration);
 
-    if (!client || !user || !episodeId) {
-      return null;
+    if (expectedGeneration === undefined || expectedGeneration === null || !Number.isFinite(expectedGen)) {
+      throw createProgressReadError(
+        'PROGRESS_IDENTITY_MISMATCH',
+        '[VIDEON PROGRESS] se requiere expectedGeneration para leer el progreso'
+      );
+    }
+
+    if (!client) {
+      throw createProgressReadError(
+        'PROGRESS_SESSION_ERROR',
+        '[VIDEON PROGRESS] no hay cliente de Supabase para leer el progreso'
+      );
+    }
+
+    if (!progressTableAvailable) {
+      throw createProgressReadError(
+        'PROGRESS_TABLE_MISSING',
+        '[VIDEON PROGRESS] watch_progress no está disponible'
+      );
+    }
+
+    if (!episodeId) {
+      throw createProgressReadError(
+        'PROGRESS_READ_ERROR',
+        '[VIDEON PROGRESS] se requiere episodeId para leer el progreso'
+      );
+    }
+
+    // No usar VIDEON_AUTH.getCurrentUser(): convierte silenciosamente cualquier
+    // error de autenticación en "sin sesión". getSession() distingue ambos casos.
+    let sessionResult;
+    try {
+      sessionResult = await client.auth.getSession();
+    } catch (cause) {
+      throw createProgressReadError(
+        'PROGRESS_SESSION_ERROR',
+        '[VIDEON PROGRESS] error al resolver la sesión',
+        cause
+      );
+    }
+
+    if (sessionResult?.error) {
+      throw createProgressReadError(
+        'PROGRESS_SESSION_ERROR',
+        '[VIDEON PROGRESS] error al resolver la sesión',
+        sessionResult.error
+      );
+    }
+
+    const user = sessionResult?.data?.session?.user || null;
+
+    if (!user) {
+      throw createProgressReadError(
+        'PROGRESS_NO_SESSION',
+        '[VIDEON PROGRESS] no hay sesión autenticada'
+      );
+    }
+
+    // Misma protección que en upsertProgress(): una lectura originada por otra
+    // sesión no debe observar los datos de la cuenta actual.
+    if (user.id !== expectedUserId) {
+      throw createProgressReadError(
+        'PROGRESS_IDENTITY_MISMATCH',
+        '[VIDEON PROGRESS] el usuario de Supabase no coincide con el propietario de la lectura'
+      );
+    }
+
+    const sessionIdentity = window.VIDEON_AUTH?.getSessionIdentity?.();
+
+    if (!sessionIdentity
+      || !sessionIdentity.userId
+      || sessionIdentity.generation === undefined
+      || sessionIdentity.generation === null
+      || !Number.isFinite(Number(sessionIdentity.generation))) {
+      throw createProgressReadError(
+        'PROGRESS_SESSION_ERROR',
+        '[VIDEON PROGRESS] getSessionIdentity() no devolvió una identidad válida'
+      );
+    }
+
+    if (sessionIdentity.userId !== expectedUserId) {
+      throw createProgressReadError(
+        'PROGRESS_IDENTITY_MISMATCH',
+        '[VIDEON PROGRESS] la identidad actual no coincide con el propietario de la lectura'
+      );
+    }
+
+    // Comparación explícita: la generación 0 también debe validarse.
+    if (Number(sessionIdentity.generation) !== expectedGen) {
+      throw createProgressReadError(
+        'PROGRESS_IDENTITY_MISMATCH',
+        '[VIDEON PROGRESS] la generación de sesión no coincide con la lectura'
+      );
     }
 
     const { data, error } = await client
@@ -200,16 +290,20 @@ const VIDEON_DB = (() => {
       .eq('episode_id', episodeId)
       .maybeSingle();
 
-    if (error && error.code !== 'PGRST116') {
+    if (error) {
       if (isMissingProgressTableError(error)) {
         progressTableAvailable = false;
-        return null;
       }
 
-      console.error('Error leyendo episodio concreto:', error);
-      return null;
+      console.error('Error leyendo progreso del episodio:', error);
+      throw createProgressReadError(
+        isMissingProgressTableError(error) ? 'PROGRESS_TABLE_MISSING' : 'PROGRESS_READ_ERROR',
+        '[VIDEON PROGRESS] error en la consulta de progreso',
+        error
+      );
     }
 
+    // maybeSingle(): null significa exclusivamente "consulta correcta sin fila".
     return data || null;
   };
 

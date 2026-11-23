@@ -17,6 +17,93 @@ const VIDEON_AUTH = (() => {
     return window.VIDEON_SUPABASE.client;
   };
 
+  let sessionGeneration = 0;
+  let sessionUserId = null;
+  let authStateBound = false;
+  const sessionListeners = new Set();
+
+  const getSessionIdentity = () => ({
+    userId: sessionUserId,
+    generation: sessionGeneration
+  });
+
+  const notifySessionChange = (userId, reason) => {
+    const nextUserId = userId || null;
+
+    // INITIAL_SESSION sin usuario no representa un cambio real de sesión.
+    if (!nextUserId && sessionGeneration === 0) {
+      return;
+    }
+
+    // SIGNED_IN/TOKEN_REFRESHED duplicados del mismo usuario no invalidan
+    // las colas: solo un cambio real de cuenta o de generación debe hacerlo.
+    if (nextUserId === sessionUserId && sessionGeneration > 0) {
+      return;
+    }
+
+    sessionGeneration += 1;
+    sessionUserId = nextUserId;
+    const detail = { userId: nextUserId, generation: sessionGeneration, reason };
+
+    sessionListeners.forEach((listener) => {
+      try {
+        listener(detail);
+      } catch (error) {
+        console.error('[VIDEON AUTH] error en listener de sesión:', error);
+      }
+    });
+
+    document.dispatchEvent(new CustomEvent('videon:session-change', { detail }));
+  };
+
+  const onSessionChange = (listener) => {
+    if (typeof listener !== 'function') {
+      return () => {};
+    }
+
+    sessionListeners.add(listener);
+
+    // Notificación inmediata: progress.js no debe depender del orden de carga
+    // ni perder la sesión inicial que ya existía antes de suscribirse.
+    try {
+      listener(getSessionIdentity());
+    } catch (error) {
+      console.error('[VIDEON AUTH] error en listener de sesión:', error);
+    }
+
+    return () => sessionListeners.delete(listener);
+  };
+
+  const handleAuthStateEvent = (event, session) => {
+    const userId = session?.user?.id || null;
+
+    if (event === 'INITIAL_SESSION' || event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+      notifySessionChange(userId, event);
+      return;
+    }
+
+    // Un refresh de token del mismo usuario no cambia la generación.
+    if ((event === 'USER_UPDATED' || event === 'TOKEN_REFRESHED') && userId !== sessionUserId) {
+      notifySessionChange(userId, event);
+    }
+  };
+
+  const bindAuthStateChanges = () => {
+    if (authStateBound) {
+      return;
+    }
+
+    const client = getClient();
+    if (!client?.auth?.onAuthStateChange) {
+      return;
+    }
+
+    authStateBound = true;
+    client.auth.onAuthStateChange(handleAuthStateEvent);
+  };
+
+  bindAuthStateChanges();
+
   const getCurrentUser = async () => {
     const client = getClient();
 
@@ -289,6 +376,9 @@ const VIDEON_AUTH = (() => {
     }
 
     if (data?.user) {
+      // La sesión se publica antes de cualquier recarga de UI para que
+      // progress.js invalide inmediatamente la generación anterior.
+      notifySessionChange(data.user.id, 'SIGNED_IN');
       alert('Sesión iniciada correctamente.');
       closeAuthModal();
       await renderAccountState();
@@ -355,6 +445,7 @@ const VIDEON_AUTH = (() => {
       return;
     }
 
+    notifySessionChange(null, 'SIGNED_OUT');
     await renderAccountState();
     if (window.VIDEON_PROGRESS && typeof window.VIDEON_PROGRESS.loadContinueWatching === 'function') {
       await window.VIDEON_PROGRESS.loadContinueWatching();
@@ -362,6 +453,7 @@ const VIDEON_AUTH = (() => {
   };
 
   document.addEventListener('DOMContentLoaded', async () => {
+    bindAuthStateChanges();
     bindAuthButtons();
     await renderAccountState();
   });
@@ -369,6 +461,8 @@ const VIDEON_AUTH = (() => {
   const api = {
     getClient,
     getCurrentUser,
+    getSessionIdentity,
+    onSessionChange,
     renderAccountState,
     signIn,
     signInWithGoogle,

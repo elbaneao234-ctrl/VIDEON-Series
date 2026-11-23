@@ -1,6 +1,28 @@
 const VIDEON_PROGRESS = (() => {
   const STORAGE_KEY = 'videon-progress-cache';
 
+  const getSessionIdentity = () => {
+    const identity = window.VIDEON_AUTH?.getSessionIdentity?.();
+    return {
+      userId: identity?.userId || null,
+      generation: Number(identity?.generation) || 0
+    };
+  };
+
+  // Acepta tanto la forma de auth.js ({ userId, generation }) como la de una
+  // petición ({ userId, sessionGeneration }).
+  const isIdentityCurrent = (owner) => {
+    const userId = owner?.userId || null;
+    const generation = Number(owner?.sessionGeneration ?? owner?.generation ?? 0);
+
+    if (!userId) {
+      return false;
+    }
+
+    const current = getSessionIdentity();
+    return current.userId === userId && current.generation === generation;
+  };
+
   const generateEpisodeId = (series, season, episode) => {
     const safeSeries = String(series || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const safeSeason = String(season || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -19,20 +41,42 @@ const VIDEON_PROGRESS = (() => {
     return { catalogKey, seasonIndex, selectedCatalog, selectedSeason };
   };
 
-  const getLocalProgressCache = () => {
+  const getCacheKey = (userId) => (userId ? `${STORAGE_KEY}:${userId}` : null);
+
+  const getLocalProgressCache = (userId) => {
+    const key = getCacheKey(userId);
+    if (!key) {
+      return {};
+    }
+
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(key);
       return raw ? JSON.parse(raw) : {};
     } catch (error) {
       return {};
     }
   };
 
-  const saveLocalProgressCache = (items) => {
+  const saveLocalProgressCache = (userId, items) => {
+    const key = getCacheKey(userId);
+    if (!key) {
+      return;
+    }
+
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+      localStorage.setItem(key, JSON.stringify(items));
     } catch (error) {
       console.warn('No se pudo guardar caché local:', error);
+    }
+  };
+
+  // La clave global anterior no se volverá a leer: se elimina para que ninguna
+  // cuenta herede posiciones de otra sesión. No afecta a Supabase.
+  const clearLegacyProgressCache = () => {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (error) {
+      console.warn('No se pudo invalidar la caché local anterior:', error);
     }
   };
 
@@ -41,7 +85,9 @@ const VIDEON_PROGRESS = (() => {
     markActiveEpisodeCompleted: null
   };
 
-  const saveVideoProgress = async (payload) => {
+  let videoSessionUnsubscribe = null;
+
+  const saveVideoProgress = async (payload, expectedUserId, expectedGeneration) => {
     const client = window.VIDEON_DB;
 
     if (!client) {
@@ -49,33 +95,59 @@ const VIDEON_PROGRESS = (() => {
       return null;
     }
 
-    let user;
+    let identity = getSessionIdentity();
 
-    try {
-      user = await window.VIDEON_AUTH.getCurrentUser();
-    } catch (error) {
-      console.error('[VIDEON PROGRESS] error:', error);
+    // Compatibilidad con llamadores externos que no pasan la identidad:
+    // se captura aquí, en el momento de crear la escritura.
+    if (!expectedUserId && !identity.userId && window.VIDEON_AUTH?.getCurrentUser) {
+      try {
+        const user = await window.VIDEON_AUTH.getCurrentUser();
+        if (user) {
+          identity = { userId: user.id, generation: identity.generation };
+        }
+      } catch (error) {
+        console.error('[VIDEON PROGRESS] error:', error);
+        return null;
+      }
+    }
+
+    const owner = {
+      userId: expectedUserId || identity.userId,
+      sessionGeneration: Number(expectedGeneration) || identity.generation
+    };
+
+    if (!owner.userId) {
+      console.warn('[VIDEON PROGRESS] error: no hay usuario autenticado');
       return null;
     }
 
-    if (!user) {
-      console.warn('[VIDEON PROGRESS] error: no hay usuario autenticado');
+    if (!isIdentityCurrent(owner)) {
+      console.error('[VIDEON PROGRESS] error: la sesión actual no coincide con el propietario de la petición');
       return null;
     }
 
     console.log('[VIDEON PROGRESS] guardando:', payload);
 
     try {
-      const result = await client.upsertProgress(payload);
+      const result = await client.upsertProgress(payload, owner.userId, owner.sessionGeneration);
+
+      // Una respuesta antigua no debe actualizar el caché ni el estado visual
+      // de una sesión nueva.
+      if (!isIdentityCurrent(owner)) {
+        console.warn('[VIDEON PROGRESS] escritura descartada por cambio de sesión:', payload.episodeId);
+        return null;
+      }
+
       if (result) {
-        const cache = getLocalProgressCache();
+        const cache = getLocalProgressCache(owner.userId);
         cache[payload.episodeId] = {
           ...payload,
           updated_at: payload.updatedAt || new Date().toISOString()
         };
-        saveLocalProgressCache(cache);
+        saveLocalProgressCache(owner.userId, cache);
         console.log('[VIDEON PROGRESS] guardado correctamente');
       }
+
       return result;
     } catch (error) {
       console.error('[VIDEON PROGRESS] error:', error);
@@ -83,8 +155,9 @@ const VIDEON_PROGRESS = (() => {
     }
   };
 
-  const getVideoProgressFromCache = (episodeId) => {
-    const cache = getLocalProgressCache();
+  const getVideoProgressFromCache = (episodeId, userId) => {
+    const ownerId = userId || getSessionIdentity().userId;
+    const cache = getLocalProgressCache(ownerId);
     return cache[episodeId] || null;
   };
 
@@ -224,12 +297,32 @@ const VIDEON_PROGRESS = (() => {
       return;
     }
 
-    const closeModalButton = modal.querySelector('.close-modal');
+    if (videoSessionUnsubscribe) {
+      videoSessionUnsubscribe();
+      videoSessionUnsubscribe = null;
+    }
+
+    clearLegacyProgressCache();
+
+    let sessionIdentity = getSessionIdentity();
+
+    const SAVE_INTERVAL_MS = 5000;
+    const MAX_WRITE_ATTEMPTS = 4;
+    const RETRY_DELAYS_MS = [5000, 10000, 20000];
 
     let progressTimer = null;
+    let progressTimerAt = 0;
     let lastSavedSeconds = 0;
+    let lastSyncAt = 0;
     let activeEpisode = null;
     let closingEpisode = false;
+    let resumeListener = null;
+
+    const pendingPeriodic = new Map();
+    const requestQueue = [];
+    const pendingCompletions = new Set();
+    const completedEpisodes = new Set();
+    let draining = false;
 
     const getEpisodeFromCard = (card) => {
       const title = card.dataset.title || card.querySelector('h3')?.textContent?.trim() || 'Episodio';
@@ -254,6 +347,163 @@ const VIDEON_PROGRESS = (() => {
       };
     };
 
+    // Una única captura de identidad por activación. `seed` es la identidad ya
+    // capturada en activateEpisode: solo se completa el userId si auth.js aún no
+    // ha publicado la sesión inicial, conservando siempre la misma generación.
+    const resolveOwner = async (seed) => {
+      const owner = {
+        userId: seed?.userId || null,
+        sessionGeneration: Number(seed?.sessionGeneration ?? seed?.generation) || 0
+      };
+
+      if (!owner.userId && window.VIDEON_AUTH?.getCurrentUser) {
+        try {
+          const user = await window.VIDEON_AUTH.getCurrentUser();
+          if (user) {
+            owner.userId = user.id;
+          }
+        } catch (error) {
+          console.warn('[VIDEON PROGRESS] no se pudo resolver la sesión:', error);
+        }
+      }
+
+      return owner;
+    };
+
+    // Estados de lectura. 'failed' nunca se convierte en 'ready-empty'.
+    const READ_PENDING = 'pending';
+    const READ_READY_WITH_PROGRESS = 'ready-with-progress';
+    const READ_READY_EMPTY = 'ready-empty';
+    const READ_FAILED = 'failed';
+
+    const createReadState = (owner) => ({
+      status: READ_PENDING,
+      progress: null,
+      userId: owner.userId,
+      sessionGeneration: owner.sessionGeneration
+    });
+
+    // La lectura nunca rechaza: el fallo es un resultado explícito. El propietario
+    // se captura al iniciar la lectura, no se toma de la sesión al terminar.
+    const loadEpisodeProgress = async (episode, owner) => {
+      const state = episode.readState;
+
+      if (!isIdentityCurrent(owner) || !owner.userId) {
+        state.status = READ_FAILED;
+        return state;
+      }
+
+      try {
+        const progress = await window.VIDEON_DB.getEpisodeProgress(
+          episode.episodeId,
+          owner.userId,
+          owner.sessionGeneration
+        );
+
+        if (!isIdentityCurrent(owner)) {
+          state.status = READ_FAILED;
+          return state;
+        }
+
+        state.progress = progress || null;
+        state.status = progress ? READ_READY_WITH_PROGRESS : READ_READY_EMPTY;
+      } catch (error) {
+        console.error('[VIDEON PROGRESS] error leyendo progreso:', error);
+        state.status = READ_FAILED;
+      }
+
+      return state;
+    };
+
+    const showReadError = (episode) => {
+      if (activeEpisode !== episode || !modal.classList.contains('is-open')) {
+        return;
+      }
+
+      const message = document.querySelector('#video-action-message');
+      if (message) {
+        message.textContent = 'No se pudo leer tu progreso. Se conservará el último progreso guardado.';
+      }
+    };
+
+    const applyVideoReadResult = (episode, state) => {
+      if (state.status === READ_FAILED || !isIdentityCurrent(episode)) {
+        showReadError(episode);
+        return state;
+      }
+
+      const progress = state.progress;
+
+      // Registrar el estado confirmado aunque el episodio ya no esté activo,
+      // siempre que la sesión que originó la lectura siga siendo válida.
+      if (progress?.completed) {
+        episode.completed = true;
+        completedEpisodes.add(episode.episodeId);
+      }
+
+      if (activeEpisode !== episode || !isIdentityCurrent(episode)) {
+        return state;
+      }
+
+      const cached = getVideoProgressFromCache(episode.episodeId, episode.userId);
+      const resumeTime = progress?.progress_seconds || cached?.positionSeconds || 0;
+
+      if (resumeTime > 0) {
+        const applyResume = () => {
+          if (activeEpisode !== episode || !isIdentityCurrent(episode)) {
+            return;
+          }
+          if (resumeTime < videoPlayer.duration) {
+            videoPlayer.currentTime = resumeTime;
+          }
+        };
+
+        if (videoPlayer.readyState >= 1) {
+          applyResume();
+        } else {
+          if (resumeListener) {
+            videoPlayer.removeEventListener('loadedmetadata', resumeListener);
+          }
+          resumeListener = () => {
+            resumeListener = null;
+            applyResume();
+          };
+          videoPlayer.addEventListener('loadedmetadata', resumeListener, { once: true });
+        }
+      }
+
+      return state;
+    };
+
+    const applyIframeReadResult = async (episode, state) => {
+      if (state.status === READ_FAILED || !isIdentityCurrent(episode)) {
+        showReadError(episode);
+        return state;
+      }
+
+      const progress = state.progress;
+
+      if (progress?.completed) {
+        episode.completed = true;
+        completedEpisodes.add(episode.episodeId);
+        return state;
+      }
+
+      // Solo una consulta correcta sin fila permite inicializar el episodio nuevo.
+      // Nunca se crea una fila artificial 0/0 tras un error de lectura.
+      if (state.status === READ_READY_EMPTY) {
+        await saveVideoProgress({
+          episodeId: episode.episodeId,
+          positionSeconds: 0,
+          durationSeconds: 0,
+          completed: false,
+          updatedAt: new Date().toISOString()
+        }, episode.userId, episode.sessionGeneration);
+      }
+
+      return state;
+    };
+
     const activateEpisode = (episode) => {
       const card = episode?.dataset ? episode : null;
       const episodeDetails = card ? getEpisodeFromCard(card) : episode;
@@ -263,108 +513,535 @@ const VIDEON_PROGRESS = (() => {
       }
 
       closingEpisode = false;
+      if (resumeListener) {
+        videoPlayer.removeEventListener('loadedmetadata', resumeListener);
+        resumeListener = null;
+      }
       document.querySelectorAll('.video-card').forEach((item) => item.classList.remove('is-active'));
       card?.classList.add('is-active');
-      activeEpisode = { ...episodeDetails, card, completed: Boolean(episodeDetails.completed) };
+
+      const identity = getSessionIdentity();
+      const activationOwner = {
+        userId: identity.userId,
+        sessionGeneration: Number(identity.generation) || 0
+      };
+
+      const episodeToActivate = {
+        ...episodeDetails,
+        card,
+        completed: Boolean(episodeDetails.completed) || completedEpisodes.has(episodeDetails.episodeId),
+        userId: activationOwner.userId,
+        sessionGeneration: activationOwner.sessionGeneration
+      };
+      activeEpisode = episodeToActivate;
       lastSavedSeconds = 0;
+
+      // El readState y la consulta comparten exactamente la misma captura.
+      const readState = createReadState(activationOwner);
+      episodeToActivate.readState = readState;
+
+      // Una sola promesa: resuelve siempre con el estado de lectura final y
+      // nunca rechaza, de modo que ningún consumidor deje un rechazo sin gestionar.
+      episodeToActivate.progressReady = resolveOwner(activationOwner).then((owner) => {
+        // Si la generación cambió durante la preparación, la lectura se descarta.
+        if (!isIdentityCurrent(owner) || !owner.userId) {
+          readState.status = READ_FAILED;
+          return readState;
+        }
+
+        // La sesión inicial puede resolverse de forma asíncrona: sincronizar la
+        // identidad del episodio antes de lanzar la consulta y sus escrituras.
+        episodeToActivate.userId = owner.userId;
+        episodeToActivate.sessionGeneration = owner.sessionGeneration;
+        readState.userId = owner.userId;
+        readState.sessionGeneration = owner.sessionGeneration;
+
+        return loadEpisodeProgress(episodeToActivate, owner);
+      }).then((state) => {
+        if (episodeToActivate.type === 'iframe') {
+          return applyIframeReadResult(episodeToActivate, state);
+        }
+        return applyVideoReadResult(episodeToActivate, state);
+      }).catch((error) => {
+        console.error('[VIDEON PROGRESS] error preparando la lectura:', error);
+        if (isIdentityCurrent(episodeToActivate)) {
+          readState.status = READ_FAILED;
+          showReadError(episodeToActivate);
+        }
+        return readState;
+      });
+
+      console.log('[VIDEON PROGRESS] episodio activo:', activeEpisode.episodeId);
+    };
+
+    const isWriteBlocked = (episodeId) => pendingCompletions.has(episodeId) || completedEpisodes.has(episodeId);
+
+    const scheduleFlush = () => {
+      const now = Date.now();
+      let wakeAt = null;
+
+      if (pendingPeriodic.size) {
+        wakeAt = lastSyncAt + SAVE_INTERVAL_MS;
+      }
+
+      requestQueue.forEach((request) => {
+        if (wakeAt === null || request.nextAttemptAt < wakeAt) {
+          wakeAt = request.nextAttemptAt;
+        }
+      });
+
+      if (wakeAt === null) {
+        if (progressTimer) {
+          clearTimeout(progressTimer);
+          progressTimer = null;
+          progressTimerAt = 0;
+        }
+        return;
+      }
+
+      // Un reintento lejano de A no debe retrasar una escritura de B que ya tiene su plazo.
+      if (progressTimer && progressTimerAt <= wakeAt) {
+        return;
+      }
 
       if (progressTimer) {
         clearTimeout(progressTimer);
+      }
+
+      progressTimerAt = wakeAt;
+      progressTimer = setTimeout(() => {
         progressTimer = null;
-      }
+        progressTimerAt = 0;
 
-      console.log('[VIDEON PROGRESS] episodio activo:', activeEpisode.episodeId);
-
-      if (activeEpisode.type === 'iframe') {
-        const episodeToLoad = activeEpisode;
-        episodeToLoad.progressReady = window.VIDEON_DB.getEpisodeProgress(episodeToLoad.episodeId).then((progress) => {
-          episodeToLoad.completed = Boolean(progress?.completed);
-
-          if (!episodeToLoad.completed) {
-            return saveVideoProgress({
-              episodeId: episodeToLoad.episodeId,
-              positionSeconds: Number(progress?.progress_seconds || 0),
-              durationSeconds: Number(progress?.duration || 0),
-              completed: false,
-              updatedAt: new Date().toISOString()
-            });
-          }
-          return null;
-        }).catch((error) => {
-          console.warn('[VIDEON PROGRESS] error leyendo progreso iframe:', error);
-          episodeToLoad.completed = false;
-        });
-        return;
-      }
-
-      const cached = getVideoProgressFromCache(activeEpisode.episodeId);
-      const episodeToLoad = activeEpisode;
-      window.VIDEON_DB.getEpisodeProgress(episodeToLoad.episodeId).then((progress) => {
-        if (activeEpisode !== episodeToLoad) {
-          return;
+        if (pendingPeriodic.size && Date.now() >= lastSyncAt + SAVE_INTERVAL_MS) {
+          pendingPeriodic.forEach((request) => requestQueue.push(request));
+          pendingPeriodic.clear();
         }
-        const resumeTime = progress?.progress_seconds || cached?.positionSeconds || 0;
-        if (resumeTime > 0) {
-          videoPlayer.addEventListener('loadedmetadata', () => {
-            if (resumeTime < videoPlayer.duration) {
-              videoPlayer.currentTime = resumeTime;
-            }
-          }, { once: true });
-        }
-      }).catch((error) => {
-        console.warn('[VIDEON PROGRESS] error leyendo progreso:', error);
-      });
+
+        drain().catch(reportDrainError);
+      }, Math.max(0, wakeAt - now));
     };
 
-    const syncProgress = async (force = false, markCompleted = false, episodeToSync = activeEpisode, allowThreshold = false) => {
-      if (!episodeToSync || activeEpisode !== episodeToSync || (episodeToSync.completed && !markCompleted)) {
+    const reportDrainError = (error) => {
+      console.error('[VIDEON PROGRESS] error:', error);
+      draining = false;
+      scheduleFlush();
+    };
+
+    const resolveWaiters = (request, result) => {
+      request.waiters.forEach((resolve) => resolve(result));
+      request.waiters = [];
+    };
+
+    const discardRequest = (request) => {
+      const episodeId = request.episode.episodeId;
+
+      if (request.payload.completed
+        && !requestQueue.some((item) => item !== request
+          && item.episode.episodeId === episodeId && item.payload.completed)) {
+        pendingCompletions.delete(episodeId);
+      }
+
+      resolveWaiters(request, false);
+    };
+
+    const refreshCardsForSession = async (identity) => {
+      if (!identity.userId || !window.VIDEON_DB?.getProgress) {
         return;
       }
 
-      if (episodeToSync.type === 'iframe') {
-        if (force) {
-          if (episodeToSync.progressReady) {
-            await episodeToSync.progressReady;
-          }
+      try {
+        const items = await window.VIDEON_DB.getProgress();
 
-          if (!episodeToSync.completed) {
-            await saveVideoProgress({
-              episodeId: episodeToSync.episodeId,
-              positionSeconds: 0,
-              durationSeconds: 0,
-              completed: false,
-              updatedAt: new Date().toISOString()
-            });
-          }
+        // La lectura puede terminar después de otro cambio de sesión.
+        if (!isIdentityCurrent(identity)) {
+          return;
         }
+
+        applyEpisodeProgressToCards(items);
+      } catch (error) {
+        console.warn('[VIDEON PROGRESS] no se pudo repintar el progreso tras el cambio de sesión:', error);
+      }
+    };
+
+    const resetSessionState = (identity) => {
+      if (progressTimer) {
+        clearTimeout(progressTimer);
+        progressTimer = null;
+        progressTimerAt = 0;
+      }
+
+      pendingPeriodic.forEach((request) => discardRequest(request));
+      pendingPeriodic.clear();
+      requestQueue.slice().forEach((request) => discardRequest(request));
+      requestQueue.length = 0;
+
+      pendingCompletions.clear();
+      completedEpisodes.clear();
+
+      if (resumeListener) {
+        videoPlayer.removeEventListener('loadedmetadata', resumeListener);
+        resumeListener = null;
+      }
+
+      activeEpisode = null;
+      closingEpisode = false;
+      lastSavedSeconds = 0;
+      lastSyncAt = 0;
+
+      const actionMessage = document.querySelector('#video-action-message');
+      if (actionMessage) {
+        actionMessage.textContent = '';
+      }
+
+      // No se toca `draining`: una escritura ya en vuelo debe terminar y
+      // descartarse por cambio de generación sin permitir otra simultánea.
+      document.querySelectorAll('.video-card').forEach((item) => item.classList.remove('is-active'));
+      applyEpisodeProgressToCards([]);
+      clearLegacyProgressCache();
+      refreshCardsForSession(identity);
+    };
+
+    const handleSessionChange = (nextIdentity) => {
+      const incoming = {
+        userId: nextIdentity?.userId || null,
+        generation: Number(nextIdentity?.generation) || 0
+      };
+      const changed = incoming.userId !== sessionIdentity.userId
+        || incoming.generation !== sessionIdentity.generation;
+
+      sessionIdentity = incoming;
+
+      if (!changed) {
         return;
       }
 
-      if (videoPlayer.hidden) {
+      resetSessionState(incoming);
+    };
+
+    const drain = async () => {
+      if (draining) {
         return;
       }
 
-      const currentTime = Number(videoPlayer.currentTime || 0);
-      const duration = Number(videoPlayer.duration || 0);
+      draining = true;
+
+      try {
+        while (requestQueue.length) {
+          const now = Date.now();
+          const index = requestQueue.findIndex((request) => request.nextAttemptAt <= now);
+          if (index < 0) {
+            break;
+          }
+
+          const [request] = requestQueue.splice(index, 1);
+          const episodeId = request.episode.episodeId;
+
+          if (!isIdentityCurrent(request)) {
+            console.warn('[VIDEON PROGRESS] petición descartada por cambio de sesión:', episodeId);
+            discardRequest(request);
+            continue;
+          }
+
+          if (!request.payload.completed && isWriteBlocked(episodeId)) {
+            resolveWaiters(request, true);
+            continue;
+          }
+
+          request.attempts += 1;
+          if (request.periodic && request.attempts === 1) {
+            lastSyncAt = Date.now();
+          }
+
+          let saved = false;
+          try {
+            saved = Boolean(await saveVideoProgress(
+              request.payload,
+              request.userId,
+              request.sessionGeneration
+            ));
+          } catch (error) {
+            console.error('[VIDEON PROGRESS] error:', error);
+          }
+
+          // La sesión puede haber cambiado mientras la petición estaba en vuelo.
+          // En ese caso no se toca el estado visual ni la cola de la sesión nueva.
+          if (!isIdentityCurrent(request)) {
+            console.warn('[VIDEON PROGRESS] respuesta descartada por cambio de sesión:', episodeId);
+            discardRequest(request);
+            continue;
+          }
+
+          if (saved) {
+            if (request.payload.completed) {
+              request.episode.completed = true;
+              pendingCompletions.delete(episodeId);
+              completedEpisodes.add(episodeId);
+
+              try {
+                markEpisodeCardCompleted(episodeId);
+              } catch (error) {
+                console.error('[VIDEON PROGRESS] error:', error);
+              }
+            } else if (completedEpisodes.has(episodeId)
+              && !requestQueue.some((item) => item.episode.episodeId === episodeId && item.payload.completed)) {
+              // Una lectura confirmó la finalización mientras esta escritura estaba en vuelo:
+              // restaurar completed:true de inmediato para no perder el estado.
+              pendingCompletions.add(episodeId);
+              requestQueue.unshift({
+                episode: request.episode,
+                payload: { ...request.payload, completed: true, updatedAt: new Date().toISOString() },
+                waiters: [],
+                attempts: 0,
+                nextAttemptAt: 0,
+                periodic: false,
+                userId: request.userId,
+                sessionGeneration: request.sessionGeneration
+              });
+            }
+
+            if (request.episode === activeEpisode) {
+              lastSavedSeconds = request.payload.positionSeconds;
+            }
+
+            resolveWaiters(request, true);
+            continue;
+          }
+
+          if (request.attempts < MAX_WRITE_ATTEMPTS) {
+            // Reintento progresivo por petición: conservamos payload y waiters, y no
+            // bloqueamos el resto de la cola mientras llega su momento de ejecución.
+            request.nextAttemptAt = Date.now() + RETRY_DELAYS_MS[request.attempts - 1];
+            requestQueue.push(request);
+            continue;
+          }
+
+          console.error('[VIDEON PROGRESS] guardado descartado tras agotar intentos:', episodeId, request.payload);
+          discardRequest(request);
+        }
+      } finally {
+        draining = false;
+        scheduleFlush();
+      }
+    };
+
+    const queuePeriodicWrite = (episode, payload) => new Promise((resolve) => {
+      if (!isIdentityCurrent(episode)) {
+        resolve(false);
+        return;
+      }
+
+      if (isWriteBlocked(episode.episodeId)) {
+        resolve(true);
+        return;
+      }
+
+      // Una petición huérfana de otra generación nunca debe absorber waiters nuevos.
+      const staleIndex = requestQueue.findIndex((item) => item.episode.episodeId === episode.episodeId
+        && !isIdentityCurrent(item));
+      if (staleIndex >= 0) {
+        discardRequest(requestQueue.splice(staleIndex, 1)[0]);
+      }
+
+      const existing = requestQueue.find((item) => item.episode.episodeId === episode.episodeId);
+      if (existing) {
+        existing.waiters.push(resolve);
+        existing.userId = episode.userId;
+        existing.sessionGeneration = episode.sessionGeneration;
+        if (!existing.payload.completed) {
+          existing.payload = payload;
+        }
+        // No reiniciar attempts ni nextAttemptAt: cada timeupdate no debe renovar
+        // el presupuesto de reintentos de una petición que ya está fallando.
+        return;
+      }
+
+      let pending = pendingPeriodic.get(episode.episodeId);
+      if (pending && !isIdentityCurrent(pending)) {
+        pendingPeriodic.delete(episode.episodeId);
+        discardRequest(pending);
+        pending = null;
+      }
+
+      if (pending) {
+        pending.payload = payload;
+        pending.waiters.push(resolve);
+        pending.userId = episode.userId;
+        pending.sessionGeneration = episode.sessionGeneration;
+      } else {
+        pendingPeriodic.set(episode.episodeId, {
+          episode,
+          payload,
+          waiters: [resolve],
+          attempts: 0,
+          nextAttemptAt: 0,
+          periodic: true,
+          userId: episode.userId,
+          sessionGeneration: episode.sessionGeneration
+        });
+      }
+
+      scheduleFlush();
+    });
+
+    const queueForceWrite = (episode, payload) => new Promise((resolve) => {
+      const episodeId = episode.episodeId;
+
+      if (!isIdentityCurrent(episode)) {
+        resolve(false);
+        return;
+      }
+
+      if (!payload.completed && isWriteBlocked(episodeId)) {
+        resolve(true);
+        return;
+      }
+
+      const waiters = [resolve];
+
+      if (payload.completed) {
+        pendingCompletions.add(episodeId);
+      }
+
+      const pending = pendingPeriodic.get(episodeId);
+      if (pending) {
+        if (isIdentityCurrent(pending)) {
+          waiters.push(...pending.waiters);
+        } else {
+          discardRequest(pending);
+        }
+        pendingPeriodic.delete(episodeId);
+      }
+
+      const index = requestQueue.findIndex((item) => item.episode.episodeId === episodeId);
+      if (index >= 0) {
+        const [existing] = requestQueue.splice(index, 1);
+
+        if (isIdentityCurrent(existing)) {
+          existing.payload = payload;
+          existing.waiters.push(...waiters);
+          existing.userId = episode.userId;
+          existing.sessionGeneration = episode.sessionGeneration;
+          // Una escritura forzada es una acción nueva del usuario: presupuesto propio.
+          existing.attempts = 0;
+          existing.nextAttemptAt = 0;
+          existing.periodic = false;
+          requestQueue.unshift(existing);
+        } else {
+          discardRequest(existing);
+          requestQueue.unshift({
+            episode,
+            payload,
+            waiters,
+            attempts: 0,
+            nextAttemptAt: 0,
+            periodic: false,
+            userId: episode.userId,
+            sessionGeneration: episode.sessionGeneration
+          });
+        }
+      } else {
+        requestQueue.unshift({
+          episode,
+          payload,
+          waiters,
+          attempts: 0,
+          nextAttemptAt: 0,
+          periodic: false,
+          userId: episode.userId,
+          sessionGeneration: episode.sessionGeneration
+        });
+      }
+
+      drain().catch(reportDrainError);
+    });
+
+    const syncProgress = async (
+      force = false,
+      markCompleted = false,
+      episodeToSync = activeEpisode,
+      allowThreshold = false,
+      allowInactive = false
+    ) => {
+      if (!episodeToSync
+        || (!allowInactive && activeEpisode !== episodeToSync)
+        || !isIdentityCurrent(episodeToSync)
+        || (episodeToSync.completed && !markCompleted)) {
+        return;
+      }
+
+      const isIframe = episodeToSync.type === 'iframe';
+
+      // Capturar la posición antes de cualquier await: al cerrar, script.js
+      // vacía el src del vídeo y currentTime pasaría a 0. Un iframe NUNCA debe
+      // heredar currentTime/duration de un vídeo HTML5 reproducido antes.
+      const currentTime = isIframe ? 0 : Number(videoPlayer.currentTime || 0);
+      const duration = isIframe ? 0 : Number(videoPlayer.duration || 0);
       const percentage = duration ? Math.min((currentTime / duration) * 100, 100) : 0;
-      const completed = markCompleted || (allowThreshold && percentage >= 90);
+      const completed = markCompleted || (allowThreshold && !isIframe && percentage >= 90);
 
       const payload = {
         episodeId: episodeToSync.episodeId,
-        positionSeconds: Math.floor(currentTime),
-        durationSeconds: Math.floor(duration),
+        positionSeconds: isIframe ? 0 : Math.floor(currentTime),
+        durationSeconds: isIframe ? 0 : Math.floor(duration),
         completed,
         updatedAt: new Date().toISOString()
       };
 
-      if (force || Math.abs(lastSavedSeconds - payload.positionSeconds) >= 1 || completed) {
-        const result = await saveVideoProgress(payload);
-        if (result && completed) {
-          episodeToSync.completed = true;
-          markEpisodeCardCompleted(episodeToSync.episodeId);
-        }
-        lastSavedSeconds = payload.positionSeconds;
+      if (!force && !completed && Math.abs(lastSavedSeconds - payload.positionSeconds) < 1) {
+        return;
       }
+
+      if (!isIframe && !allowInactive && videoPlayer.hidden) {
+        return;
+      }
+
+      if (episodeToSync.progressReady) {
+        // La promesa resuelve con el estado de lectura; nunca rechaza.
+        const readState = await episodeToSync.progressReady;
+
+        // La lectura puede terminar después de un cambio de sesión.
+        if (!isIdentityCurrent(episodeToSync)) {
+          return;
+        }
+
+        if (!allowInactive
+          && (activeEpisode !== episodeToSync || (!isIframe && videoPlayer.hidden))) {
+          return;
+        }
+
+        // Un fallo de lectura nunca autoriza una escritura completed:false:
+        // no sabemos si Supabase ya tiene un progreso completado.
+        if (!payload.completed && (!readState || readState.status === READ_FAILED)) {
+          console.warn('[VIDEON PROGRESS] escritura incompleta bloqueada: lectura fallida');
+          return;
+        }
+
+        if (!payload.completed
+          && readState?.status === READ_READY_WITH_PROGRESS
+          && readState.progress?.completed) {
+          return;
+        }
+      }
+
+      // Revalidar tras el await: la generación puede haber cambiado mientras leíamos.
+      if (!isIdentityCurrent(episodeToSync)) {
+        return;
+      }
+
+      if (isIframe) {
+        if (!force) {
+          return;
+        }
+        // Las escrituras directas de iframe quedan fuera del coordinador, como en fases anteriores.
+        return Boolean(await saveVideoProgress(payload, episodeToSync.userId, episodeToSync.sessionGeneration));
+      }
+
+      if (force || completed) {
+        return await queueForceWrite(episodeToSync, payload);
+      }
+
+      return await queuePeriodicWrite(episodeToSync, payload);
     };
 
     const markActiveEpisodeCompleted = async () => {
@@ -392,17 +1069,25 @@ const VIDEON_PROGRESS = (() => {
         return { success: false, reason: 'episode-changed' };
       }
 
+      if (!isIdentityCurrent(episodeToComplete)) {
+        return { success: false, reason: 'session-changed' };
+      }
+
       const isIframe = episodeToComplete.type === 'iframe';
-      const result = await saveVideoProgress({
+      const payload = {
         episodeId: episodeToComplete.episodeId,
         positionSeconds: isIframe ? 0 : Math.floor(Number(videoPlayer.currentTime || 0)),
         durationSeconds: isIframe ? 0 : Math.floor(Number(videoPlayer.duration || 0)),
         completed: true,
         updatedAt: new Date().toISOString()
-      });
+      };
 
-      if (!result) {
-        return { success: false, reason: 'save-failed' };
+      const result = isIframe
+        ? await saveVideoProgress(payload, episodeToComplete.userId, episodeToComplete.sessionGeneration)
+        : await queueForceWrite(episodeToComplete, payload);
+
+      if (!result || !isIdentityCurrent(episodeToComplete)) {
+        return { success: false, reason: result ? 'session-changed' : 'save-failed' };
       }
 
       episodeToComplete.completed = true;
@@ -413,13 +1098,11 @@ const VIDEON_PROGRESS = (() => {
     playerControls.activateEpisode = activateEpisode;
     playerControls.markActiveEpisodeCompleted = markActiveEpisodeCompleted;
 
-    videoPlayer.addEventListener('timeupdate', () => {
-      if (progressTimer) {
-        clearTimeout(progressTimer);
-      }
+    videoSessionUnsubscribe = window.VIDEON_AUTH?.onSessionChange?.(handleSessionChange) || null;
 
+    videoPlayer.addEventListener('timeupdate', () => {
       const episodeToSync = activeEpisode;
-      progressTimer = setTimeout(() => syncProgress(false, false, episodeToSync, true), 2000);
+      syncProgress(false, false, episodeToSync, true);
     });
 
     videoPlayer.addEventListener('pause', () => {
@@ -430,24 +1113,34 @@ const VIDEON_PROGRESS = (() => {
     videoPlayer.addEventListener('ended', () => syncProgress(true, true));
 
     const saveBeforeClose = async () => {
-      if (activeEpisode && !closingEpisode) {
-        const episodeToClose = activeEpisode;
-        closingEpisode = true;
-        if (progressTimer) {
-          clearTimeout(progressTimer);
-          progressTimer = null;
-        }
-        await syncProgress(true, false, episodeToClose);
+      if (!activeEpisode || closingEpisode) {
+        return;
+      }
+
+      const episodeToClose = activeEpisode;
+      closingEpisode = true;
+
+      try {
+        // El guardado NO bloquea el cierre: script.js cierra el modal de inmediato.
+        // allowInactive evita que el cierre descarte el guardado legítimo mientras
+        // progressReady sigue pendiente; la identidad sigue siendo obligatoria.
+        await syncProgress(true, false, episodeToClose, false, true);
+
         if (activeEpisode === episodeToClose) {
           activeEpisode = null;
           lastSavedSeconds = 0;
         }
+      } catch (error) {
+        console.error('[VIDEON PROGRESS] error:', error);
+      } finally {
         closingEpisode = false;
       }
     };
 
+    const closeModalButton = modal.querySelector('.close-modal');
+
     if (closeModalButton) {
-      closeModalButton.addEventListener('click', saveBeforeClose, true);
+      closeModalButton.addEventListener('click', () => { saveBeforeClose(); }, true);
     }
 
     modal.addEventListener('click', (event) => {
@@ -558,15 +1251,34 @@ const VIDEON_PROGRESS = (() => {
           return;
         }
 
+        // La identidad se captura en el momento del clic, no al ejecutar la escritura.
+        const identity = getSessionIdentity();
+        const owner = { userId: identity.userId, sessionGeneration: identity.generation };
+
+        if (!owner.userId && window.VIDEON_AUTH?.getCurrentUser) {
+          try {
+            const currentUser = await window.VIDEON_AUTH.getCurrentUser();
+            if (currentUser) {
+              owner.userId = currentUser.id;
+            }
+          } catch (error) {
+            console.error('[VIDEON PROGRESS] error:', error);
+          }
+        }
+
+        if (!isIdentityCurrent(owner)) {
+          return;
+        }
+
         const result = await client.upsertProgress({
           episodeId: item.episode_id,
           positionSeconds: Number(item.progress_seconds || 0),
           durationSeconds: Number(item.duration || 0),
           completed: true,
           updatedAt: new Date().toISOString()
-        });
+        }, owner.userId, owner.sessionGeneration);
 
-        if (result) {
+        if (result && isIdentityCurrent(owner)) {
           await loadContinueWatching();
           await renderProfile();
         }
