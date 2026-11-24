@@ -5625,6 +5625,91 @@ const catalogData = {
 	},
 };
 
+const genreLabels = {
+    accion: 'Acción',
+    aventura: 'Aventura',
+    'artes-marciales': 'Artes marciales',
+    'ciencia-ficcion': 'Ciencia ficción',
+    comedia: 'Comedia',
+    drama: 'Drama',
+    deportes: 'Deportes',
+    escolar: 'Escolar',
+    fantasia: 'Fantasía',
+    'fantasia-oscura': 'Fantasía oscura',
+    historico: 'Histórico',
+    isekai: 'Isekai',
+    mecha: 'Mecha',
+    mitologia: 'Mitología',
+    misterio: 'Misterio',
+    musica: 'Música',
+    psicologico: 'Psicológico',
+    'recuentos-de-la-vida': 'Recuentos de la vida',
+    romance: 'Romance',
+    sobrenatural: 'Sobrenatural',
+    suspense: 'Suspense',
+    terror: 'Terror'
+};
+
+const animeGenres = {
+    aventuras: ['fantasia', 'aventura', 'isekai', 'drama'],
+    documentales: ['deportes', 'aventura', 'comedia'],
+    especiales: ['psicologico', 'misterio', 'suspense', 'sobrenatural'],
+    chainsaw: ['accion', 'fantasia-oscura', 'terror', 'sobrenatural'],
+    vinland: ['accion', 'aventura', 'historico', 'drama'],
+    hunter: ['accion', 'aventura', 'fantasia'],
+    bluelock: ['deportes', 'drama'],
+    aoashi: ['deportes', 'drama'],
+    gurren: ['accion', 'ciencia-ficcion', 'mecha', 'aventura'],
+    jujutsu: ['accion', 'fantasia-oscura', 'sobrenatural', 'terror'],
+    nobleza: ['romance', 'drama', 'escolar', 'recuentos-de-la-vida'],
+    yla: ['drama', 'romance', 'musica'],
+    clover: ['accion', 'aventura', 'fantasia'],
+    ragnarok: ['accion', 'fantasia', 'mitologia'],
+    aot: ['accion', 'drama', 'fantasia-oscura', 'misterio'],
+    leveling: ['accion', 'aventura', 'fantasia'],
+    opm: ['accion', 'comedia', 'ciencia-ficcion'],
+    dragonball: ['accion', 'aventura', 'artes-marciales', 'fantasia'],
+    haikyu: ['deportes', 'drama', 'comedia'],
+    yourname: ['romance', 'drama', 'fantasia', 'sobrenatural'],
+    fullmetal: ['accion', 'aventura', 'fantasia', 'drama'],
+    drstone: ['ciencia-ficcion', 'aventura', 'comedia'],
+    quintillizas: ['romance', 'comedia', 'escolar'],
+    cyberpunk: ['accion', 'ciencia-ficcion', 'drama'],
+    tomodachi: ['psicologico', 'suspense', 'misterio'],
+    gachiakuta: ['accion', 'aventura', 'fantasia-oscura'],
+    yourpancreas: ['drama', 'romance', 'recuentos-de-la-vida'],
+    bunnygirlsenpai: ['romance', 'drama', 'sobrenatural', 'escolar'],
+    ippo: ['deportes', 'drama', 'comedia'],
+    erased: ['misterio', 'suspense', 'drama', 'ciencia-ficcion'],
+    deathparade: ['psicologico', 'drama', 'sobrenatural', 'suspense'],
+    pingpong: ['deportes', 'drama', 'recuentos-de-la-vida'],
+    sao: ['accion', 'aventura', 'ciencia-ficcion', 'fantasia'],
+    burst: ['accion', 'ciencia-ficcion', 'mecha'],
+    fireforce: ['accion', 'sobrenatural', 'fantasia', 'misterio'],
+    chihiro: ['aventura', 'fantasia', 'sobrenatural'],
+    kuroko: ['deportes', 'drama', 'escolar'],
+    codegeass: ['ciencia-ficcion', 'mecha', 'accion', 'psicologico'],
+    monster: ['psicologico', 'suspense', 'misterio', 'drama'],
+    akamegakill: ['accion', 'fantasia', 'drama'],
+    demonslayer: ['accion', 'fantasia', 'historico', 'sobrenatural'],
+    souleater: ['accion', 'fantasia', 'sobrenatural', 'comedia'],
+    tokyoghoul: ['accion', 'terror', 'sobrenatural', 'drama'],
+    tokyorevengers: ['accion', 'drama', 'escolar'],
+    madeinabyss: ['aventura', 'fantasia', 'misterio', 'drama'],
+    onepiece: ['accion', 'aventura', 'fantasia', 'comedia'],
+    oshinoko: ['drama', 'misterio', 'suspense', 'psicologico'],
+    rezero: ['isekai', 'fantasia', 'drama', 'suspense'],
+    jojos: ['accion', 'aventura', 'sobrenatural', 'comedia']
+};
+
+Object.entries(animeGenres).forEach(([catalogKey, genreIds]) => {
+    if (catalogData[catalogKey]) {
+        catalogData[catalogKey].genres = [...genreIds];
+    }
+});
+
+const getAnimeGenres = (catalogKey) => catalogData[catalogKey]?.genres || [];
+
 const episodeTagRanges = {
     clover: {
         relleno: [[29], [66], [68], [82], [123, 125], [131], [134, 135], [142, 149]]
@@ -5692,6 +5777,43 @@ const renderContentTags = (tags = []) => {
     return badges ? `<span class="content-badges">${badges}</span>` : '';
 };
 
+const createGenreTags = (catalogKey) => {
+    const genreIds = getAnimeGenres(catalogKey);
+    if (!genreIds.length) {
+        return null;
+    }
+
+    const container = document.createElement('div');
+    container.className = 'genre-tags';
+    container.setAttribute('aria-label', 'Géneros');
+
+    genreIds.forEach((genreId) => {
+        const label = genreLabels[genreId];
+        if (!label) {
+            return;
+        }
+
+        const tag = document.createElement('span');
+        tag.className = 'genre-tag';
+        tag.dataset.genre = genreId;
+        tag.textContent = label;
+        container.appendChild(tag);
+    });
+
+    return container.childElementCount ? container : null;
+};
+
+const renderGenreTags = (info, catalogKey) => {
+    if (!info || info.querySelector('.genre-tags')) {
+        return;
+    }
+
+    const tags = createGenreTags(catalogKey);
+    if (tags) {
+        info.appendChild(tags);
+    }
+};
+
 const videoGrid = document.querySelector('#video-grid');
 const seasonGrid = document.querySelector('#season-grid');
 const catalogKey = new URLSearchParams(window.location.search).get('catalogo');
@@ -5738,6 +5860,13 @@ if (animeSearch) {
 		.toLocaleLowerCase();
 
 	if (animeGrid && emptyState) {
+		animeGrid.querySelectorAll('.catalog-card').forEach((card) => {
+			const cardKey = new URL(card.getAttribute('href') || '', window.location.href).searchParams.get('catalogo');
+			if (cardKey) {
+				renderGenreTags(card.querySelector('.video-info'), cardKey);
+			}
+		});
+
 		animeSearch.addEventListener('input', () => {
 			const query = normalizeSearchText(animeSearch.value.trim());
 			let visibleCards = 0;
@@ -5866,6 +5995,7 @@ if (featuredAnimeGrid) {
 		const description = document.createElement('p');
 		description.textContent = firstSeason.title;
 		info.append(title, description);
+		renderGenreTags(info, key);
 		link.append(cover, info);
 		featuredAnimeGrid.appendChild(link);
 	});

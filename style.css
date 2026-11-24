@@ -768,6 +768,32 @@ body.video-is-open {
     color: #ff8585;
 }
 
+.genre-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.genre-tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 20px;
+    padding: 3px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 6px;
+    background: var(--panel-raised);
+    color: #c9c5ca;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+}
+
 .video-info p {
     margin-top: 8px;
 
@@ -1495,6 +1521,16 @@ footer {
 
     .video-info h3 {
         font-size: 15px;
+    }
+
+    .genre-tags {
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .genre-tag {
+        padding: 3px 6px;
+        font-size: 9px;
     }
 }
 
